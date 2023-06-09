@@ -54,10 +54,18 @@
     <header class="containter-fluid fixed-top">
         <h1>Welcome to Poster Prints.</h1>
     </header>
-    
+
     {% if messages %}
     <div class="message-container"></div>
     {% endif %}
-    
+
+    {% block page_header%}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {% endblock %}
   </body>
 </html>
