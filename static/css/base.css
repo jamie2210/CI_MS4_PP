@@ -6,11 +6,11 @@
 }
 
 .index-image {
-    background: url('/media/pexels-terry-magallanes-12639296.jpg') no-repeat center center fixed;
+    background: url('/media/wall-4.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #504e4d;
     font-family: 'DM Sans', sans-serif;
-    height: 100vh;
+    height: 70vh;
 }
 
 header, footer {
