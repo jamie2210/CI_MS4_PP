@@ -5,22 +5,21 @@
     color: #504e4d;
 }
 
+.title {
+    font-size: 50px;
+}
+
 .index-image {
     background: url('/media/wall-4.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #504e4d;
     font-family: 'DM Sans', sans-serif;
-    height: 70vh;
+    height: 80vh;
 }
 
 header, footer {
     background-color: #f0eddf;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    z-index: 1000;
 }
 
 .text-dark {
@@ -42,7 +41,29 @@ footer {
     padding-top: 30px;
 }
 
+/* ------------------------- Header */
+
+.search-bar {
+    max-width: 500px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.sticky-search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #f0eddf;
+}
+
 /* ------------------------- Footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
 .socials {
    font-size:x-large;
@@ -52,6 +73,11 @@ footer {
     margin-top: -15px;
 }
 
+.small-logo {
+    height: 50px;
+    width: auto;
+}
+
 /* ------------------------- Icons */
 
 .icon {
@@ -59,6 +85,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     color: #504e4d;
+    cursor: pointer;
 }
 
 .icon-light {
@@ -131,23 +158,10 @@ footer {
 
 .link-dark:hover {
     color:#222121;
-    font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.search-bar {
-    max-width: 500px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: auto;
-}
-
-.sticky-search-bar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #f0eddf;
-}
 /* ------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
