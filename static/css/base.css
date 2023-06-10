@@ -57,6 +57,14 @@ header, footer {
     background-color: #f0eddf;
 }
 
+.dropdown-menu {
+    background: #f0eddf;
+}
+
+.item-bar {
+    margin: auto;
+}
+
 /* ------------------------- Footer */
 
 footer {
