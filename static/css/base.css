@@ -1,0 +1,146 @@
+/* ------------------------- Body */
+
+html {
+    height: 100%;
+}
+
+.logo-font {
+    font-family: 'Noto Serif KR', sans-serif;
+    color: #504e4d;
+}
+
+body {
+    background: url('/media/pexels-terry-magallanes-12639296.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #504e4d;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    background-color: #f0eddf;
+}
+
+.text-dark {
+    color: #504e4d;
+}
+
+.text-light {
+    color: #eee9cc;
+}
+
+.main-logo {
+    max-width: 300px;
+    height: atuo;
+}
+
+/* ------------------------- from Bulma */
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #504e4d;
+}
+
+.icon-light {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #eee9cc;
+}
+
+.icon-light:hover,
+.icon-light:active,
+.icon-light:focus {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #504e4d;
+}
+
+.icon:hover,
+.icon:active,
+.icon:focus {
+    color: #222121;
+}
+
+/* ------------------------- Buttons */
+
+.btn-dark {
+    background: #504e4d;
+    color: white;
+}
+
+.btn-light {
+    background: #eee9cc;
+    color: #504e4d;
+}
+
+.no-border {
+    border: None;
+}
+
+.border-dark {
+    border: 2px solid #504e4d !important;
+}
+
+.border-light {
+    border: 2px solid #eee9cc !important
+}
+
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus {
+    background: #eee9cc;
+    color: #504e4d !important;
+}
+
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus {
+    background: #504e4d;
+    color: #eee9cc,
+}
+
+/* ------------------------- Links */
+
+.link-dark {
+    text-decoration: none;
+    color: #504e4d;
+    transition: transform 0.3s ease;
+}
+
+.link-dark:hover {
+    color:#222121;
+    font-weight: bold;
+}
+
+/* ------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 220px;
+      }
+  }
