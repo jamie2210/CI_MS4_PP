@@ -71,6 +71,13 @@
           <div class="col-sm-6 my-auto py-lg-0 py-1 text-center text-lg-right">
             
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+              <li class="list-inline-item mob-nav">
+                <!-- Navbar toggle -->
+                  <nav class="navbar navbar-expand-md navbar-light w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+              </li>
               <li class="list-inline-item dropdown">
                 <a href="#" class="nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center link-dark">
@@ -105,8 +112,8 @@
                   </div>
                 </a>
               </li>
+              {% include 'includes/main-nav.html' %}
             </ul>
-            
           </div>
         </div>
       </header>
@@ -128,10 +135,10 @@
               </form>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
+          <div class="row web-nav">
+            <div class="col-12">
               <!-- Navbar toggle -->
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <nav class="navbar navbar-expand-md navbar-light w-100">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                   </button>

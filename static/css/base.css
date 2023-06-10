@@ -38,7 +38,7 @@ header, footer {
 
 .welcome {
     position: relative;
-    padding-top: 30px;
+    padding-top: 125px;
 }
 
 /* ------------------------- Header */
@@ -189,3 +189,21 @@ footer {
           z-index: 1030;
       }
   }
+
+  @media (min-width: 678px) {
+    .mob-nav {
+        display: none;
+      }
+  }
+
+  @media (max-width: 678px) {
+    .web-nav {
+      display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .welcome {
+        padding-top: 30px;
+    }
+}
