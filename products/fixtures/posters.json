@@ -1,0 +1,18 @@
+[
+    {
+       "model":"products.product",
+       "pk":1,
+       "fields":{
+          "name":"",
+          "category":1,
+          "price":"25.00",
+          "sku":"PP220058",
+          "description":"",
+          "feature1":"",
+          "feature2":"",
+          "has_sizes":true,
+          "image_url":"",
+          "image":""
+       }
+    }
+]
