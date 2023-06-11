@@ -62,22 +62,31 @@
     <title>Poster Prints. {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="containter-fluid">
-      </div>
-        <div class="row">
-          <div class="col-sm-6 my-auto text-lg-left text-center">
-            <a href="{% url 'home' %}" class="nav-link"><img src="{{ MEDIA_URL }}main-logo.png" class="main-logo link-dark" alt="Poster Prints Logo" aria-label="To go home page"></a>
+    <header class="containter-fluid fixed-top">
+      <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+          <!-- logo -->
+          <div class="col-12 col-lg-4 my-auto text-lg-left text-center">
+            <a href="{% url 'home' %}" class="nav-link"><h2 class="logo-font main-logo">Poster Prints.</h2></a>
           </div>
-          <div class="col-sm-6 my-auto py-lg-0 py-1 text-center text-lg-right">
-            
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-              <li class="list-inline-item mob-nav">
-                <!-- Navbar toggle -->
-                  <nav class="navbar navbar-expand-md navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+          <!-- Search bar -->
+          <div class="row search-bar justify-content-center col-12 col-lg-4">
+            <div class="col-12">
+              <form method="GET" action="">
+                <div class="input-group">
+                  <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our prints">
+                  <div class="input-group-append">
+                    <button class="form-control btn btn-dark no-border rounded-0 icon-light" type="submit">
+                      <span>
+                        <i class="fas fa-search"></i>
+                      </span>
                     </button>
-              </li>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 my-auto py-lg-0 py-1 text-center text-lg-right">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
               <li class="list-inline-item dropdown">
                 <a href="#" class="nav-link" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center link-dark">
@@ -112,40 +121,23 @@
                   </div>
                 </a>
               </li>
-              {% include 'includes/main-nav.html' %}
             </ul>
           </div>
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
         </div>
-      </header>
-        <!-- Search Bar -->
-        <div class="sticky-search-bar container-fluid">
-          <div class="row search-bar justify-content-center">
-            <div class="col-12">
-              <form method="GET" action="">
-                <div class="input-group">
-                  <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our prints">
-                  <div class="input-group-append">
-                    <button class="form-control btn btn-dark no-border rounded-0 icon-light" type="submit">
-                      <span>
-                        <i class="fas fa-search"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="row web-nav">
-            <div class="col-12">
-              <!-- Navbar toggle -->
-                <nav class="navbar navbar-expand-md navbar-light w-100">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                {% include 'includes/main-nav.html' %}
-            </div>
-          </div>
-        </div>
+        
+      <div class="row">
+          <!-- Navbar toggle -->
+          <nav class="navbar navbar-expand-lg navbar-light w-100 pl-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'includes/mobile-top-header.html' %}
+            {% include 'includes/main-nav.html' %}
+          </nav>
+      </div>
+    </header>
+          
    
        
 

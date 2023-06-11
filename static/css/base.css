@@ -26,19 +26,25 @@ header, footer {
     color: #504e4d;
 }
 
+.text-dark:hover,
+.text-dark:active,
+.text-dark:focus {
+    color: #504e4d;
+}
+
 .text-light {
     color: #eee9cc;
 }
 
 .main-logo {
-    max-width: 300px;
-    height: atuo;
-    padding-top: 10px;
+    font-size: 50px;
+    padding-left: 10px;
+    color: #504e4d;
 }
 
 .welcome {
     position: relative;
-    padding-top: 125px;
+    padding-top: 200px;
 }
 
 /* ------------------------- Header */
@@ -50,12 +56,13 @@ header, footer {
     margin: auto;
 }
 
-.sticky-search-bar {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: #f0eddf;
+.sm-search-bar {
+    max-width: 500px;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
 }
+
 
 .dropdown-menu {
     background: #f0eddf;
@@ -190,20 +197,18 @@ footer {
       }
   }
 
-  @media (min-width: 678px) {
-    .mob-nav {
-        display: none;
-      }
-  }
-
-  @media (max-width: 678px) {
-    .web-nav {
-      display: none;
+@media (max-width: 720px) {
+    .welcome {
+        padding-top: 200px;
     }
 }
 
-@media (max-width: 720px) {
-    .welcome {
-        padding-top: 30px;
+@media (max-width: 440px) {
+    .navbar ul {
+        padding-top: 5px;
+        padding-left: 0;
+    }
+    .list-inline-item a {
+        padding: 0;
     }
 }
