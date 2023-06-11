@@ -72,6 +72,15 @@ header, footer {
     margin: auto;
 }
 
+.mobile-list {
+    margin: 0;
+}
+
+.mobile-search {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
 /* ------------------------- Footer */
 
 footer {
