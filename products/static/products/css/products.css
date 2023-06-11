@@ -4,6 +4,12 @@
     padding-bottom: 50px;
 }
 
+.product-title {
+    position: relative;
+    padding-top: 175px;
+    padding-bottom: 25px;
+}
+
 .film-poster {
 padding-top: 40px;
 }
@@ -43,7 +49,8 @@ z-index: 1;
 }
 
 @media (max-width: 992px) {
-    .title {
+    .title,
+    .product-title {
         padding-top: 100px;
     }
 }
