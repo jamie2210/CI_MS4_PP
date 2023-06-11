@@ -3,16 +3,375 @@
        "model":"products.product",
        "pk":1,
        "fields":{
-          "name":"",
+          "name":"Batman",
           "category":1,
           "price":"25.00",
-          "sku":"PP220058",
-          "description":"",
-          "feature1":"",
-          "feature2":"",
+          "sku":"PP2210",
+          "description":"Orignal poster design from Tim Burton's Batman 1989",
+          "feature":"Printed on satin 200gsm paper",
           "has_sizes":true,
           "image_url":"",
-          "image":""
+          "image":"pp-2210.png"
        }
-    }
+    },
+    {
+      "model":"products.product",
+      "pk":2,
+      "fields":{
+         "name":"Die Hard",
+         "category":8,
+         "price":"29.00",
+         "sku":"PP22102",
+         "description":"Orignal poster design from Die hard",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22102.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":3,
+      "fields":{
+         "name":"Dune",
+         "category":8,
+         "price":"34.99",
+         "sku":"PP22103",
+         "description":"Concept illustration of a poster for Dune",
+         "feature":"Printed on Matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22103.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":4,
+      "fields":{
+         "name":"John Wick",
+         "category":8,
+         "price":"34.99",
+         "sku":"PP22104",
+         "description":"Poster from the first John Wick film in the franchise",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22104.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":5,
+      "fields":{
+         "name":"Leon",
+         "category":8,
+         "price":"19.99",
+         "sku":"PP22105",
+         "description":"Graphic Design Illustration",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22105.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":6,
+      "fields":{
+         "name":"Predator",
+         "category":8,
+         "price":"34.99",
+         "sku":"PP22106",
+         "description":"Original poster design from Arnold Schwarzenegger's Predator",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22106.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":7,
+      "fields":{
+         "name":"Robocop",
+         "category":8,
+         "price":"20.99",
+         "sku":"PP22107",
+         "description":"Poster has been designed to look old for effect",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22107.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":8,
+      "fields":{
+         "name":"Skyfall",
+         "category":8,
+         "price":"40.99",
+         "sku":"PP22108",
+         "description":"Rare poster design for the James Bond movie - Skyfall",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22108.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":9,
+      "fields":{
+         "name":"Terminator 2",
+         "category":8,
+         "price":"19.99",
+         "sku":"PP22109",
+         "description":"Original poster design from Arnold Schwarzenegger's Terminator 2",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-22109.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":10,
+      "fields":{
+         "name":"Jurassic Park",
+         "category":9,
+         "price":"19.99",
+         "sku":"PP221010",
+         "description":"Original poster design from Steven Spielberg's Jurrasic Park",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221010.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":11,
+      "fields":{
+         "name":"Nope",
+         "category":9,
+         "price":"29.99",
+         "sku":"PP221011",
+         "description":"Original poster design from Jordan Peele's Nope",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221011.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":12,
+      "fields":{
+         "name":"Bill & Ted",
+         "category":9,
+         "price":"14.99",
+         "sku":"PP221012",
+         "description":"Poster has been designed to look old for effect",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221012.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":13,
+      "fields":{
+         "name":"Fear and Loathing",
+         "category":7,
+         "price":"19.99",
+         "sku":"PP221013",
+         "description":"Original poster design from Fear and Loathing in Las Vegas",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221013.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":14,
+      "fields":{
+         "name":"The Goonies",
+         "category":8,
+         "price":"19.99",
+         "sku":"PP221014",
+         "description":"Poster has been designed to look old for effect",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221014.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":15,
+      "fields":{
+         "name":"Gremilns",
+         "category":8,
+         "price":"19.99",
+         "sku":"PP221015",
+         "description":"Poster has been designed to look old for effect",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221015.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":16,
+      "fields":{
+         "name":"short Circuit",
+         "category":8,
+         "price":"21.99",
+         "sku":"PP221016",
+         "description":"Poster has been designed to look old for effect",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221016.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":17,
+      "fields":{
+         "name":"Indiana Jones",
+         "category":8,
+         "price":"24.99",
+         "sku":"PP221017",
+         "description":"Original poster design from The Temple of Doom",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221017.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":18,
+      "fields":{
+         "name":"Casino",
+         "category":7,
+         "price":"29.99",
+         "sku":"PP221018",
+         "description":"Original poster design from Casino",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221018.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":19,
+      "fields":{
+         "name":"Drive",
+         "category":7,
+         "price":"29.99",
+         "sku":"PP221019",
+         "description":"Original poster design from Ryan Gosling's Drive",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221019.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":20,
+      "fields":{
+         "name":"Drive",
+         "category":7,
+         "price":"23.99",
+         "sku":"PP221020",
+         "description":"Cannot confirm originality of Poster design",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221020.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":21,
+      "fields":{
+         "name":"Drive",
+         "category":7,
+         "price":"25.99",
+         "sku":"PP221021",
+         "description":"Original poster design from the cult classic Jaws",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221021.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":22,
+      "fields":{
+         "name":"Pulp Fiction",
+         "category":7,
+         "price":"21.99",
+         "sku":"PP221022",
+         "description":"Original poster design, it has not been edited for effect",
+         "feature":"Printed on satin 200gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221022.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":23,
+      "fields":{
+         "name":"Romeo & Juliet",
+         "category":7,
+         "price":"29.99",
+         "sku":"PP221023",
+         "description":"Original poster design from Leonardo DiCaprio's Romeo & Juliet",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221023.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":25,
+      "fields":{
+         "name":"Star Wars",
+         "category":7,
+         "price":"39.99",
+         "sku":"PP221025",
+         "description":"Star Wars episde 4 poster design by Greg Hildebrandt",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221025.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":26,
+      "fields":{
+         "name":"True Romance",
+         "category":7,
+         "price":"39.99",
+         "sku":"PP221026",
+         "description":"Original poster design from tony Scott and Quentin Tarantino's True Romance",
+         "feature":"Printed on matt 220gsm paper",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221026.png"
+      }
+   }
 ]
