@@ -1,0 +1,53 @@
+.title {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.film-poster {
+padding-top: 40px;
+}
+
+.card-film {
+transition: transform 0.3s ease;
+}
+
+.card-film:hover {
+transform: scale(1.05);
+z-index: 1;
+}
+
+.card,
+.card-footer {
+    background: #e5e3e2;
+}
+
+/* ------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 440px) {
+ 
+}

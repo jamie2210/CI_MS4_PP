@@ -26,6 +26,10 @@ header, footer {
     color: #504e4d;
 }
 
+.card-img-top {
+    size: 90%;
+}
+
 .text-dark:hover,
 .text-dark:active,
 .text-dark:focus {
@@ -195,16 +199,22 @@ footer {
     }
   }
   
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  }
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+@media (max-width: 1170px) {
+    .main-logo {
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 720px) {
     .welcome {
