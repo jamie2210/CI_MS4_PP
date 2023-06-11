@@ -288,7 +288,7 @@
       "model":"products.product",
       "pk":20,
       "fields":{
-         "name":"Drive",
+         "name":"The Good, the Bad and The Ugly",
          "category":7,
          "price":"23.99",
          "sku":"PP221020",
@@ -303,7 +303,7 @@
       "model":"products.product",
       "pk":21,
       "fields":{
-         "name":"Drive",
+         "name":"Jaws",
          "category":7,
          "price":"25.99",
          "sku":"PP221021",
