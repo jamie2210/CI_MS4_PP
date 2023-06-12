@@ -3,7 +3,9 @@ from .models import Product
 
 
 def all_products(request):
-    """ A view to show all products, including searching and sorting """
+    """ A view to show all products in random order
+        including searching and sorting
+    """
 
     products = Product.objects.order_by('?')
 
