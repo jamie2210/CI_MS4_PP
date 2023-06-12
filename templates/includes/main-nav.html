@@ -21,10 +21,10 @@
                 Photography
             </a>
             <div class="dropdown-menu border" aria-labelledby="photography-link">
-                <a href="" class="dropdown-item text-dark">Landscapes</a>
-                <a href="" class="dropdown-item text-dark">People</a>
-                <a href="" class="dropdown-item text-dark">Widllife</a>
-                <a href="" class="dropdown-item text-dark">All Photography</a>
+                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item text-dark">Landscapes</a>
+                <a href="{% url 'products' %}?category=architecture" class="dropdown-item text-dark">Architecture</a>
+                <a href="{% url 'products' %}?category=wildlife" class="dropdown-item text-dark">Widllife</a>
+                <a href="{% url 'products' %}?category=landscapes,architecture,wildlife" class="dropdown-item text-dark">All Photography</a>
             </div>
         </li>
 
@@ -33,10 +33,10 @@
                 Graphic Design
             </a>
             <div class="dropdown-menu border" aria-labelledby="graphics-link">
-                <a href="" class="dropdown-item text-dark">Comics</a>
-                <a href="" class="dropdown-item text-dark">Illustrations</a>
-                <a href="" class="dropdown-item text-dark">Typography</a>
-                <a href="" class="dropdown-item text-dark">All Graphic Design</a>
+                <a href="{% url 'products' %}?category=comics" class="dropdown-item text-dark">Comics</a>
+                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item text-dark">Illustrations</a>
+                <a href="{% url 'products' %}?category=typography" class="dropdown-item text-dark">Typography</a>
+                <a href="{% url 'products' %}?category=comics,illustrations,typography" class="dropdown-item text-dark">All Graphic Design</a>
             </div>
         </li>
 
@@ -45,10 +45,10 @@
                 Film
             </a>
             <div class="dropdown-menu border" aria-labelledby="text-link">
-                <a href="" class="dropdown-item text-dark">Classics</a>
-                <a href="" class="dropdown-item text-dark">Action</a>
-                <a href="" class="dropdown-item text-dark">Adventure</a>
-                <a href="" class="dropdown-item text-dark">All Film</a>
+                <a href="{% url 'products' %}?category=classics" class="dropdown-item text-dark">Classics</a>
+                <a href="{% url 'products' %}?category=action" class="dropdown-item text-dark">Action</a>
+                <a href="{% url 'products' %}?category=adventure" class="dropdown-item text-dark">Adventure</a>
+                <a href="{% url 'products' %}?category=classics,action,adventure" class="dropdown-item text-dark">All Film</a>
             </div>
         </li>
     </ul>

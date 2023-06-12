@@ -4,7 +4,7 @@
        "pk":1,
        "fields":{
           "name":"Batman",
-          "category":1,
+          "category":8,
           "price":"19.99",
           "sku":"PP2210",
           "description":"Orignal poster design from Tim Burton's Batman 1989",
@@ -184,7 +184,7 @@
       "pk":13,
       "fields":{
          "name":"Fear and Loathing",
-         "category":7,
+         "category":9,
          "price":"14.99",
          "sku":"PP221013",
          "description":"Original poster design from Fear and Loathing in Las Vegas",
@@ -199,7 +199,7 @@
       "pk":14,
       "fields":{
          "name":"The Goonies",
-         "category":8,
+         "category":9,
          "price":"14.99",
          "sku":"PP221014",
          "description":"Poster has been designed to look old for effect",
@@ -214,7 +214,7 @@
       "pk":15,
       "fields":{
          "name":"Gremilns",
-         "category":8,
+         "category":9,
          "price":"14.99",
          "sku":"PP221015",
          "description":"Poster has been designed to look old for effect",
@@ -229,7 +229,7 @@
       "pk":16,
       "fields":{
          "name":"short Circuit",
-         "category":8,
+         "category":9,
          "price":"14.99",
          "sku":"PP221016",
          "description":"Poster has been designed to look old for effect",
@@ -244,7 +244,7 @@
       "pk":17,
       "fields":{
          "name":"Indiana Jones",
-         "category":8,
+         "category":9,
          "price":"19.99",
          "sku":"PP221017",
          "description":"Original poster design from The Temple of Doom",
