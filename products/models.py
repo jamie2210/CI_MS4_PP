@@ -47,6 +47,11 @@ class Product(models.Model):
         blank=True
     )
 
+    feature2 = models.TextField(
+        max_length=500,
+        blank=True
+    )
+
     has_sizes = models.BooleanField(
         default=False,
         null=True,

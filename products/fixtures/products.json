@@ -5,7 +5,7 @@
        "fields":{
           "name":"Batman",
           "category":1,
-          "price":"25.00",
+          "price":"19.99",
           "sku":"PP2210",
           "description":"Orignal poster design from Tim Burton's Batman 1989",
           "feature":"Printed on satin 200gsm paper",
@@ -20,7 +20,7 @@
       "fields":{
          "name":"Die Hard",
          "category":8,
-         "price":"29.00",
+         "price":"19.99",
          "sku":"PP22102",
          "description":"Orignal poster design from the movie Die Hard",
          "feature":"Printed on satin 200gsm paper",
@@ -35,7 +35,7 @@
       "fields":{
          "name":"Dune",
          "category":8,
-         "price":"34.99",
+         "price":"14.99",
          "sku":"PP22103",
          "description":"Concept illustration of a poster for Dune",
          "feature":"Printed on Matt 220gsm paper",
@@ -50,7 +50,7 @@
       "fields":{
          "name":"John Wick",
          "category":8,
-         "price":"34.99",
+         "price":"19.99",
          "sku":"PP22104",
          "description":"Poster from the first John Wick film in the franchise",
          "feature":"Printed on satin 200gsm paper",
@@ -65,7 +65,7 @@
       "fields":{
          "name":"Leon",
          "category":8,
-         "price":"19.99",
+         "price":"14.99",
          "sku":"PP22105",
          "description":"Graphic Design Illustration",
          "feature":"Printed on matt 220gsm paper",
@@ -80,7 +80,7 @@
       "fields":{
          "name":"Predator",
          "category":8,
-         "price":"34.99",
+         "price":"19.99",
          "sku":"PP22106",
          "description":"Original poster design from Arnold Schwarzenegger's Predator",
          "feature":"Printed on satin 200gsm paper",
@@ -95,7 +95,7 @@
       "fields":{
          "name":"Robocop",
          "category":8,
-         "price":"20.99",
+         "price":"14.99",
          "sku":"PP22107",
          "description":"Poster has been designed to look old for effect",
          "feature":"Printed on satin 200gsm paper",
@@ -110,7 +110,7 @@
       "fields":{
          "name":"Skyfall",
          "category":8,
-         "price":"40.99",
+         "price":"19.99",
          "sku":"PP22108",
          "description":"Rare poster design for the James Bond movie - Skyfall",
          "feature":"Printed on satin 200gsm paper",
@@ -155,7 +155,7 @@
       "fields":{
          "name":"Nope",
          "category":9,
-         "price":"29.99",
+         "price":"19.99",
          "sku":"PP221011",
          "description":"Original poster design from Jordan Peele's Nope",
          "feature":"Printed on satin 200gsm paper",
@@ -185,7 +185,7 @@
       "fields":{
          "name":"Fear and Loathing",
          "category":7,
-         "price":"19.99",
+         "price":"14.99",
          "sku":"PP221013",
          "description":"Original poster design from Fear and Loathing in Las Vegas",
          "feature":"Printed on matt 220gsm paper",
@@ -200,7 +200,7 @@
       "fields":{
          "name":"The Goonies",
          "category":8,
-         "price":"19.99",
+         "price":"14.99",
          "sku":"PP221014",
          "description":"Poster has been designed to look old for effect",
          "feature":"Printed on matt 220gsm paper",
@@ -215,7 +215,7 @@
       "fields":{
          "name":"Gremilns",
          "category":8,
-         "price":"19.99",
+         "price":"14.99",
          "sku":"PP221015",
          "description":"Poster has been designed to look old for effect",
          "feature":"Printed on matt 220gsm paper",
@@ -230,7 +230,7 @@
       "fields":{
          "name":"short Circuit",
          "category":8,
-         "price":"21.99",
+         "price":"14.99",
          "sku":"PP221016",
          "description":"Poster has been designed to look old for effect",
          "feature":"Printed on matt 220gsm paper",
@@ -245,7 +245,7 @@
       "fields":{
          "name":"Indiana Jones",
          "category":8,
-         "price":"24.99",
+         "price":"19.99",
          "sku":"PP221017",
          "description":"Original poster design from The Temple of Doom",
          "feature":"Printed on satin 200gsm paper",
@@ -260,7 +260,7 @@
       "fields":{
          "name":"Casino",
          "category":7,
-         "price":"29.99",
+         "price":"19.99",
          "sku":"PP221018",
          "description":"Original poster design from Casino",
          "feature":"Printed on satin 200gsm paper",
@@ -275,7 +275,7 @@
       "fields":{
          "name":"Drive",
          "category":7,
-         "price":"29.99",
+         "price":"19.99",
          "sku":"PP221019",
          "description":"Original poster design from Ryan Gosling's Drive",
          "feature":"Printed on satin 200gsm paper",
@@ -290,7 +290,7 @@
       "fields":{
          "name":"The Good, the Bad and The Ugly",
          "category":7,
-         "price":"23.99",
+         "price":"19.99",
          "sku":"PP221020",
          "description":"Cannot confirm originality of Poster design",
          "feature":"Printed on satin 200gsm paper",
@@ -305,7 +305,7 @@
       "fields":{
          "name":"Jaws",
          "category":7,
-         "price":"25.99",
+         "price":"19.99",
          "sku":"PP221021",
          "description":"Original poster design from the cult classic Jaws",
          "feature":"Printed on satin 200gsm paper",
@@ -320,7 +320,7 @@
       "fields":{
          "name":"Pulp Fiction",
          "category":7,
-         "price":"21.99",
+         "price":"19.99",
          "sku":"PP221022",
          "description":"Original poster design, it has not been edited for effect",
          "feature":"Printed on satin 200gsm paper",
@@ -335,7 +335,7 @@
       "fields":{
          "name":"Romeo & Juliet",
          "category":7,
-         "price":"29.99",
+         "price":"14.99",
          "sku":"PP221023",
          "description":"Original poster design from Leonardo DiCaprio's Romeo & Juliet",
          "feature":"Printed on matt 220gsm paper",
@@ -350,7 +350,7 @@
       "fields":{
          "name":"Star Wars",
          "category":7,
-         "price":"39.99",
+         "price":"14.99",
          "sku":"PP221025",
          "description":"Star Wars episde 4 poster design by Greg Hildebrandt",
          "feature":"Printed on matt 220gsm paper",
@@ -365,13 +365,253 @@
       "fields":{
          "name":"True Romance",
          "category":7,
-         "price":"39.99",
+         "price":"14.99",
          "sku":"PP221026",
          "description":"Original poster design from tony Scott and Quentin Tarantino's True Romance",
          "feature":"Printed on matt 220gsm paper",
          "has_sizes":true,
          "image_url":"",
          "image":"pp-221026.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":27,
+      "fields":{
+         "name":"Afro Samurai",
+         "category":4,
+         "price":"14.99",
+         "sku":"PP221027",
+         "description":"Afro Samurai is a Japanese seinen dōjinshi manga series",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2": "Written and illustrated Takashi Okazaki",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221027.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":28,
+      "fields":{
+         "name":"Rocket Racoon",
+         "category":4,
+         "price":"19.99",
+         "sku":"PP221028",
+         "description":"Fictional character from the Marvel Comics and leader of The Guardians of the Galaxy",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221028.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":29,
+      "fields":{
+         "name":"Superman",
+         "category":4,
+         "price":"14.99",
+         "sku":"PP221029",
+         "description":"Vintage styled illustration of Superman from the DC comics",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221029.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":30,
+      "fields":{
+         "name":"Thor vs Gorr",
+         "category":4,
+         "price":"14.99",
+         "sku":"PP221030",
+         "description":"The mighty Thor fighting Gorr the God Butcher from the Marvel comics",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221030.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":31,
+      "fields":{
+         "name":"Batman",
+         "category":4,
+         "price":"19.99",
+         "sku":"PP221031",
+         "description":"The Dark Knght aka Batman from the DC comics",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221031.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":32,
+      "fields":{
+         "name":"Naruto",
+         "category":4,
+         "price":"19.99",
+         "sku":"PP221032",
+         "description":"Naruto, from the Japanese manga series Naruto",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"Illustrated by Masashi Kishimoto",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221032.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":33,
+      "fields":{
+         "name":"Marilyn",
+         "category":5,
+         "price":"19.99",
+         "sku":"PP221033",
+         "description":"Digital, colourful illustration of Marilyn Monroe",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221033.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":34,
+      "fields":{
+         "name":"Elephant",
+         "category":5,
+         "price":"14.99",
+         "sku":"PP221034",
+         "description":"Line drawing of an elephant",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221034.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":35,
+      "fields":{
+         "name":"Owl",
+         "category":5,
+         "price":"14.99",
+         "sku":"PP221035",
+         "description":"Graphic design illustration of an Owl",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"Artist: Jamie Letts",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221035.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":36,
+      "fields":{
+         "name":"Cheeky Chappy",
+         "category":5,
+         "price":"14.99",
+         "sku":"PP221036",
+         "description":"Graphic design illustration of a boy smoking a cigarette",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"Artist: Jamie Letts",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221036.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":37,
+      "fields":{
+         "name":"A quiet Place",
+         "category":5,
+         "price":"19.99",
+         "sku":"PP221037",
+         "description":"Abstract graphic design illustration",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221037.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":38,
+      "fields":{
+         "name":"Dream Big!",
+         "category":6,
+         "price":"19.99",
+         "sku":"PP221038",
+         "description":"Creative motivational typogpraphy",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"Artist: Gleb Guralnyk",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221038.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":39,
+      "fields":{
+         "name":"All will be OK",
+         "category":6,
+         "price":"19.99",
+         "sku":"PP221039",
+         "description":"Creative motivational typogpraphy",
+         "feature":"Printed on satin 200gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221039.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":40,
+      "fields":{
+         "name":"You will succeed!",
+         "category":6,
+         "price":"14.99",
+         "sku":"PP221040",
+         "description":"Creative motivational typogpraphy",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"",
+         "has_sizes":true,
+         "image_url":"Artist: artmonkey",
+         "image":"pp-221040.png"
+      }
+   },
+   {
+      "model":"products.product",
+      "pk":41,
+      "fields":{
+         "name":"Stage Door",
+         "category":6,
+         "price":"19.99",
+         "sku":"PP221041",
+         "description":"Theatre related creative motivational typogpraphy",
+         "feature":"Printed on matt 220gsm paper",
+         "feature2":"Artist: Jamie Letts",
+         "has_sizes":true,
+         "image_url":"",
+         "image":"pp-221041.png"
       }
    }
 ]
