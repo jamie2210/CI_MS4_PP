@@ -1,5 +1,8 @@
 /* ------------------------- Body */
 
+.main-body {
+    min-height: 80vh;
+}
 .logo-font {
     font-family: 'Noto Serif KR', sans-serif;
     color: #504e4d;
@@ -91,6 +94,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 .socials {

@@ -16,12 +16,11 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col-12 text-center mt-3">
             <h2 class="logo-font title">All Posters</h2>
         </div>
         <div class="row">
             <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-1"></div>
                 <div class="row">
                     {% for product in products %}
                     <div class="card-film col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -47,26 +46,6 @@
                             </div>
                         </div>
                     </div>
-                    {% if forloop.counter|divisibleby:1 %}
-                        <div class="col-12 d-sm-none mb-1">
-                            <hr>
-                        </div>
-                    {% endif %}                        
-                    {% if forloop.counter|divisibleby:2 %}
-                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-1">
-                            <hr>
-                        </div>
-                    {% endif %}
-                    {% if forloop.counter|divisibleby:3 %}
-                        <div class="col-12 d-none d-lg-block d-xl-none mb-1">
-                            <hr>
-                        </div>
-                    {% endif %}
-                    {% if forloop.counter|divisibleby:4 %}
-                        <div class="col-12 d-none d-xl-block mb-1">
-                            <hr>
-                        </div>
-                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
