@@ -29,7 +29,6 @@ $('#sort-selector').change(function() {
 window.addEventListener('scroll', function() {
     let button = document.querySelector('.arrow-button');
     let footer = document.querySelector('footer');
-    let footerHeight = footer.offsetHeight; // return the height of the footer
     let footerOffset = footer.offsetTop; // gets distance between footer and closest ancestor
     let scrollPosition = document.documentElement.scrollTop; // gets current scroll position of page
 
@@ -42,5 +41,4 @@ window.addEventListener('scroll', function() {
         // Button is above the footer
         button.style.bottom = '20px';
     }
-
-})
+});
