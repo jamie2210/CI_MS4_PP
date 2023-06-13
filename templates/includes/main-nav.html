@@ -10,9 +10,9 @@
                 All Posters
             </a>
             <div class="dropdown-menu border" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item text-dark">By Price</a>
-                <a href="" class="dropdown-item text-dark">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item text-dark">All Posters</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item text-dark">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-dark">By Category</a>
+                <a href="{% url 'products' %}?random=True" class="dropdown-item text-dark" aria-label="view all posters" name="random">All Posters</a>
             </div>
         </li>
 

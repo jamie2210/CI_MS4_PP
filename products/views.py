@@ -14,9 +14,10 @@ def all_products(request):
         including searching and sorting
     """
 
-    products = Product.objects.order_by('?')
+    products = Product.objects.all()
     query = None
     categories = None
+    random_order = False
 
     if request.GET:
         if 'category' in request.GET:
@@ -35,10 +36,17 @@ def all_products(request):
                 name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+        if 'random' in request.GET:
+            random_order = True
+
+    if random_order:
+        products = products.order_by('?')
+
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'random_order': random_order,
     }
 
     return render(request, 'products/products.html', context)
