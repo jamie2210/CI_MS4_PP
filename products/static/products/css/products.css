@@ -10,16 +10,16 @@
     padding-bottom: 25px;
 }
 
-.film-poster {
+.card-poster {
     padding-top: 40px;
 }
 
-.card-film {
+.card-container {
     transition: transform 0.3s ease;
     margin: 15px 0;
 }
 
-.card-film:hover {
+.card-container:hover {
     transform: scale(1.05);
     z-index: 1;
 }

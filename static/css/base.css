@@ -8,6 +8,12 @@
     color: #504e4d;
 }
 
+.logo-font a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #504e4d;
+}
+
 .title {
     font-size: 50px;
 }
@@ -25,12 +31,18 @@ header, footer {
     z-index: 1000;
 }
 
+.card-img-top {
+    size: 90%;
+}
+
 .text-dark {
     color: #504e4d;
 }
 
-.card-img-top {
-    size: 90%;
+.text-dark a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #504e4d;
 }
 
 .text-dark:hover,
@@ -177,7 +189,7 @@ footer {
 .btn-light:active,
 .btn-light:focus {
     background: #504e4d;
-    color: #eee9cc,
+    color: #eee9cc !important;
 }
 
 /* ------------------------- Links */
