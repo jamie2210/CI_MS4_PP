@@ -23,7 +23,7 @@ $('#sort-selector').change(function() {
 });
 
 
-/** Event listner to stop top arrow
+/** Event listener to stop up to top arrow
  * button scroll beyond the footer */
 
 window.addEventListener('scroll', function() {
