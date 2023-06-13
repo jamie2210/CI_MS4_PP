@@ -6,6 +6,7 @@ from django.shortcuts import (
     )
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Product, Category
 
 
@@ -27,7 +28,7 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                products = Products.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
 
@@ -55,7 +56,11 @@ def all_products(request):
 
             products = products.filter(queries)
 
-        if 'random' in request.GET:
+        # generates random order if above parameters are not called
+        if 'sort' not in request.GET and \
+            'category' not in request.GET and \
+            'q' not in request.GET and \
+                'random' in request.GET:
             random_order = True
 
     if random_order:
