@@ -6,24 +6,22 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col"></div>
+            <div class="col-12 text-center mt-3">
+                <h2 class="logo-font title"><a href="{% url 'products' %}?random=True">Posters</a></h2>
+                {% for c in current_categories %}
+                    <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
+                        <span class="p-2 btn btn-light no-border btn-lrg mb-4 ml-1 mr-1">{{ c.friendly_name }}</span>
+                    </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12 text-center mt-3">
-            <h2 class="logo-font title"><a href="{% url 'products' %}?random=True">Posters</a></h2>
-            {% for c in current_categories %}
-                <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
-                    <span class="p-2 btn btn-light no-border btn-lrg mb-4 ml-1 mr-1">{{ c.friendly_name }}</span>
-                </a>
-            {% endfor %}
-        </div>
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
