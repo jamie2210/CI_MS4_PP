@@ -137,6 +137,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     color: #eee9cc;
+    text-decoration: none;
 }
 
 .icon-light:hover,
@@ -146,6 +147,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     color: #504e4d;
+    text-decoration: none;
 }
 
 .icon:hover,
@@ -159,6 +161,7 @@ footer {
 .btn-dark {
     background: #504e4d;
     color: white;
+    text-decoration: none;
 }
 
 .btn-light {
@@ -183,6 +186,7 @@ footer {
 .btn-dark:focus {
     background: #eee9cc;
     color: #504e4d !important;
+    text-decoration: none;
 }
 
 .btn-light:hover,
@@ -190,6 +194,7 @@ footer {
 .btn-light:focus {
     background: #504e4d;
     color: #eee9cc !important;
+    text-decoration: none;
 }
 
 /* ------------------------- Links */

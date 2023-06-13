@@ -29,7 +29,50 @@
     background: #e5e3e2;
 }
 
+/* ---------------------------- Page top arrow */
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #eee9cc;
+    text-decoration: none;
+    background: #504e4d;
+}
+
+.arrow-button:hover,
+.arrow-button:active,
+.arrow-button:focus {
+    background: #eee9cc;
+    text-decoration: none;
+}
+
+.arrow-button a i {
+    color: #eee9cc;
+    text-decoration: none;
+}
+
+.arrow-button:hover a i,
+.arrow-button:active a i,
+.arrow-button:focus a i {
+    color: #504e4d;
+    text-decoration: none;
+}
+
+.fa-circle-up {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.fa-circle-up:hover {
+    text-decoration: none;
+}
+
+
 /* ------------------------- Media Queries */
+
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
