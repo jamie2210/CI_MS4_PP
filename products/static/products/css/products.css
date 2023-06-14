@@ -30,6 +30,16 @@
     background: #e5e3e2;
 }
 
+#delivery-banner {
+    display: block;
+}
+
+#delivery-banner p {
+    margin: 0;
+    padding: 5px;
+}
+
+
 /* ---------------------------- Page top arrow */
 
 .arrow-button {

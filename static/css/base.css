@@ -18,6 +18,10 @@
     font-size: 50px;
 }
 
+.bag-title {
+    margin-top: 220px;
+}
+
 .index-image {
     background: url('/media/wall-4.jpg') no-repeat center center fixed;
     background-size: cover;
