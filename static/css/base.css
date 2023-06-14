@@ -18,12 +18,6 @@
     font-size: 50px;
 }
 
-.bag-title {
-    position: relative;
-    padding-top: 200px;
-    padding-bottom: 50px;
-}
-
 .index-image {
     background: url('/media/wall-4.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -174,13 +168,15 @@ footer {
 
 .btn-dark {
     background: #504e4d;
-    color: white;
+    color: #f0eddf;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-light {
     background: #eee9cc;
     color: #504e4d;
+    transition: transform 0.3s ease;
 }
 
 .no-border {
