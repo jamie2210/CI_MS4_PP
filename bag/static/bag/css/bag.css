@@ -1,9 +1,20 @@
-.title {
+.bag-title {
     position: relative;
-    padding-top: 220px;
     padding-bottom: 50px;
 }
 
-#delivery_banner {
+#delivery-banner {
     display: block;
 }
+
+#delivery-banner p {
+    margin: 0;
+    padding: 5px;
+}
+
+
+.bag-image {
+    max-height: 150px;
+    width: auto;
+}
+
