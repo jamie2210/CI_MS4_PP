@@ -1,0 +1,9 @@
+.title {
+    position: relative;
+    padding-top: 220px;
+    padding-bottom: 50px;
+}
+
+#delivery_banner {
+    display: block;
+}
