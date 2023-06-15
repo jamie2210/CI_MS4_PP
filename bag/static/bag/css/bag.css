@@ -18,3 +18,8 @@
     width: auto;
 }
 
+.delivery-alert {
+    color: #f0eddf;
+    background: #504e4d;
+    width: fit-content;
+}

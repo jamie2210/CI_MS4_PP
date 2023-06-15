@@ -43,7 +43,34 @@
                                         <p class="my-0">{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">{{ item.quantity }}</p>
+                                        <form method="POST" class="form update-form" action="">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <div class="input-group justify-content-center">
+                                                    <div class="input-group-prepend">
+                                                        <button class="decrement-qty btn-dark border-0" 
+                                                            data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                            <i class="fa-regular qty-circle fa-circle-down"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input class="form-control qty_input" type="number"
+                                                                name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                                data-item_id="{{ item.item_id }}"
+                                                                id="id_qty_{{ item.item_id }}">
+                                                    <div class="input-group-append">
+                                                        <button class="increment-qty btn-dark border-0"
+                                                            data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                            <i class="fa-regular qty-circle fa-circle-up"></i>
+                                                        </button>
+                                                    </div>
+                                                    {% if item.product.has_sizes %}
+                                                        <input type="hidden" name="product_size" value="{{ item.size }}">
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <a href="" class="update-link text-dark"><small>Update</small></a>
+                                        <a href="" class="remove-item float-right text-dark" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">{{ item.product.price }}</p>
@@ -52,12 +79,14 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                                    <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-danger">
+                                        <p class="mb-1 delivery-alert float-right p-2 rounded">
+                                            <i class="fa-solid fa-bolt"></i>
                                             You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
+                                            <i class="fa-solid fa-bolt"></i>
                                         </p>
                                     {% endif %}
                                 </td>
@@ -89,4 +118,8 @@
             <div class="col"></div>
         </div>
     </div>
+{% endblock %}
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'bag/js/bag.js' %}"></script>
 {% endblock %}
