@@ -72,15 +72,19 @@
     text-decoration: none;
 }
 
-.fa-circle-up {
+.arrow-button .fa-circle-up {
     font-size: 30px;
     text-decoration: none;
 }
 
-.fa-circle-up:hover {
+.arrow-button .fa-circle-up:hover {
     text-decoration: none;
 }
 
+
+.qty-circle {
+    font-size: 20px;
+}
 
 /* ------------------------- Media Queries */
 
