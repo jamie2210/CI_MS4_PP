@@ -225,6 +225,23 @@ footer {
     cursor: pointer;
 }
 
+/* ------------------------- Messages */
+
+.message-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 99999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* ------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
