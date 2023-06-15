@@ -43,7 +43,7 @@
                                         <p class="my-0">{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <form method="POST" class="form update-form" action="">
+                                        <form method="POST" class="form update-form" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group justify-content-center">
