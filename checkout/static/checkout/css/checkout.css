@@ -4,6 +4,12 @@
     margin-top: 220px;
 }
 
+.checkout-success-title {
+  position: relative;
+  padding-bottom: 40px;
+  margin-top: 190px;
+}
+
 #delivery-banner {
     display: block;
 }
@@ -11,6 +17,10 @@
 #delivery-banner p {
     margin: 0;
     padding: 5px;
+}
+
+.order-confirmation-wrapper {
+  margin: 20px;
 }
 
 /* ---------------------------- Stripe */
@@ -80,4 +90,15 @@ select option {
 select:invalid,
 select option[value=""] {
   color: #aab7c4 !important;
+}
+
+
+/* --------------------------- Media Queries */
+
+@media (max-width: 576px) {
+  .text-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
 }
