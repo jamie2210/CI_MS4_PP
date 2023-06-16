@@ -252,6 +252,16 @@ footer {
     height: 2px;
 }
 
+.toast-col-left {
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.toast-col-right {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
 /* ------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

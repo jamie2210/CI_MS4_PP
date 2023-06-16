@@ -46,14 +46,26 @@
                             <i class="fa-solid fa-bolt"></i>
                         </p>
                     {% endif %}
-                    {% if request.path != '/bag/' %}
-                    <a href="{% url 'view_bag' %}" class="btn btn-dark rounded border-0 w-100 center-div">
-                        <span class="text-uppercase">Go To Secure Checkout</span>
-                            <i class="fas fa-lock"></i>
-                    </a>
-                    {% endif %}
                 </div>
             </div>
+            
+                {% if request.path != '/bag/' %}
+                <div class="row">
+                        <div class="col-6 toast-col-left">
+                            <a href="{% url 'view_bag' %}" class="btn btn-dark rounded w-100 border-0">
+                                <span class="text-uppercase">View bag</span>
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </div>
+                        <div class="col-6 toast-col-right">
+                            <a href="{% url 'checkout' %}" class="btn btn-dark rounded w-100 border-0">
+                                <span class="text-uppercase">Checkout</span>
+                                <i class="fa-regular fa-credit-card"></i>
+                            </a>
+                        </div>
+                </div>
+                {% endif %}
+            
         {% endif %}
     </div>
 </div>
