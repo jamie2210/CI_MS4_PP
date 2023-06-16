@@ -50,18 +50,18 @@
             </div>
             {% if request.path != '/bag/' %}
                 <div class="row">
-                        <div class="col-6 toast-col-left">
-                            <a href="{% url 'view_bag' %}" class="btn btn-dark rounded w-100 border-0">
-                                <span class="text-uppercase">View bag</span>
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </a>
-                        </div>
-                        <div class="col-6 toast-col-right">
-                            <a href="{% url 'checkout' %}" class="btn btn-dark rounded w-100 border-0">
-                                <span class="text-uppercase">Checkout</span>
-                                <i class="fa-regular fa-credit-card"></i>
-                            </a>
-                        </div>
+                    <div class="col-6 toast-col-left">
+                        <a href="{% url 'view_bag' %}" class="btn btn-dark rounded w-100 border-0">
+                            <span class="text-uppercase">View bag</span>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 toast-col-right">
+                        <a href="{% url 'checkout' %}" class="btn btn-dark rounded w-100 border-0">
+                            <span class="text-uppercase">Checkout</span>
+                            <i class="fa-regular fa-credit-card"></i>
+                        </a>
+                    </div>
                 </div>
                 {% else %}
                 <div class="row">
@@ -73,7 +73,6 @@
                     </div>
                 </div>
             {% endif %}
-            
         {% endif %}
     </div>
 </div>
