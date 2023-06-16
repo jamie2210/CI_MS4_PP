@@ -65,7 +65,7 @@ class Order(models.Model):
         blank=True
         )
 
-    county = models.CharField(
+    country = models.CharField(
         max_length=80,
         null=True,
         blank=True
