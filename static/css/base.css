@@ -74,6 +74,16 @@ header, footer {
     padding-top: 200px;
 }
 
+hr {
+    color: #504e4d;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* ------------------------- Header */
 
 .search-bar {
