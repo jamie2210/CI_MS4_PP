@@ -48,8 +48,7 @@
                     {% endif %}
                 </div>
             </div>
-            
-                {% if request.path != '/bag/' %}
+            {% if request.path != '/bag/' %}
                 <div class="row">
                         <div class="col-6 toast-col-left">
                             <a href="{% url 'view_bag' %}" class="btn btn-dark rounded w-100 border-0">
@@ -64,7 +63,16 @@
                             </a>
                         </div>
                 </div>
-                {% endif %}
+                {% else %}
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{% url 'checkout' %}" class="btn btn-dark rounded w-100 border-0">
+                            <span class="text-uppercase">Checkout</span>
+                            <i class="fa-regular fa-credit-card"></i>
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
             
         {% endif %}
     </div>

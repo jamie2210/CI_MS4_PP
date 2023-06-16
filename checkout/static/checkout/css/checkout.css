@@ -1,0 +1,14 @@
+.checkout-title {
+    position: relative;
+    padding-bottom: 50px;
+    margin-top: 220px;
+}
+
+#delivery-banner {
+    display: block;
+}
+
+#delivery-banner p {
+    margin: 0;
+    padding: 5px;
+}
