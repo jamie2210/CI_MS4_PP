@@ -39,6 +39,10 @@
     padding: 5px;
 }
 
+.product-container {
+    max-width: 600px;
+}
+
 
 /* ---------------------------- Page top arrow */
 

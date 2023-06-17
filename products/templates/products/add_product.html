@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="logo-font product-title mb-0">Product Management</h2>
+            <h5 class="text-muted">Add a Product</h5>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 product-container">
+                <form method="POST" actiom="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form| crispy }}
+                    <div class="text-center">
+                        <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2">Cancel</a>
+                        <button class="btn btn-dark rounded border-0 mt-2 mb-2">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("delivery-banner").style.display = "none";
+        });
+    </script>
+{% endblock %}
