@@ -4,6 +4,8 @@ from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 
+from django_countries.fields import CountryField
+
 from products.models import Product
 
 
@@ -65,8 +67,8 @@ class Order(models.Model):
         blank=True
         )
 
-    country = models.CharField(
-        max_length=80,
+    country = CountryField(
+        blank_label='Country *',
         null=True,
         blank=True
         )

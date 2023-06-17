@@ -19,6 +19,16 @@
     padding: 5px;
 }
 
+select,
+select option {
+  color: #504e4d;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #aab7c4 !important;
+}
+
 .order-confirmation-wrapper {
   margin: 20px;
 }
