@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-12 text-center">
             <h2 class="logo-font product-title mb-0">Product Management</h2>
-            <h5 class="text-muted">Add a Product</h5>
+            <h5 class="text-muted">Edit a Product</h5>
         </div>
     </div>
 {% endblock %}
@@ -18,12 +18,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 add-product-container">
-                <form method="POST" actiom="{% url 'add_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" actiom="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form| crispy }}
                     <div class="text-center">
                         <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2">Cancel</a>
-                        <button class="btn btn-dark rounded border-0 mt-2 mb-2">Add Product</button>
+                        <button class="btn btn-dark rounded border-0 mt-2 mb-2">Edit Product</button>
                     </div>
                 </form>
             </div>
