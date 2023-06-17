@@ -4,6 +4,11 @@
     margin-top: 220px;
 }
 
+.order-history {
+    max-height: 500px;
+    overflow: auto;
+}
+
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
