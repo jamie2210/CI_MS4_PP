@@ -3,3 +3,16 @@
     padding-bottom: 50px;
     margin-top: 220px;
 }
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #504e4d;
+}
+
+#id_default_country option:first-child {
+    color: #aab7ca;
+}

@@ -92,14 +92,13 @@ select option[value=""] {
     height: 100%;
 }
 
-select,
-select option {
-  color: #504e4d;
+#id_country,
+#id_country option:not(:first-child) {
+    color: #504e4d;
 }
 
-select:invalid,
-select option[value=""] {
-  color: #aab7c4 !important;
+#id_country option:first-child {
+    color: #aab7c4;
 }
 
 /* --------------------------- Loading spinner */
