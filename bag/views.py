@@ -21,14 +21,23 @@ def add_to_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    size = None
-    if 'product_size1' in request.POST:
-        size = request.POST['product_size1']
-    if 'product_size2' in request.POST:
-        size = request.POST['product_size2']
+    size = request.POST.get('product_size')
     bag = request.session.get('bag', {})
 
     if size:
+        if product.has_sizes:
+            if size == 'a4':
+                price_value = Decimal(product.A4_price)
+            elif size == 'a3':
+                price_value = Decimal(product.A3_price)
+            elif size == 'a2':
+                price_value = Decimal(product.A2_price)
+            elif size == 'a1':
+                price_value = Decimal(product.A1_price)
+            elif size == 'a0':
+                price_value = Decimal(product.A0_price)
+        else:
+            price_value = Decimal(product.price)
         if item_id in bag.keys():
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
@@ -46,7 +55,10 @@ def add_to_bag(request, item_id):
             messages.success(
                 request,
                 f'Added size {size.upper()} {product.name} to your bag')
-
+        print(price_value)
+        total_cost = quantity * Decimal(price_value)
+        bag[item_id]['total_cost'] = float(total_cost)
+        print(total_cost)
     request.session['bag'] = bag
     return redirect(redirect_url)
 
