@@ -55,10 +55,10 @@ def add_to_bag(request, item_id):
             messages.success(
                 request,
                 f'Added size {size.upper()} {product.name} to your bag')
-        print(price_value)
+
         total_cost = quantity * Decimal(price_value)
         bag[item_id]['total_cost'] = float(total_cost)
-        print(total_cost)
+
     request.session['bag'] = bag
     return redirect(redirect_url)
 
