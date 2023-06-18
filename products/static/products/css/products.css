@@ -47,6 +47,10 @@
     background-color: #eee9cc;
 }
 
+textarea.form-control {
+    max-height: 100px;
+}
+
 /* ---------------------------- Page top arrow */
 
 .arrow-button {
