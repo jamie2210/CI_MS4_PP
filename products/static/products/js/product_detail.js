@@ -69,43 +69,54 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-/**
- * Update price that reflects size selected
- */
-const selectElement1 = document.getElementById('id_product_size1');
-const selectElement2 = document.getElementById('id_product_size2');
-const priceDisplay = document.getElementById('price-display');
+var priceInput = document.getElementById('price-input');
+var selectElement1 = document.getElementById('id_product_size1');
+var selectElement2 = document.getElementById('id_product_size2');
+var priceDisplay = document.getElementById('price-display');
 
-selectElement1.addEventListener('change', function(){
-    const selectedValue = selectElement1.value;
-    priceDisplay.textContent = `£${getOptionPrice1(selectedValue)}`;
+selectElement1.addEventListener('change', function() {
+    var selectedValue = selectElement1.value;
+    var optionPrice = getOptionPrice1(selectedValue);
+
+    priceDisplay.textContent = optionPrice;
+    priceInput.value = optionPrice;
 });
 
 function getOptionPrice1(value) {
-    const itemPrice = selectElement1.getAttribute('data-item-price');
-    const prices = itemPrice.split(';').map(entry => entry.split(':'));
+    var itemPrice = selectElement1.getAttribute('data-item-price');
+    var prices = itemPrice.split(';').map(entry => entry.split(':'));
 
-    for (const [optionValue, price] of prices) {
-        if (optionValue === value) {
-          return price;
+    for (var i = 0; i < prices.length; i++) {
+        if (prices[i][0] === value) {
+            return prices[i][1];
         }
-      }
-    return itemPrice
+    }
+    return itemPrice;
 }
 
-selectElement2.addEventListener('change', function(){
-    const selectedValue = selectElement2.value;
-    priceDisplay.textContent = `£${getOptionPrice2(selectedValue)}`;
+selectElement2.addEventListener('change', function() {
+    var selectedValue = selectElement2.value;
+    var optionPrice = getOptionPrice2(selectedValue);
+
+    priceDisplay.textContent = optionPrice;
+    priceInput.value = optionPrice;
 });
 
 function getOptionPrice2(value) {
-    const itemPrice = selectElement2.getAttribute('data-item-price');
-    const prices = itemPrice.split(';').map(entry => entry.split(':'));
+    var itemPrice = selectElement2.getAttribute('data-item-price');
+    var prices = itemPrice.split(';').map(entry => entry.split(':'));
 
-    for (const [optionValue, price] of prices) {
-        if (optionValue === value) {
-          return price;
+    for (var i = 0; i < prices.length; i++) {
+        if (prices[i][0] === value) {
+            return prices[i][1];
         }
-      }
-    return itemPrice
+    }
+    return itemPrice;
 }
+
+// Retrieve the price value from the hidden input field
+var priceInput = document.getElementById('price-input');
+var priceValue = priceInput.value;
+
+// Store the price value in the session
+sessionStorage.setItem('priceValue', priceValue);

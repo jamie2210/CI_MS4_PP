@@ -32,7 +32,7 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
-                <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">£{{ product.price }}</p>
+                <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">{{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
@@ -129,7 +129,7 @@
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <!-- Hidden input field to store the price value -->
-                        <input type="hidden" name="price-display" id="price-input">
+                        <input type="hidden" name="price-display" id="price-input" value="{{ priceSize }}">
                     {% endwith %}
                     </div>
                 </form>
@@ -141,7 +141,7 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control w-50 matt-print" name="product_size2" id='id_product_size2' 
+                                    <select class="form-control w-50 matt-print" name="product_size2" id='id_product_size2'
                                     data-item-price="a6:3.99;a5:6.99;a4:9.99;a3:14.99;a2:19.99;a1:24.99;a0:34.99">
                                         <option value="a6">A6 - £3.99</option>
                                         <option value="a5">A5 - £6.99</option>
