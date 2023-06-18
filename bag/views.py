@@ -7,6 +7,7 @@ from django.shortcuts import (
     )
 from django.contrib import messages
 from products.models import Product
+from decimal import Decimal
 
 # Create your views here.
 
@@ -23,8 +24,14 @@ def add_to_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
+
+    if 'product_size1' in request.POST:
+        size = request.POST['product_size1']
+    elif 'product_size2' in request.POST:
+        size = request.POST['product_size2']
+    else:
+        size = None
+
     bag = request.session.get('bag', {})
 
     if size:
@@ -55,6 +62,13 @@ def add_to_bag(request, item_id):
             bag[item_id] = quantity
             messages.success(request, f'Added {product.name} to your bag')
 
+    # Adjust the price based on the selected size
+    if size:
+        price_string = request.POST.get('price-display')
+        if price_string:
+            price = Decimal(price_string.replace('£', ''))
+            bag[item_id]['items_by_size'][size] = price
+    print(price_string)
     request.session['bag'] = bag
     return redirect(redirect_url)
 
@@ -65,6 +79,7 @@ def adjust_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
+
     if 'product_size' in request.POST:
         size = request.POST['product_size']
     bag = request.session.get('bag', {})

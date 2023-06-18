@@ -50,26 +50,24 @@ $('.decrement-qty').click(function(e) {
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the elements with ID "item-price-19.99" and class "satin-print"
     const satinPrint = document.querySelector('[data-product-price="19.99"]');
-    const satinOptions = document.querySelector('.satin-print');
+    const satinForm = document.querySelector('.satin-form');
   
-    // Get the elements with ID "item-price-14.99" and class "matt-print"
     const mattPrint = document.querySelector('[data-product-price="14.99"]');
-    const mattOptions = document.querySelector('.matt-print');
+    const mattForm = document.querySelector('.matt-form');
   
     // Check if the satin-print element exists
     if (satinPrint) {
-      satinPrint.style.display = 'block';
-      mattOptions.style.display = 'none';
+        satinForm.style.display = 'block';
+        mattForm.style.display = 'none';
     }
   
     // Check if the matt-print element exists
     if (mattPrint) {
-      mattPrint.style.display = 'block';
-      satinOptions.style.display = 'none';
+        mattForm.style.display = 'block';
+        satinForm.style.display = 'none';
     }
-  });
+});
 
 /**
  * Update price that reflects size selected
