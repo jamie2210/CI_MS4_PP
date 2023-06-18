@@ -44,3 +44,70 @@ $('.decrement-qty').click(function(e) {
    var itemId = $(this).data('item_id');
    handleEnableDisable(itemId);
 });
+
+/**
+ * Target correct sizing menu based on id
+ */
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the elements with ID "item-price-19.99" and class "satin-print"
+    const satinPrint = document.querySelector('[data-product-price="19.99"]');
+    const satinOptions = document.querySelector('.satin-print');
+  
+    // Get the elements with ID "item-price-14.99" and class "matt-print"
+    const mattPrint = document.querySelector('[data-product-price="14.99"]');
+    const mattOptions = document.querySelector('.matt-print');
+  
+    // Check if the satin-print element exists
+    if (satinPrint) {
+      satinPrint.style.display = 'block';
+      mattOptions.style.display = 'none';
+    }
+  
+    // Check if the matt-print element exists
+    if (mattPrint) {
+      mattPrint.style.display = 'block';
+      satinOptions.style.display = 'none';
+    }
+  });
+
+/**
+ * Update price that reflects size selected
+ */
+const selectElement1 = document.getElementById('id_product_size1');
+const selectElement2 = document.getElementById('id_product_size2');
+const priceDisplay = document.getElementById('price-display');
+
+selectElement1.addEventListener('change', function(){
+    const selectedValue = selectElement1.value;
+    priceDisplay.textContent = `£${getOptionPrice1(selectedValue)}`;
+});
+
+function getOptionPrice1(value) {
+    const itemPrice = selectElement1.getAttribute('data-item-price');
+    const prices = itemPrice.split(';').map(entry => entry.split(':'));
+
+    for (const [optionValue, price] of prices) {
+        if (optionValue === value) {
+          return price;
+        }
+      }
+    return itemPrice
+}
+
+selectElement2.addEventListener('change', function(){
+    const selectedValue = selectElement2.value;
+    priceDisplay.textContent = `£${getOptionPrice2(selectedValue)}`;
+});
+
+function getOptionPrice2(value) {
+    const itemPrice = selectElement2.getAttribute('data-item-price');
+    const prices = itemPrice.split(';').map(entry => entry.split(':'));
+
+    for (const [optionValue, price] of prices) {
+        if (optionValue === value) {
+          return price;
+        }
+      }
+    return itemPrice
+}

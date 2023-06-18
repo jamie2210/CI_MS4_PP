@@ -32,7 +32,7 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
-                <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">£{{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
@@ -84,14 +84,25 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control w-50" name="product_size" id='id_product_size'>
-                                        <option value="a6">A6</option>
-                                        <option value="a5">A5</option>
-                                        <option value="a4">A4</option>
-                                        <option value="a3" selected>A3</option>
-                                        <option value="a2">A2</option>
-                                        <option value="a1">A1</option>
-                                        <option value="a0">A0</option>
+                                    <select class="form-control w-50 satin-print" name="product_size" id='id_product_size1' 
+                                    data-item-price="a6:4.99;a5:9.99;a4:14.99;a3:19.99;a2:24.99;a1:29.99;a0:39.99">
+                                        <option value="a6">A6 - £4.99</option>
+                                        <option value="a5">A5 - £9.99</option>
+                                        <option value="a4">A4 - £14.99</option>
+                                        <option value="a3" selected>A3 - £19.99</option>
+                                        <option value="a2">A2 - £24.99</option>
+                                        <option value="a1">A1 - £29.99</option>
+                                        <option value="a0">A0 - £39.99</option>
+                                    </select>
+                                    <select class="form-control w-50 matt-print" name="product_size" id='id_product_size2' 
+                                    data-item-price="a6:3.99;a5:6.99;a4:9.99;a3:14.99;a2:19.99;a1:24.99;a0:34.99">
+                                        <option value="a6">A6 - £3.99</option>
+                                        <option value="a5">A5 - £6.99</option>
+                                        <option value="a4">A4 - £9.99</option>
+                                        <option value="a3" selected>A3 - £14.99</option>
+                                        <option value="a2">A2 - £19.99</option>
+                                        <option value="a1">A1 - £24.99</option>
+                                        <option value="a0">A0 - £34.99</option>
                                     </select>
                                 </div>
                             {% endif %}

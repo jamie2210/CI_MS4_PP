@@ -41,4 +41,5 @@ window.addEventListener('scroll', function() {
         // Button is above the footer
         button.style.bottom = '20px';
     }
+
 });
