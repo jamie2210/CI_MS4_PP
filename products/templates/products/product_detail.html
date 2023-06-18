@@ -32,7 +32,11 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
+                {% if product.has_sizes %}
                 <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">{{ product.price }}</p>
+                {% else %}
+                <p class="lead mb-0 text-left font-weight-bold">{{ product.price }}</p>
+                {% endif %}
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
@@ -85,15 +89,13 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control w-50 satin-print" name="product_size1" id='id_product_size1' 
-                                    data-item-price="a6:4.99;a5:9.99;a4:14.99;a3:19.99;a2:24.99;a1:29.99;a0:39.99">
-                                        <option value="a6">A6 - £4.99</option>
-                                        <option value="a5">A5 - £9.99</option>
-                                        <option value="a4">A4 - £14.99</option>
-                                        <option value="a3" selected>A3 - £19.99</option>
-                                        <option value="a2">A2 - £24.99</option>
-                                        <option value="a1">A1 - £29.99</option>
-                                        <option value="a0">A0 - £39.99</option>
+                                    <select class="form-control w-50 satin-print" name="product_size1" id='id_product_size' 
+                                    data-item-price="a4:14.99;a3:19.99;a2:24.99;a1:29.99;a0:39.99">
+                                        <option value="a4">A4 - £{{ product.A4_price }}</option>
+                                        <option value="a3" selected>A3 - £{{ product.A3_price }}</option>
+                                        <option value="a2">A2 - £{{ product.A2_price }}</option>
+                                        <option value="a1">A1 - £{{ product.A1_price }}</option>
+                                        <option value="a0">A0 - £{{ product.A0_price }}</option>
                                     </select>
                                 </div>
                             {% endif %}
@@ -130,62 +132,6 @@
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <!-- Hidden input field to store the price value -->
                         <input type="hidden" name="price-display" id="price-input" value="{{ priceSize }}">
-                    {% endwith %}
-                    </div>
-                </form>
-                <!-- Matt form & Price Options -->
-                <form class="form matt-form" data-product-price="{{ product.price }}" action="{% url 'add_to_bag' product.id %}" method="POST">
-                    {% csrf_token %}
-                    <div class="form-row">
-                        {% with product.has_sizes as s %}
-                            {% if s %}
-                                <div class="col-12">
-                                    <p><strong>Size:</strong></p>
-                                    <select class="form-control w-50 matt-print" name="product_size2" id='id_product_size2'
-                                    data-item-price="a6:3.99;a5:6.99;a4:9.99;a3:14.99;a2:19.99;a1:24.99;a0:34.99">
-                                        <option value="a6">A6 - £3.99</option>
-                                        <option value="a5">A5 - £6.99</option>
-                                        <option value="a4">A4 - £9.99</option>
-                                        <option value="a3" selected>A3 - £14.99</option>
-                                        <option value="a2">A2 - £19.99</option>
-                                        <option value="a1">A1 - £24.99</option>
-                                        <option value="a0">A0 - £34.99</option>
-                                    </select>
-                                </div>
-                            {% endif %}
-                        <div class="col-12">
-                            <p class="mt-3"><strong>Quantity:</strong></p>
-                            <div class="form-group w-50">
-                                <div class="input-group justify-content-center">
-                                    <div class="input-group-prepend">
-                                        <button class="decrement-qty btn-dark border-0" 
-                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                            <i class="fa-regular qty-circle fa-circle-down"></i>
-                                        </button>
-                                    </div>
-                                    <input class="form-control qty_input" type="number"
-                                                name="quantity" value="1" min="1" max="99"
-                                                data-item_id="{{ product.id }}"
-                                                id="id_qty_{{ product.id }}">
-                                    <div class="input-group-append">
-                                        <button class="increment-qty btn-dark border-0"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                            <i class="fa-regular qty-circle fa-circle-up"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 mt-5">
-                                <i class="fa-regular fa-circle-left"></i>
-                                <span class="text-uppercase">Keep Shopping</span>
-                            </a>
-                            <input type="submit" class="btn btn-dark border-0 text-uppercase mt-5 btn-lg" value="Add to Bag">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        <!-- Hidden input field to store the price value -->
-                        <input type="hidden" name="price-display" id="price-input">
                     {% endwith %}
                     </div>
                 </form>

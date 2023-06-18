@@ -13,9 +13,8 @@ def bag_contents(request):
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
-            price_value = Decimal(
-                request.session.get('display-price', product.price))
-            total += item_data * price_value
+            size = None
+            total += item_data * product.price
             product_count += item_data
             bag_items.append({
                 'item_id': item_id,
@@ -24,11 +23,19 @@ def bag_contents(request):
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
-            price_value = Decimal(
-                request.session.get('display-price', product.price))
-            print(price_value)
             for size, quantity in item_data['items_by_size'].items():
                 quantity = Decimal(quantity)
+                if product.has_sizes:
+                    if size == 'a4':
+                        price_value = Decimal(product.A4_price)
+                    elif size == 'a3':
+                        price_value = Decimal(product.A3_price)
+                    elif size == 'a2':
+                        price_value = Decimal(product.A2_price)
+                    elif size == 'a1':
+                        price_value = Decimal(product.A1_price)
+                    elif size == 'a0':
+                        price_value = Decimal(product.A0_price)
                 total += quantity * price_value
                 product_count += quantity
                 bag_items.append({
@@ -36,6 +43,7 @@ def bag_contents(request):
                     'quantity': quantity,
                     'product': product,
                     'size': size,
+                    'price': price_value,
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:

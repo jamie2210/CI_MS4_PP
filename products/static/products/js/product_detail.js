@@ -49,61 +49,21 @@ $('.decrement-qty').click(function(e) {
  * Target correct sizing menu based on id
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    const satinPrint = document.querySelector('[data-product-price="19.99"]');
-    const satinForm = document.querySelector('.satin-form');
-  
-    const mattPrint = document.querySelector('[data-product-price="14.99"]');
-    const mattForm = document.querySelector('.matt-form');
-  
-    // Check if the satin-print element exists
-    if (satinPrint) {
-        satinForm.style.display = 'block';
-        mattForm.style.display = 'none';
-    }
-  
-    // Check if the matt-print element exists
-    if (mattPrint) {
-        mattForm.style.display = 'block';
-        satinForm.style.display = 'none';
-    }
-});
 
 var priceInput = document.getElementById('price-input');
-var selectElement1 = document.getElementById('id_product_size1');
-var selectElement2 = document.getElementById('id_product_size2');
+var selectElement = document.getElementById('id_product_size');
 var priceDisplay = document.getElementById('price-display');
 
-selectElement1.addEventListener('change', function() {
-    var selectedValue = selectElement1.value;
-    var optionPrice = getOptionPrice1(selectedValue);
+selectElement.addEventListener('change', function() {
+    var selectedValue = selectElement.value;
+    var optionPrice = getOptionPrice(selectedValue);
 
     priceDisplay.textContent = optionPrice;
     priceInput.value = optionPrice;
 });
 
-function getOptionPrice1(value) {
-    var itemPrice = selectElement1.getAttribute('data-item-price');
-    var prices = itemPrice.split(';').map(entry => entry.split(':'));
-
-    for (var i = 0; i < prices.length; i++) {
-        if (prices[i][0] === value) {
-            return prices[i][1];
-        }
-    }
-    return itemPrice;
-}
-
-selectElement2.addEventListener('change', function() {
-    var selectedValue = selectElement2.value;
-    var optionPrice = getOptionPrice2(selectedValue);
-
-    priceDisplay.textContent = optionPrice;
-    priceInput.value = optionPrice;
-});
-
-function getOptionPrice2(value) {
-    var itemPrice = selectElement2.getAttribute('data-item-price');
+function getOptionPrice(value) {
+    var itemPrice = selectElement.getAttribute('data-item-price');
     var prices = itemPrice.split(';').map(entry => entry.split(':'));
 
     for (var i = 0; i < prices.length; i++) {

@@ -59,9 +59,17 @@ class Product(models.Model):
     )
 
     price = models.DecimalField(
-        max_digits=6,
-        decimal_places=2
-        )
+        max_digits=6, decimal_places=2)
+    A4_price = models.DecimalField(
+        max_digits=6, decimal_places=2, default=14.99)
+    A3_price = models.DecimalField(
+        max_digits=6, decimal_places=2, default=19.99)
+    A2_price = models.DecimalField(
+        max_digits=6, decimal_places=2, default=24.99)
+    A1_price = models.DecimalField(
+        max_digits=6, decimal_places=2, default=29.99)
+    A0_price = models.DecimalField(
+        max_digits=6, decimal_places=2, default=39.99)
 
     image_url = models.URLField(
         max_length=1024,
