@@ -5,11 +5,14 @@
        "fields":{
           "name":"Batman",
           "category":8,
-          "price":"19.99",
+          "price":"219.99",
           "sku":"PP2210",
-          "description":"Orignal poster design from Tim Burton's Batman 1989",
-          "feature":"Printed on satin 200gsm paper",
-          "has_sizes":true,
+          "description":"Poster from Tim Burton's Batman",
+          "feature":"Printed on Gloss - Original print from Warner Bros Studios in 1989",
+          "feature2": "Size: 27x40 Inches (One Sheet)",
+          "feature3": "Limited stock",
+          "stock": 3,
+          "has_sizes":false,
           "image_url":"",
           "image":"pp-2210.png"
        }
@@ -20,7 +23,7 @@
       "fields":{
          "name":"Die Hard",
          "category":8,
-         "price":"19.99",
+         "price": 14.99,
          "sku":"PP22102",
          "description":"Orignal poster design from the movie Die Hard",
          "feature":"Printed on satin 200gsm paper",
@@ -65,11 +68,14 @@
       "fields":{
          "name":"Leon",
          "category":8,
-         "price":"14.99",
+         "price":"49.99",
          "sku":"PP22105",
          "description":"Graphic Design Illustration",
-         "feature":"Printed on matt 220gsm paper",
-         "has_sizes":true,
+         "feature":"Brilliant original design and print from Claude Von Strudle",
+         "feature2":"Size: 30x20 Inches",
+         "feature3": "This paper is smudge and water-resistant with a smooth, bright white, resin coate. Weight: 68 lb. (252 g/m²)",
+         "stock": 5,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-22105.png"
       }
@@ -80,11 +86,14 @@
       "fields":{
          "name":"Predator",
          "category":8,
-         "price":"19.99",
+         "price":"129.99",
          "sku":"PP22106",
          "description":"Original poster design from Arnold Schwarzenegger's Predator",
-         "feature":"Printed on satin 200gsm paper",
-         "has_sizes":true,
+         "feature":"Unque poster printed on a sheet of wood for effect",
+         "feature2": "Size: A1 (594 x 841 mm)",
+         "feature3": "Limited stock",
+         "stock": 1,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-22106.png"
       }
@@ -155,11 +164,14 @@
       "fields":{
          "name":"Nope",
          "category":9,
-         "price":"19.99",
+         "price":"39.99",
          "sku":"PP221011",
          "description":"Original poster design from Jordan Peele's Nope",
-         "feature":"Printed on satin 200gsm paper",
-         "has_sizes":true,
+         "feature":"Printed on high res satin 230gsm paper, we recieved these personally from the Universal Pictures studio",
+         "feature2": "Size: 27x40 Inches (One Sheet)",
+         "feature3": "Limited stock",
+         "stock": 5,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-221011.png"
       }
@@ -275,11 +287,14 @@
       "fields":{
          "name":"Drive",
          "category":7,
-         "price":"19.99",
+         "price":"79.99",
          "sku":"PP221019",
          "description":"Original poster design from Ryan Gosling's Drive",
-         "feature":"Printed on satin 200gsm paper",
-         "has_sizes":true,
+         "feature":"Printed on premium satin 200gsm photo paper and Framed in a white frame with black mount",
+         "feature2": "Size: 27x40 Inches (One Sheet)",
+         "feature3": "Limited stock",
+         "stock": 1,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-221019.png"
       }
@@ -444,12 +459,14 @@
       "fields":{
          "name":"Thor vs Gorr",
          "category":4,
-         "price":"14.99",
+         "price":"69.99",
          "sku":"PP221030",
          "description":"The mighty Thor fighting Gorr the God Butcher from the Marvel comics",
-         "feature":"Printed on matt 220gsm paper",
-         "feature2":"",
-         "has_sizes":true,
+         "feature": "Photo of the original comic book artwork resized and mounted on canvas",
+         "feature2": "Size: 40x25 Inches",
+         "feature3": "Limited stock",
+         "stock": 2,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-221030.png"
       }
@@ -511,7 +528,7 @@
          "price":"14.99",
          "sku":"PP221034",
          "description":"Line drawing of an elephant",
-         "feature":"Printed on matt 220gsm paper",
+         "feature":"Printed on high gloss 190gsm paper",
          "feature2":"",
          "has_sizes":true,
          "image_url":"",
@@ -524,12 +541,14 @@
       "fields":{
          "name":"Owl",
          "category":5,
-         "price":"14.99",
+         "price":"29.99",
          "sku":"PP221035",
          "description":"Graphic design illustration of an Owl",
-         "feature":"Printed on matt 220gsm paper",
-         "feature2":"Artist: Jamie Letts",
-         "has_sizes":true,
+         "feature":"Printed on matt 220gsm paper, and framed in a white frame with white mount",
+         "feature2":"Size: A3 (279x420mm)",
+         "feature3":"Artist: Jamie Letts",
+         "stock": 10,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-221035.png"
       }
@@ -860,12 +879,14 @@
       "fields":{
          "name":"Little Fella",
          "category":3,
-         "price":"19.99",
+         "price":"17.99",
          "sku":"PP221056",
          "description":"A baby monkey sits on a tree branch",
-         "feature":"Printed on satin 200gsm paper",
-         "feature2":"Photographer: DSD",
-         "has_sizes":true,
+         "feature":"Printed on satin 200gsm paper, award winning photographer, DSD",
+         "feature2": "Size: 20x16 Inches",
+         "feature3": "Limited stock",
+         "stock": 2,
+         "has_sizes":false,
          "image_url":"",
          "image":"pp-221056.png"
       }

@@ -52,6 +52,17 @@ class Product(models.Model):
         blank=True
     )
 
+    feature3 = models.TextField(
+        max_length=500,
+        blank=True
+    )
+
+    stock = models.PositiveSmallIntegerField(
+        null=False,
+        blank=False,
+        default=0
+    )
+
     has_sizes = models.BooleanField(
         default=False,
         null=True,

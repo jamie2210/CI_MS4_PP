@@ -53,7 +53,7 @@ def bag_contents(request):
         delivery = 0
         free_delivery_delta = 0
 
-    grand_total = delivery + total
+    grand_total = round(delivery + total, 2)
 
     context = {
         'bag_items': bag_items,
