@@ -18,6 +18,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    random_order = False
 
     if request.GET:
         if 'sort' in request.GET:
@@ -49,6 +50,12 @@ def all_products(request):
                 name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+        if 'random' in request.GET:
+            random_order = True
+
+    if random_order:
+        products = products.order_by('?')
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -56,6 +63,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'random_order': random_order
     }
 
     return render(request, 'products/products.html', context)

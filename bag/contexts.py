@@ -20,6 +20,7 @@ def bag_contents(request):
                 'item_id': item_id,
                 'quantity': item_data,
                 'product': product,
+                'stock': product.stock,
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
