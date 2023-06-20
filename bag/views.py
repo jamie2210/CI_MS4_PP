@@ -41,7 +41,7 @@ def add_to_bag(request, item_id):
         else:
             price_value = Decimal(product.price)
 
-        if item_id in bag.keys():
+        if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
                 messages.success(
@@ -69,7 +69,7 @@ def add_to_bag(request, item_id):
                     request, f'Limited stock, only { product.stock } \
                 left of { product.name }. Please adjust the quantity.')
             else:
-                if item_id in bag.keys():
+                if item_id in list(bag.keys()):
                     if 'quantity' in bag[item_id]:
                         bag[item_id]['quantity'] += quantity
                         messages.success(
@@ -89,10 +89,8 @@ def add_to_bag(request, item_id):
             total_cost = bag[item_id][
                         'quantity'] * Decimal(product.price)
             bag[item_id]['total_cost'] = float(total_cost)
-            print(bag)
 
     request.session['bag'] = bag
-
     return redirect(redirect_url)
 
 
