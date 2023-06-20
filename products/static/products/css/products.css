@@ -51,6 +51,10 @@ textarea.form-control {
     max-height: 100px;
 }
 
+footer {
+    margin-top: 20px;
+}
+
 /* ---------------------------- Page top arrow */
 
 .arrow-button {

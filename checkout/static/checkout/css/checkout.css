@@ -37,6 +37,10 @@ select option[value=""] {
   margin: 20px;
 }
 
+footer {
+  margin-top: 20px;
+}
+
 /* ---------------------------- Stripe */
 
 .StripeElement,
