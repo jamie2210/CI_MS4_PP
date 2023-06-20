@@ -51,7 +51,7 @@ def all_products(request):
             products = products.filter(queries)
 
         if 'random' in request.GET:
-        # generates random order if above parameters are not called
+            # generates random order if above parameters are not called
             if 'sort' not in request.GET and \
                 'category' not in request.GET and \
                 'q' not in request.GET and \
