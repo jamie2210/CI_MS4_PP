@@ -22,6 +22,7 @@ def bag_contents(request):
                 'product': product,
                 'stock': product.stock,
             })
+
         else:
             product = get_object_or_404(Product, pk=item_id)
             if 'items_by_size' in item_data:

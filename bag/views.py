@@ -73,18 +73,18 @@ def add_to_bag(request, item_id):
                     if 'quantity' in bag[item_id]:
                         bag[item_id]['quantity'] += quantity
                         messages.success(
-                            request, f'Added {product.name} \
-                            quantity to {quantity}')
+                            request, f'Updated {product.name} \
+                            quantity in bag')
                     else:
                         bag[item_id]['quantity'] = quantity
                         messages.success(
-                            request, f'Updated {product.name} \
-                            quantity to {quantity}')
+                            request, f'Added {quantity} x {product.name} \
+                        to bag')
                 else:
                     bag[item_id] = {'quantity': quantity}
                     messages.success(
-                        request, f'Added {product.name} \
-                        quantity to {quantity}')
+                        request, f'Added {quantity} x {product.name} \
+                        to bag')
 
             total_cost = bag[item_id][
                         'quantity'] * Decimal(product.price)
@@ -92,6 +92,7 @@ def add_to_bag(request, item_id):
             print(bag)
 
     request.session['bag'] = bag
+
     return redirect(redirect_url)
 
 
