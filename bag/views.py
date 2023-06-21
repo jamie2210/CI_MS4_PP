@@ -86,9 +86,9 @@ def add_to_bag(request, item_id):
                         request, f'Added {quantity} x {product.name} \
                         to bag')
 
-            total_cost = bag[item_id][
-                        'quantity'] * Decimal(product.price)
-            bag[item_id]['total_cost'] = float(total_cost)
+                total_cost = bag[item_id][
+                            'quantity'] * Decimal(product.price)
+                bag[item_id]['total_cost'] = float(total_cost)
 
     request.session['bag'] = bag
     return redirect(redirect_url)

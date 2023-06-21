@@ -19,7 +19,6 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                {{ bag_items }}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table borderless">
                             <thead class="text-dark">
@@ -45,14 +44,20 @@
                                         <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
+                                    {% if item.product.has_sizes %}
                                     <td class="py-3">
                                         <p class="my-0">£{{ item.price }}</p>
                                     </td>
+                                    {% else %}
+                                    <td class="py-3">
+                                        <p class="my-0">£{{ item.product.price }}</p>
+                                    </td>
+                                    {% endif %}
                                     <td class="py-3">
                                         <form method="POST" class="form update-form" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
-                                                <div class="input-group justify-content-center">
+                                                <div class="input-group w-50 justify-content-center">
                                                     <div class="input-group-prepend">
                                                         <button class="decrement-qty btn-dark border-0" 
                                                             data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
@@ -79,7 +84,7 @@
                                         <a class="remove-item float-right text-dark" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">{{ item.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0">£{{ item.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
