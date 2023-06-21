@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                        {% if product.stock %}
+                        {% if product.stock < 4 %}
                         <div class="col-12 stock-level text-danger">
                             <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
                         </div>

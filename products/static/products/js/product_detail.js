@@ -80,3 +80,4 @@ var priceValue = priceInput.value;
 
 // Store the price value in the session
 sessionStorage.setItem('priceValue', priceValue);
+
