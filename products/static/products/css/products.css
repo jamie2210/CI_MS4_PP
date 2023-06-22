@@ -66,6 +66,18 @@ footer {
     color: #eee9cc;
     text-decoration: none;
     background: #504e4d;
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 
 .arrow-button:hover,

@@ -23,7 +23,7 @@ $('#sort-selector').change(function() {
 });
 
 
-/** Event listener to stop up to top arrow
+/** Event listener to stop 'up-to-top' arrow
  * button scroll beyond the footer */
 
 window.addEventListener('scroll', function() {
@@ -31,6 +31,16 @@ window.addEventListener('scroll', function() {
     let footer = document.querySelector('footer');
     let footerOffset = footer.offsetTop; // gets distance between footer and closest ancestor
     let scrollPosition = document.documentElement.scrollTop; // gets current scroll position of page
+    
+    if (scrollPosition > 1000) {
+        button.style.display = "block";
+        button.classList.add('fade-in');
+        button.classList.remove('fade-out');
+    } else {
+        button.style.display = "none";
+        button.classList.remove('fade-in');
+        button.classList.add('fade-out');
+    }
 
     if (scrollPosition + window.innerHeight >= footerOffset - 20) {
         // Button reached or passed the footer
