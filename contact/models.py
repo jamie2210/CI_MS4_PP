@@ -23,7 +23,7 @@ class ContactForm(models.Model):
         null=False,
         blank=False,
     )
-    contact_message = models.CharField(
+    contact_message = models.TextField(
         max_length=1500,
         null=False,
         blank=False,
