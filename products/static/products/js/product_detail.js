@@ -49,7 +49,6 @@ $('.decrement-qty').click(function(e) {
  * Target correct sizing menu based on id
  */
 
-
 var priceInput = document.getElementById('price-input');
 var selectElement = document.getElementById('id_product_size');
 var priceDisplay = document.getElementById('price-display');
@@ -80,4 +79,3 @@ var priceValue = priceInput.value;
 
 // Store the price value in the session
 sessionStorage.setItem('priceValue', priceValue);
-

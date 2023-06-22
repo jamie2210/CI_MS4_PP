@@ -122,10 +122,12 @@
                                 </div>
                             </div>
                         </div>
+                        {% if product.stock %}
                         {% if product.stock < 4 %}
                         <div class="col-12 stock-level text-danger">
                             <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
                         </div>
+                        {% endif %}
                         {% endif %}
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 mt-5">

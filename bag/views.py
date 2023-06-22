@@ -69,26 +69,35 @@ def add_to_bag(request, item_id):
                     request, f'Limited stock, only { product.stock } \
                 left of { product.name }. Please adjust the quantity.')
             else:
-                if item_id in list(bag.keys()):
-                    if 'quantity' in bag[item_id]:
-                        bag[item_id]['quantity'] += quantity
-                        messages.success(
-                            request, f'Updated {product.name} \
-                            quantity in bag')
+                total_quantity = quantity
+                if item_id in bag:
+                    total_quantity += bag[item_id].get('quantity', 0)
+
+                if total_quantity > product.stock:
+                    messages.error(
+                        request, f'Limited stock, only { product.stock } \
+                    left of { product.name }. Stock level reached.')
+                else:
+                    if item_id in list(bag.keys()):
+                        if 'quantity' in bag[item_id]:
+                            bag[item_id]['quantity'] += quantity
+                            messages.success(
+                                request, f'Updated {product.name} \
+                                quantity in bag')
+                        else:
+                            bag[item_id]['quantity'] = quantity
+                            messages.success(
+                                request, f'Added {quantity} x {product.name} \
+                            to bag')
                     else:
-                        bag[item_id]['quantity'] = quantity
+                        bag[item_id] = {'quantity': quantity}
                         messages.success(
                             request, f'Added {quantity} x {product.name} \
-                        to bag')
-                else:
-                    bag[item_id] = {'quantity': quantity}
-                    messages.success(
-                        request, f'Added {quantity} x {product.name} \
-                        to bag')
+                            to bag')
 
-                total_cost = bag[item_id][
-                            'quantity'] * Decimal(product.price)
-                bag[item_id]['total_cost'] = float(total_cost)
+            total_cost = bag[item_id][
+                        'quantity'] * Decimal(product.price)
+            bag[item_id]['total_cost'] = float(total_cost)
 
     request.session['bag'] = bag
     return redirect(redirect_url)
