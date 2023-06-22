@@ -373,6 +373,13 @@ _ _ _
 
 ## __Credits__
 
+Button display 
+https://stackoverflow.com/questions/26837928/how-can-i-hide-a-button-when-scrolled-to-the-top-of-a-page
+
+arrow button
+https://stackoverflow.com/questions/61491765/re-positioning-scroll-to-top-button-when-footer-appears-so-it-never-overlaps
+https://stackoverflow.com/questions/18053326/how-to-prevent-fixed-button-from-overlapping-footer-area-and-stop-the-button-on
+
 * [Materialize](https://materializecss.com/) is used throughout for CSS styling and some javascript / jquery
 
 * For Help with using AWS S3 buckets and python these were all very useful;
