@@ -9,7 +9,7 @@ def contact(request):
 
     if request.method == 'POST':
         contact_form - ContactForm(request.POST)
-        if conttact_form.is_valid():
+        if contact_form.is_valid():
             contact_form.save()
             messages.success(request, 'Message sent, \
             please allow 1 working day for a response.')
