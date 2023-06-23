@@ -8,7 +8,10 @@
 {% block page_header %}
 <div class="row">
     <div class="col-12 text-center mt-3">
-        <h2 class="logo-font banner-title">Favourites</h2>
+        <h2 class="logo-font banner-title">Your Favourites</h2>
+        {% if favourite_items %}
+        <p>Here are all your favourites ({{ favourite_items_count }})</p>
+        {% endif %}
     </div>
 </div>
 {% endblock %}
@@ -23,29 +26,29 @@
                     <div class="card-container col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card card-poster h-100 border-0">
                             {% if favourite.image %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            <a href="{% url 'product_detail' favourite.id %}">
+                                <img class="card-img-top img-fluid" src="{{ favourite.image.url }}" alt="{{ favourite.name }}">
                             </a>
                             {% else %}
-                            <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <a href="{% url 'product_detail' favourite.id %}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ favourite.name }}">
                             </a>
                             {% endif %}
                             <div class="card-body pb-0">
-                                <p class="mb-0">{{ product.name }}</p>
+                                <p class="mb-0">{{ favourite.name }}</p>
                             </div>
                             <div class="card-footer pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        {% if product.has_sizes %}
-                                        <p class="lead mb-0 text-left font-weight-bold">£{{ product.A4_price }}</p>
+                                        {% if favourite.has_sizes %}
+                                        <p class="lead mb-0 text-left font-weight-bold">£{{ favourite.A4_price }}</p>
                                         {% else %}
-                                        <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                        <p class="lead mb-0 text-left font-weight-bold">£{{ favourite.price }}</p>
                                         {% endif %}
-                                        {% if product.category %}
+                                        {% if favourite.category %}
                                         <p class="small mt-1 mb-0">
                                             <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                <i class="fas fa-tag mr-1"></i>{{ favourite.category.friendly_name }}
                                             </a>
                                         </p>
                                         {% endif %}
