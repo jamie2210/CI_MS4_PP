@@ -3,6 +3,9 @@ from django.conf import settings
 
 
 class ContactForm(models.Model):
+    """
+    This model is for a site users contact form
+    """
     contact_name = models.CharField(
         max_length=75,
         null=False,
