@@ -13,16 +13,17 @@ class ContactForm(models.Model):
         null=False,
         blank=False,
     )
-    contact_phone_number = models.CharField(
-        max_length=20,
-        blank=True,
-        null=True,
-    )
     contact_subject = models.CharField(
         max_length=100,
         null=False,
         blank=False,
     )
+    contact_phone_number = models.CharField(
+        max_length=20,
+        blank=True,
+        null=True,
+    )
+
     contact_message = models.TextField(
         max_length=1500,
         null=False,
@@ -30,6 +31,9 @@ class ContactForm(models.Model):
     )
     date = models.DateTimeField(
         auto_now_add=True
+    )
+    replied = models.BooleanField(
+        default=False
     )
 
     def __str__(self):

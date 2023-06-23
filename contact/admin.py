@@ -18,12 +18,14 @@ class ContactFormAdmin(admin.ModelAdmin):
         'contact_phone_number',
         'contact_subject',
         'contact_message',
+        'replied',
     )
 
     list_display = (
-        'contact_phone_number',
         'contact_subject',
+        'contact_name',
         'date',
+        'replied',
     )
 
     ordering = ('-date',)

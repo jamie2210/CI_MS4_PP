@@ -2,15 +2,15 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
 {% endblock %}
 
 {% block page_header %}
     <div class="row">
         <div class="col-12 text-center">
-            <h2 class="logo-font checkout-success-title">Thank you for getting in touch!</h2>
-            <hr class="w-75 mb-4">
-            <p class="text-dark">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+            <h2 class="logo-font contact-success-title">Thank you for getting in touch!</h2>
+            <hr class="contact-hr mb-4">
+            <p class="text-dark">Your message has bee receieved, please allow at least 1 working day for a reply.</strong>.</p>
         </div>
     </div>
 {% endblock %}
@@ -18,7 +18,8 @@
 {% block content %}
     <div class="row">
         <div class="col-12 ">
-            
+            <a href="{% url 'products' %}?random=True" class="btn btn-dark no-border btn-lrg my-3" 
+            aria-label="go to poster gallery" name="random">Back to Gallery</a>
         </div>
     </div>
 

@@ -8,7 +8,7 @@ from django.contrib import messages
 def contact(request):
 
     if request.method == 'POST':
-        contact_form - ContactForm(request.POST)
+        contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
             messages.success(request, 'Message sent, \
@@ -25,7 +25,7 @@ def contact(request):
                 user = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
                     'full_name': user.default_full_name,
-                    'email': user.user.email,
+                    'email': user.default_email,
                     'phone_number': user.default_phone_number,
                 })
             except UserProfile.DoesNotExist:
