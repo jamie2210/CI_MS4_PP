@@ -18,6 +18,12 @@
     font-size: 50px;
 }
 
+.banner-title {
+    position: relative;
+    padding-bottom: 50px;
+    margin-top: 220px;
+}
+
 .index-image {
     background: url('/media/wall-4.jpg') no-repeat center center fixed;
     background-size: cover;
