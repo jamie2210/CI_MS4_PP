@@ -8,23 +8,19 @@
 {% block page_header %}
     <div class="row">
         <div class="col-12 text-center">
-            <h2 class="logo-font contact-success-title">Thank you for getting in touch!</h2>
+            <h2 class="logo-font contact-title">Thank you for getting in touch!</h2>
             <hr class="contact-hr mb-4">
-            <p class="text-dark">Your message has bee receieved, please allow at least 1 working day for a reply.</strong>.</p>
+            <p class="text-dark">Your message has been received, please allow at least 1 working day for a reply.</p>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
     <div class="row">
-        <div class="col-12 ">
+        <div class="col-12 text-center">
             <a href="{% url 'products' %}?random=True" class="btn btn-dark no-border btn-lrg my-3" 
             aria-label="go to poster gallery" name="random">Back to Gallery</a>
         </div>
     </div>
 
-{% endblock %}
-{% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'checkout/js/checkout.js' %}"></script>
 {% endblock %}

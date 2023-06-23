@@ -17,7 +17,7 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <p class="text-muted">Please fill out the form below to get in touch.
                     <i class="fa-regular fa-face-smile-beam"></i>
                 </p>
@@ -38,9 +38,4 @@
     </div>
     
  
-{% endblock %}
-
-{% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'contact/js/contact.js' %}"></script>
 {% endblock %}
