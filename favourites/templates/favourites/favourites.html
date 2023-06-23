@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="index-image">
+        <div class="container-fluid">
+            <div class="row h-100 welcome">
+                <div class="col-12 text-center">
+                    <h1 class="logo-font">My Favourites</h1>
+                </div>
+                <div class="col-12 text-center">
+                    <p></p>
+                </div>
+                <div class="col-12 text-center">
+                    <h2>
+                        <a href="{% url 'products' %}?random=True" class="btn btn-dark no-border btn-lrg text-uppercase my-3" aria-label="go to poster gallery" name="random">View Gallery</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>  
+{% endblock %}
