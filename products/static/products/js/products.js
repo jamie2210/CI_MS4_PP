@@ -24,7 +24,9 @@ $('#sort-selector').change(function() {
 
 
 /** Event listener to stop 'up-to-top' arrow
- * button scroll beyond the footer */
+ * button scroll beyond the footer
+ * Hides button at top of page and displays once scrolled passed 1000px
+ */
 
 window.addEventListener('scroll', function() {
     let button = document.querySelector('.arrow-button');

@@ -12,7 +12,7 @@
 }
 
 .card-poster {
-    padding-top: 40px;
+    padding: 30px;
 }
 
 .card-container {
@@ -25,9 +25,19 @@
     z-index: 1;
 }
 
+
 .card,
 .card-footer {
     background: #e5e3e2;
+}
+
+.card-footer,
+.card-body {
+    padding-left: 0;
+}
+
+.card-footer {
+    padding-bottom: 0;
 }
 
 #delivery-banner {
@@ -159,5 +169,7 @@ footer {
 }
 
 @media (max-width: 440px) {
- 
+    .card-poster {
+        padding: 20px;
+    }
 }
