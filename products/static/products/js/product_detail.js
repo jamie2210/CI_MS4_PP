@@ -53,24 +53,27 @@ var priceInput = document.getElementById('price-input');
 var selectElement = document.getElementById('id_product_size');
 var priceDisplay = document.getElementById('price-display');
 
-selectElement.addEventListener('change', function() {
-    var selectedValue = selectElement.value;
-    var optionPrice = getOptionPrice(selectedValue);
+if (selectElement !== null) {
+    selectElement.addEventListener('change', function() {
+        var selectedValue = selectElement.value;
+        var optionPrice = getOptionPrice(selectedValue);
 
-    priceDisplay.textContent = optionPrice;
-    priceInput.value = optionPrice;
-});
+        priceDisplay.textContent = optionPrice;
+        priceInput.value = optionPrice;
+    });
 
-function getOptionPrice(value) {
-    var itemPrice = selectElement.getAttribute('data-item-price');
-    var prices = itemPrice.split(';').map(entry => entry.split(':'));
 
-    for (var i = 0; i < prices.length; i++) {
-        if (prices[i][0] === value) {
-            return prices[i][1];
+    function getOptionPrice(value) {
+        var itemPrice = selectElement.getAttribute('data-item-price');
+        var prices = itemPrice.split(';').map(entry => entry.split(':'));
+
+        for (var i = 0; i < prices.length; i++) {
+            if (prices[i][0] === value) {
+                return prices[i][1];
+            }
         }
+        return itemPrice;
     }
-    return itemPrice;
 }
 
 // Retrieve the price value from the hidden input field
@@ -79,3 +82,12 @@ var priceValue = priceInput.value;
 
 // Store the price value in the session
 sessionStorage.setItem('priceValue', priceValue);
+
+// Tool Tip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+$(document).ready(function () {
+    $('.tooltipped').tooltip();
+    });
+

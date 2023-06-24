@@ -51,11 +51,15 @@ textarea.form-control {
     max-height: 100px;
 }
 
+.tooltip .tooltip-inner {
+    background-color: #504e4d;
+}
+
 footer {
     margin-top: 20px;
 }
 
-.fa-heart {
+.fa-star {
     font-size: x-large;
 }
 

@@ -51,7 +51,7 @@ def add_to_favourites(request, item_id):
         favourites = Favourites.objects.create(username=request.user)
 
     if product in favourites.products.all():
-        messages.info(request, f'The { product.name } is '
+        messages.info(request, f'{ product.name } is '
                                'already in your favourites!')
     else:
         favourites.products.add(product)
