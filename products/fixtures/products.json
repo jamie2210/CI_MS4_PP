@@ -89,13 +89,15 @@
          "price":"129.99",
          "sku":"PP22106",
          "description":"Original poster design from Arnold Schwarzenegger's Predator",
-         "feature":"Unque poster printed on a sheet of wood for effect",
-         "feature2": "A1 (594 x 841 mm)",
+         "feature": "Artwork resized, printed and mounted on canvas",
+         "feature2": "40x25 Inches",
          "feature3": "Limited stock",
          "stock": 1,
          "has_sizes":false,
          "image_url":"",
-         "image":"pp-22106.png"
+         "image":"pp-22106.png",
+         "image2_url":"",
+         "image2":"pp-221064.png"
       }
    },
    {
@@ -464,13 +466,15 @@
          "price":"69.99",
          "sku":"PP221030",
          "description":"The mighty Thor fighting Gorr the God Butcher from the Marvel comics",
-         "feature": "Photo of the original comic book artwork resized and mounted on canvas",
+         "feature": "Photo of the original comic book artwork resized, printed and mounted on canvas",
          "feature2": "40x25 Inches",
          "feature3": "Limited stock",
          "stock": 2,
          "has_sizes":false,
          "image_url":"",
-         "image":"pp-221030.png"
+         "image":"pp-221030.png",
+         "image2_url":"",
+         "image2":"pp-221063.png"
       }
    },
    {
