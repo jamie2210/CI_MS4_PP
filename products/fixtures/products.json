@@ -73,7 +73,7 @@
          "description":"Graphic Design Illustration",
          "feature":"Brilliant original design and print from Claude Von Strudle",
          "feature2":"30x20 Inches",
-         "feature3": "This paper is smudge and water-resistant with a smooth, bright white, resin coate. Weight: 68 lb. (252 g/m²)",
+         "feature3": "This paper is smudge and water-resistant with a smooth, bright white, resin coat. Weight: 68 lb. (252 g/m²)",
          "stock": 5,
          "has_sizes":false,
          "image_url":"",
@@ -290,13 +290,15 @@
          "price":"79.99",
          "sku":"PP221019",
          "description":"Original poster design from Ryan Gosling's Drive",
-         "feature":"Printed on premium satin 200gsm photo paper and Framed in a white frame with black mount",
+         "feature":"Printed on premium satin 200gsm photo paper, framed in a black frame with white mount",
          "feature2": "27x40 Inches (One Sheet)",
          "feature3": "Limited stock",
          "stock": 1,
          "has_sizes":false,
          "image_url":"",
-         "image":"pp-221019.png"
+         "image":"pp-221019.png",
+         "image2_url":"",
+         "image2":"pp-221061.png"
       }
    },
    {
@@ -544,13 +546,15 @@
          "price":"29.99",
          "sku":"PP221035",
          "description":"Graphic design illustration of an Owl",
-         "feature":"Printed on matt 220gsm paper, and framed in a white frame with white mount",
+         "feature":"Printed on matt 220gsm paper, framed in a black frame with white mount",
          "feature2":"A3 (279x420mm)",
          "feature3":"Artist: Jamie Letts",
          "stock": 10,
          "has_sizes":false,
          "image_url":"",
-         "image":"pp-221035.png"
+         "image":"pp-221035.png",
+         "image2_url":"",
+         "image2":"pp-221062.png"
       }
    },
    {

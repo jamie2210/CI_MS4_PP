@@ -92,5 +92,15 @@ class Product(models.Model):
         null=True,
         blank=True)
 
+    image2_url = models.URLField(
+        max_length=1024,
+        null=True,
+        blank=True
+        )
+
+    image2 = models.ImageField(
+        null=True,
+        blank=True)
+
     def __str__(self):
         return self.name
