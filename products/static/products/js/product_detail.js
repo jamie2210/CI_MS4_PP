@@ -83,11 +83,14 @@ var priceValue = priceInput.value;
 // Store the price value in the session
 sessionStorage.setItem('priceValue', priceValue);
 
-// Tool Tip
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-$(document).ready(function () {
-    $('.tooltipped').tooltip();
-    });
+var star = document.querySelector('.fa-star');
+var tool = document.querySelector('.tool');
 
+star.addEventListener('mouseover', function() {
+    tool.style.visibility = 'visible';
+});
+
+star.addEventListener('mouseout', function() {
+    tool.style.visibility = 'hidden';
+});
