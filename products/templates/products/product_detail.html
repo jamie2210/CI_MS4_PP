@@ -52,7 +52,7 @@
                 {% if product.feature3 %}
                 <p class="mt-3">{{ product.feature3 }}</p>
                 {% endif %}
-                {% if product in favourites.products.all %}
+                {% if product_in_favourites %}
                 <p>
                     <a href="{% url 'remove_from_favourites_in_products_detail' product.id %}" aria-label="remove product from favourites">
                     <i class="icon fa-solid fa-star" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Remove from favourites"></i></a>
