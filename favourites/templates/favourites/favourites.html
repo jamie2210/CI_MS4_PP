@@ -52,13 +52,13 @@
                                             </a>
                                         </p>
                                         {% endif %}
-                                        {% if request.user.is_superuser %}
                                         <!-- Edit & Remove Buttons -->
-                                            <div>
+                                        <div>
+                                            {% if request.user.is_superuser %}
                                                 <a href="{% url 'edit_product' favourite.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1">Edit</a>
-                                                <button data-target="#deleteModal-{{ favourite.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Remove</button>
-                                            </div>
-                                        {% endif %}
+                                            {% endif %}
+                                            <button data-target="#deleteModal-{{ favourite.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Remove</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
