@@ -58,3 +58,42 @@ def add_to_favourites(request, item_id):
         messages.info(request, f'Added { product.name } to your favourites')
 
     return redirect(reverse('product_detail', args=[item_id]))
+
+
+@login_required
+def remove_from_favourites_in_favourites(request, item_id):
+    """
+    Remove a product item from favourites page
+    """
+    product = get_object_or_404(Product, pk=item_id)
+    favourites = get_object_or_404(Favourites, username=request.user.id)
+
+    if product in favourites.products.all():
+        favourites.products.remove(product)
+        messages.info(request, f'Removed { product.name } '
+                               'from your favourites list')
+    else:
+        messages.error(request, f'{ product.name } is '
+                                'not in your favourites list!')
+
+    return redirect(reverse('view_favourites'))
+
+
+@login_required
+def remove_from_favourites_in_products_detail(request, item_id):
+    """
+    Remove a product item from
+    favourites on products detail page
+    """
+    product = get_object_or_404(Product, pk=item_id)
+    favourites = get_object_or_404(Favourites, username=request.user.id)
+
+    if product in favourites.products.all():
+        favourites.products.remove(product)
+        messages.info(request, f'Removed { product.name } '
+                               'from your favourites list')
+    else:
+        messages.error(request, f'{ product.name } is '
+                                'not in your favourites list!')
+
+    return redirect(reverse('product_detail', args=[item_id]))

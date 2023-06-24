@@ -53,7 +53,7 @@
                                         </p>
                                         {% endif %}
                                         {% if request.user.is_superuser %}
-                                        <!-- Edit and Delete Buttons -->
+                                        <!-- Edit & Remove Buttons -->
                                             <div>
                                                 <a href="{% url 'edit_product' favourite.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1">Edit</a>
                                                 <button data-target="#deleteModal-{{ favourite.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Remove</button>
@@ -75,12 +75,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Are you sure you want to delete <strong>{{ favourite.name }}?</strong></p>
-                                    <p>This action is permanent and cannot be undone!</p>
+                                    <p>Are you sure you want to remove <strong>{{ favourite.name }}</strong> from your favourites list?</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="" class="btn btn-dark rounded border-0">
-                                    Delete
+                                    <a href="{% url 'remove_from_favourites_in_favourites' favourite.id %}" class="btn btn-dark rounded border-0">
+                                    Remove
                                     <i class="fa-solid fa-trash ml-1"></i>
                                     </a>
                                     <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal">Close</button>
