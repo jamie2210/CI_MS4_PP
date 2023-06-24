@@ -12,14 +12,12 @@ def favourite_contents(request):
         favourites = get_object_or_404(Favourites, username=request.user.id)
         favourites_items = favourites.products.all()
         favourites_count = len(favourites_items)
+        print(favourites_items)
     except Http404:
         favourites_count = None
 
     context = {
         'favourites_count': favourites_count,
     }
-
-    return context
-    context = {}
 
     return context

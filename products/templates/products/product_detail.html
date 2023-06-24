@@ -55,7 +55,7 @@
                 
                 <p><a href="" aria-label="remove product from favourites"><i class="icon fas fa-heart"></i></a></p>
                
-                <p><a href="" aria-label="add product to favourites" ><i class="icon far fa-heart"></i></a></p>
+                <p><a href="{% url 'add_to_favourites' product.id %}" aria-label="add product to favourites" ><i class="icon far fa-heart"></i></a></p>
                 
                 {% if request.user.is_superuser %}
                     <!-- Edit and Delete Buttons -->

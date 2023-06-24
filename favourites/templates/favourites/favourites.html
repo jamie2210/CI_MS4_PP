@@ -20,9 +20,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="product-container col-10 offset-1">
-            {% if favourite_items %}
+            {% if favourites_items %}
             <div class="row">
-                {% for favourite in favourites %}
+                {% for favourite in favourites_items %}
                     <div class="card-container col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card card-poster h-100 border-0">
                             {% if favourite.image %}
@@ -55,8 +55,8 @@
                                         {% if request.user.is_superuser %}
                                         <!-- Edit and Delete Buttons -->
                                             <div>
-                                                <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1">Edit</a>
-                                                <button data-target="#deleteModal-{{ product.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Delete</button>
+                                                <a href="{% url 'edit_product' favourite.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1">Edit</a>
+                                                <button data-target="#deleteModal-{{ favourite.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Remove</button>
                                             </div>
                                         {% endif %}
                                     </div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <!-- Delete Modal -->
-                    <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ product.id }}">
+                    <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ favourite.id }}">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -75,11 +75,11 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Are you sure you want to delete <strong>{{ product.name }}?</strong></p>
+                                    <p>Are you sure you want to delete <strong>{{ favourite.name }}?</strong></p>
                                     <p>This action is permanent and cannot be undone!</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-dark rounded border-0">
+                                    <a href="" class="btn btn-dark rounded border-0">
                                     Delete
                                     <i class="fa-solid fa-trash ml-1"></i>
                                     </a>
