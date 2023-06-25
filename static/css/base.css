@@ -84,7 +84,8 @@ header, footer {
     padding-top: 200px;
 }
 
-.welcome h1, p {
+.welcome h1,
+.welcome p {
     pointer-events: none;
 }
 
