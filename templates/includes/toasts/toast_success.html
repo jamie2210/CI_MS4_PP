@@ -14,7 +14,7 @@
             </div>
         </div>
         {% if grand_total and not on_profile_page %}
-            <p class="logo-font bg-white text-dark py-1"> Your bag {{ product_count }}</p>
+            <p class="logo-font bg-white text-dark py-1"> Your cart {{ product_count }}</p>
             <div class="bag-notification-wrapper" data-number-of-items="{{ bag_items|length }}">
                 {% for item in bag_items %}
                     <div class="row">
@@ -52,8 +52,8 @@
                 <div class="row">
                     <div class="col-6 toast-col-left">
                         <a href="{% url 'view_bag' %}" class="btn btn-dark rounded w-100 border-0">
-                            <span class="text-uppercase">View bag</span>
-                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="text-uppercase">View Cart</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </div>
                     <div class="col-6 toast-col-right">
