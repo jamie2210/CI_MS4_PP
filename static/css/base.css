@@ -22,12 +22,14 @@
     position: relative;
     padding-bottom: 50px;
     margin-top: 220px;
+    pointer-events: none;
 }
 
 .no-banner-title {
     position: relative;
     padding-bottom: 40px;
     margin-top: 190px;
+    pointer-events: none;
 }
 
 .index-image {
@@ -80,6 +82,10 @@ header, footer {
 .welcome {
     position: relative;
     padding-top: 200px;
+}
+
+.welcome h1, p {
+    pointer-events: none;
 }
 
 hr {
