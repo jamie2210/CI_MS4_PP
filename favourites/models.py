@@ -7,7 +7,6 @@ class Favourites(models.Model):
     """
     This model is for a user's favourites list
     """
-
     products = models.ManyToManyField(
         Product,
         blank=True
