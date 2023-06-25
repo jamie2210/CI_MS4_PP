@@ -18,7 +18,7 @@
 }
 
 .category-title {
-    max-width: 200px;
+    font-size: 20px;
 }
 
 .card-footer,
@@ -154,5 +154,8 @@ footer {
 @media (max-width: 440px) {
     .card-poster {
         padding: 20px;
+    }
+    .sort-select-wrapper {
+        margin-top: 20px;
     }
 }

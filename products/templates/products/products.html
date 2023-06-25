@@ -10,16 +10,12 @@
         <div class="row">
             <div class="col-12 text-center mt-3">
                 <h2 class="logo-font title banner-title">Our Posters</h2>
-            </div>
-                
                 {% for c in current_categories %}
-                <div class="text-center">
-                <div class="col-sm-12 col-md-4 category-title">
-                        <h3 class="logo-font text-center">{{ c.friendly_name }}</h3>
-                    </div>
-                </div>
+                <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
+                    <span class="p-2 link-dark mb-4 ml-1 mr-1 category-title">{{ c.friendly_name }}</span>
+                </a>
                 {% endfor %}
-            
+            </div>
         </div>
     </div>
 {% endblock %}
