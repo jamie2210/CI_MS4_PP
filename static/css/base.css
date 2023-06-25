@@ -24,6 +24,12 @@
     margin-top: 220px;
 }
 
+.no-banner-title {
+    position: relative;
+    padding-bottom: 40px;
+    margin-top: 190px;
+}
+
 .index-image {
     background: url('/media/wall-4.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -336,8 +342,17 @@ footer {
         margin-right: 20px;
         margin-bottom: 10px;
     }
-    .allauth-title {
+    .allauth-title,
+    .no-banner-title {
         margin-top: 100px;
+        padding-bottom: 20px;
+    }
+    .banner-title {
+        margin-top: 110px;
+        padding-bottom: 20px;
+    }
+    .title {
+        font-size: 30px;
     }
 }
 
