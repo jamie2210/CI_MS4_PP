@@ -28,7 +28,7 @@
             <p class="my-0">My Account</p>
             </div>
         </a>
-        <div class="dropdown-menu" aria-labelledby="user-options">
+        <div class="dropdown-menu pl-2" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item">Manage Items</a>
@@ -42,10 +42,10 @@
             {% endif %}
         </div>
     </li>
-    <li class="list-inline-item">
+    <li class="list-inline-item pr-3">
         <a class="{% if grand_total  %} font-weight-bold {% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
             <div class="text-center link-dark">
-                <div><i class="fas fa-shopping-bag fa-lg icon"></i></div>
+                <div><i class="fa-solid fa-cart-shopping icon"></i></div>
                 <p class="my-0">
                     {% if grand_total %}
                         £{{ grand_total|floatformat:2 }}
