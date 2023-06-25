@@ -8,6 +8,22 @@
         </button>
     </div>
     <div class="toast-body bg-white">
-        {{ message }}        
+        <div class="row">
+            <div class="col-12">
+        {{ message }} 
+        <hr class="mt-1 mb-3">
+            </div>
+        </div> 
+        {% if favourites_count %}
+        <div class="row">
+            <div class="col-12">
+                <p class="logo-font bg-white text-dark py-1"> Total Favourites: {{ favourites_count }}</p>
+                <a href="{% url 'view_favourites' %}" class="btn btn-dark rounded w-100 border-0">
+                    <span class="text-uppercase">View Favourites</span>
+                    <i class="fa-solid fa-star"></i>
+                </a>
+            </div>
+        </div>
+        {% endif %}
     </div>
 </div>
