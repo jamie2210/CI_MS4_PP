@@ -11,7 +11,6 @@ from django.contrib import messages
 
 def contact(request):
     """Display the contact form"""
-    user = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
@@ -28,6 +27,7 @@ def contact(request):
     else:
         if request.user.is_authenticated:
             try:
+                user = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
                     'contact_name': user.default_full_name,
                     'contact_email': user.default_email,
