@@ -12,10 +12,13 @@
     z-index: 1;
 }
 
-
 .card,
 .card-footer {
     background: #e5e3e2;
+}
+
+.category-title {
+    max-width: 200px;
 }
 
 .card-footer,

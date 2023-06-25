@@ -9,13 +9,17 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center mt-3">
-                <h2 class="logo-font title banner-title"><a href="{% url 'products' %}?random=True">All Posters</a></h2>
-                {% for c in current_categories %}
-                    <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
-                        <span class="p-2 btn btn-light no-border btn-lrg mb-4 ml-1 mr-1">{{ c.friendly_name }}</span>
-                    </a>
-                {% endfor %}
+                <h2 class="logo-font title banner-title">Our Posters</h2>
             </div>
+                
+                {% for c in current_categories %}
+                <div class="text-center">
+                <div class="col-sm-12 col-md-4 category-title">
+                        <h3 class="logo-font text-center">{{ c.friendly_name }}</h3>
+                    </div>
+                </div>
+                {% endfor %}
+            
         </div>
     </div>
 {% endblock %}
