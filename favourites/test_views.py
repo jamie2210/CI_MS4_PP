@@ -24,7 +24,7 @@ class TestFavouriteViews(TestCase):
         This test tests get the product favourites page
         """
         self.client.login(username='test_user', password='test_password')
-        response = self.client.get('/favourites/view_favourites/')
+        response = self.client.get('/favourites/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'favourites/favourites.html')
 
