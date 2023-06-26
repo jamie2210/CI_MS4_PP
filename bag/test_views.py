@@ -44,7 +44,7 @@ class TestBagViews(TestCase):
         # Check if the product has sizes
         size = None
         if product.has_sizes:
-            size = 'a4'  # Set the size to match the logic in view
+            size = 'a4'  # Set size to match the logic in view
 
         if size:
             if str(product.id) in bag:
