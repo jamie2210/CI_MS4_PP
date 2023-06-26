@@ -12,7 +12,6 @@ from decimal import Decimal
 
 def view_bag(request):
     """ A view that renders the bag content """
-
     return render(request, 'bag/bag.html')
 
 

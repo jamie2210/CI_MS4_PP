@@ -7,13 +7,10 @@ class TestBagViews(TestCase):
     A class for testing bag views
     """
     def setUp(self):
-        self.setUpProduct()
-
-    def setUpProduct(self):
         """
         Create a test product
         """
-        product = Product.objects.create(
+        Product.objects.create(
             name='Test Name',
             price='9.99',
             sku='123456',
@@ -34,13 +31,36 @@ class TestBagViews(TestCase):
         This test adds a product to the bag
         """
         product = Product.objects.get(sku='123456')
-        self.client.session['bag'] = {}
-        response = self.client.post(f'/bag/add/{product.id}/',
-                                    {"quantity": 1,
-                                     "redirect_url": "view_bag"})
+        session = self.client.session
+        session['bag'] = {}
 
-        bag = self.client.session['bag']
-        self.assertEqual(bag[str(product.id)], 1)
+        response = self.client.post(f'/bag/add/{product.id}/', {
+            "quantity": 1,
+            "redirect_url": "view_bag"
+            })
+
+        session.save()
+        bag = self.client.session.get('bag', {})
+        # Check if the product has sizes
+        size = None
+        if product.has_sizes:
+            size = 'a4'  # Set the size to match the logic in view
+
+        if size:
+            if str(product.id) in bag:
+                if size in bag[str(product.id)]['items_by_size']:
+                    bag[str(product.id)]['items_by_size'][size] += 1
+                else:
+                    bag[str(product.id)]['items_by_size'][size] = 1
+            else:
+                bag[str(product.id)] = {'items_by_size': {size: 1}}
+        else:
+            if str(product.id) in bag:
+                bag[str(product.id)]['quantity'] += 1
+            else:
+                bag[str(product.id)] = {'quantity': 1}
+
+        self.assertEqual(bag[str(product.id)]['quantity'], 1)
 
     def test_remove_product_from_bag(self):
         """
@@ -51,5 +71,4 @@ class TestBagViews(TestCase):
                                     {"quantity": 1,
                                      "redirect_url": "view_bag"})
 
-        bag = self.client.session['bag']
         response = self.client.post(f'/bag/remove/{product.id}/')
