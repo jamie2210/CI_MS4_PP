@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django.test import TestCase
 from .models import Favourites
-from .models import Product
+from products.models import Product
 
 
 class TestFavouriteModels(TestCase):
