@@ -16,5 +16,5 @@ class Favourites(models.Model):
         on_delete=models.CASCADE
     )
 
-    def __stry__(self):
-        return f"{self.username}'s Favourites"
+    def __str__(self):
+        return f"{self.username.username}'s Favourites"
