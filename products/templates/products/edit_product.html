@@ -21,7 +21,17 @@
             <div class="col-12 add-product-container">
                 <form method="POST" actiom="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form| crispy }}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {% if field.name != 'image2' %}
+                                {{ field | as_crispy_field }}
+                            {% else %}
+                                {{ field }}
+                            {% endif %}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
                     <div class="text-center">
                         <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2">Cancel</a>
                         <button class="btn btn-dark rounded border-0 mt-2 mb-2">Edit Product</button>
@@ -34,6 +44,7 @@
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}
+    <script src="{% static 'products/js/products.js' %}"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("delivery-banner").style.display = "none";

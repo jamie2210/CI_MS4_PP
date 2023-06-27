@@ -23,7 +23,8 @@ $('#sort-selector').change(function() {
 });
 
 
-/** Event listener to stop 'up-to-top' arrow
+/** 
+ * Event listener to stop 'up-to-top' arrow
  * button scroll beyond the footer
  * Hides button at top of page and displays once scrolled passed 1000px
  */
@@ -55,3 +56,17 @@ window.addEventListener('scroll', function() {
     }
 
 });
+
+/** 
+ * Set File name display for new image uploads
+ */
+$('#new-image').change(function() {
+    var file = $('#new-image')[0].files[0];
+    $('#filename').text(`Image will be set to: ${file.name}`);
+});
+
+$('#new-image2').change(function() {
+    var file = $('#new-image2')[0].files[0];
+    $('#filename2').text(`Image will be set to: ${file.name}`);
+});
+
