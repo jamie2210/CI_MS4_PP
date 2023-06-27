@@ -1,0 +1,1 @@
+web: gunicorn poster_prints.wsgi:application
