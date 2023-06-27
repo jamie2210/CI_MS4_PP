@@ -32,7 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-jamie2210-cims4pp-5sm1mntkjio.ws-eu100.gitpod.io',
-    'localhost']
+    'localhost',
+    'poster-prints.herokuapp.com']
 
 
 # Application definition
