@@ -13,9 +13,6 @@ import os
 import dj_database_url
 from pathlib import Path
 
-if os.path.exists("env.py"):
-    import env
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -206,6 +203,9 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+else:
+    if os.path.exists("env.py"):
+        import env
 
 # stripe
 FREE_DELIVERY_THRESHOLD = 50
