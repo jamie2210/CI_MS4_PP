@@ -55,7 +55,17 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-8 text-md-right">
-                        <p class="small mb-0">{{ item.quantity }} @ £{{ item.product.price }}</p>
+                        <p class="small mb-0">
+                            {{ item.quantity }} @ £{% if item.product_size %}
+                                {% if item.product_size == 'a4' %}{{ item.product.A4_price }}{% endif %}
+                                {% if item.product_size == 'a3' %}{{ item.product.A3_price }}{% endif %}
+                                {% if item.product_size == 'a2' %}{{ item.product.A2_price }}{% endif %}
+                                {% if item.product_size == 'a1' %}{{ item.product.A1_price }}{% endif %}
+                                {% if item.product_size == 'a0' %}{{ item.product.A0_price }}{% endif %}
+                            {% else %}
+                                {{ item.product.price }}
+                            {% endif %}
+                        </p>
                     </div>
                 </div>
                 {% endfor %}
