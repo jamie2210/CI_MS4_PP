@@ -35,7 +35,7 @@
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
                 {% if product.has_sizes %}
-                <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">£{{ product.A3_price }}</p>
+                <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">£{{ product.a3_price }}</p>
                 {% else %}
                 <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                 {% endif %}
@@ -111,11 +111,11 @@
                                     <p><strong>Size:</strong></p>
                                     <select class="form-control w-50 satin-print" name="product_size" id='id_product_size' 
                                     data-item-price="a4:£14.99;a3:£19.99;a2:£24.99;a1:£29.99;a0:£39.99">
-                                        <option value="a4">A4 - £{{ product.A4_price }}</option>
-                                        <option value="a3" selected>A3 - £{{ product.A3_price }}</option>
-                                        <option value="a2">A2 - £{{ product.A2_price }}</option>
-                                        <option value="a1">A1 - £{{ product.A1_price }}</option>
-                                        <option value="a0">A0 - £{{ product.A0_price }}</option>
+                                        <option value="a4">A4 - £{{ product.a4_price }}</option>
+                                        <option value="a3" selected>A3 - £{{ product.a3_price }}</option>
+                                        <option value="a2">A2 - £{{ product.a2_price }}</option>
+                                        <option value="a1">A1 - £{{ product.a1_price }}</option>
+                                        <option value="a0">A0 - £{{ product.a0_price }}</option>
                                     </select>
                                 </div>
                             {% endif %}
