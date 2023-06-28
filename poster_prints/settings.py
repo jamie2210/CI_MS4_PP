@@ -13,6 +13,8 @@ import os
 import dj_database_url
 from pathlib import Path
 
+if os.path.exists("env.py"):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-jamie2210-cims4pp-5sm1mntkjio.ws-eu100.gitpod.io',
+    '8000-jamie2210-cims4pp-5sm1mntkjio.ws-eu101.gitpod.io',
     'localhost',
     'poster-prints-8ff329d79ba2.herokuapp.com']
 
@@ -202,9 +204,6 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-else:
-    if os.path.exists("env.py"):
-        import env
 
 # stripe
 FREE_DELIVERY_THRESHOLD = 50
