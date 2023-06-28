@@ -87,6 +87,8 @@ def checkout(request):
                                 order_line_item.save()
                         else:
                             quantity = item_data.get('quantity', 0)
+                            product.stock = product.stock - quantity
+                            product.save()
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
