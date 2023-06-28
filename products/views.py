@@ -83,7 +83,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to sow individual product details """
+    """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -97,6 +97,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'product_in_favourites': product_in_favourites,
+        'on_product_detail_page': True,
     }
 
     return render(request, 'products/product_detail.html', context)
