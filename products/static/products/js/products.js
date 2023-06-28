@@ -31,6 +31,11 @@ $('#sort-selector').change(function() {
 
 window.addEventListener('scroll', function() {
     let button = document.querySelector('.arrow-button');
+
+    if (!button) {
+        return; // Exit the function if the button is not present
+    }
+
     let footer = document.querySelector('footer');
     let footerOffset = footer.offsetTop; // gets distance between footer and closest ancestor
     let scrollPosition = document.documentElement.scrollTop; // gets current scroll position of page
@@ -69,4 +74,3 @@ $('#new-image2').change(function() {
     var file = $('#new-image2')[0].files[0];
     $('#filename2').text(`Image will be set to: ${file.name}`);
 });
-

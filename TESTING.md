@@ -134,3 +134,30 @@ _ _ _
 _ _ _
 
 ## __Bugs__
+
+code ```
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 add-product-container">
+                <form method="POST" actiom="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {% if field.name != 'image2' %}
+                                {{ field | as_crispy_field }}
+                            {% else %}
+                                {{ field }}
+                            {% endif %}
+                        {% else %}
+                            {{ field }}
+                        {% endif %}
+                    {% endfor %}
+                    <div class="text-center">
+                        <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2">Cancel</a>
+                        <button class="btn btn-dark rounded border-0 mt-2 mb-2">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
