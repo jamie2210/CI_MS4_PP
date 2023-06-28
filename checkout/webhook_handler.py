@@ -142,13 +142,23 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data[
-                                'items_by_size'].items():
+                        if 'items_by_size' in item_data and isinstance(
+                             item_data['items_by_size'], dict):
+                            for size, quantity in item_data[
+                                    'items_by_size'].items():
+                                order_line_item = OrderLineItem(
+                                    order=order,
+                                    product=product,
+                                    quantity=quantity,
+                                    product_size=size,
+                                )
+                                order_line_item.save()
+                        else:
+                            quantity = item_data.get('quantity', 0)
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
-                                quantity=quantity,
-                                product_size=size,
+                                quantity=quantity
                             )
                             order_line_item.save()
             except Exception as e:
