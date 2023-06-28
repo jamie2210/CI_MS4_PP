@@ -17,15 +17,15 @@ def bag_contents(request):
                 quantity = Decimal(quantity)
                 if product.has_sizes:
                     if size == 'a4':
-                        price_value = Decimal(product.A4_price)
+                        price_value = Decimal(product.a4_price)
                     elif size == 'a3':
-                        price_value = Decimal(product.A3_price)
+                        price_value = Decimal(product.a3_price)
                     elif size == 'a2':
-                        price_value = Decimal(product.A2_price)
+                        price_value = Decimal(product.a2_price)
                     elif size == 'a1':
-                        price_value = Decimal(product.A1_price)
+                        price_value = Decimal(product.a1_price)
                     elif size == 'a0':
-                        price_value = Decimal(product.A0_price)
+                        price_value = Decimal(product.a0_price)
                 total += quantity * price_value
                 product_count += quantity
                 bag_items.append({
