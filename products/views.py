@@ -155,7 +155,6 @@ def edit_product(request, product_id):
         'form': form,
         'product': product,
     }
-
     return render(request, template, context)
 
 

@@ -143,16 +143,15 @@
                             </div>
                         </div>
                         {% if product.stock %}
-                        {% if product.stock < 4 %}
-                        <div class="col-12 stock-level text-danger">
-                            <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
-                        </div>
-                        {% if product.stock < 1 %}
-                        <div class="col-12 stock-level text-danger">
-                            <p><strong>Sold Out!</strong></p>
-                        </div>
-                        {% endif %}
-                        {% endif %}
+                            {% if product.stock < 4 %}
+                                <div class="col-12 stock-level text-danger">
+                                    <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
+                                </div>
+                            {% endif %}
+                        {% else %}
+                            <div class="col-12 stock-level text-danger">
+                                <p><strong>Sold Out!</strong></p>
+                            </div>
                         {% endif %}
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 mt-5">
