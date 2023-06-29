@@ -58,9 +58,9 @@ class Product(models.Model):
     )
 
     stock = models.PositiveSmallIntegerField(
-        null=False,
-        blank=False,
-        default=0
+        null=True,
+        blank=True,
+        default=None
     )
 
     has_sizes = models.BooleanField(
