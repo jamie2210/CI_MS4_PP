@@ -75,6 +75,10 @@ $('#new-image2').change(function() {
     $('#filename2').text(`Image will be set to: ${file.name}`);
 });
 
+/** 
+ * Disables and hides new-image2 url and input unless new-image
+ * has image uploaded
+ */
 document.addEventListener('DOMContentLoaded', function() {
     const newImageInput = document.getElementById('new-image');
     const newImage2Input = document.getElementById('new-image2');
