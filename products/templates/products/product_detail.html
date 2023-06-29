@@ -150,11 +150,11 @@
                             {% endif %}
                         {% endif %}
                         <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 mt-5">
+                            <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 detail-button">
                                 <i class="fa-regular fa-circle-left"></i>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-dark border-0 text-uppercase mt-5 btn-lg" value="Add to Cart">
+                            <input type="submit" class="btn btn-dark border-0 text-uppercase btn-lg detail-button" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <!-- Hidden input field to store the price value -->

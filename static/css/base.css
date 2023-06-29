@@ -245,6 +245,14 @@ footer {
     text-decoration: none;
 }
 
+.detail-button {
+    margin-top: 10px;
+}
+
+.bag-button {
+    margin-top: 40px;
+}
+
 /* ------------------------- Links */
 
 .link-dark {
@@ -367,6 +375,24 @@ footer {
     }
 }
 
+@media (max-width: 992px) {
+    .allauth-title,
+    .no-banner-title {
+        margin-top: 100px;
+        padding-bottom: 20px;
+    }
+    .banner-title {
+        margin-top: 110px;
+        padding-bottom: 20px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .mainbody .image-container.my-5 {
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 720px) {
     .welcome {
         padding-top: 150px;
@@ -382,11 +408,17 @@ footer {
         padding-bottom: 20px;
     }
     .banner-title {
-        margin-top: 110px;
+        margin-top: 120px;
         padding-bottom: 20px;
     }
     .title {
         font-size: 30px;
+    }
+    .mainbody .image-container.my-5 {
+        margin-top: 0;
+    }
+    .big-button {
+        margin-top: 10px;
     }
 }
 
@@ -397,5 +429,17 @@ footer {
     }
     .list-inline-item a {
         padding: 0;
+    }
+    .no-banner-title {
+        padding-bottom: 0;
+    }
+    .banner-title {
+        padding-bottom: 0;
+    }
+    .sub-title {
+        padding-top: 20px;
+    }
+    .bag-button {
+        margin-top: 20px;
     }
 }
