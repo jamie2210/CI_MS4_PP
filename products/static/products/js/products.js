@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   
-    // Disable new-image2 initially if new-image is empty
+    // Disable / hide new-image2 and url initially if new-image is empty
     if (!newImageInput.value) {
       newImage2Input.disabled = true;
       imageButton.hidden = true;
