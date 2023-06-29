@@ -74,3 +74,29 @@ $('#new-image2').change(function() {
     var file = $('#new-image2')[0].files[0];
     $('#filename2').text(`Image will be set to: ${file.name}`);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const newImageInput = document.getElementById('new-image');
+    const newImage2Input = document.getElementById('new-image2');
+    const imageButton = document.getElementById('image2-button');
+    const imageUrl = document.getElementById('div_id_image2_url');
+  
+    newImageInput.addEventListener('change', function() {
+      if (newImageInput.value) {
+        newImage2Input.disabled = false;
+        imageButton.hidden = false;
+        imageUrl.hidden = false;
+      } else {
+        newImage2Input.disabled = true;
+        imageButton.hidden = true;
+        imageUrl.hidden = true;
+      }
+    });
+  
+    // Disable new-image2 initially if new-image is empty
+    if (!newImageInput.value) {
+      newImage2Input.disabled = true;
+      imageButton.hidden = true;
+      imageUrl.hidden = true;
+    }
+  });
