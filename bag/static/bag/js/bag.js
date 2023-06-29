@@ -4,16 +4,16 @@
  */
 
 // Disable +/- buttons outside 1-99 range (desktop)
-function handleEnableDisable(itemId) {
-    var currentValue = parseInt($(`#id_qty_${itemId}`).val());
+function handleEnableDisableDesktop(itemId) {
+    var currentValue = parseInt($(`#desk-id_qty_${itemId}`).val());
     var minusDisabled = currentValue < 2;
     var plusDisabled = currentValue > 98;
-    $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-    $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
+    $(`#desk-decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+    $(`#desk-increment-qty_${itemId}`).prop('disabled', plusDisabled);
 }
 
-// Disable +/- buttons outside 1-99 range (desktop)
-function handleEnableDisable(itemId) {
+// Disable +/- buttons outside 1-99 range (mobile)
+function handleEnableDisableMobile(itemId) {
     var currentValue = parseInt($(`#id_qty_${itemId}`).val());
     var minusDisabled = currentValue < 2;
     var plusDisabled = currentValue > 98;
@@ -25,13 +25,15 @@ function handleEnableDisable(itemId) {
 var allQtyInputs = $('.qty_input');
 for(var i = 0; i < allQtyInputs.length; i++){
     var itemId = $(allQtyInputs[i]).data('item_id');
-    handleEnableDisable(itemId);
+    handleEnableDisableDesktop(itemId);
+    handleEnableDisableMobile(itemId);
 }
 
 // Check enable/disable every time the input is changed
 $('.qty_input').change(function() {
     var itemId = $(this).data('item_id');
-    handleEnableDisable(itemId);
+    handleEnableDisableDesktop(itemId);
+    handleEnableDisableMobile(itemId);
 });
 
 // Increment quantity
@@ -41,7 +43,8 @@ $('.increment-qty').click(function(e) {
    var currentValue = parseInt($(closestInput).val());
    $(closestInput).val(currentValue + 1);
    var itemId = $(this).data('item_id');
-   handleEnableDisable(itemId);
+   handleEnableDisableDesktop(itemId);
+   handleEnableDisableMobile(itemId);
 });
 
 // Decrement quantity
@@ -51,7 +54,8 @@ $('.decrement-qty').click(function(e) {
    var currentValue = parseInt($(closestInput).val());
    $(closestInput).val(currentValue - 1);
    var itemId = $(this).data('item_id');
-   handleEnableDisable(itemId);
+   handleEnableDisableDesktop(itemId);
+   handleEnableDisableMobile(itemId);
 });
 
 
