@@ -253,6 +253,10 @@ footer {
     margin-top: 40px;
 }
 
+.sm-bag-button {
+    margin-top: 40px;
+}
+
 /* ------------------------- Links */
 
 .link-dark {
@@ -367,6 +371,9 @@ footer {
         left: 0;
         z-index: 1030;
     }
+    .delivery-alert {
+        float: right;
+      }
 }
 
 @media (max-width: 1170px) {
@@ -441,5 +448,12 @@ footer {
     }
     .bag-button {
         margin-top: 20px;
+    }
+    .sm-font {
+        font-size: small;
+    }
+    .sm-bag-button {
+        margin-top: 20px;
+        font-size: x-small;
     }
 }

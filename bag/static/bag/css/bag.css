@@ -26,3 +26,46 @@
 footer {
     margin-top: 20px;
 }
+
+/* ----------------- up-to-top arrow */
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #eee9cc;
+    text-decoration: none;
+    background: #504e4d;
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.arrow-button:hover,
+.arrow-button:active,
+.arrow-button:focus {
+    background: #eee9cc;
+    text-decoration: none;
+}
+
+.arrow-button a i {
+    color: #eee9cc;
+    text-decoration: none;
+}
+
+.arrow-button:hover a i,
+.arrow-button:active a i,
+.arrow-button:focus a i {
+    color: #504e4d;
+    text-decoration: none;
+}
+
+.arrow-button .fa-circle-up {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.arrow-button .fa-circle-up:hover {
+    text-decoration: none;
+}
