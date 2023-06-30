@@ -57,6 +57,11 @@ class Product(models.Model):
         blank=True
     )
 
+    unique_size = models.TextField(
+        max_length=50,
+        blank=True
+    )
+
     stock = models.PositiveSmallIntegerField(
         null=True,
         blank=True,

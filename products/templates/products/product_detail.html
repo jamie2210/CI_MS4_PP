@@ -48,8 +48,11 @@
                 {% endif %}
                 <p class="mt-3">{{ product.description }}</p>
                 <p class="mt-3">{{ product.feature }}</p>
+                {% if product.unique_size %}
+                <p class="mt-3"><strong>Size: </strong>{{ product.unique_size }}</p>
+                {% endif %}
                 {% if product.feature2 %}
-                <p class="mt-3"><strong>Size: </strong>{{ product.feature2 }}</p>
+                <p class="mt-3">{{ product.feature2 }}</p>
                 {% endif %}
                 {% if product.feature3 %}
                 <p class="mt-3">{{ product.feature3 }}</p>
