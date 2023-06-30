@@ -56,7 +56,7 @@ def contact(request):
 def send_auto_contact_received_email(contact_form):
     """Send the user a confirmation email"""
     contact_form = ContactForm()
-    cust_email = contact_form.cleaned_data['contact_email']
+    cust_email = contact_form.contact_email
     subject = render_to_string(
         'contact_confirmation_emails/contact_confirmation_subject.txt',
         {'form': contact_form})
