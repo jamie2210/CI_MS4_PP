@@ -1,6 +1,6 @@
 /**
- * [Toast functionality
- * Credit: Code Institute project Boutique Ado and Bootstrap Toasts demo ]
+ * Toast functionality
+ * Credit: Code Institute project Boutique Ado and Bootstrap Toasts demo
  */
 
 document.addEventListener('DOMContentLoaded', function () {

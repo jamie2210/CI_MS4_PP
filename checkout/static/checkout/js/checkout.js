@@ -1,7 +1,7 @@
-  /**
- * [Ensures Country is grey until selected
- * Credit: Code Institute project Boutique Ado ]
- */
+/**
+* Ensures Country is grey until selected
+* Credit: Code Institute project Boutique Ado
+*/
 
 let countrySelected = $('#id_country').val();
 if(!countrySelected) {

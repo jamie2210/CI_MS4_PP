@@ -1,6 +1,6 @@
 /**
- * [Incrememnting and decrementing quantity
- * Credit: Code Institute project Boutique Ado ]
+ * Incrememnting and decrementing quantity
+ * Credit: Code Institute project Boutique Ado
  */
 
 // Disable +/- buttons outside 1-99 range
@@ -83,7 +83,10 @@ var priceValue = priceInput.value;
 // Store the price value in the session
 sessionStorage.setItem('priceValue', priceValue);
 
-
+/**
+ * Create tooltip banner for favourties star icon depending
+ * on if poster in favourites or not
+ */
 var star = document.querySelector('.fa-star');
 var tool = document.querySelector('.tool');
 

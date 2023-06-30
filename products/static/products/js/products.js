@@ -1,6 +1,6 @@
 /**
- * [Product sorting/image updates
- * Credit: Code Institute project Boutique Ado ]
+ * Product sorting/image updates
+ * Credit: Code Institute project Boutique Ado
  */
 $('.arrow-button').click(function(e) {
     window.scrollTo(0,0);
@@ -64,6 +64,7 @@ window.addEventListener('scroll', function() {
 
 /** 
  * Set File name display for new image uploads
+ * Credit: Code Institute project Boutique Ado
  */
 $('#new-image').change(function() {
     var file = $('#new-image')[0].files[0];

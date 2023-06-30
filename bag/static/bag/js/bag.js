@@ -1,6 +1,6 @@
 /**
- * [Incrememnting and decrementing quantity
- * Credit: Code Institute project Boutique Ado ]
+ * Incrememnting and decrementing quantity
+ * Credit: Code Institute project Boutique Ado
  */
 
 // Disable +/- buttons outside 1-99 range (desktop)
