@@ -1,10 +1,10 @@
-Hi {{ contact_name.value }}!
+Hi {{ contact_name }}!
 
-Thanky you for getting in touch with the below query;
+Thank you for getting in touch with the below query;
 
-{{ contact_subject.value }}
+Subject: {{ contact_subject }}
 
-{{ contact_message.value }}
+Message: {{ contact_message }}
 
 We will get back to you as soon as we can, typically within 1 working day.
 
