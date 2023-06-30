@@ -1,1 +1,1 @@
-Poster Prints contact - {{ form_data.contact_subject }}
+Poster Prints contact - {{ contact_subject.value }}

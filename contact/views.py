@@ -57,16 +57,13 @@ def send_auto_contact_received_email(contact_form):
     """Send the user a confirmation email"""
     if contact_form.is_valid():
         cust_email = contact_form.cleaned_data['contact_email']
-        context = {
-            'form_data': contact_form.cleaned_data,
-        }
         subject = render_to_string(
             'contact_confirmation_emails/contact_confirmation_subject.txt',
-            context)
+            {'form': contact_form})
         body = render_to_string(
             'contact_confirmation_emails/contact_confirmation_body.txt',
-            context,
-            {'contact_email': settings.DEFAULT_FROM_EMAIL})
+            {'form': contact_form,
+             'contact_email': settings.DEFAULT_FROM_EMAIL})
         send_mail(
                 subject,
                 body,
