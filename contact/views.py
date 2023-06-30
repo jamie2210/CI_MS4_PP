@@ -67,8 +67,8 @@ def send_auto_contact_received_email(contact_form):
         send_mail(
                 subject,
                 body,
-                settings.EMAIL_BACKEND
-                [cust_email]
+                settings.DEFAULT_FROM_EMAIL,
+                [cust_email],
             )
 
 
