@@ -8,5 +8,7 @@ Thanky you for getting in touch with the below query;
 
 We will get back to you as soon as we can, typically within 1 working day.
 
+If you'd like to contact us directly or before then please get in touch here {{ contact_email }}.
+
 Many thanks,
 Poster Prints.
