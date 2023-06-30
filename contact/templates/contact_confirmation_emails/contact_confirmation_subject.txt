@@ -1,1 +1,1 @@
-Poster Prints contact - {{ contact_form.contact_subject }}
+Poster Prints contact - {{ contact_form.cleaned_data.contact_subject }}
