@@ -1,0 +1,13 @@
+New Message in contact form:
+
+Name: {{ form_data.contact_name}}
+
+Email: {{ form_data.contact_email }}
+
+Subject: {{ form_data.contact_subject }}
+
+Message: {{ form_data.contact_message }}
+
+Please action within 1 working day.
+
+Poster Prints Management.

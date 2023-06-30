@@ -20,6 +20,7 @@ def contact(request):
         if contact_form.is_valid():
             contact_form.save()
             send_auto_contact_received_email(contact_form)
+            send_contact_notify_admin(contact_form)
             messages.success(request, 'Message sent, \
             please allow 1 working day for a response.')
             return render(request, 'contact/contact_success.html')
@@ -40,9 +41,11 @@ def contact(request):
             except UserProfile.DoesNotExist:
                 contact_form = ContactForm()
                 send_auto_contact_received_email(contact_form)
+                send_contact_notify_admin(contact_form)
         else:
             contact_form = ContactForm()
             send_auto_contact_received_email(contact_form)
+            send_contact_notify_admin(contact_form)
 
     template = 'contact/contact.html'
     context = {
@@ -59,7 +62,7 @@ def send_auto_contact_received_email(contact_form):
         cust_email = contact_form.cleaned_data['contact_email']
         context = {
             'form_data': contact_form.cleaned_data,
-            'contact_email': settings.DEFAULT_FROM_EMAIL
+            'contact_email': settings.DEFAULT_FROM_EMAIL,
         }
         subject = render_to_string(
             'contact_confirmation_emails/contact_confirmation_subject.txt',
@@ -74,6 +77,30 @@ def send_auto_contact_received_email(contact_form):
                 body,
                 settings.DEFAULT_FROM_EMAIL,
                 [cust_email],
+            )
+
+
+def send_contact_notify_admin(contact_form):
+    """Send admin confirmation email of user contact"""
+    if contact_form.is_valid():
+        admin_email = settings.DEFAULT_FROM_EMAIL
+        context = {
+            'form_data': contact_form.cleaned_data,
+            'contact_email': settings.DEFAULT_FROM_EMAIL,
+        }
+        subject = render_to_string(
+            'contact_confirmation_emails/contact_admin_subject.txt',
+            context
+        )
+        body = render_to_string(
+            'contact_confirmation_emails/contact_admin_body.txt',
+            context,
+        )
+        send_mail(
+                subject,
+                body,
+                settings.DEFAULT_FROM_EMAIL,
+                [admin_email],
             )
 
 
