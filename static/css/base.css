@@ -1,5 +1,9 @@
 /* ------------------------- Body */
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .main-body {
     min-height: 80vh;
 }
@@ -36,7 +40,6 @@
     background: url('/media/wall.png') no-repeat center center fixed;
     background-size: cover;
     color: #504e4d;
-    font-family: 'DM Sans', sans-serif;
     height: 100vh;
 }
 
