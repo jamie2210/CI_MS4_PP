@@ -58,7 +58,6 @@ $('.decrement-qty').click(function(e) {
    handleEnableDisableMobile(itemId);
 });
 
-
 /**
  * [Product sorting/image updates
  * Credit: Code Institute project Boutique Ado ]
@@ -120,5 +119,4 @@ window.addEventListener('scroll', function() {
         // Button is above the footer
         button.style.bottom = '20px';
     }
-
 });
