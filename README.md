@@ -284,7 +284,56 @@ _ _ _
 | 25 | Store Owner | Add a poster | Upload new posters for sale to my store |
 | 26 | Store Owner | Edit/Update a poster | Change product prices, descriptions, sizes, images, stock and other product criteria |
 | 27 | Store Owner | Delete a poster | Remove posters that are no longer for sale |
+_ _ _
 
+## Skeleton
+### Wireframes
+Each wireframe image below contains three sub images, one for desktop, tablet and mobile
+Balsamiq was used to create the wireframes
+_ _ _
+
+<details><summary>Home</summary>
+<img src="documentation/wireframes/home.png">
+</details>
+<details><summary>Register</summary>
+<img src="documentation/wireframes/register.png">
+</details>
+<details><summary>Login</summary>
+<img src="documentation/wireframes/login.png">
+</details>
+<details><summary>Logout</summary>
+<img src="documentation/wireframes/logout.png">
+</details>
+<details><summary>Products</summary>
+<img src="documentation/wireframes/products.png">
+</details>
+<details><summary>Products Add</summary>
+<img src="documentation/wireframes/products-add.png">
+</details>
+<details><summary>Products Edit</summary>
+<img src="documentation/wireframes/products-edit.png">
+</details>
+<details><summary>Products Detail</summary>
+<img src="documentation/wireframes/products-detail.png">
+</details>
+<details><summary>Favourites</summary>
+<img src="documentation/wireframes/favourites.png">
+</details>
+<details><summary>Bag</summary>
+<img src="documentation/wireframes/bag.png">
+</details>
+<details><summary>Checkout</summary>
+<img src="documentation/wireframes/checkout.png">
+</details>
+<details><summary>Checkout Success</summary>
+<img src="documentation/wireframes/checkout-success.png">
+</details>
+<details><summary>Profile</summary>
+<img src="documentation/wireframes/profile.png">
+</details>
+<details><summary>Contact</summary>
+<img src="documentation/wireframes/contact.png">
+</details>
 _ _ _
 
 
@@ -346,13 +395,7 @@ The page is structured in a user friendly and visually appealing way.
 
 The website consists of 
 
-### Wireframes
 
-<details><summary>Home</summary>
-<img src="docs/wireframes/home.png">
-</details>
-
-_ _ _
 
 ## __Technologies Used__
 
