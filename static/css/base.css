@@ -382,14 +382,14 @@ footer {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
     .allauth-title,
     .no-banner-title {
         margin-top: 100px;
         padding-bottom: 20px;
     }
     .banner-title {
-        margin-top: 110px;
+        margin-top: 140px;
         padding-bottom: 20px;
     }
     .title {
