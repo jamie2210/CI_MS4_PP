@@ -179,6 +179,49 @@ _ _ _
 This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the Postgres database
 <br>![Database model](documentation/images/database_schema.png)
 
+#### Models
+_ _ _ 
+
+##### User Model
+- The User model contains information about the user. It is part of the Django allauth library
+- The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
+
+##### UserProfile Model
+- The UserProfile model has a one-to-one relationship with User
+- The model contains the following fields: default_full_name, default_email, default_phone_number, default_street_address1, default_street_address2
+default_town_or_city, default_county, default_postcode and default_country
+
+##### Order Model
+- The Order model contains information about orders made on the website.
+- It contains UserProfile as a foreign-key.
+- The model contains the following fields: order_number, user_profile, full_name, email, phone_number, country, postcode, town_or_city, street_address1, street_address2, county, date, delivery_cost, order_total, grand_total, original_bag, stripe_pid
+
+##### OrderLineItem Model
+- The OrderLineItem model contains information about an entry in an order, for orders made on the website.
+- It contains Order and Product as foreign-keys.
+- The model contains the following fields: order, product, product_size, quantity, lineitem_total
+
+##### Favourites Model
+- The Favourites model contains a users favourite products
+- It contains Products as many-to-many field, and User as a one-to-one relationship
+- The model contains the following fields: products, username
+
+##### Product Model
+- The Product Model represents a poster and its details
+- It contains Category as a foreign-key
+- The model contains the following fields: name, category, sku, description, feature, feature2, feature3, unique_size, stock, has_sizes, price, a4_price, a3_price, a2_price, a1_price, a0_price image_url, image, image2_url, image2
+- The image fields contains the poster image(s)
+- The image_url field contains the url to where the image file is physically stored, for example AWS S3 bucket
+
+##### Category Model
+- The Category model contains a product category
+- The model contains the following fields: name, friendly_name
+
+##### Contact Model
+- The Contact model presents a contact form
+- The model contains the following fields: contact_name, contact_email, contact_phone_number, contact_subject, contact_message, date, replied
+
+
 ### User Goals
 - Play both games that are fun and engaging.
 - Easily find the rules of each game.
