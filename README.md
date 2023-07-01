@@ -138,6 +138,35 @@ Bag / Cart | A user can add products to a shopping cart which contains each item
 Checkout | A user can enter their delivery details and credit card information to checkout an order   
 Checkout success | Once an order is successful, the user can view the checkout success
 
+### Code Structure
+_ _ _
+
+The project is divided into a number of apps, it is built using the Django Framework
+The project was built on the Boutique Ado project with Code Institute, that was part of the project content
+The apps are described as follows:
+- bag: (part of the original Boutique Ado project): This app contains functionality regarding a users shopping bag
+- checkout: (part of the original Boutique Ado project): This app contains functionality regarding a users checking out and payment of an order
+- contact: A newly written app, it allows any user, logged in or not, to contact the store with any queries they may have
+- favourites: A newly written app, that allows the user to add and remove items from a favourites list. This list is unique to the user.
+- home: (part of the original Boutique Ado project): This app contains functionality regarding the users home page
+- products: (part of the original Boutique Ado project): This app contains functionality regarding a product.
+- profiles: (part of the original Boutique Ado project): This app contains functionality regarding a users profile and order history
+
+To complement the apps there are
+- poster_prints: Containing settings.py(Settings) and urls.py(Website urls) for example
+- templates: Containing the base.html, allauth(django authentication) and includes html files
+- static: Base css and Javascript files, favicon image There is some javascript in some html files, but I have tried to minimise that using separate js files throughout
+- manage.py: Main python file for starting the website
+- README.md: Readme documentation
+- TESTING.md: Testing documentation
+- Procfile: To run the application
+- Requirements.txt: Containing the python libraries installed
+<br>
+
+__Note:__ 
+- Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in and listed in .gitignore, and on Heroku in app settings.
+- I accidentilly committed and pushed an exposed Elephant SQL code so I deleted that database and created a new one making the exposed code redundant.
+
 ### User Goals
 - Play both games that are fun and engaging.
 - Easily find the rules of each game.
