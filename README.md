@@ -319,8 +319,8 @@ _ _ _
 <details><summary>Favourites</summary>
 <img src="documentation/wireframes/favourites.png">
 </details>
-<details><summary>Bag</summary>
-<img src="documentation/wireframes/bag.png">
+<details><summary>Cart</summary>
+<img src="documentation/wireframes/cart.png">
 </details>
 <details><summary>Checkout</summary>
 <img src="documentation/wireframes/checkout.png">
@@ -333,6 +333,9 @@ _ _ _
 </details>
 <details><summary>Contact</summary>
 <img src="documentation/wireframes/contact.png">
+</details>
+<details><summary>Errors</summary>
+<img src="documentation/wireframes/errors.png">
 </details>
 _ _ _
 
