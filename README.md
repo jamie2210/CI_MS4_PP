@@ -1,18 +1,48 @@
 # Poster Prints
 (Developer: Jamie Letts)
 
-![Mockup image](docs/device-display.jpg)
+![Mockup image](documentation/images/device-display.jpg)
 
-[Live webpage](https://poster-prints-app.herokuapp.com/)
+[Live webpage](https://poster-prints-8ff329d79ba2.herokuapp.com/)
 
-This is the website for Poster Prints
+Poster Prints is an ecommerce poster website allowing users to purchase printed, framed and mounted posters developed for Milestone 4 as milestone project 4 as part of the Code Institute - Level 5 Diploma in Software Development course (Full stack).
 
-## Table of Content
+- There are two types of users
+    - An admin(administrator) user account
+    - A regular(shopper) user account
+    - When making a payment as a regular user, a test credit card of 4242424242424242 has been set up for the card number
+    - For the expiry date, cvc and postal code any series of numbers can be used (once they meet the mimimum values)
+<br>
 
-1. [Project Goals](#project-goals)
-    * [User Stories](#user-goals)
-    * [Site Owner Goals](#site-owner-goals)
-    * [Developer Goals](#developer-goals)
+
+## Table of Contents
+
+[Project Overview](#project-overview)
+
+1. [User Experience](#user-experience)
+  * [Strategy](#strategy)
+    + [Primary Goal](#primary-goal)
+  * [Structure](#structure)
+    + [Website pages](#website-pages)
+    + [Code Structure](#code-structure)
+    + [Database](#database)
+      - [Physical database model](#physical-database-model)
+      - [Models](#models)
+        * [User Model](#user-model)
+        * [UserProfile Model](#userprofile-model)
+        * [Order Model](#order-model)
+        * [OrderLineItem Model](#orderlineitem-model)
+        * [Favourites Model](#favourites-model)
+        * [Product Model](#product-model)
+        * [Category Model](#category-model)
+        * [Contact Model](#news-model)
+  * [Scope](#scope)
+    + [User Stories](#user-stories)
+  * [Skeleton](#skeleton)
+    + [Wireframes](#wireframes)
+  * [Surface](#surface)
+    + [Color Palette](#color-palette)
+    + [Typography](#typography)
 2. [User Experience](#user-experience)
     * [Target Audience](#target-audience)
     * [User Requirements and Expectations](#user-requirements-and-expectations)
@@ -48,7 +78,39 @@ This is the website for Poster Prints
 
 12. [Acknowledgements](#acknowledgements)
 
+# Project Overview
+
+- This project is a website is for submission as milestone project 4 as part of the Code Institute - Level 5 Diploma in Software Development course (Full Stack).
+- The repository on GitHub that contains the website source code and assets is available at the following url: [Code Repository](https://github.com/jamie2210/CI_MS4_PP)
+- The website was built to be responsive on desktop, tablet and mobile devices.
+
 _ _ _
+
+# User Experience
+
+_ _ _
+
+## Strategy
+### Primary Goal
+The primary goal of the website from the site 
+owners perspective is as follows:
+- To add, edit and delete products with the relevant information (price, description, image, sizes, stock and category) on the website 
+- To allow a user make a purchase of the posters on the website
+- To display low stocked items
+- Allow the user an easy means of contact
+
+The primary goal of the website from a site users perspective is as follows:
+- To register for an account on the website and receive an email after successful registration
+- To login or logout from the website
+- To easily recover my password in case I forget it
+- Have a personalised user profile with my delivery, payment information and order history
+- View a list of products on the website
+- View an individual product detail (price, description, image, sizes, stock (if low) and category)
+- To add an item to a shopping bag, and select the quantity and size if applicable
+- Complete a purchase of items in a shopping bag
+- To sort the list of available products by price and category
+- Search for a product by name or description and view the search results
+- To have a list of product favourites and to add/delete items from the list
 
 ## Project Goals
 
