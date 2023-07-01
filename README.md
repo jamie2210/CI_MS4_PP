@@ -108,6 +108,7 @@ The primary goal of the website from a site users perspective is as follows:
 - To sort the list of available products by price and category
 - Search for a product by name or description and view the search results
 - To have a list of product favourites and to add/delete items from the list
+_ _ _
 
 ## Structure
 ### Website Pages
@@ -220,6 +221,71 @@ default_town_or_city, default_county, default_postcode and default_country
 ##### Contact Model
 - The Contact model presents a contact form
 - The model contains the following fields: contact_name, contact_email, contact_phone_number, contact_subject, contact_message, date, replied
+_ _ _
+
+## Scope
+### User Stories
+
+_ _ _
+
+| **Viewing & Navigation** |
+|-------------|
+
+| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
+|-------------|------------|---------------------|-------------------|
+| 1 | Shopper | View a list of products | Select some to purchase |
+| 2 | Shopper | View specific category of products | Quickly find posters I'm interested in without having to search through all options |
+| 3 | Shopper | View Individual product details | Identify the price, description, product rating, product image and available sizes |
+| 4 | Shopper | Quickly Identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
+| 5 | Shopper | Easily view the total of my purchases at any time | Avoid spending too much |
+| 6 | Shopper | Easily contact the store whether I have an account or not | Have an query answered |
+
+| **Registration & User Accounts** |
+|-------------|
+
+| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
+|-------------|------------|---------------------|-------------------|
+| 7 | Site User | Easily register for an account | Have a personal account and be able to view my profile |
+| 8 | Site User | Easily login or logout | Access my personal account information |
+| 9 | Site User | Easily recover my password incase I forget it | Recover access to my account |
+| 10 | Site User | Receive an email confimation after registering  | Verify that my account registration was successful |
+| 11 | Site User | Have a personalised user profile | View my personal order history and order confirmations, and save my payment information |
+| 12 | Site User | Store my favourite posters | Easily find them when I am ready to purchase |
+
+| **Sorting & Searching** |
+|-------------|
+
+| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
+|-------------|------------|---------------------|-------------------|
+| 13 | Shopper | Sort the list of available posters | Easily identify the best priced and categorically sorted products |
+| 14 | Shopper | Sort a specific category of poster | Find the best-priced or in a specific category, or sort the products in that category by name |
+| 15 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced across the broad categories, such as 'photography' or 'illustrations' |
+| 16 | Shopper | Search for a poster by name or description | Find a specific product I'd like to purchase |
+| 17 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+
+| **Purchasing & Checkout** |
+|-------------|
+
+| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
+|-------------|------------|---------------------|-------------------|
+| 18 | Shopper | Easily select the size and quantity of a poster when purchasing it | Ensure I don't accidentally select the wrong poster, quantity or size  |
+| 19 | Shopper | View items in my bag to purchased | Identify the total cost of my purchase and all items I will receive  |
+| 20 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchases before checkout |
+| 21 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
+| 22 | Shopper | Feel my personal payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 23 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 24 | Shopper | Receive an email confimation after checking out | Keep the confimation of what I've purchased for my records |
+
+| **Admin & Store Management** |
+|-------------|
+
+| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
+|-------------|------------|---------------------|-------------------|
+| 25 | Store Owner | Add a poster | Upload new posters for sale to my store |
+| 26 | Store Owner | Edit/Update a poster | Change product prices, descriptions, sizes, images, stock and other product criteria |
+| 27 | Store Owner | Delete a poster | Remove posters that are no longer for sale |
+
+_ _ _
 
 
 ### User Goals
@@ -257,64 +323,7 @@ default_town_or_city, default_county, default_postcode and default_country
 
 _ _ _
 
-### __User Stories__
 
-| **Viewing & Navigation** |
-|-------------|
-
-| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
-|-------------|------------|---------------------|-------------------|
-| 1 | Shopper | View a list of products | Select some to purchase |
-| 2 | Shopper | View specific category of products | Quickly find posters I'm interested in without having to search through all options |
-| 3 | Shopper | View Individual product details | Identify the price, description, product rating, product image and available sizes |
-| 4 | Shopper | Quickly Identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
-| 5 | Shopper | Easily view the total of my purchases at any time | Avoid spending too much |
-
-| **Registration & User Accounts** |
-|-------------|
-
-| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
-|-------------|------------|---------------------|-------------------|
-| 6 | Site User | Easily register for an account | Have a personal account and be able to view my profile |
-| 7 | Site User | Easily login or logout | Access my personal account information |
-| 8 | Site User | Easily recover my password incase I forget it | Recover access to my account |
-| 9 | Site User | Receive an email confimation after registering  | Verify that my account registration was successful |
-| 10 | Site User | Have a personalised user profile | View my personal order history and order confirmations, and save my payment information |
-
-| **Sorting & Searching** |
-|-------------|
-
-| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
-|-------------|------------|---------------------|-------------------|
-| 11 | Shopper | Sort the list of available posters | Easily identify the best rated, best priced and categorically sorted products |
-| 12 | Shopper | Sort a specific category of poster | Find the best-priced or best-rated poster in a specific category, or sort the products in that category by name |
-| 13 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across the broad categories, such as 'photography' or 'illustrations' |
-| 14 | Shopper | Search for a poster by name or description | Find a specific product I'd like to purchase |
-| 15 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
-
-| **Purchasing & Checkout** |
-|-------------|
-
-| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
-|-------------|------------|---------------------|-------------------|
-| 16 | Shopper | Easily select the size and quantity of a poster when purchasing it | Ensure I don't accidentally select the wrong poster, quantity or size  |
-| 17 | Shopper | View items in my bag to purchased | Identify the total cost of my purchase and all items I will receive  |
-| 18 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchases before checkout |
-| 19 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
-| 20 | Shopper | Feel my personal payment information is safe and secure | Confidently provide the needed information to make a purchase |
-| 21 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 22 | Shopper | Receive an email confimation after checking out | Keep the confimation of what I've purchased for my records |
-
-| **Admin & Store Management** |
-|-------------|
-
-| **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
-|-------------|------------|---------------------|-------------------|
-| 23 | Store Owner | Add a poster | Add new posters to print to my store |
-| 24 | Store Owner | Edit/Update a poster | Change product prices, descriptions, images and other product criteria |
-| 25 | Store Owner | Delete a poster | Remove posters that are no longer for sale |
-
-_ _ _
 
 ## Design
 
