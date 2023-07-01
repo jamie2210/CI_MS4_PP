@@ -838,11 +838,11 @@
       "model":"products.product",
       "pk":53,
       "fields":{
-         "name":"Moutain Dawn",
+         "name":"Mountain Dawn",
          "category":1,
          "price":"19.99",
          "sku":"PP221053",
-         "description":"Moutain view with a pink sky, Brixen im Thale, Tirol, Austria",
+         "description":"Mountain view with a pink sky, Brixen im Thale, Tirol, Austria",
          "feature":"Printed on satin 200gsm paper",
          "feature2":"Photographer: Stephan Seeber",
          "has_sizes":true,
