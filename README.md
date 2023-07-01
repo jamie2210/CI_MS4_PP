@@ -167,6 +167,18 @@ __Note:__
 - Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in and listed in .gitignore, and on Heroku in app settings.
 - I accidentilly committed and pushed an exposed Elephant SQL code so I deleted that database and created a new one making the exposed code redundant.
 
+### Database
+_ _ _
+
+- The website is a data-centric one with html, javascript, css used with the bootstrap(version 4) framework as a frontend
+- The backend consists of Python built with the Django framework with a database of a Postgres using Elephant SQL for the deployed Heroku version(production)
+- Postgres is a powerful, open source object-relational database system (https://www.postgresql.org/)
+- A SQLLite database was used for local development (https://www.sqlite.org/index.html)
+
+#### Physical database model
+This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the Postgres database
+<br>![Database model](documentation/images/database_schema.png)
+
 ### User Goals
 - Play both games that are fun and engaging.
 - Easily find the rules of each game.
