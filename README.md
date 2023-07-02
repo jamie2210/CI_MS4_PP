@@ -392,6 +392,18 @@ Checkout |&#9989;        |&#9989;          |&#9989; |
 Checkout success |&#9989;        |&#9989;          |&#9989; |
 Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
+__Defensive Programming__
+
+Defenisve programming is used throughout to prevent users accessing pages they do not have the permission to do so. For areas accesible only for admin checks are made and if the user is not a superuser they will be redirected automatically with a message diplayed exlpaning the action. Should a user not be logged in and try to access a page for logged in users, 'My Favourites' for example, the same will happen with a similar message alerted.
+
+__Stock Management__
+
+For stocked items checks have been made adding items to the bag and editting them agai oncein the bag. Quantity levels above the stock count will not be updated and a message will alert the user of the stock count. If stock is 3 or below a low stock message is displayed with the stock count in the product detail page allowing the user to act fast should the poster be close to out of stock. On purchasing a stocked item the quantity is adjusted depending on the quantity bought. This means there is potential for a low stocked item to be in multiple bags which could lead to upsetting the shopper. Due to time constraints I haven't had time to look into this further but one option would be to put a time limit on a low stocked item once it's in the bag before removing it from the bag if time ran out. It is something I would love to figure out given more time.
+
+__Features I would like__
+
+With more time I would look into adding more stocked items and a larger viariety of displays including landscape posters with an option to search for landscape or portrait posters. Instead of using an 'up-to-top' button pagination could be used when items get to a certain number to avoid endlessly scrolling when the numbers are really high. For this project as the numbers are limited paired with the option to search by category it works well as it is. I would have also added a review and potentially a comment section but due to the time constraints I focused on adding a favourites page as I saw that as a more important feature. It was also new to me which encouraged me to learn more as a rating feature is included in the Boutique Ado walk through and I used pagination and a comment feature in my 3rd project.
+
 ### Consistent Features
 
 * __Favicon__ 
@@ -428,7 +440,7 @@ Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
   Mobile Display
 
-    ![Mobile Navbar](documentation/features/mobile-navbar.gif)
+  ![Mobile Navbar](documentation/features/mobile-navbar.gif)
 
 
 * __Footer__ 
@@ -450,15 +462,6 @@ Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
   ![Home Page](documentation/features/home-page.png)
 
-### __Main Content Features__
-
-There are X pages which extend from a base template;
-
-* __Logged Out Home__
-* __Logged In Home__
-* __Login__
-* __Register__
-* __Profile__
 
 ### Logged Out Home
 - Introduction to the site
