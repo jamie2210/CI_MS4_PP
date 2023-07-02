@@ -842,7 +842,7 @@ _ _ _
 ### Error Pages
 _ _ _
 
--  All error pages direct the user back to the home page via a button
+- All error pages direct the user back to the home page via a home button
 - User Stories covered: 28
 
 - Error Page:
