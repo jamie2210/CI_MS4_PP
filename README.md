@@ -392,6 +392,8 @@ Checkout |&#9989;        |&#9989;          |&#9989; |
 Checkout success |&#9989;        |&#9989;          |&#9989; |
 Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
+_ _ _
+
 __Defensive Programming__
 
 Defenisve programming is used throughout to prevent users accessing pages they do not have the permission to do so. For areas accesible only for admin checks are made and if the user is not a superuser they will be redirected automatically with a message diplayed exlpaning the action. Should a user not be logged in and try to access a page for logged in users, 'My Favourites' for example, the same will happen with a similar message alerted.
@@ -403,8 +405,10 @@ For stocked items checks have been made adding items to the bag and editting the
 __Features I would like__
 
 With more time I would look into adding more stocked items and a larger viariety of displays including landscape posters with an option to search for landscape or portrait posters. Instead of using an 'up-to-top' button pagination could be used when items get to a certain number to avoid endlessly scrolling when the numbers are really high. For this project as the numbers are limited paired with the option to search by category it works well as it is. I would have also added a review and potentially a comment section but due to the time constraints I focused on adding a favourites page as I saw that as a more important feature. It was also new to me which encouraged me to learn more as a rating feature is included in the Boutique Ado walk through and I used pagination and a comment feature in my 3rd project.
+_ _ _
 
 ### Consistent Features
+_ _ _
 
 * __Favicon__ 
 
@@ -462,19 +466,53 @@ With more time I would look into adding more stocked items and a larger viariety
 
   ![Home Page](documentation/features/home-page.png)
 
+_ _ _
 
-### Logged Out Home
-- Introduction to the site
-- Log In or Register Button
-- User redirected here if not logged in
-- User Stories covered: 
+### Contact
+_ _ _
 
-![Logged Out Home](documentation/images/features/logged-out-home.png)
+- Contact can be made logged in or out. 
+- If logged in and the user has saved their details to their profile, some fields are automatically populated.
+- User Stories covered: 6
+
+- Logged out user:
+
+  ![Logged out user](documentation/features/contact/logged-out-form.png)
+
+- Logged in user:
+
+  ![Logged in user](documentation/features/contact/populate-contact.png)
+
+- User Fills out the required fields:
+
+  ![Filled out form](documentation/features/contact/filled-out-form.png)
+
+- Upon pressing send 5 events are actioned:
+  * The query is sent to the admin backend as a form with a boolean field 'Replied' as false. This is to be marked as True once replied to keep organised.
+  * The page refreshes to the contact_success page notifying the message has been sent successfully.
+  * A success toast messages also confirms the same.
+  * An email is sent to the user with a confirmation of what was sent in the message.
+  * An emailis sent to the website email notifying the shop owner / staff of a new enquiry prompting action.
+
+- Admin Backend:
+
+![Admin Backend](documentation/features/contact/replied.png)
+
+- Contact Success & Toast:
+
+![Contact Success](documentation/features/contact/contact-success.png)
+
+- User Email:
+
+![User Email](documentation/features/contact/filled-out-form.png)
+
+- Shop Owner / Staff email:
+
+![Shop Owner / Staff Email](documentation/features/contact/new-message-email.png)
 
 _ _ _
 
 ## __Technologies Used__
-
 _ _ _
 
 ## Languages
@@ -544,13 +582,6 @@ Stripe for the website is currently in developer mode, which allows the user to 
 
 _ _ _
 
-
-
-_ _ _
-
-## __Future Implementations__
-
-I am content with what was implemented but if I had more time there are a few bonus features I think could be added;
 
 
 ## __Testing__
