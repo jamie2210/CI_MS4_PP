@@ -126,7 +126,7 @@ Order History         | An order history page, order details, the order informat
 Register               | A user can register an account on the site with a valid email address
 Login               | A user can login with a valid username and password  
 Logout               | A logout button is provided under the My Account link to logout    
-Bag / Cart | A user can add products to a shopping cart which contains each item in the order and an overall price / delivery if applicable   
+Bag | A user can add products to a shopping cart which contains each item in the order and an overall price / delivery if applicable   
 Checkout | A user can enter their delivery details and credit card information to checkout an order   
 Checkout success | Once an order is successful, the user can view the checkout success
 
@@ -260,7 +260,7 @@ _ _ _
 | **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
 |-------------|------------|---------------------|-------------------|
 | 18 | Shopper | Easily select the size and quantity of a poster when purchasing it | Ensure I don't accidentally select the wrong poster, quantity or size  |
-| 19 | Shopper | View items in my bag to purchased | Identify the total cost of my purchase and all items I will receive  |
+| 19 | Shopper | View items in my bag to purchase | Identify the total cost of my purchase and all items I will receive  |
 | 20 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchases before checkout |
 | 21 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
 | 22 | Shopper | Feel my personal payment information is safe and secure | Confidently provide the needed information to make a purchase |
@@ -756,10 +756,38 @@ _ _ _
 
 - Favourites Page Remove Modal:
 
-  ![Favourites Page](documentation/features/favourites/favourites-page-modal.png)
+  ![Favourites Page Modal](documentation/features/favourites/favourites-page-modal.png)
 _ _ _
 
 ### Bag
+_ _ _
+
+- All users, logged in or out, can add products the bag.
+- Each time a products is added the total is calculated and displayed under icon.
+- On clicking the icon the user is taken to the bag page (Shopping Cart on the site)
+- From there items can be removed or quantity updated each time confirming with toats message
+- There is a Grand Total and button to the secure checkout under the bag items
+- User Stories Covered: 18, 19, 20
+
+- Add product to Cart:
+
+  ![Add Product](documentation/features/bag/add-product.png)
+
+- View Shopping Cart:
+
+  ![Shopping Cart](documentation/features/bag/shopping-cart.png)
+
+- Update Quantity:
+
+  ![Update Quantity](documentation/features/bag/update-quantity.png)
+
+- Remove Product:
+
+  ![Remove Product](documentation/features/bag/remove-product.png)
+
+- Grand Total / Secure Checkout
+
+  ![Grand Total / Checkout](documentation/features/bag/total.png)
 _ _ _
 
 ### Checkout
