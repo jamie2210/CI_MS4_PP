@@ -227,7 +227,7 @@ _ _ _
 | 1 | Shopper | View a list of products | Select some to purchase |
 | 2 | Shopper | View specific category of products | Quickly find posters I'm interested in without having to search through all options |
 | 3 | Shopper | View Individual product details | Identify the price, description, product rating, product image and available sizes |
-| 4 | Shopper | Quickly Identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
+| 4 | Shopper | Identify stock levels on items low on stock | Insure I don't miss out on items I want |
 | 5 | Shopper | Easily view the total of my purchases at any time | Avoid spending too much |
 | 6 | Shopper | Easily contact the store whether I have an account or not | Have an query answered |
 
@@ -241,13 +241,13 @@ _ _ _
 | 9 | Site User | Easily recover my password incase I forget it | Recover access to my account |
 | 10 | Site User | Receive an email confimation after registering  | Verify that my account registration was successful |
 | 11 | Site User | Have a personalised user profile | View my personal order history and order confirmations, and save my payment information |
-| 12 | Site User | Store my favourite posters | Easily find them when I am ready to purchase |
 
 | **Sorting & Searching** |
 |-------------|
 
 | **ID** | **As A** | **I Want To Be Able To** | **So That I Can** |
 |-------------|------------|---------------------|-------------------|
+| 12 | Shopper | Store and view my favourite posters | Easily find them when I am ready to purchase |
 | 13 | Shopper | Sort the list of available posters | Easily identify the best priced and categorically sorted products |
 | 14 | Shopper | Sort a specific category of poster | Find the best-priced or in a specific category, or sort the products in that category by name |
 | 15 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced across the broad categories, such as 'photography' or 'illustrations' |
@@ -394,29 +394,41 @@ Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
 ### Consistent Features
 
-* __Favicon__ - I designed the favicon in Illustrator
+* __Favicon__ 
+
+- I designed the favicon in Illustrator.
 
   ![Poster Prints Favicon](documentation/features/favicon.png)
 
-* __Navbar__ - The Navbar is displayed on all pages and changes depending on whether the user is logged in or out or if admin when Organisations is then visible.
+* __Navbar__ 
+
+- The Navbar is displayed on all pages and has a drop down menu with the list changing depending whether logged in or out and whether a shopper or admin.
+- The Cart and the items in it are alwasy displayed for easy access.
+- Within the Navbar are links to the different categories of posters and a search bar.
+- On larger screens the logo acts as a home link which is pushed inside a dropdown menu on smaller screens. 
+- The Navbar alters depending on the the device used and a burger bar icon is used to display a dropdown of options on smaller devices and mobiles.
 
   Logged Out Navbar
-  - Log In, Register & Home links
-  - User Stories covered: 
+  - Log In, Register, Home, Gallery View, Category Options and Cart links
+  - User Stories covered: 1, 2, 5, 7, 11, 14, 16, 17 19
 
-  ![Logged Out Navbar](documentation/images/features/logged-out-navbar.png)
+  ![Logged Out Navbar](documentation/features/logged-out-navbar.png)
 
-  Logged In Navbar
-  - Home, Profile, Rave Reviews, Leave Reviews & Log Out Links
-  - User Stories covered: 
+  Logged In Navbar, Shopper
+  - Log In, Register, Home, Gallery View, Category Options, My Favourites, My Profile and Cart links
+  - User Stories covered: 1, 2, 5, 7, 11, 12, 14, 16, 17, 19
 
-  ![Logged In NavBar](documentation/images/features/logged-in-navbar.png)
+  ![Logged In Navbar, Shopper](documentation/features/logged-in-shopper.png)
 
-  Admin Logged In Navbar
-  - Home, Profile, Rave Reviews, Leave Reviews, Organisation & Log Out Links
-  - User Stories covered: 
+  Logged In Navbar, Admin
+  - Log In, Register, Home, Gallery View, Category Options, My Favourites, My Profile, Manage Items and Cart links
+  - User Stories covered: 1, 2, 5, 7, 11, 12, 14, 16, 19, 25
 
-  ![Admin Logged In NavBar](documentation/images/features/admin-logged-in.png)
+  ![Logged In Navbar, Admin](documentation/features/logged-in-admin.png)
+
+  Mobile Display
+
+    ![Mobile Navbar](documentation/features/mobile-navbar.gif)
 
 * __Footer__ 
 - The footer is displayed on all pages and includes social links, my GitHub link to this repository, a link to the contact page, the copyright year, and the logo.
