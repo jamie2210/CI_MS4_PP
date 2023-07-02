@@ -785,13 +785,25 @@ _ _ _
 
   ![Remove Product](documentation/features/bag/remove-product.png)
 
-- Grand Total / Secure Checkout
+- Grand Total / Secure Checkout:
 
   ![Grand Total / Checkout](documentation/features/bag/total.png)
 _ _ _
 
 ### Checkout
 _ _ _
+
+- Users Logged in or out can Checkout.
+- Users logged in can save their delivery information.
+- If a returning user with saved information, delivery details are populated.
+- Order details are listed on the right of the delivery information.
+- Payment is made via stripe.
+- User Stories Covered: 21, 22
+
+- Checkout Page
+
+  ![Checkout Page](documentation/features/checkout/checkout-page.png)
+_ _ _ 
 
 ### Checkout success
 _ _ _
