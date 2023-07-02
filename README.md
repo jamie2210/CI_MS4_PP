@@ -704,7 +704,7 @@ _ _ _
 _ _ _
 
 - Admin can delete products using the delete button
-- the button calls a model which confirms whether the user wants to delte the product.
+- The button calls a modal which confirms whether the user wants to delte the product.
 - Toast message confirms the product is deleted once actioned and urser returned to the All Products page
 - User Stories covered: 27
 
@@ -712,18 +712,51 @@ _ _ _
 
   ![Delete Button](documentation/features/products/delete-button.png)
 
-- Delete Model:
+- Delete Modal:
 
-  ![Delete model](documentation/features/products/delete-model.png)
+  ![Delete modal](documentation/features/products/delete-modal.png)
 
 - Product Deleted:
 
   ![Product Deleted](documentation/features/products/product-deleted.png)
-
-### Favourites
 _ _ _
 
-### Add to Favourites
+### Favourites & Add To Favourites
+_ _ _
+
+- Logged in users have access to adding and removing prosters from their favourites and a favourites page.
+- On the product detail page:
+  * Clicking the empty star icon adds the poster from the favourites page.
+  * On click the star becomes filled indicating the poster is in favourites and a toast confirms it so also.
+  * Clicking the filled star icon removes the poster from the favourites page.
+  * On click the star becomes empty indicating the poster is removed from favourites and a toast confirms it so also.
+- Access to the favourites page is via the 'My Account' drop down menu in the navbar.
+- All favourited posters are listed on the favourites page and can be removed there too.
+- User stories covered: 12
+
+- Add to Favourites:
+
+  ![Add to Favourites](documentation/features/favourites/add-favourite.png)
+
+- Added To Favourites:
+
+  ![Added to Favourites](documentation/features/favourites/favourite-added.png)
+
+- Remove from Favourites:
+
+  ![Add to Favourites](documentation/features/favourites/remove-favourite.png)
+
+- Removed from Favourites:
+
+  ![Added to Favourites](documentation/features/favourites/favourite-removed.png)
+
+- Favourites Page:
+
+  ![Favourites Page](documentation/features/favourites/favourites-page.png)
+
+- Favourites Page Remove Modal:
+
+  ![Favourites Page](documentation/features/favourites/favourites-page-modal.png)
 _ _ _
 
 ### Bag
