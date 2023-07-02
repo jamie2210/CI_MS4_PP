@@ -99,7 +99,7 @@ The primary goal of the website from a site users perspective is as follows:
 - To sort the list of available products by price and category
 - Search for a product by name or description and view the search results
 - To have a list of product favourites and to add/delete items from the list
-_ _ _
+
 
 ## Structure
 _ _ _
@@ -212,7 +212,7 @@ default_town_or_city, default_county, default_postcode and default_country
 ##### Contact Model
 - The Contact model presents a contact form
 - The model contains the following fields: contact_name, contact_email, contact_phone_number, contact_subject, contact_message, date, replied
-_ _ _
+
 
 ## Scope
 _ _ _
@@ -275,7 +275,8 @@ _ _ _
 | 25 | Store Owner | Add a poster | Upload new posters for sale to my store |
 | 26 | Store Owner | Edit/Update a poster | Change product prices, descriptions, sizes, images, stock and other product criteria |
 | 27 | Store Owner | Delete a poster | Remove posters that are no longer for sale |
-_ _ _
+| 28 | Store Owner | Ensure any errors direct the user back to the home page | Ensure I do not lose them as a customer |
+
 
 ## Skeleton
 _ _ _
@@ -331,7 +332,7 @@ _ _ _
 <img src="documentation/wireframes/errors.png">
 </details>
 
-_ _ _
+
 
 ## Surface
 _ _ _
@@ -360,7 +361,7 @@ Noto Serif is used through as the brands main font, 'Roboto' used throughout for
 <img src="documentation/images/roboto.png">
 </details>
 
-_ _ _
+
 
 # Features
 
@@ -392,15 +393,25 @@ Checkout |&#9989;        |&#9989;          |&#9989; |
 Checkout success |&#9989;        |&#9989;          |&#9989; |
 Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
-_ _ _
+
 
 __Defensive Programming__
 
-Defenisve programming is used throughout to prevent users accessing pages they do not have the permission to do so. For areas accesible only for admin checks are made and if the user is not a superuser they will be redirected automatically with a message diplayed exlpaning the action. Should a user not be logged in and try to access a page for logged in users, 'My Favourites' for example, the same will happen with a similar message alerted.
+Defenisve programming is used throughout to prevent users accessing pages they do not have the permission to do so. For areas accessible only for admin checks are made and if the user is not a superuser they will be redirected automatically with a message displayed explaining the action. Should a user not be logged in and try to access a page for logged in users, 'My Favourites' for example, the same will happen with a similar message alerted.
+
+<details><summary>Access Denied</summary>
+<img src="documentation/features/access-denied.png">
+</details>
+<br>
 
 __Stock Management__
 
 For stocked items checks have been made adding items to the bag and editting them agai oncein the bag. Quantity levels above the stock count will not be updated and a message will alert the user of the stock count. If stock is 3 or below a low stock message is displayed with the stock count in the product detail page allowing the user to act fast should the poster be close to out of stock. On purchasing a stocked item the quantity is adjusted depending on the quantity bought. This means there is potential for a low stocked item to be in multiple bags which could lead to upsetting the shopper. Due to time constraints I haven't had time to look into this further but one option would be to put a time limit on a low stocked item once it's in the bag before removing it from the bag if time ran out. It is something I would love to figure out given more time.
+
+<details><summary>Stock Alert</summary>
+<img src="documentation/features/stock-level.png">
+</details>
+<br>
 
 __Features I would like__
 
@@ -466,7 +477,6 @@ _ _ _
 
   ![Home Page](documentation/features/home-page.png)
 
-_ _ _
 
 ### Contact
 _ _ _
@@ -510,7 +520,6 @@ _ _ _
 
   ![Shop Owner / Staff Email](documentation/features/contact/new-message-email.png)
 
-_ _ _
 
 ### Register
 _ _ _
@@ -538,7 +547,6 @@ _ _ _
 
   ![Email Confirmed](documentation/features/register/email-confirmed.png)
 
-_ _ _
 
 ### Login
 _ _ _
@@ -563,7 +571,6 @@ _ _ _
 
   ![Email Confirmed](documentation/features/login-logout/view-options.png)
 
-_ _ _
 
 ### Log out
 _ _ _
@@ -583,7 +590,6 @@ _ _ _
 
   ![Return Home](documentation/features/login-logout/return-home.png)
 
-_ _ _
 
 ### Password Recovery / Reset
 _ _ _
@@ -615,7 +621,6 @@ _ _ _
 
   ![New Password Confirmation](documentation/features/password-reset/change-success.png)
 
-_ _ _ 
 
 ### Products
 _ _ _
@@ -630,7 +635,7 @@ _ _ _
 - All posters page and the options for sorting, search and categorising:
 
   ![All Posters](documentation/features/products/all-posters.png)
-_ _ _
+
 
 ### Product Detail
 _ _ _
@@ -662,7 +667,6 @@ _ _ _
 
   ![All Posters](documentation/features/products/favourites.png)
 
-_ _ _
 
 ### Product Management(Add Product)
 _ _ _
@@ -678,7 +682,7 @@ _ _ _
 - Save & Create Product:
 
   ![Save & Create Product](documentation/features/products/create.png)
-_ _ _ 
+
 
 ### Product Management(Edit Product)
 _ _ _
@@ -698,7 +702,7 @@ _ _ _
 - Save & Update Product:
 
   ![Save & Edit Product](documentation/features/products/edit.png)
-_ _ _ 
+
 
 ### Product Management(Delete Product)
 _ _ _
@@ -719,7 +723,7 @@ _ _ _
 - Product Deleted:
 
   ![Product Deleted](documentation/features/products/product-deleted.png)
-_ _ _
+
 
 ### Favourites & Add To Favourites
 _ _ _
@@ -757,7 +761,7 @@ _ _ _
 - Favourites Page Remove Modal:
 
   ![Favourites Page Modal](documentation/features/favourites/favourites-page-modal.png)
-_ _ _
+
 
 ### Bag
 _ _ _
@@ -788,7 +792,7 @@ _ _ _
 - Grand Total / Secure Checkout:
 
   ![Grand Total / Checkout](documentation/features/bag/total.png)
-_ _ _
+
 
 ### Checkout
 _ _ _
@@ -803,7 +807,7 @@ _ _ _
 - Checkout Page:
 
   ![Checkout Page](documentation/features/checkout/checkout-page.png)
-_ _ _ 
+
 
 ### Checkout success
 _ _ _
@@ -821,7 +825,7 @@ _ _ _
 
   ![Order Confirmation](documentation/features/checkout/order-confirmation.png)
 
-_ _ _
+
 
 ### Profile & Order History
 _ _ _
@@ -834,7 +838,16 @@ _ _ _
 - User Profile:
 
   ![User Profile](documentation/features/user-profile.png)
+
+### Error Pages
 _ _ _
+
+-  All error pages direct the user back to the home page via a button
+- User Stories covered: 28
+
+- Error Page:
+
+  ![Error Page](documentation/features/error-page.png)
 
 ## __Technologies Used__
 _ _ _
@@ -884,7 +897,7 @@ _ _ _
 - [Adobe Suite (Illustrator, Photoshop & InDesign)](https://www.adobe.com/uk/) - Graphic design software.
 - [Giphy](https://giphy.com/) - Video to gif conversion website for user story testing section.
 - [Font Awesome](https://fontawesome.com/search) - The icons used on the site from font awesome.
-- [Diagrams.net](https://app.diagrams.net/) - Flow chart maker used for database models.
+- [Quick DBD](https://www.quickdatabasediagrams.com/) - Flow chart maker used for database models.
 - [W3C validator](https://validator.w3.org/) - HTML validation testing.
 - [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) - CSS validation testing.
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) - Accessibility testing.
@@ -903,10 +916,7 @@ Stripe for the website is currently in developer mode, which allows the user to 
 | Success| Visa | 4242 4242 4242 4242 | A date in the future | Any 3 digits | Any 5 digits |
 | Require authorisation | 4000 0027 6000 3184 | A date in the future | Any 3 digits | Any 5 digits |
 | Declined | 4000 0000 0000 0002 | A date in the future | Any 3 digits | Any 5 digits |
-
 _ _ _
-
-
 
 ## __Testing__
 
