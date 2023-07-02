@@ -51,12 +51,12 @@ def add_to_bag(request, item_id):
                 bag[item_id]['items_by_size'][size] = quantity
                 messages.success(
                     request,
-                    f'Added size {size.upper()} {product.name} to your bag')
+                    f'Added size {size.upper()} {product.name} to your cart')
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
             messages.success(
                 request,
-                f'Added size {size.upper()} {product.name} to your bag')
+                f'Added size {size.upper()} {product.name} to your cart')
 
         total_cost = quantity * Decimal(price_value)
         bag[item_id]['total_cost'] = float(total_cost)
@@ -82,17 +82,17 @@ def add_to_bag(request, item_id):
                             bag[item_id]['quantity'] += quantity
                             messages.success(
                                 request, f'Updated {product.name} \
-                                quantity in bag')
+                                quantity in cart')
                         else:
                             bag[item_id]['quantity'] = quantity
                             messages.success(
                                 request, f'Added {quantity} x {product.name} \
-                            to bag')
+                            to cart')
                     else:
                         bag[item_id] = {'quantity': quantity}
                         messages.success(
                             request, f'Added {quantity} x {product.name} \
-                            to bag')
+                            to cart')
 
                 total_cost = bag[item_id][
                             'quantity'] * Decimal(product.price)
@@ -127,7 +127,7 @@ def adjust_bag(request, item_id):
             messages.success(
                     request,
                     f'Removed size {size.upper()} {product.name}'
-                    ' from your bag')
+                    ' from your cart')
     if not size:
         if quantity > 0:
             if quantity > product.stock:
@@ -141,7 +141,7 @@ def adjust_bag(request, item_id):
                          {product.name} to {quantity}')
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            messages.success(request, f'Removed {product.name} from your cart')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -164,10 +164,10 @@ def remove_item(request, item_id):
             messages.success(
                 request,
                 f'Removed size {size.upper()} {product.name}'
-                ' from your bag')
+                ' from your cart')
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            messages.success(request, f'Removed {product.name} from your cart')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
