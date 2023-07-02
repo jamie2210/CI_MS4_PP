@@ -1141,79 +1141,53 @@ else:
 26. Click on the link provided to access the application
 27. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
-_ _ _
-
 ## __Credits__
-
-Button display 
-https://stackoverflow.com/questions/26837928/how-can-i-hide-a-button-when-scrolled-to-the-top-of-a-page
-
-arrow button
-https://stackoverflow.com/questions/61491765/re-positioning-scroll-to-top-button-when-footer-appears-so-it-never-overlaps
-https://stackoverflow.com/questions/18053326/how-to-prevent-fixed-button-from-overlapping-footer-area-and-stop-the-button-on
-
-* [Materialize](https://materializecss.com/) is used throughout for CSS styling and some javascript / jquery
-
-* For Help with using AWS S3 buckets and python these were all very useful;
-
-    https://towardsdatascience.com/how-to-upload-and-download-files-from-aws-s3-using-python-2022-4c9b787b15f2
-
-    https://www.twilio.com/blog/media-file-storage-python-flask-amazon-s3-buckets
-
-    https://blog.filestack.com/tutorials/upload-files-amazon-s3-bucket-using-python/
-
-    https://www.youtube.com/watch?v=QSvw50mMQaQ
-
-    https://www.youtube.com/watch?v=7gqvV4tUxmY
-
-*   When adding a password confirmation Javascript feature that only enables the register button once both password entries are the same, this tutorial was very helpful;
-
-    https://www.youtube.com/watch?v=n5E_gxkLo6A
-
-*  For the pagination of the reviews these articles were of great help;
-
-    https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9
-
-    https://pythonhosted.org/Flask-paginate/
-
-    and these tutorials;
-
-    https://www.youtube.com/watch?v=CnBYLXA9zXY
-
-    https://www.youtube.com/watch?v=PSWf2TjTGNY&t=61s
-
-* For the send-email functionality I used some code from the code institute learning platform.
-
-* I used this stack overflow page to better understand exception handling;
-
-  https://stackoverflow.com/questions/33239308/how-to-get-exception-message-in-python-properly
-
-* For a better understanding on how to check for YouTube links in javascript I used this stack overflow thread;
-
-  https://stackoverflow.com/questions/28735459/how-to-validate-youtube-url-in-client-side-in-text-box
-
 _ _ _
+
+* The project is based on the Boutique Ado project by the Code Institute and was used as a basic for my project (https://github.com/Code-Institute-Solutions/boutique_ado_v1/)
+* Previous projects I have done on the course were used for guidance through.
+
+* [Bootstrap](https://getbootstrap.com/) is used throughout for CSS styling and some javascript / jquery
+
+* I used [Stack Overflow](https://stackoverflow.com/) for a lot of programming issues, for example;
+   - https://stackoverflow.com/questions/9490906/how-to-change-a-select-value-from-javascript
+   - https://stackoverflow.com/questions/61491765/re-positioning-scroll-to-top-button-when-footer-appears-so-it-never-overlaps
 
 ## __Content__
+_ _ _
 
 - [Font Awesome](#http://fontawesome.com)    
     - The icons used on the site from font awesome.
     
 - Fonts<br>
-    [Merriweather-sans](#https://fonts.google.com/specimen/Merriweather+Sans)    
-    - The text font Merriweather Sans is from Google fonts
+    [Noto Serif](https://fonts.google.com/noto/specimen/Noto+Serif?query=noto+ser)    
+    - The text font Noto Serif is used as the main logo font and stlying of the brand.
   
-  [PhillySans](#https://www.dafont.com/philly-sans.font)
-    - PhillySans was taken as a free font for personal use from dafont.
+  [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto)
+    - Robot is used for all other text throughout.
 
 _ _ _ 
 
-## __Media__
+## Media
 
-All images are either photos taken by me or uploaded by users of the site
+* __Source Unknown__ - For the purpose of this course and project I have taken images from the internet where I was unable to find the source and therefore credit the owner. If this sitr were to ever go live these images would be removed and never used for monetary gain. They are purely for the content of the course.
 
-All logos are designed by myself
+* Film Posters
+  * The majority of the film posters were sourced from [IMDb](https://www.imdb.com/)
+  * The Film posters that were not - __Source Unknown__
 
+* Graphic Design Posters
+  * Some Artwork is my own, which is stated on the product detail.
+  * The Artwork is not is as follows:
+    * Comic - __Source Unknown__
+    * Illustrations - __Source Unknown__ 
+      * Marilyn Monroe Art Print [Stars on Art](https://pixels.com/profiles/stars-onart)  
+    * Typography - [Freepik](https://www.freepik.com/free-photos-vectors/motivational-quotes)
+
+* Photography
+  * All photos are taken from [Pexels](https://www.pexels.com/)
+  * Each photo is credited to the photographer on the product details page.
+    
 _ _ _
 
 ## __Acknowledgements__
@@ -1221,7 +1195,7 @@ _ _ _
 I would like to take the opportunity to thank;
 
 - My mentor, Mo Shami, for his excellent feedback, advice support and guidance throughout.
-- Tutor support from Code Institute for their swift response.
+- Tutor support from Code Institute for their guidance when stuck on a particular problem with the bag app.
 - The slack community of coders for immediate and helpful response.
 - WAES College and my Tutor Michael for their support and help throughout.
 - My friends and family who have created accounts and tested the site and given valid feedback helping me fix bugs I was otherwise unaware of.
