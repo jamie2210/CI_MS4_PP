@@ -583,6 +583,39 @@ _ _ _
 
   ![Return Home](documentation/features/login-logout/return-home.png)
 
+_ _ _
+
+### Password Recovery / Reset
+_ _ _
+
+- User can recover their password if forgotten
+- User stories: 9
+
+- Click 'Forgotten Password?' link:
+
+  ![Forgotten Password](documentation/features/password-reset/forgotten-password.png)
+
+- Confirm email on the account:
+
+  ![Confirm Email](documentation/features/password-reset/reset-email.png)
+
+- Page confirms an email has been sent:
+
+  ![Email Sent](documentation/features/password-reset/reset-confirmation-email.png)
+
+- Email sent with reset link:
+
+  ![Reset Link](documentation/features/password-reset/reset-link.png)
+
+- Enter New Password:
+
+  ![New Password](documentation/features/password-reset/new-password.png)
+
+- New password confirmation page and toast:
+
+  ![New Password Confirmation](documentation/features/password-reset/change-success.png)
+
+
 ### Products
 _ _ _
 
