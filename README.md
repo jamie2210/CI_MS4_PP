@@ -403,7 +403,7 @@ Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 * __Navbar__ 
 
 - The Navbar is displayed on all pages and has a drop down menu with the list changing depending whether logged in or out and whether a shopper or admin.
-- The Cart and the items in it are alwasy displayed for easy access.
+- The Cart and the items in it are always displayed for easy access.
 - Within the Navbar are links to the different categories of posters and a search bar.
 - On larger screens the logo acts as a home link which is pushed inside a dropdown menu on smaller screens. 
 - The Navbar alters depending on the the device used and a burger bar icon is used to display a dropdown of options on smaller devices and mobiles.
@@ -442,6 +442,13 @@ Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
   <details><summary>Mobile Footer</summary>
   <img src="documentation/features/mobile-footer.png">
   </details>
+
+* __HomePage__
+
+- Home page consists of a welcome message and button that links to view the entire gallery of posters.
+- User Stories covered: 1
+
+  ![Home Page](documentation/features/home-page.png)
 
 ### __Main Content Features__
 
