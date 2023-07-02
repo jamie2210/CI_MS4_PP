@@ -496,19 +496,87 @@ _ _ _
 
 - Admin Backend:
 
-![Admin Backend](documentation/features/contact/replied.png)
+  ![Admin Backend](documentation/features/contact/replied.png)
 
 - Contact Success & Toast:
 
-![Contact Success](documentation/features/contact/contact-success.png)
+  ![Contact Success](documentation/features/contact/contact-success.png)
 
 - User Email:
 
-![User Email](documentation/features/contact/filled-out-form.png)
+  ![User Email](documentation/features/contact/filled-out-form.png)
 
 - Shop Owner / Staff email:
 
-![Shop Owner / Staff Email](documentation/features/contact/new-message-email.png)
+  ![Shop Owner / Staff Email](documentation/features/contact/new-message-email.png)
+
+_ _ _
+
+### Register
+_ _ _
+
+- To register an account a few steps must be made that verifies the user's email address before permitting the account.
+- User Stories covered: 
+
+- Fill out the Sign Up form:
+
+  ![Sign Up form](documentation/features/register/sign-up.png)
+
+- Receive a prompt top verify email:
+
+  ![Verify Email](documentation/features/register/confirmation-prompt.png)
+
+- Click link in verification email:
+
+  ![Verification Link](documentation/features/register/email-confirmation.png)
+
+- Click confirm button:
+
+  ![Confirm Button](documentation/features/register/confirm-email.png)
+
+- Email confirmation confirmed with success toast message and prompt to sign in:
+
+  ![Email Confirmed](documentation/features/register/email-confirmed.png)
+
+### Log in
+_ _ _
+
+### Log out  
+_ _ _
+
+### Products
+_ _ _
+
+### Product Detail
+_ _ _
+
+### Product Management(Add Product)
+_ _ _
+
+### Product Management(Edit Product)
+_ _ _
+
+### Product Management(Delete Product)
+_ _ _
+
+### Favourites
+_ _ _
+
+### Add to Favourites
+_ _ _
+
+### Bag
+_ _ _
+
+### Checkout
+_ _ _
+
+### Checkout success
+_ _ _
+
+### Profile & Order History
+_ _ _
+
 
 _ _ _
 
