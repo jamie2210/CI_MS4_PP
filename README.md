@@ -662,9 +662,23 @@ _ _ _
 
   ![All Posters](documentation/features/products/favourites.png)
 
+_ _ _
 
 ### Product Management(Add Product)
 _ _ _
+
+- Admin can add new products on the Product Management page
+- On saving user is taken to the new poroducts detial page and a toast confirms the product has been added.
+- User stories covered: 25
+
+- Add Product Details:
+
+  ![Add Product](documentation/features/products/add-product.png)
+
+- Save & Create Product:
+
+  ![Savfe & Create Product](documentation/features/products/create.png)
+_ _ _ 
 
 ### Product Management(Edit Product)
 _ _ _
