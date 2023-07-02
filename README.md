@@ -767,7 +767,7 @@ _ _ _
 - On clicking the icon the user is taken to the bag page (Shopping Cart on the site)
 - From there items can be removed or quantity updated each time confirming with toats message
 - There is a Grand Total and button to the secure checkout under the bag items
-- User Stories Covered: 18, 19, 20
+- User Stories Covered: 5, 18, 19, 20
 
 - Add product to Cart:
 
@@ -798,14 +798,29 @@ _ _ _
 - If a returning user with saved information, delivery details are populated.
 - Order details are listed on the right of the delivery information.
 - Payment is made via stripe.
-- User Stories Covered: 21, 22
+- User Stories Covered: 5, 21, 22
 
-- Checkout Page
+- Checkout Page:
 
   ![Checkout Page](documentation/features/checkout/checkout-page.png)
 _ _ _ 
 
 ### Checkout success
+_ _ _
+
+- Upon successful checkout a confimation email is sent detailing the order.
+- Checkout success page and toast message notifies the user the purchase has been successful. 
+- If a user is logged in, the order is stored to their profile. 
+- User Stories covered: 22, 23, 24 
+
+- Checkout Success:
+
+  ![Checkout Success](documentation/features/checkout/checkout-success.png)
+
+- Order Confirmation:
+
+  ![Order Confirmation](documentation/features/checkout/order-confirmation.png)
+
 _ _ _
 
 ### Profile & Order History
