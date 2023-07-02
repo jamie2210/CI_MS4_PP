@@ -430,11 +430,18 @@ Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
     ![Mobile Navbar](documentation/features/mobile-navbar.gif)
 
-* __Footer__ 
-- The footer is displayed on all pages and includes social links, my GitHub link to this repository, a link to the contact page, the copyright year, and the logo.
-- User Stories covered: 
 
-  ![Footer](documentation/images/features/footer.png)
+* __Footer__ 
+
+- The footer is displayed on all pages and includes social links, my GitHub link to this repository, contact details and a link to the contact page, the copyright year, and payment information.
+- It changes from a horizontal list to a vertical one depending on the screen size.
+- User Stories covered: 6
+
+  ![Footer](documentation/features/footer.png)
+  
+  <details><summary>Mobile Footer</summary>
+  <img src="documentation/features/mobile-footer.png">
+  </details>
 
 ### __Main Content Features__
 
