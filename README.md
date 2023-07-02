@@ -124,8 +124,8 @@ Add to Favourites     | Posters can be added or removed to/from a users favourit
 My Profile             | The users profile (delivery information) and previous orders is displayed       
 Order History         | An order history page, order details, the order information and price
 Register               | A user can register an account on the site with a valid email address
-Log in               | A user can login with a valid username and password  
-Log out               | A logout button is provided under the My Account link to logout    
+Login               | A user can login with a valid username and password  
+Logout               | A logout button is provided under the My Account link to logout    
 Bag / Cart | A user can add products to a shopping cart which contains each item in the order and an overall price / delivery if applicable   
 Checkout | A user can enter their delivery details and credit card information to checkout an order   
 Checkout success | Once an order is successful, the user can view the checkout success
@@ -239,7 +239,7 @@ _ _ _
 | 7 | Site User | Easily register for an account | Have a personal account and be able to view my profile |
 | 8 | Site User | Easily login or logout | Access my personal account information |
 | 9 | Site User | Easily recover my password incase I forget it | Recover access to my account |
-| 10 | Site User | Receive an email confimation after registering  | Verify that my account registration was successful |
+| 10 | Site User | Receive confimation after registering  | Verify that my account registration was successful |
 | 11 | Site User | Have a personalised user profile | View my personal order history and order confirmations, and save my payment information |
 
 | **Sorting & Searching** |
@@ -378,8 +378,8 @@ The navigation buttons update depending on whether a user is logged in or not, a
 Home     |&#9989;        |&#9989;          |&#9989; |
 Contact         |&#9989;         |&#9989;          |&#9989; |
 Register               |&#9989;        |&#10060;         |&#10060; |
-Log in               |&#9989;        |&#10060;         |&#10060; |
-Log out               |&#10060;       |&#9989;          |&#9989; |
+Login               |&#9989;        |&#10060;         |&#10060; |
+Logout               |&#10060;       |&#9989;          |&#9989; |
 Products           |&#9989;        |&#9989;          |&#9989; |
 Product Detail           |&#9989;        |&#9989;          |&#9989; |
 Product Management(Add Product)     |&#10060;       |&#10060;         |&#9989; |
@@ -516,7 +516,7 @@ _ _ _
 _ _ _
 
 - To register an account a few steps must be made that verifies the user's email address before permitting the account.
-- User Stories covered: 
+- User Stories covered: 7, 10
 
 - Fill out the Sign Up form:
 
@@ -538,7 +538,31 @@ _ _ _
 
   ![Email Confirmed](documentation/features/register/email-confirmed.png)
 
-### Log in
+_ _ _
+
+### Login
+_ _ _
+
+- Users log in via the 'My Account' icon dropdown menu in the navbar.
+- Once logged in they then have access to their favourites and profile via the same icon dropdown menu.
+- User stories covered:  8, 11, 12
+
+- Click Log In:
+
+  ![Email Confirmed](documentation/features/login-logout/login.png)  
+
+- Fill out Sign In form:
+
+  ![Email Confirmed](documentation/features/login-logout/sign-up.png)
+
+- Signed in confirmation toast:
+
+  ![Email Confirmed](documentation/features/login-logout/signed-in.png)  
+
+- Access logged in features:
+
+  ![Email Confirmed](documentation/features/login-logout/view-options.png)
+
 _ _ _
 
 ### Log out  
