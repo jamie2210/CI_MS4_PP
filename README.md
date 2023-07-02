@@ -703,6 +703,23 @@ _ _ _
 ### Product Management(Delete Product)
 _ _ _
 
+- Admin can delete products using the delete button
+- the button calls a model which confirms whether the user wants to delte the product.
+- Toast message confirms the product is deleted once actioned and urser returned to the All Products page
+- User Stories covered: 27
+
+- Delete Button:
+
+  ![Delete Button](documentation/features/products/delete-button.png)
+
+- Delete Model:
+
+  ![Delete model](documentation/features/products/delete-model.png)
+
+- Product Deleted:
+
+  ![Product Deleted](documentation/features/products/product-deleted.png)
+
 ### Favourites
 _ _ _
 
