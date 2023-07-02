@@ -164,7 +164,7 @@ def remove_item(request, item_id):
             messages.success(
                 request,
                 f'Removed size {size.upper()} {product.name}'
-                'from your bag')
+                ' from your bag')
         else:
             bag.pop(item_id)
             messages.success(request, f'Removed {product.name} from your bag')
