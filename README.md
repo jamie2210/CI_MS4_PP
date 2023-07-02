@@ -935,7 +935,10 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 1. Create an email account at google.com, login, navigate to Settings in your gmail account and then click on Other Google Account Settings
 2. Turn on 2-step verification and follow the steps to enable
 3. Click on app passwords, select Other as the app and give the password a name, for example Django
-<br>![App password](documentation/images/django.png)
+<br><details><summary>App Password</summary>
+<img src="documentation/deployment/django.png">
+</details>
+
 4. Click create and a 16 digit password will be generated, note the password down
 5. In the env.py file, create an environment variable called EMAIL_HOST_PASS with the 16 digit password
 6. In the env.py file, create an environment variable called EMAIL_HOST_USER with the email address of the gmail account
@@ -954,7 +957,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 2. Click on the Developers section of your account once logged in
 3. Under Developers, click on the API keys section
 <br><details><summary>API Keys</summary>
-<img src="documentation/images/api-keys.png">
+<img src="documentation/deployment/api-keys.png">
 </details>
 
 4. Note the values for the publishable and secret keys
@@ -966,7 +969,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://poster-prints-8ff329d79ba2.herokuapp.com//checkout/wh/
 8. Note the secret key created for this webhook
 <br><details><summary>Secret Key</summary>
-<img src="documentation/images/secret-key.png">
+<img src="documentation/deployment/secret-key.png">
 </details>
 
 9. In your local environment(env.py) and heroku, create environment variable STRIPE_WH_SECRET with the secret values
@@ -988,71 +991,59 @@ There are a number of applications that need to be configured to run this applic
 5. Enable the setting, and set the index.html and the error.html values
 6. In the Permissions section, click edit on the CORS configuration and set the below configuration
 <br><details><summary>AWS CORS</summary>
-<img src="documentation/images/aws-cors.png">
+<img src="documentation/deployment/aws-cors.png">
 </details>
 
 7. In the permissions section, click edit on the bucket policy and generate and set the below configuration (or similar to your settings)
 <br><details><summary>AWS Bucket Policy</summary>
-<img src="documentation/images/aws-bucket-policy.png">
+<img src="documentation/deployment/aws-bucket-policy.png">
 </details>
 
 8. In the permissions section, click edit on the Access control list(ACL)
 9. Set Read access for the Bucket ACL for Everyone(Public Access)
 10. The bucket is created, the next step is to open the IAM application to set up access
 11. Create a new user group named 'manage-poster-prints'
-13. Go to "Policies" and click "Create New Policy"
-14. Click "Import Managed Policy" and select "AmazonS3FullAccess" > Click 'Import'.
-15. In the JSON editor, update the policy "Resource" to the following
+12. Go to "Policies" and click "Create New Policy"
+13. Click "Import Managed Policy" and select "AmazonS3FullAccess" > Click 'Import'.
+14. In the JSON editor, update the policy "Resource" to the following
 <br><code>"Resource": [</code>
 <br><code>"arn:aws:s3:::poster-prints",</code>
 <br><code>"arn:aws:s3:::poster-prints/*"</code>
 <br><code>]</code>
 
-16. Give the policy a name and click "Create Policy"
-17. Add the newly created policy to the user group
+15. Give the policy a name and click "Create Policy"
+16. Add the newly created policy to the user group
 <br><details><summary>Added Policy</summary>
-<img src="documentation/images/poster-prints-policy.png">
+<img src="documentation/deployment/poster-prints-policy.png">
 </details>
 
-18. Go to Users and create a new user
-19. Add the user to the user group manage-poster-prints
-20. Select "Programmatic access" for the access type
-21. Note the AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID variables, they are used in other parts of this README for local deployment and Heroku setup
-22. The user is now created with the correct user group and policy
+17. Go to Users and create a new user
+18. Add the user to the user group manage-poster-prints
+19. Select "Programmatic access" for the access type
+20. Note the AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID variables, they are used in other parts of this README for local deployment and Heroku setup
+21. The user is now created with the correct user group and policy
 <br><details><summary>User & Policy</summary>
-<img src="documentation/images/user-policy.png">
+<img src="documentation/deployment/user-policy.png">
 </details>
 
-23. Note the AWS code in settings.py. Note an environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage
+22. Note the AWS code in settings.py. Note an environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage
 <br><details><summary>AWS Settings.py</summary>
-<img src="documentation/images/aws-settings.png">
+<img src="documentation/deployment/aws-settings.png">
 </details>
 
-24. These settings set up a cache policy, set the bucket name, and the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY that you set in your aws account
-25. The configuration also requires the media/static folders that must be setup in the AWS S3 bucket to store the media and static files 
-
-
-### Mongo Database
-Mongodb is the database used in the application
-1. Create an account at mongodb
-2. Create a database cluster
-3. Select the cluster, and in the collections section create a database and create 4 collections under the database: raves, organisation, users & comments.
-![Database](documentation/images/database.png)
-4. In the database access, create a user and allow the user read/write access. Note the username.
-5. In the network access tab, allow network access from the ip-address of the application connecting to the database.
-6. In the Databases section click Connect, and select connect your application.
-7. Note the MONGO_URI, MONGO_DBNAME and user, these parameters are used when deploying locally(env.py file) and deploying on the likes of heroku(config vars).
+23. These settings set up a cache policy, set the bucket name, and the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY that you set in your aws account
+24. The configuration also requires the media/static folders that must be setup in the AWS S3 bucket to store the media and static files 
 
 ### Local Deployment
-To run this project locally, you will need to clone the repository.
-1. Login to GitHub (https://wwww.github.com).
-2. Select the repository jamie2210/CI_MS3_RR.
-3. Click the Code button and copy the HTTPS url, for example: https://github.com/jamie2210/CI_MS3_RR
+To run this project locally, you will need to clone the repository
+1. Login to GitHub (https://wwww.github.com)
+2. Select the repository jamie2210/CI_MS3_PP
+3. Click the Code button and copy the HTTPS url, for example: https://github.com/jamie2210/CI_MS4_PP
 4. In your IDE, open a terminal and run the git clone command, for example 
 
-    ```git clone https://github.com/jamie2210/CI_MS3_RR```
+    ```git clone https://github.com/jamie2210/CI_MS4_PP```
 
-5. The repository will now be cloned in your workspace.
+5. The repository will now be cloned in your workspace
 6. Create an env.py file in the root folder in your project, and add in the following code with the relevant key, value pairs, and ensure you enter the correct key values<br>
 <code>import os</code><br>
 <code>os.environ.setdefault("IP", TO BE ADDED BY USER)</code><br>
@@ -1064,25 +1055,91 @@ To run this project locally, you will need to clone the repository.
 <code>os.environ.setdefault("AWS_SECRET_ACCESS_KEY", TO BE ADDED BY USER)</code>
 7. Install the relevant packages as per the requirements.txt file
 8. Start the application by running <code>python3 app.py</code>
+9. In the settings.py ensure the connection is set to either the Heroku postgres database or the local sqllite database
+10. Ensure debug is set to true in the settings.py file for local development
+11. Add localhost/127.0.0.1 to the ALLOWED_HOSTS variable in settings.py
+12. Run "python3 manage.py showmigrations" to check the status of the migrations
+13. Run "python3 manage.py migrate" to migrate the database
+14. Run "python3 manage.py createsuperuser" to create a super/admin user
+15. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+16. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+17. Run "python3 manage.py loaddata news.json" on the news file in news/fixtures to create the news items(optional)
+18. Start the application by running <code>python3 manage.py runserver</code>
+19. Open the application in a web browser
 
-### Heroku
-To deploy this application to Heroku, run the following steps.
-1. In the app.py file, ensure that debug is not enabled, i.e. set to True.
-2. Create a file called ProcFile in the root directory, and add the line <code>web: python app.py</code> if the file does not already exist.
-3. Create a requirements.txt file by running the command <code>pip freeze > requirements.txt</code> in your terminal if the file doesn't already exist.
-5. Both the ProcFile and requirements.txt files should be added to your git repo in the root directory.
-6. Create an account on heroku.com.
-7. Create a new application and give it a unique name.
-8. In the application dashboard, navigate to the deploy section and connect your application to your git repo, by selecting your repo.
-![Heroku dashboard](documentation/images/heroku_dashboard.png)
-9. Select the branch for example master and enable automatic deploys if desired. Otherwise, a deployment will be manual
-10. The next step is to set the config variables in the Settings section
-![Config vars](documentation/images/config.png)
-11. Set key/value pairs for the following keys: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, IP, MONGO_DBNAME, MONGO_URI, PORT, SECRET_KEY
-12. Go to the dashboard and trigger a deployment
-![Deploy](documentation/images/deploy.png)
-13. This will trigger a deployment, once the deployment has been successful click on the "Open App" link to open the app.
-14. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue.
+## Heroku and Postgres Database
+To deploy this application to Heroku, run the following steps;
+1. Create an account at heroku.com
+2. Create an app, give it a name for example poster-prints, and select a region
+3. Using ElephantSQL, create an account and the a new instance.    
+4. Note the DATABASE_URL, this can be set as an environment variable in your settings.py
+5. Install the plugins dj-database-url and psycopg2-binary.
+6. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+7. Create a Procfile with the text: web: gunicorn poster_prints.wsgi:application for example
+8. In the settings.py ensure the connection is to the Elephant SQL postgres database and the backend database is commented out
+```
+# DATABASES = {
+ #     'default': {
+ #         'ENGINE': 'django.db.backends.sqlite3',
+ #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+ #     }
+ # }
+     
+ DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+ }
+ ```
+9. Ensure not to commit while the URL is saved in the settings.py file
+10. Run "python3 manage.py showmigrations" to check the status of the migrations
+11. Run "python3 manage.py migrate" to migrate the database
+12. Run "python3 manage.py createsuperuser" to create a super/admin user
+13. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+14. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+15. Install gunicorn and add it to the requirements.tx file using the command pip3 freeze > requirements.txt
+16. To confirm the data has been created in hyour Elephant SQL database head to Elephant SQL
+17. From there go to browser and select 'auth_user' and select Execute, if succesful you will see the newly created superuser.
+<br><details><summary>Super User</summary>
+<img src="documentation/deployment/super-user.png">
+</details>
+
+18. With Elephant database set up, head to Heroku and in add the url to DATABASE_URL in the convig vars.
+19. Delete the DATABSES above and replace with
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR / 'db.sqlite3'),
+        }
+    }
+```
+20. From the CLI login to Heroku using the command heroku login -i;
+  * Enter your Heroku account email and press Enter.
+  * Next, you will be prompted to enter your API key. To obtain your API key, follow these steps:
+  * Open the Heroku Dashboard in your web browser and log in with your Heroku account credentials.
+  * Navigate to your Account Settings.
+  * Scroll down to the API Key section and click on "Reveal" to view your API key.
+  * Copy the API key.
+  * Return to your terminal or command prompt and paste the API key when prompted.
+21. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 --app
+22. Push the code to Heroku using the command git push heroku main
+23. Ensure the following environment variables are set in Heroku
+<br><details><summary>Config Vars</summary>
+<img src="documentation/deployment/config-vars.png">
+</details>
+
+24. Connect the app to GitHub, and enable automatic deploys from main
+<br><details><summary>Auto Deploy</summary>
+<img src="documentation/deployment/auto-deploy.png">
+</details>
+    
+25. Click deploy to deploy your application to Heroku for the first time
+26. Click on the link provided to access the application
+27. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 _ _ _
 
