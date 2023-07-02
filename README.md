@@ -1,5 +1,5 @@
 # Poster Prints
-(Developer: Jamie Letts)
+Developer: Jamie Letts
 
 ![Mockup image](documentation/images/device-display.jpg)
 
@@ -44,7 +44,7 @@ Poster Prints is an ecommerce poster website allowing users to purchase printed,
     + [Color Palette](#color-palette)
     + [Typography](#typography)
 2. [Features](#features)
-    * [Base template Features](#base-template-features)
+    * [Consistent Features](#consistent-features)
     * [Main Content Features](#main-content-features)
 3. [Technologies Used](#technologies-used)
     * [Languages](#languages)
@@ -366,7 +366,6 @@ _ _ _
 
 _ _ _
 
-# Features
 The website has 16 distinct features, and they are described below
 Pages are accessible by the 3 types of users
 1. A user not logged into the site
@@ -393,7 +392,7 @@ Checkout |&#9989;        |&#9989;          |&#9989; |
 Checkout success |&#9989;        |&#9989;          |&#9989; |
 Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
-### Conistent Features
+### Consistent Features
 
 * __Favicon__ - I designed the favicon in Illustrator
 
