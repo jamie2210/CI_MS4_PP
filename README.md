@@ -668,7 +668,7 @@ _ _ _
 _ _ _
 
 - Admin can add new products on the Product Management page
-- On saving user is taken to the new poroducts detial page and a toast confirms the product has been added.
+- On saving user is taken to the new products detail page and a toast confirms the product has been added.
 - User stories covered: 25
 
 - Add Product Details:
@@ -677,11 +677,28 @@ _ _ _
 
 - Save & Create Product:
 
-  ![Savfe & Create Product](documentation/features/products/create.png)
+  ![Save & Create Product](documentation/features/products/create.png)
 _ _ _ 
 
 ### Product Management(Edit Product)
 _ _ _
+
+- Admin can access the Edit Products page using the edit button
+- On saving user is taken to the edited products detail page and a toast confirms the product has been updated.
+- User stories covered: 26
+
+- Edit Button:
+
+  ![Edit Button](documentation/features/products/edit-button.png)
+
+- Edit Product Details:
+
+  ![Edit Product](documentation/features/products/edit-product.png)
+
+- Save & Update Product:
+
+  ![Save & Edit Product](documentation/features/products/edit.png)
+_ _ _ 
 
 ### Product Management(Delete Product)
 _ _ _
