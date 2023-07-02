@@ -980,19 +980,56 @@ _ _ _
 
 There are a number of applications that need to be configured to run this application locally or on a cloud based service, for example Heroku.
 
-### Amazon WebServices
-1. Create an account at https://aws.amazon.com
-2. Open the IAM application and create a new user
-3. Set the AmazonS3FullAccess for the user and note the users AWS ACCESS and SECRET keys
-![Iam](documentation/images/iam.png)
-4. Open the S3 application and create a new bucket. For the purpose of this application the bucket name is rave-reviews-bucket but this can be updated.
-5. With security best practices update the public access and policy bucket to enable the user created and the application access to read/write to the S3 bucket. Consult the AWS documentation if required: https://aws.amazon.com/s3/
-![Policies](documentation/images/access.png)
-6. The s3 bucket is now updated to be accessed by your application.
-7. In necessary route files update the variables BUCKET and image_url with the correct information that you have set up, for example:
-<br>
-<code>BUCKET = "rave-reviews-bucket"</code><br>
-<code>image_url = "https://rave-reviews-bucket.s3.eu-west-1.amazonaws.com/" </code>
+## Amazon WebServices
+1. Create an account at aws.amazon.com
+2. Open the S3 application and create an S3 bucket named "poster-prints"
+3. Uncheck the "Block All Public access setting"
+4. In the Properties section, navigate to the "Static Website Hosting" section and click edit
+5. Enable the setting, and set the index.html and the error.html values
+6. In the Permissions section, click edit on the CORS configuration and set the below configuration
+<br><details><summary>AWS CORS</summary>
+<img src="documentation/images/aws-cors.png">
+</details>
+
+7. In the permissions section, click edit on the bucket policy and generate and set the below configuration (or similar to your settings)
+<br><details><summary>AWS Bucket Policy</summary>
+<img src="documentation/images/aws-bucket-policy.png">
+</details>
+
+8. In the permissions section, click edit on the Access control list(ACL)
+9. Set Read access for the Bucket ACL for Everyone(Public Access)
+10. The bucket is created, the next step is to open the IAM application to set up access
+11. Create a new user group named 'manage-poster-prints'
+13. Go to "Policies" and click "Create New Policy"
+14. Click "Import Managed Policy" and select "AmazonS3FullAccess" > Click 'Import'.
+15. In the JSON editor, update the policy "Resource" to the following
+<br><code>"Resource": [</code>
+<br><code>"arn:aws:s3:::poster-prints",</code>
+<br><code>"arn:aws:s3:::poster-prints/*"</code>
+<br><code>]</code>
+
+16. Give the policy a name and click "Create Policy"
+17. Add the newly created policy to the user group
+<br><details><summary>Added Policy</summary>
+<img src="documentation/images/poster-prints-policy.png">
+</details>
+
+18. Go to Users and create a new user
+19. Add the user to the user group manage-poster-prints
+20. Select "Programmatic access" for the access type
+21. Note the AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID variables, they are used in other parts of this README for local deployment and Heroku setup
+22. The user is now created with the correct user group and policy
+<br><details><summary>User & Policy</summary>
+<img src="documentation/images/user-policy.png">
+</details>
+
+23. Note the AWS code in settings.py. Note an environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage
+<br><details><summary>AWS Settings.py</summary>
+<img src="documentation/images/aws-settings.png">
+</details>
+
+24. These settings set up a cache policy, set the bucket name, and the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY that you set in your aws account
+25. The configuration also requires the media/static folders that must be setup in the AWS S3 bucket to store the media and static files 
 
 
 ### Mongo Database
