@@ -565,8 +565,23 @@ _ _ _
 
 _ _ _
 
-### Log out  
+### Log out
 _ _ _
+
+- Users log out via the 'My Account' icon dropdown menu in the navbar
+- Userstories covered: 8
+
+- Click Logout:
+
+  ![Logout Link](documentation/features/login-logout/view-options.png)
+
+- Confirm Logout:
+
+  ![Confirm Logout](documentation/features/login-logout/confirm-logout.png)
+
+- User returned to home page with logout toast confirmation:
+
+  ![Return Home](documentation/features/login-logout/return-home.png)
 
 ### Products
 _ _ _
