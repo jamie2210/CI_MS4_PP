@@ -615,12 +615,53 @@ _ _ _
 
   ![New Password Confirmation](documentation/features/password-reset/change-success.png)
 
+_ _ _ 
 
 ### Products
 _ _ _
 
+- All posters can be viewed by any user whether logged in or out.
+- Categories are listed in the navbar for easy access as well as a search bar.
+- Sorting posters by various feilds is also an option.
+- the 'All Products' view is randomised to ensure users are always offered something new to encourage new purchases.
+- A banner is displayed advertising the free delivery threshold.
+- User stories covered: 1, 2, 13, 14, 15, 16, 17
+
+- All posters page and the options for sorting, search and categorising:
+
+  ![All Posters](documentation/features/products/all-posters.png)
+_ _ _
+
 ### Product Detail
 _ _ _
+
+- Any user can access the product detail page by clicking on the poster of choice.
+- when the mouse hovers over the poster it increases insize highlighting the selection if clicked.
+- On the product detail page the following is displayed:
+  * If the item has a second image it is diplayed, otherwise the same image is
+  * The Title
+  * The price
+  * Descriptions
+  * Size or size options if available
+  * Add to Favourites option if logged in
+  * Quantity options
+  * Call to action if low on stock
+  * 'Add To Cart' button
+
+- User stories covered: 3, 4, 12, 18
+
+- Stocked Item:
+
+  ![All Posters](documentation/features/products/stocked.png)
+
+- Item By Size:
+
+  ![All Posters](documentation/features/products/by-size.png)
+
+- Favourites Option (Logged in user)
+
+  ![All Posters](documentation/features/products/favourites.png)
+
 
 ### Product Management(Add Product)
 _ _ _
