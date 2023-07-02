@@ -341,9 +341,9 @@ _ _ _
 As posters are bought on their visual appeal I wanted to ensure they real;ly stood out against the rest of the website. It was important to me to create and warm and gentle design with sublte and calm colours and please fonts. The colours chosen are light and complement each other, none are vibrant or too strong ensuring the imagery of each poster is always the most eye catching.
 
 There are 4 primary colours in the color palette
-- 504e4d - Dark grey used for the majority of text on the website
-- f0eddf - The main light shade of yellow / cream used throughout
-- eee9cc - A slight lighter tone of a similar yellow / cream for text
+- 504e4d - Dark grey used for the majority of text on the website.
+- f0eddf - The main light shade of yellow / cream used throughout.
+- eee9cc - A slight lighter tone of a similar yellow / cream for text.
 - e5e3e2 - A sublte purple / grey used for the padding on the poster gallerys which also matches the wall on the home page image.
 
 
@@ -849,6 +849,7 @@ _ _ _
 
   ![Error Page](documentation/features/error-page.png)
 
+
 ## __Technologies Used__
 _ _ _
 
@@ -898,12 +899,13 @@ _ _ _
 - [Giphy](https://giphy.com/) - Video to gif conversion website for user story testing section.
 - [Font Awesome](https://fontawesome.com/search) - The icons used on the site from font awesome.
 - [Quick DBD](https://www.quickdatabasediagrams.com/) - Flow chart maker used for database models.
+- [Temp Mail](https://temp-mail.org/en/) - Temporary email account for testing registrations and orders.
 - [W3C validator](https://validator.w3.org/) - HTML validation testing.
 - [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) - CSS validation testing.
 - [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) - Accessibility testing.
 - [jshint](https://jshint.com/) - Javascript validation testing.
 - [pep8](http://ww7.pep8online.com/) - Python validation testing.
-- [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - For performance, accessibility, progressive web apps, SEO analysis of the project code
+- [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - For performance, accessibility, progressive web apps, SEO analysis of the project code.
 
 ### Stripe
 
@@ -916,28 +918,67 @@ Stripe for the website is currently in developer mode, which allows the user to 
 | Success| Visa | 4242 4242 4242 4242 | A date in the future | Any 3 digits | Any 5 digits |
 | Require authorisation | 4000 0027 6000 3184 | A date in the future | Any 3 digits | Any 5 digits |
 | Declined | 4000 0000 0000 0002 | A date in the future | Any 3 digits | Any 5 digits |
-_ _ _
 
-## __Testing__
+
+## Testing
+_ _ _
 
 The testing information and results for this project are documented in [TESTING.md](TESTING.md)
 
+
+## APIs & Configuration
 _ _ _
 
-## __APIs__
+### Google emails
 
-### Email JS
-1. Create an account at emailjs.com 
-2. In the integration screen in the emailjs dashboard, note your userid
-3. Create an email service in the Email Services section and note the id
-4. Create an email template in the Email templates section and note the id
-5. Update the script sendEmail.js, method sendMail with your user id, email service id and email template id.
+To set up the project to send emails and to use a Google account as an SMTP server, the following steps are required
+1. Create an email account at google.com, login, navigate to Settings in your gmail account and then click on Other Google Account Settings
+2. Turn on 2-step verification and follow the steps to enable
+3. Click on app passwords, select Other as the app and give the password a name, for example Django
+<br>![App password](documentation/images/django.png)
+4. Click create and a 16 digit password will be generated, note the password down
+5. In the env.py file, create an environment variable called EMAIL_HOST_PASS with the 16 digit password
+6. In the env.py file, create an environment variable called EMAIL_HOST_USER with the email address of the gmail account
+7. Set and confirm the following values in the settings.py file to successfully send emails
+<br><code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code>
+<br><code>EMAIL_USE_TLS = True</code>
+<br><code>EMAIL_PORT = 587</code>
+<br><code>EMAIL_HOST = 'smtp.gmail.com'</code>
+<br><code>EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')</code>
+<br><code>EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')</code>
+<br><code>DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')</code>
+8. You will also need to set the variables EMAIL_HOST_PASS and EMAIL_HOST_USER in your production instance, for example Heroku
+
+## Stripe
+1. Register for an account at stripe.com
+2. Click on the Developers section of your account once logged in
+3. Under Developers, click on the API keys section
+<br><details><summary>API Keys</summary>
+<img src="documentation/images/api-keys.png">
+</details>
+
+4. Note the values for the publishable and secret keys
+5. In your local environment(env.py) and heroku, create environment variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY with the publishable and secret key values
+<br><code>os.environ.setdefault('STRIPE_PUBLIC_KEY', 'YOUR_VALUE_GOES_HERE')</code>
+<br><code>os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')</code>
+
+6. Back in the Developers section of your stripe account click on Webhooks
+7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://poster-prints-8ff329d79ba2.herokuapp.com//checkout/wh/
+8. Note the secret key created for this webhook
+<br><details><summary>Secret Key</summary>
+<img src="documentation/images/secret-key.png">
+</details>
+
+9. In your local environment(env.py) and heroku, create environment variable STRIPE_WH_SECRET with the secret values
+<code>os.environ.setdefault('STRIPE_WH_SECRET', 'YOUR_VALUE_GOES_HERE')</code>
+
+10. Test out the webhook and note the success/fail attempts for troubleshooting
 
 _ _ _
 
-## __Deployment__
+## Deployment
 
-There are a number of applications that need to be configured to run this application locally or on a cloud based service, for example Heroku
+There are a number of applications that need to be configured to run this application locally or on a cloud based service, for example Heroku.
 
 ### Amazon WebServices
 1. Create an account at https://aws.amazon.com
