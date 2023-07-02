@@ -826,7 +826,14 @@ _ _ _
 ### Profile & Order History
 _ _ _
 
+- Once an account is created as is a profile. 
+- The user can save their delivery details there and view their order history.
 
+- User Stories Covered: 11
+
+- User Profile:
+
+  ![User Profile](documentation/features/user-profile.png)
 _ _ _
 
 ## __Technologies Used__
