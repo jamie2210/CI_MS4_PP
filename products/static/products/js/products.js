@@ -81,15 +81,15 @@ $('#new-image2').change(function() {
  * has image uploaded
  */
 document.addEventListener('DOMContentLoaded', function() {
+    if (!newImageInput) {
+        return; // Exit the function if the newImageInput is not present
+    }
     const newImageInput = document.getElementById('new-image');
     const newImage2Input = document.getElementById('new-image2');
     const imageButton = document.getElementById('image2-button');
     const imageUrl = document.getElementById('div_id_image2_url');
   
     newImageInput.addEventListener('change', function() {
-        if (!newImageInput) {
-            return; // Exit the function if the newImageInput is not present
-        }
         if (newImageInput.value) {
             newImage2Input.disabled = false;
             imageButton.hidden = false;
