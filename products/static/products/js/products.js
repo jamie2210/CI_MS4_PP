@@ -87,15 +87,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageUrl = document.getElementById('div_id_image2_url');
   
     newImageInput.addEventListener('change', function() {
-      if (newImageInput.value) {
-        newImage2Input.disabled = false;
-        imageButton.hidden = false;
-        imageUrl.hidden = false;
-      } else {
-        newImage2Input.disabled = true;
-        imageButton.hidden = true;
-        imageUrl.hidden = true;
-      }
+        if (!newImageInput) {
+            return; // Exit the function if the newImageInput is not present
+        }
+        if (newImageInput.value) {
+            newImage2Input.disabled = false;
+            imageButton.hidden = false;
+            imageUrl.hidden = false;
+        } else {
+            newImage2Input.disabled = true;
+            imageButton.hidden = true;
+            imageUrl.hidden = true;
+        }
     });
   
     // Disable / hide new-image2 and url initially if new-image is empty
