@@ -68,7 +68,7 @@ footer {
     background: #504e4d;
     color: #e5e3e2;
     visibility: hidden;
-    margin: none;
+    margin: 0;
     text-decoration: none;
 }
 
