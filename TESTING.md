@@ -67,11 +67,29 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
-When pasting in my index errors and warnings flagged were all linked to Materialize.
+All pass with no errors, occassional warning when webkits used.
 
-When validating just my own custom CSS file it passes with no errors with only 1 warning as it could not read the Google Fonts import.
-<details><summary>style.css</summary>
-<img src="documentation/testing/css_validation.png">
+
+<details><summary>base.css</summary>
+<img src="documentation/testing/css-base.png">
+</details><br>
+<details><summary>bag.css</summary>
+<img src="documentation/testing/css-bag.png">
+</details><br>
+<details><summary>checkout.css</summary>
+<img src="documentation/testing/css-checkout.png">
+</details><br>
+<details><summary>contact.css</summary>
+<img src="documentation/testing/css-contact.png">
+</details><br>
+<details><summary>favourites.css</summary>
+<img src="documentation/testing/css-favourites.png">
+</details><br>
+<details><summary>products.css</summary>
+<img src="documentation/testing/css-products.png">
+</details><br>
+<details><summary>profiles.css</summary>
+<img src="documentation/testing/css-profiles.png">
 </details><br>
 
 ### JavaScript Validation
