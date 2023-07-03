@@ -2,11 +2,12 @@
 
 ![Mockup image](documentation/images/device-display.jpg)
 
-[Live webpage](https://rave-reviews-app.herokuapp.com/)
+[Live webpage](https://poster-prints-8ff329d79ba2.herokuapp.com/)
 
 ## __Contents__
 
 1. [Automated Testing](#automated-testing)
+1. [Validation Testing](#validation-testing)
     * [HTML Validation](#HTML-validation)
     * [CSS Validation](#CSS-validation)
     * [JavaScript Validation](#javascript-validation)
@@ -19,20 +20,51 @@
     * [Testing User Stories](#testing-user-stories)
 3. [Bugs](#bugs)
 
-I consistently tested throughout the build of the project with Chrome developer tools, utilising print statements in python and checking for device compatibility at each stage of the development.
-_ _ _ 
+I consistently tested throughout the build of the project with Chrome developer tools, utilising print statements in python, writing unit tests for models, views and forms and checking for device compatibility at each stage of the development.
 
-## __Automated Testing__
+## Automated Testing
 
-### __HTML Validation__
+_ _ _
+
+- I wrote a number of unit tests(32) using the Django unit test framework [Django TestCase](https://docs.djangoproject.com/en/4.1/topics/testing/overview/)
+
+- I also used [coverage](https://pypi.org/project/coverage/) throughout for feedback on test written.
+
+- This is an area I look forward to learning more about and utilising as I progress as a developer as it's an area I know I can improve. I know it will prove more and more useful helping me write more robust and tested code for future projects.
+
+### Coverage Testing
+
+| App | Coverage | Results |
+| :---| :--- | :--- |
+| Home | 100% | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
+| Products | 69% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Bag | 74% | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
+| Checkout | 53% | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
+| Contact | 89% | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
+| Favourites | 69% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Profiles | 65%  | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
+
+## Validation Testing
+
+### HTML Validation
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
-Logged Out Home [results]()
+Home [results]()
+Products [results]()
+Products Detail [results]()
+Favourites [results]()
+Profile [results]()
+Contact [results]()
+Contact Success [results]()
+Bag [results]()
+Checkout [results]()
+Checkout Success [results]()
 
 
 
-### __CSS Validation__
+
+### CSS Validation
 
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
 When pasting in my index errors and warnings flagged were all linked to Materialize.
@@ -42,7 +74,7 @@ When validating just my own custom CSS file it passes with no errors with only 1
 <img src="documentation/testing/css_validation.png">
 </details><br>
 
-### __JavaScript Validation__
+### JavaScript Validation
 
 JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found. Only undefined variables flagged were those used for the emailjs functions.
 
@@ -52,7 +84,7 @@ OnClick buttons were flagged as unused, but /* exported */ feature was used to r
 <img src="documentation/testing/jshint.png">
 </details><br>
 
-### __Python Validation__
+### Python Validation
 
 [pep8ci](#https://pep8ci.herokuapp.com/) was the linter used to check the python code, all clear with no errors.
 <br>
@@ -65,7 +97,7 @@ OnClick buttons were flagged as unused, but /* exported */ feature was used to r
 <img src="documentation/testing/linter/authentication.png">
 </details>
 
-### __Accessibility__
+### Accessibility
 
 To ensure the site is accessible as possible I have taken the following steps;
 
@@ -78,7 +110,7 @@ To ensure the site is accessible as possible I have taken the following steps;
 
 Logged Out Home [results](https://wave.webaim.org/report#/https://rave-reviews-app.herokuapp.com/)
 
-### __Performance__
+### Performance
 
 Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be but for most of them, the lower ones especially, it was from labels or formatting within Materialize I which I could not change so it's not something I'm too worried about.
 <br>
@@ -89,9 +121,9 @@ Performance testing was done using lighthouse in chrome developer tools testing 
 
 _ _ _
 
-## __Manuel Testing__
+## Manuel Testing
 
-### __Device testing__
+### Device testing
 The website was tested on the following devices:
 - MacBook Pro
 - iPad Tablet
@@ -100,7 +132,7 @@ The website was tested on the following devices:
 
 In addition, the website was tested using Google Chrome Developer Tools device toggle option for all available device options.
 
-### __Browser Compatibility__
+### Browser Compatibility
 
 The website was tested on the following browsers:
 - Google Chrome
@@ -109,7 +141,7 @@ The website was tested on the following browsers:
 
 _ _ _
 
-### __Developer Feature Testing__
+### Developer Feature Testing
 
 | Feature | Testing Performed | Pass/Fail |
 | --- | --- | --- |
@@ -118,7 +150,7 @@ _ _ _
 
 _ _ _
 
-### __Testing User Stories__
+### Testing User Stories
 
 1. As a Shopper I want to be able to view a list of products so that I can select some to purchase.
 
@@ -133,7 +165,7 @@ _ _ _
 
 _ _ _
 
-## __Bugs__
+## Bugs
 
 code ```
     <div class="container">
