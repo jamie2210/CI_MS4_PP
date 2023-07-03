@@ -68,8 +68,6 @@ _ _ _
 - Errors [results](documentation/testing/errors.png)
 
 
-
-
 ### CSS Validation
 
 [W3C](https://validator.w3.org/) Jigsaw CSS Validation Service was used to validate the CSS of the website.
