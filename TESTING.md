@@ -94,12 +94,23 @@ All pass with no errors, occassional warning when webkits used.
 
 ### JavaScript Validation
 
-JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found. Only undefined variables flagged were those used for the emailjs functions.
+JSHint JS Validation Service was used to validate the Javascript files. All pass with no issues.
+All code from the Boutique Ado project was left out to ensure the testing was done on only my code.
 
-OnClick buttons were flagged as unused, but /* exported */ feature was used to remove the flags as they are called in the HTML files.
-
-<details><summary>script.js</summary>
-<img src="documentation/testing/jshint.png">
+<details><summary>base.js</summary>
+<img src="documentation/testing/js-base.png">
+</details><br>
+<details><summary>bag.js</summary>
+<img src="documentation/testing/js-bag.png">
+</details><br>
+<details><summary>favourites.js</summary>
+<img src="documentation/testing/js-favourites.png">
+</details><br>
+<details><summary>product_detail.js</summary>
+<img src="documentation/testing/js-product-detail.png">
+</details><br>
+<details><summary>products.js</summary>
+<img src="documentation/testing/js-products.png">
 </details><br>
 
 ### Python Validation
