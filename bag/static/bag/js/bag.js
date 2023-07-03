@@ -112,7 +112,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition + window.innerHeight >= footerOffset - 20) {
         // Button reached or passed the footer
-        var distanceToFooter = (scrollPosition + window.innerHeight) - footerOffset + 20; // calculates distance between butt0n and footer
+        var distanceToFooter = (scrollPosition + window.innerHeight) - footerOffset + 20; // calculates distance between button and footer
         var adjustedBottom = Math.max(20, distanceToFooter); // ensures distance between button and footer is 20px
         button.style.bottom = adjustedBottom + 'px';
     } else {
