@@ -20,29 +20,29 @@ Poster Prints is an ecommerce poster website allowing users to purchase printed,
 [Project Overview](#project-overview)
 
 1. [User Experience](#user-experience)
-  * [Strategy](#strategy)
-    + [Primary Goal](#primary-goal)
-  * [Structure](#structure)
-    + [Website pages](#website-pages)
-    + [Code Structure](#code-structure)
-    + [Database](#database)
-      - [Physical database model](#physical-database-model)
-      - [Models](#models)
-        * [User Model](#user-model)
-        * [UserProfile Model](#userprofile-model)
-        * [Order Model](#order-model)
-        * [OrderLineItem Model](#orderlineitem-model)
-        * [Favourites Model](#favourites-model)
-        * [Product Model](#product-model)
-        * [Category Model](#category-model)
-        * [Contact Model](#contact-model)
-  * [Scope](#scope)
-    + [User Stories](#user-stories)
-  * [Skeleton](#skeleton)
-    + [Wireframes](#wireframes)
-  * [Surface](#surface)
-    + [Color Palette](#color-palette)
-    + [Typography](#typography)
+    * [Strategy](#strategy)
+      * [Primary Goal](#primary-goal)
+    * [Structure](#structure)
+      * [Website pages](#website-pages)
+      * [Code Structure](#code-structure)
+      * [Database](#database)
+        * [Physical Database Model](#physical-database-model)
+        * [Models](#models)
+          * [User Model](#user-model)
+          * [UserProfile Model](#userprofile-model)
+          * [Order Model](#order-model)
+          * [OrderLineItem Model](#orderlineitem-model)
+          * [Favourites Model](#favourites-model)
+          * [Product Model](#product-model)
+          * [Category Model](#category-model)
+          * [Contact Model](#contact-model)
+    * [Scope](#scope)
+      * [User Stories](#user-stories)
+    * [Skeleton](#skeleton)
+      * [Wireframes](#wireframes)
+    * [Surface](#surface)
+      * [Color Palette](#color-palette)
+      * [Typography](#typography)
 2. [Features](#features)
     * [Consistent Features](#consistent-features)
     * [Main Content Features](#main-content-features)
@@ -54,19 +54,21 @@ Poster Prints is an ecommerce poster website allowing users to purchase printed,
     * [Programs](#programs)
 4. [Future Implementations](#future-implementations)
 5. [Testing](#testing)
-6. [Deployment](#deployment)
-  * [Amazon Webservices](#amazon-webservices)
-  * [Mongo Database](#mongo-database)
-  * [Local Deployment](#local-deployment)
-  * [Heroku](#heroku)
+6. [APIs & Configuration](#apis--configuration)
+    * [Google Emails](#google-emails)
+    * [Stripe](#stripe)
+7. [Deployment](#deployment)
+    * [Amazon Webservices](#amazon-webservices)
+    * [Local Deployment](#local-deployment)
+    * [Heroku & Postgres Database](#heroku--postgres-database)
 
-7. [Credits](#credits)
+8. [Credits](#credits)
 
-10. [Content](#content)
+9. [Content](#content)
 
-11. [Media](#media)
+10. [Media](#media)
 
-12. [Acknowledgements](#acknowledgements)
+11. [Acknowledgements](#acknowledgements)
 
 # Project Overview
 
@@ -394,7 +396,6 @@ Checkout success |&#9989;        |&#9989;          |&#9989; |
 Profile & Order History            |&#10060;       |&#9989;          |&#9989; |
 
 
-
 __Defensive Programming__
 
 Defenisve programming is used throughout to prevent users accessing pages they do not have the permission to do so. For areas accessible only for admin checks are made and if the user is not a superuser they will be redirected automatically with a message displayed explaining the action. Should a user not be logged in and try to access a page for logged in users, 'My Favourites' for example, the same will happen with a similar message alerted.
@@ -412,10 +413,6 @@ For stocked items checks have been made adding items to the bag and editting the
 <img src="documentation/features/stock-level.png">
 </details>
 <br>
-
-__Features I would like__
-
-With more time I would look into adding more stocked items and a larger viariety of displays including landscape posters with an option to search for landscape or portrait posters. Instead of using an 'up-to-top' button pagination could be used when items get to a certain number to avoid endlessly scrolling when the numbers are really high. For this project as the numbers are limited paired with the option to search by category it works well as it is. I would have also added a review and potentially a comment section but due to the time constraints I focused on adding a favourites page as I saw that as a more important feature. It was also new to me which encouraged me to learn more as a rating feature is included in the Boutique Ado walk through and I used pagination and a comment feature in my 3rd project.
 _ _ _
 
 ### Consistent Features
@@ -849,8 +846,16 @@ _ _ _
 
   ![Error Page](documentation/features/error-page.png)
 
+## Future Implementations
+_ _ _
 
-## __Technologies Used__
+- With more time I would look into adding more stocked items and a larger viariety of options including landscape posters with an option to search for landscape or portrait posters. I'd also add more choices of framed peices with options of frame to chose much like the option of size is currently.
+- Instead of using an 'up-to-top' button pagination could be used when items get to a certain number to avoid endlessly scrolling when the numbers are really high. For this project as the numbers are limited paired with the option to search by category it works well as it is.
+- I would have also added a review and potentially a comment section but due to the time constraints I focused on adding a favourites page as I saw that as a more important feature. It was also new to me which encouraged me to learn more as a rating feature is included in the Boutique Ado walk through and I used pagination and a comment feature in my 3rd project.
+- An option to sign up to a newsletter by joining a mailing list would also be a great feature allowing users to keep up-to-date with the latest prints / posters and deals on offer.
+- A sale items feauture would also be a nice addition for stock / prints that aren't selling as well as they should be.
+
+## Technologies Used
 _ _ _
 
 ## Languages
@@ -983,7 +988,7 @@ _ _ _
 
 There are a number of applications that need to be configured to run this application locally or on a cloud based service, for example Heroku.
 
-## Amazon WebServices
+## Amazon Web Services
 1. Create an account at aws.amazon.com
 2. Open the S3 application and create an S3 bucket named "poster-prints"
 3. Uncheck the "Block All Public access setting"
@@ -1067,7 +1072,7 @@ To run this project locally, you will need to clone the repository
 18. Start the application by running <code>python3 manage.py runserver</code>
 19. Open the application in a web browser
 
-## Heroku and Postgres Database
+## Heroku & Postgres Database
 To deploy this application to Heroku, run the following steps;
 1. Create an account at heroku.com
 2. Create an app, give it a name for example poster-prints, and select a region
