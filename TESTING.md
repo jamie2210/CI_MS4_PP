@@ -36,13 +36,13 @@ _ _ _
 
 | App | Coverage | Results |
 | :---| :--- | :--- |
-| Home | 100% | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
-| Products | 69% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
-| Bag | 74% | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
-| Checkout | 53% | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
-| Contact | 89% | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
-| Favourites | 69% | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
-| Profiles | 65%  | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
+| Home |  | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
+| Products |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Bag |  | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
+| Checkout | | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
+| Contact |  | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
+| Favourites |  | [Coverage Products](documentation/testing/coverage/coverage-favourites.png) |
+| Profiles |   | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
 
 ## Validation Testing
 
@@ -50,16 +50,16 @@ _ _ _
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
-Home [results]()
-Products [results]()
-Products Detail [results]()
-Favourites [results]()
-Profile [results]()
-Contact [results]()
-Contact Success [results]()
-Bag [results]()
-Checkout [results]()
-Checkout Success [results]()
+- Home [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2F)
+- Products [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F%3Frandom%3DTrue)
+- Products Detail [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F14%2F)
+- Favourites [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Ffavourites%2F)
+- Profile [results](https://poster-prints-8ff329d79ba2.herokuapp.com/profile/)
+- Contact [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcontact%2F)
+- Contact Success [results](documentation/testing/contact-success.png)
+- Bag [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fbag%2F)
+- Checkout [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2F)
+- Checkout Success [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2Fcheckout_success%2F2C24A64E7ED64A0CA1BADFAC4D905053)
 
 
 
