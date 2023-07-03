@@ -38,6 +38,8 @@ _ _ _
 | :---| :--- | :--- |
 | Home |  | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
 | Products |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Add Products |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
+| Edit Product |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
 | Bag |  | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
 | Checkout | | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
 | Contact |  | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
@@ -48,10 +50,12 @@ _ _ _
 
 ### HTML Validation
 
-The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
+[W3C](https://validator.w3.org/) Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
 - Home [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2F)
 - Products [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F%3Frandom%3DTrue)
+- Add Product [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fadd%2F)
+- Edit Product [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fedit%2F35%2F)
 - Products Detail [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F14%2F)
 - Favourites [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Ffavourites%2F)
 - Profile [results](https://poster-prints-8ff329d79ba2.herokuapp.com/profile/)
@@ -60,13 +64,15 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 - Bag [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fbag%2F)
 - Checkout [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2F)
 - Checkout Success [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2Fcheckout_success%2F2C24A64E7ED64A0CA1BADFAC4D905053)
+- Checkout Success [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2Fcheckout_success%2F2C24A64E7ED64A0CA1BADFAC4D905053)
+- Errors [results](documentation/testing/errors.png)
 
 
 
 
 ### CSS Validation
 
-The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
+[W3C](https://validator.w3.org/) Jigsaw CSS Validation Service was used to validate the CSS of the website.
 All pass with no errors, occassional warning when webkits used.
 
 
@@ -94,7 +100,7 @@ All pass with no errors, occassional warning when webkits used.
 
 ### JavaScript Validation
 
-JSHint JS Validation Service was used to validate the Javascript files. All pass with no issues.
+[JS Hint](https://jshint.com/) JS Validation Service was used to validate the Javascript files. All pass with no issues.
 All code from the Boutique Ado project was left out to ensure the testing was done on only my code.
 
 <details><summary>base.js</summary>
