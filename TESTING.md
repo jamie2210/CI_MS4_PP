@@ -225,4 +225,18 @@ code ```
             </div>
         </div>
     </div>
+```
+code ```
+    var star = document.querySelector('.fa-star');
+    var tool = document.querySelector('.tool');
+
+    star.addEventListener('mouseover', function() {
+        tool.style.visibility = 'visible';
+    });
+
+    star.addEventListener('mouseout', function() {
+        tool.style.visibility = 'hidden';
+    });
+    
+```
 
