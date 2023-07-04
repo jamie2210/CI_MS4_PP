@@ -200,7 +200,11 @@ _ _ _
 
 ## Bugs
 
-code ```
+_ _ _
+
+### Image Field
+
+```html
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 add-product-container">
@@ -226,7 +230,13 @@ code ```
         </div>
     </div>
 ```
-code ```
+
+### Tooltip
+
+- I could not get the bootstrap tooltip to work, followed everything for the correct Bootstrap version, but for some reason it would not work. I took it onmyself to create one myself as I really wanted this feature for the star / favourite icon.
+- This is the code I originally used.
+
+```Javascript
     var star = document.querySelector('.fa-star');
     var tool = document.querySelector('.tool');
 
@@ -236,7 +246,47 @@ code ```
 
     star.addEventListener('mouseout', function() {
         tool.style.visibility = 'hidden';
-    });
-    
+    });    
+```
+- The issue was that each time the icon was clicked and therefore changed as a favourite was added or remove the event listeners were still looking for the old icon. It was only after refreshing the page would the tooltip now show on mouse over.
+- While this worked ok I knoew it could work the way I wanted and should.
+- Below is the new working cord.
+
+```Javascript
+    const addStar = document.querySelector('.add');
+    const removeStar = document.querySelector('.remove');
+    const toolOne = document.querySelector('.tool1');
+    const toolTwo = document.querySelector('.tool2');
+
+    // function to toggle visibility
+    function toggleVisibility(element, isVisible) {
+        element.style.visibility = isVisible ? 'visible' : 'hidden';
+    }
+
+    // Event handler for mouseover events
+    function handleMouseOver(event) {
+        const target = event.target;
+        if (target === addStar) {
+        toggleVisibility(toolOne, true);
+        } else if (target === removeStar) {
+        toggleVisibility(toolTwo, true);
+        }
+    }
+
+    // Event handler for mouseout events
+    function handleMouseOut(event) {
+        const target = event.target;
+        if (target === addStar) {
+        toggleVisibility(toolOne, false);
+        } else if (target === removeStar) {
+        toggleVisibility(toolTwo, false);
+        }
+    }
+
+    // Attach the event listeners
+    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mouseout', handleMouseOut);
 ```
 
+- By creating individual classes for both icons and specific functions for each class the page no longer needs to refresh for the mouse over to display the tooltip or vice versa.
+- Its a much more long winded way of doing it for such a small feature, but it wass important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
