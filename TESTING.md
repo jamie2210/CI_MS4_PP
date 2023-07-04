@@ -122,12 +122,81 @@ All code from the Boutique Ado project was left out to ensure the testing was do
 [pep8ci](#https://pep8ci.herokuapp.com/) was the linter used to check the python code, all clear with no errors.
 <br>
 
-<details><summary>Index</summary>
-<img src="documentation/testing/linter/index.png">
-</details>
+| File | Result | Proof |
+| :--- | :--- | :---: |
+| custom_storages.py | Pass | [custom_storages.py validation](documentation/testing/linter/custom-storage.png) |
+| **POSTER_PRINTS** |
+| poster_prints/settings.py | Pass | [settings.py validation](documentation/testing/linter/settings.png) |
+| poster_prints/urls.py | Pass | [urls.py validation](documentation/testinglinter/urls.png) |
+| **BAG** |
+| bag/apps.py | Pass | [apps.py validation](documentation/testing/linter/bag-apps.png) |
+| bag/contexts.py | Pass | [contexts.py validation](documentation/testing/linter/bag-context.png) |
+| bag/urls.py | Pass | [urls.py validation](documentation/testinglinter/bag-urls.png) |
+| bag/views.py | Pass | [views.py validation](documentation/testing/linter/bag-views.png) |
+| bag/templatetags/bag_tools.py | Pass | [bag_tools.py validation](documentation/testing/linter/bag-tools.png)|
+| bag/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/bag-test-views.png) |
+| **CHECKOUT** |
+| checkout/admin.py | Pass | [admin.py validation](documentation/testing/linter/checkout-admin.png) |
+| checkout/apps.py | Pass | [apps.py validation](documentation/testing/linter/checkout-apps.png) |
+| checkout/forms.py | Pass | [forms.py validation](documentation/testing/linter/checkout-forms.png) |
+| checkout/models.py | Pass | [models.py validation](documentation/testing/linter/checkout-models.png) |
+| checkout/signals.py | Pass | [signals.py validation](documentation/testing/linter/checkout-signals.png) |
+| checkout/urls.py | Pass | [urls.py validation](documentation/testing/linter/checkout-urls.png) |
+| checkout/views.py | Pass | [views.py validation](documentation/testing/linter/checkout-views.png) |
+| checkout/webhook_handler.py | Pass | [webhook_handler.py](documentation/testing/linter/checkout-webhook-handler.png) |
+| checkout/webhooks.py | Pass| [webhooks.py](documentation/testing/linter/checkout-webhooks.png) |
+| checkout/test_forms.py | Pass | [test_forms.py validation](documentation/testing/linter/checkout-test-forms.png)|
+| checkout/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/checkout-test-models.png)|
+| checkout/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/checkout-test-views.png) |
+| **CONTACT** |
+| contact/admin.py | Pass |[admin.py validation](documentation/testing/linter/contact-admin.png) |
+| contact/apps.py | Pass | [apps.py validation](documentation/testing/linter/contact-apps.png) |
+| contact/forms.py | Pass | [forms.py validation](documentation/testing/linter/contact-forms.png) |
+| contact/models.py | Pass | [models.py validation](documentation/testing/linter/contact-models.png) |
+| contact/urls.py | Pass | [urls.py validation](documentation/testing/linter/contact-urls.png) |
+| contact/views.py | Pass | [views.py validation](documentation/testing/linter/contact-views.png) |
+| contact/test_forms.py | Pass | [test_forms.py validation](documentation/testing/linter/contact-test-forms.png) |
+| contact/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/contact-test-models.png) |
+| contact/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/contact-test-views.png) |
+| **FAVOURITES** |
+| favourites/apps.py | Pass | [apps.py validation](documentation/testing/linter/favourites-apps.png) |
+| favourites/contexts.py | Pass | [contexts.py validation](documentation/testing/linter/favourites-contexts.png) |
+| favourites/urls.py | Pass | [urls.py validation](documentation/testing/linter/favourites-urls.png) |
+| favourites/models.py | Pass | [models.py validation](documentation/testing/linter/favourites-models.png) |
+| favourites/views.py | Pass | [views.py validation](documentation/testing/linter/favourites-views.png) |
+| favourites/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/favourites-test-models.png)|
+| favourites/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/favourites-test-views.png) |
+| **HOME** |
+| home/apps.py | Pass | [apps.py validation](documentation/testing/linter/home-apps.png) |
+| home/urls.py | Pass | [urls.py validation](documentation/testing/linter/home-urls.png)|
+| home/views.py | Pass | [views.py validation](documentation/testing/linter/home-views.png) |
+| home/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/home-test-views.png) |
+| **PRODUCTS** |
+| products/admin.py | Pass | [admin.py validation](documentation/testing/linter/products-admin.png) |
+| products/apps.py | Pass | [apps.py validation](documentation/testing/linter/products-apps.png) |
+| products/forms.py | Pass | [forms.py validation](documentation/testing/linter/products-forms.png) |
+| products/models.py | Pass | [models.py validation](documentation/testing/linter/products-models.png) |
+| products/urls.py | Pass | [urls.py validation](documentation/testing/linter/products-urls.png) |
+| products/views.py | Pass | [views.py validation](documentation/testing/linter/products-views.png) |
+| products/widgets.py | Pass | [widgets.py validation](documentation/testing/linter/products-widgets.png) |
+| products/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/products-test-models.png) |
+| products/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/products-test-views.png) |
+| **PROFILES** |
+| profiles/apps.py | Pass | [apps.py validation](documentation/testing/linter/profiles-apps.png) |
+| profiles/forms.py | Pass | [forms.py validation](documentation/testing/linter/profiles-forms.png) |
+| profiles/models.py | Pass | [models.py validation](documentation/testing/linter/profiles-models.png) |
+| profiles/urls.py | Pass | [urls.py validation](documentation/testing/linter/profiles-urls.png) |
+| profiles/views.py | Pass | [views.py validation](documentation/testing/linter/profiles-views.png) |
+| profiles/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/profiles-test-models.png) |
+| profiles/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/profiles-test-views.png) |
 
-<details><summary>Authentication</summary>
-<img src="documentation/testing/linter/authentication.png">
+
+### Performance
+
+Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be but for most of them, the lower ones especially, it was from labels or formatting within Materialize I which I could not change so it's not something I'm too worried about.
+<br>
+<details><summary>Logged Out Home</summary>
+<img src="documentation/testing/lighthouse/logged-out-home.png">
 </details>
 
 ### Accessibility
@@ -142,16 +211,6 @@ To ensure the site is accessible as possible I have taken the following steps;
 [Wave accessibility](#https://wave.webaim.org/) was used to test the websites accessibility
 
 Logged Out Home [results](https://wave.webaim.org/report#/https://rave-reviews-app.herokuapp.com/)
-
-### Performance
-
-Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be but for most of them, the lower ones especially, it was from labels or formatting within Materialize I which I could not change so it's not something I'm too worried about.
-<br>
-<details><summary>Logged Out Home</summary>
-<img src="documentation/testing/lighthouse/logged-out-home.png">
-</details>
-
-
 _ _ _
 
 ## Manuel Testing
@@ -179,7 +238,6 @@ _ _ _
 | Feature | Testing Performed | Pass/Fail |
 | --- | --- | --- |
 | Links | Check all links navigate correctly | Pass |
-
 
 _ _ _
 
