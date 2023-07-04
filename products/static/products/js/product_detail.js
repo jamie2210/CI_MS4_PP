@@ -63,7 +63,7 @@ if (selectElement !== null) {
     });
 
 
-    function getOptionPrice(value) {
+    var getOptionPrice = function(value) {
         var itemPrice = selectElement.getAttribute('data-item-price');
         var prices = itemPrice.split(';').map(entry => entry.split(':'));
 
@@ -73,7 +73,7 @@ if (selectElement !== null) {
             }
         }
         return itemPrice;
-    }
+    };
 }
 
 // Retrieve the price value from the hidden input field
@@ -98,24 +98,24 @@ function toggleVisibility(element, isVisible) {
 }
 
 // Event handler for mouseover events
-function handleMouseOver(event) {
+const handleMouseOver = function (event) {
     const target = event.target;
     if (target === addStar) {
       toggleVisibility(toolOne, true);
     } else if (target === removeStar) {
       toggleVisibility(toolTwo, true);
     }
-}
+};
 
 // Event handler for mouseout events
-function handleMouseOut(event) {
+const handleMouseOut = function (event) {
     const target = event.target;
     if (target === addStar) {
       toggleVisibility(toolOne, false);
     } else if (target === removeStar) {
       toggleVisibility(toolTwo, false);
     }
-}
+};
 
 // Attach the event listeners
 document.addEventListener('mouseover', handleMouseOver);
