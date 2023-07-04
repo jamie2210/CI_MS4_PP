@@ -33,8 +33,8 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-center">
-                        <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2">Cancel</a>
-                        <button class="btn btn-dark rounded border-0 mt-2 mb-2">Edit Product</button>
+                        <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2" aria="go back to gallery">Cancel</a>
+                        <button class="btn btn-dark rounded border-0 mt-2 mb-2" aria-label="submit product edit">Edit Product</button>
                     </div>
                 </form>
             </div>

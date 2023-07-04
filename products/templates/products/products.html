@@ -11,7 +11,7 @@
             <div class="col-12 text-center mt-3">
                 <h2 class="logo-font title banner-title">Our Posters</h2>
                 {% for c in current_categories %}
-                <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none">
+                <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none" aria-label="go to product category">
                     <span class="p-2 link-dark mb-4 ml-1 mr-1 category-title">{{ c.friendly_name }}</span>
                 </a>
                 {% endfor %}
@@ -27,7 +27,7 @@
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
-                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" aria-label="sort products by selection">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -41,7 +41,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="text-dark"><a href="{% url 'products' %}">Posters Home</a> | </span>
+                                <span class="text-dark"><a href="{% url 'products' %}" aria-label="go to main gallery">Posters Home</a> | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
@@ -52,11 +52,11 @@
                         <div class="card-container col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card card-poster h-100 border-0">
                                 {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
+                                    <a href="{% url 'product_detail' product.id %}" aria-label="go to product detail page">
                                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
                                 {% else %}
-                                    <a href="{% url 'product_detail' product.id %}">
+                                    <a href="{% url 'product_detail' product.id %}" aria-label="go to product detail page">
                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                     </a>
                                 {% endif %}
@@ -81,8 +81,8 @@
                                             {% if request.user.is_superuser %}
                                             <!-- Edit and Delete Buttons -->
                                                 <div>
-                                                    <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1">Edit</a>
-                                                    <button data-target="#deleteModal-{{ product.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Delete</button>
+                                                    <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1" aria-label="go to product edit page">Edit</a>
+                                                    <button data-target="#deleteModal-{{ product.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal" aria-label="go to delete modal">Delete</button>
                                                 </div>
                                             {% endif %}
                                         </div>
@@ -105,11 +105,11 @@
                                         <p>This action is permanent and cannot be undone!</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="{% url 'delete_product' product.id %}" class="btn btn-dark rounded border-0">
+                                        <a href="{% url 'delete_product' product.id %}" class="btn btn-dark rounded border-0" aria-label="delete product, to go gallery">
                                         Delete
                                         <i class="fa-solid fa-trash ml-1"></i>
                                         </a>
-                                        <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal" aria-label="cancel, go to product detail page">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
         </div>
     </div>
 <div class="arrow-button btn btn-dark border-0">
-    <a class="d-flex h-100 justify-content-center icon-light">
+    <a class="d-flex h-100 justify-content-center icon-light" aria-label="to go top of the page">
         <i class="fa-regular fa-circle-up mx-auto my-auto"></i>
     </a>	
 </div>

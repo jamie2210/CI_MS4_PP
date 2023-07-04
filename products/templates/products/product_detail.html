@@ -19,15 +19,15 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image2 %}
-                <a href="{{ product.image2.url }}" target="_blank">
+                <a href="{{ product.image2.url }}" target="_blank" aria-label="go to product image">
                     <img class="card-img-top img-fluid" src="{{ product.image2.url }}" alt="{{ product.name }}">
                 </a>
                 {% elif product.image %}
-                <a href="{{ product.image.url }}" target="_blank">
+                <a href="{{ product.image.url }}" target="_blank" aria-label="go to product image">
                     <img class="card-img-top img-fluid w-75" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" aria-label="go to product image">
                 {% endif %}
             </div>
         </div>
@@ -41,7 +41,7 @@
                 {% endif %}
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
-                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted" aria-label="go to product category">
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>
                 </p>
@@ -75,8 +75,8 @@
                 {% if request.user.is_superuser %}
                     <!-- Edit and Delete Buttons -->
                     <div class="justify-content-center">
-                    <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-dark rounded border-0 mb-2">Edit</a>
-                    <button data-target="#deleteModal-{{ product.id }}" class="btn btn-sm btn-dark rounded border-0 mb-2" data-toggle="modal">Delete</button>
+                    <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-dark rounded border-0 mb-2" aria-label="go to product edit page">Edit</a>
+                    <button data-target="#deleteModal-{{ product.id }}" class="btn btn-sm btn-dark rounded border-0 mb-2" data-toggle="modal" aria-label="open delete modal">Delete</button>
                     </div>
 
                     <!-- Delete Modal -->
@@ -94,11 +94,11 @@
                                 <p>This action is permanent and cannot be undone!</p>
                             </div>
                             <div class="modal-footer">
-                              <a href="{% url 'delete_product' product.id %}" class="btn btn-dark rounded border-0">
+                              <a href="{% url 'delete_product' product.id %}" class="btn btn-dark rounded border-0" aria-label="delete product">
                                 Delete
                                 <i class="fa-solid fa-trash ml-1"></i>
                                 </a>
-                              <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal" aria-label="cancel delete, close modal">Close</button>
                             </div>
                           </div>
                         </div>
@@ -113,7 +113,7 @@
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
                                     <select class="form-control w-50 satin-print" name="product_size" id='id_product_size' 
-                                    data-item-price="a4:£14.99;a3:£19.99;a2:£24.99;a1:£29.99;a0:£39.99">
+                                    data-item-price="a4:£14.99;a3:£19.99;a2:£24.99;a1:£29.99;a0:£39.99" aria-label="choose product size">
                                         <option value="a4">A4 - £{{ product.a4_price }}</option>
                                         <option value="a3" selected>A3 - £{{ product.a3_price }}</option>
                                         <option value="a2">A2 - £{{ product.a2_price }}</option>
@@ -153,11 +153,11 @@
                             {% endif %}
                         {% endif %}
                         <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 detail-button">
+                            <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0 detail-button" aria-label="to go gallery page">
                                 <i class="fa-regular fa-circle-left"></i>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-dark border-0 text-uppercase btn-lg detail-button" value="Add to Cart">
+                            <input type="submit" class="btn btn-dark border-0 text-uppercase btn-lg detail-button" value="Add to Cart" aria-label="add product to shoppoing cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <!-- Hidden input field to store the price value -->
