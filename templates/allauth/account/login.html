@@ -40,10 +40,10 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
   {% endif %}
-  <a class="btn btn-dark rounded border-0 mr-1" href="{% url 'home' %}">Home</a>
-  <button class="btn btn-dark rounded border-0 ml-1" type="submit">{% trans "Sign In" %}</button>
+  <a class="btn btn-dark rounded border-0 mr-1" href="{% url 'home' %}" aria-label="go to home page">Home</a>
+  <button class="btn btn-dark rounded border-0 ml-1" type="submit" aria-label="submit sign in">{% trans "Sign In" %}</button>
   <p class="mt-2">
-    <a class="link-dark" href="{% url 'account_reset_password' %}">{% trans "Forgotten Password?" %}</a>
+    <a class="link-dark" href="{% url 'account_reset_password' %}" aria-label="go to password reset page">{% trans "Forgotten Password?" %}</a>
   </p>
 </form>
 
