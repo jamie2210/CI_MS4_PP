@@ -26,11 +26,11 @@
                     <div class="card-container col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card card-poster h-100 border-0">
                             {% if favourite.image %}
-                            <a href="{% url 'product_detail' favourite.id %}">
+                            <a href="{% url 'product_detail' favourite.id %}" aria-label="go to product detail page">
                                 <img class="card-img-top img-fluid" src="{{ favourite.image.url }}" alt="{{ favourite.name }}">
                             </a>
                             {% else %}
-                            <a href="{% url 'product_detail' favourite.id %}">
+                            <a href="{% url 'product_detail' favourite.id %}" aria-label="go to product detail page">
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ favourite.name }}">
                             </a>
                             {% endif %}
@@ -47,7 +47,7 @@
                                         {% endif %}
                                         {% if favourite.category %}
                                         <p class="small mt-1 mb-0">
-                                            <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                                            <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted" aria-label="go to product category page">
                                                 <i class="fas fa-tag mr-1"></i>{{ favourite.category.friendly_name }}
                                             </a>
                                         </p>
@@ -55,9 +55,11 @@
                                         <!-- Edit & Remove Buttons -->
                                         <div>
                                             {% if request.user.is_superuser %}
-                                                <a href="{% url 'edit_product' favourite.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1">Edit</a>
+                                                <a href="{% url 'edit_product' favourite.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1"
+                                                    aria-label="go to edit product detail page">Edit</a>
                                             {% endif %}
-                                            <button data-target="#deleteModal-{{ favourite.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" data-toggle="modal">Remove</button>
+                                            <button data-target="#deleteModal-{{ favourite.id }}" class="btn btn-sm btn-dark rounded border-0 mt-1" 
+                                                    data-toggle="modal" aria-label="go to remove product modal">Remove</button>
                                         </div>
                                     </div>
                                 </div>
@@ -78,11 +80,11 @@
                                     <p>Are you sure you want to remove <strong>{{ favourite.name }}</strong> from your favourites list?</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <a href="{% url 'remove_from_favourites_in_favourites' favourite.id %}" class="btn btn-dark rounded border-0">
-                                    Remove
+                                    <a href="{% url 'remove_from_favourites_in_favourites' favourite.id %}" class="btn btn-dark rounded border-0" 
+                                            aria-label="remove product from favourites">Remove 
                                     <i class="fa-solid fa-trash ml-1"></i>
                                     </a>
-                                    <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark rounded border-0" data-dismiss="modal" aria-label="cancel remove">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +93,7 @@
             </div>
             {% else %}
                 <p class="lead mb-5">You currently have no favourites</p>
-                <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0">
+                <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0" aria-label="to go poster gallery">
                     <i class="fa-regular fa-circle-left"></i>
                     <span class="text-uppercase">Keep Shopping</span>
                 </a>
@@ -100,7 +102,7 @@
     </div>
 </div>
 <div class="arrow-button btn btn-dark border-0">
-    <a class="d-flex h-100 justify-content-center icon-light">
+    <a class="d-flex h-100 justify-content-center icon-light" aria-label="go to top of the page">
         <i class="fa-regular fa-circle-up mx-auto my-auto"></i>
     </a>	
 </div>
