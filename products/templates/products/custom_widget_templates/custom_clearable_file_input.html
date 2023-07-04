@@ -12,12 +12,12 @@
 {% endif %}
 {% if widget.name == 'image2' %}
 <span id="image2-button" class="btn btn-dark rounded border-0 btn-file">
-    Select Image2 <input id="new-image2" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+    Select Image2 <input id="new-image2" aria-label="input new image 2" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <strong><p class="text-danger" id="filename2"></p></strong>
 {% else %}
 <span class="btn btn-dark rounded border-0 btn-file">
-    Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+    Select Image <input id="new-image" aria-label="input new image 2" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <strong><p class="text-danger" id="filename"></p></strong>
 {% endif %}
