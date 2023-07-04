@@ -23,30 +23,30 @@
 I consistently tested throughout the build of the project with Chrome developer tools, utilising print statements in python, writing unit tests for models, views and forms and checking for device compatibility at each stage of the development.
 
 ## Automated Testing
-
 _ _ _
 
 - I wrote a number of unit tests(32) using the Django unit test framework [Django TestCase](https://docs.djangoproject.com/en/4.1/topics/testing/overview/)
 
-- I also used [coverage](https://pypi.org/project/coverage/) throughout for feedback on test written.
+- I also used [coverage](https://pypi.org/project/coverage/) for feedback on the tests.
 
+### Testing Results
+
+A total of 32 test all passing with no errors.
+
+![tests](documentation/testing/tests.png)
+
+### Coverage Results
+
+<details><summary>Coverage Report</summary>
+<img src="documentation/testing/coverage-report.png">
+</details><br>
+
+- As you can see from the report, while I have written plenty of tests which pass, a lot of them miss resulting in a low coverage percentage.
 - This is an area I look forward to learning more about and utilising as I progress as a developer as it's an area I know I can improve. I know it will prove more and more useful helping me write more robust and tested code for future projects.
 
-### Coverage Testing
-
-| App | Coverage | Results |
-| :---| :--- | :--- |
-| Home |  | [Coverage Home](documentation/testing/coverage/coverage-home.png) |
-| Products |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
-| Add Products |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
-| Edit Product |  | [Coverage Products](documentation/testing/coverage/coverage-products.png) |
-| Bag |  | [Coverage Bag](documentation/testing/coverage/coverage-bag.png) |
-| Checkout | | [Coverage Checkout](documentation/testing/coverage/coverage-checkout.png)|
-| Contact |  | [Coverage Contact](documentation/testing/coverage/coverage-contact.png) |
-| Favourites |  | [Coverage Products](documentation/testing/coverage/coverage-favourites.png) |
-| Profiles |   | [Coverage Profiles](documentation/testing/coverage/coverage-profiles.png) |
-
 ## Validation Testing
+
+_ _ _
 
 ### HTML Validation
 
