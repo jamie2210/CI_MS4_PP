@@ -93,7 +93,7 @@
                                             <div class="form-group">
                                                 <div class="input-group w-50 justify-content-center">
                                                     <div class="input-group-prepend">
-                                                        <button class="decrement-qty btn-dark border-0" 
+                                                        <button class="decrement-qty btn-dark border-0" aria-label="decrement quantity"
                                                             data-item_id="{{ item.item_id }}" id="desk-decrement-qty_{{ item.item_id }}">
                                                             <i class="fa-regular qty-circle fa-circle-down"></i>
                                                         </button>
@@ -103,7 +103,7 @@
                                                                 data-item_id="{{ item.item_id }}"
                                                                 id="desk-id_qty_{{ item.item_id }}">
                                                     <div class="input-group-append">
-                                                        <button class="increment-qty btn-dark border-0"
+                                                        <button class="increment-qty btn-dark border-0" aria-label="increment quantity"
                                                             data-item_id="{{ item.item_id }}" id="desk-increment-qty_{{ item.item_id }}">
                                                             <i class="fa-regular qty-circle fa-circle-up"></i>
                                                         </button>
@@ -114,8 +114,8 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-dark"><small>Update</small></a>
-                                        <a class="remove-item float-right text-dark" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
+                                        <a class="update-link text-dark" aria-label="update product quantity"><small>Update</small></a>
+                                        <a class="remove-item float-right text-dark" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}" aria-label="remove product"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">£{{ item.price | calc_subtotal:item.quantity }}</p>
@@ -136,7 +136,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty</p>
-                    <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0">
+                    <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0" aria-label="to go main gallery">
                         <i class="fa-regular fa-circle-left"></i>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
@@ -144,7 +144,7 @@
             </div>
         </div>
         <div class="arrow-button btn btn-dark border-0">
-            <a class="d-flex h-100 justify-content-center icon-light">
+            <a class="d-flex h-100 justify-content-center icon-light" aria-label="go to top of the page">
                 <i class="fa-regular fa-circle-up mx-auto my-auto"></i>
             </a>	
         </div>
