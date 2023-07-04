@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-lg-none">
-            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="{% url 'home' %}" id="home-link" aria-label="to go home page">
                 Home
             </a>
         </li>
@@ -10,9 +10,9 @@
                 All Posters
             </a>
             <div class="dropdown-menu border" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item text-dark">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-dark">By Category</a>
-                <a href="{% url 'products' %}?random=True" class="dropdown-item text-dark" aria-label="view all posters">All Posters</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item text-dark" aria-label="arrange products by price">By Price</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item text-dark" aria-label="arrange products by category">By Category</a>
+                <a href="{% url 'products' %}?random=True" class="dropdown-item text-dark" aria-label="view all posters" aria-label="arrange products randomly">All Posters</a>
             </div>
         </li>
 
@@ -21,10 +21,10 @@
                 Photography
             </a>
             <div class="dropdown-menu border" aria-labelledby="photography-link">
-                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item text-dark">Landscapes</a>
-                <a href="{% url 'products' %}?category=architecture" class="dropdown-item text-dark">Architecture</a>
-                <a href="{% url 'products' %}?category=wildlife" class="dropdown-item text-dark">Widllife</a>
-                <a href="{% url 'products' %}?category=landscapes,architecture,wildlife" class="dropdown-item text-dark">All Photography</a>
+                <a href="{% url 'products' %}?category=landscapes" class="dropdown-item text-dark" aria-label="to go landscape posters">Landscapes</a>
+                <a href="{% url 'products' %}?category=architecture" class="dropdown-item text-dark" aria-label="to go architecture posters">Architecture</a>
+                <a href="{% url 'products' %}?category=wildlife" class="dropdown-item text-dark" aria-label="to go wildlife posters">Widllife</a>
+                <a href="{% url 'products' %}?category=landscapes,architecture,wildlife" class="dropdown-item text-dark" aria-label="to go all photography posters">All Photography</a>
             </div>
         </li>
 
@@ -33,10 +33,10 @@
                 Graphic Design
             </a>
             <div class="dropdown-menu border" aria-labelledby="graphics-link">
-                <a href="{% url 'products' %}?category=comics" class="dropdown-item text-dark">Comics</a>
-                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item text-dark">Illustrations</a>
-                <a href="{% url 'products' %}?category=typography" class="dropdown-item text-dark">Typography</a>
-                <a href="{% url 'products' %}?category=comics,illustrations,typography" class="dropdown-item text-dark">All Graphic Design</a>
+                <a href="{% url 'products' %}?category=comics" class="dropdown-item text-dark" aria-label="to go comic posters">Comics</a>
+                <a href="{% url 'products' %}?category=illustrations" class="dropdown-item text-dark" aria-label="to go illustration posters">Illustrations</a>
+                <a href="{% url 'products' %}?category=typography" class="dropdown-item text-dark" aria-label="to go typography posters">Typography</a>
+                <a href="{% url 'products' %}?category=comics,illustrations,typography" class="dropdown-item text-dark" aria-label="to go all graphic design posters">All Graphic Design</a>
             </div>
         </li>
 
@@ -45,10 +45,10 @@
                 Film
             </a>
             <div class="dropdown-menu border" aria-labelledby="text-link">
-                <a href="{% url 'products' %}?category=classics" class="dropdown-item text-dark">Classics</a>
-                <a href="{% url 'products' %}?category=action" class="dropdown-item text-dark">Action</a>
-                <a href="{% url 'products' %}?category=adventure" class="dropdown-item text-dark">Adventure</a>
-                <a href="{% url 'products' %}?category=classics,action,adventure" class="dropdown-item text-dark">All Film</a>
+                <a href="{% url 'products' %}?category=classics" class="dropdown-item text-dark" aria-label="to go classic posters">Classics</a>
+                <a href="{% url 'products' %}?category=action" class="dropdown-item text-dark" aria-label="to go action posters">Action</a>
+                <a href="{% url 'products' %}?category=adventure" class="dropdown-item text-dark" aria-label="to go adventure posters">Adventure</a>
+                <a href="{% url 'products' %}?category=classics,action,adventure" class="dropdown-item text-dark" aria-label="to go all film posters">All Film</a>
             </div>
         </li>
     </ul>

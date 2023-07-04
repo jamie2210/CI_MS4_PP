@@ -31,19 +31,19 @@
         <div class="dropdown-menu pl-2" aria-labelledby="user-option">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Manage Items</a>
+                <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="go to add product page">Manage Items</a>
             {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'view_favourites' %}" class="dropdown-item">My Favourites</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="{% url 'profile' %}" class="dropdown-item" aria-label="go to profile page">My Profile</a>
+            <a href="{% url 'view_favourites' %}" class="dropdown-item" aria-label="to go favourites page">My Favourites</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="to go logout page">Logout</a>
             {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Log In</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="to go registration page">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="to go login page">Log In</a>
             {% endif %}
         </div>
     </li>
     <li class="list-inline-item pr-2">
-        <a class="{% if grand_total  %} font-weight-bold {% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+        <a class="{% if grand_total  %} font-weight-bold {% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}" aria-label="to go shopping cart">
             <div class="text-center link-dark">
                 <div><i class="fa-solid fa-cart-shopping icon"></i></div>
                 <p class="my-0">
