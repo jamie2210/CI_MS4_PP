@@ -189,12 +189,12 @@
     <div class="row">
         <div class="col-12 text-center">
         {% if from_profile %}
-        <a href="{% url 'profile' %}" class="btn btn-dark border-0 rounded my-2">
+        <a href="{% url 'profile' %}" class="btn btn-dark border-0 rounded my-2" aria-label="go back to profile page">
             <i class="fa-solid fa-arrow-rotate-left mr-2"></i>
             <span class="upper-case">Back to Profile</span>
         </a>
         {% else %}
-            <a href="{% url 'products' %}?random=True" class="btn btn-dark border-0 rounded my-2">
+            <a href="{% url 'products' %}?random=True" class="btn btn-dark border-0 rounded my-2" aria-label="to go main gallery">
                 <i class="fa-solid fa-cart-shopping mr-2"></i>
                 <span class="upper-case">Keep Shopping!</span>
             </a>

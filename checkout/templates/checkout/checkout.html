@@ -37,9 +37,9 @@
                             <div class="col-2 mb-1">
                                 <a href="{% url 'product_detail' item.product.id %}">
                                     {% if item.product.image %}
-                                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}" aria-label="go to product page">
                                     {% else %}
-                                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                        <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" aria-label="go to product page">
                                     {% endif %}
                                 </a>
                             </div>
@@ -87,12 +87,12 @@
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
-								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+								<label class="form-check-label" for="id-save-info" aria-label="save delivery information">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
 								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
+                                    <a class="text-info" href="{% url 'account_signup' %}" aria-label="go to sign up page">Create an account</a> or 
+                                    <a class="text-info" href="{% url 'account_login' %}" aria-label="go to login page">login</a> to save this information
                                 </label>
 							{% endif %}
 						</div>
@@ -109,11 +109,11 @@
                     </fieldset>
                     <!-- Submit Button -->
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-dark border-0 rounded">
+						<a href="{% url 'view_bag' %}" class="btn btn-dark border-0 rounded" aria-label="go to cart">
                             <i class="fa-regular fa-circle-left"></i>
 							<span>Adjust Cart</span>
 						</a>
-						<button id="submit-button" class="btn btn-dark border-0 rounded">
+						<button id="submit-button" class="btn btn-dark border-0 rounded" aria-label="submit payment">
 							<span class="font-weight-bold">BUY NOW</span>
 						</button>
 						<p class="small text-danger my-0">
