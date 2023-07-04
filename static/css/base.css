@@ -37,7 +37,7 @@ body {
 }
 
 .index-image {
-    background: url('/media/wall.png') no-repeat center center fixed;
+    background: url('/media/wall.webp') no-repeat center center fixed;
     background-size: cover;
     color: #504e4d;
     height: 100vh;
