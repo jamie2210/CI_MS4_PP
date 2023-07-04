@@ -87,13 +87,36 @@ sessionStorage.setItem('priceValue', priceValue);
  * Create tooltip banner for favourties star icon depending
  * on if poster in favourites or not
  */
-var star = document.querySelector('.fa-star');
-var tool = document.querySelector('.tool');
+const addStar = document.querySelector('.add');
+const removeStar = document.querySelector('.remove');
+const toolOne = document.querySelector('.tool1');
+const toolTwo = document.querySelector('.tool2');
 
-star.addEventListener('mouseover', function() {
-    tool.style.visibility = 'visible';
-});
+// function to toggle visibility
+function toggleVisibility(element, isVisible) {
+    element.style.visibility = isVisible ? 'visible' : 'hidden';
+}
 
-star.addEventListener('mouseout', function() {
-    tool.style.visibility = 'hidden';
-});
+// Event handler for mouseover events
+function handleMouseOver(event) {
+    const target = event.target;
+    if (target === addStar) {
+      toggleVisibility(toolOne, true);
+    } else if (target === removeStar) {
+      toggleVisibility(toolTwo, true);
+    }
+}
+
+// Event handler for mouseout events
+function handleMouseOut(event) {
+    const target = event.target;
+    if (target === addStar) {
+      toggleVisibility(toolOne, false);
+    } else if (target === removeStar) {
+      toggleVisibility(toolTwo, false);
+    }
+}
+
+// Attach the event listeners
+document.addEventListener('mouseover', handleMouseOver);
+document.addEventListener('mouseout', handleMouseOut);

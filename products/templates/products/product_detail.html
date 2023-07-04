@@ -61,14 +61,14 @@
                     {% if product_in_favourites %}
                         <p>
                             <a href="{% url 'remove_from_favourites_in_products_detail' product.id %}" aria-label="remove product from favourites">
-                            <i class="icon fa-solid fa-star product-star"></i></a>
-                            <span class="border-0 rounded p-2 tool">Remove from favourites</span>
+                            <i class="icon fa-solid fa-star product-star remove"></i></a>
+                            <span class="border-0 rounded p-2 tool2">Remove from favourites</span>
                         </p>
                     {% else %}
                         <p>
                             <a href="{% url 'add_to_favourites' product.id %}" aria-label="add product to favourites">
-                            <i class="icon fa-regular fa-star product-star"></i></a>
-                            <span class="border-0 rounded p-2 tool">Add to favourites</span>
+                            <i class="icon fa-regular fa-star product-star add"></i></a>
+                            <span class="border-0 rounded p-2 tool1">Add to favourites</span>
                         </p>
                     {% endif %}
                 {% endif %}

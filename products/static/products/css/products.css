@@ -64,7 +64,15 @@ footer {
     text-decoration: none;
 }
 
-.tool {
+.tool1 {
+    background: #504e4d;
+    color: #e5e3e2;
+    visibility: hidden;
+    margin: 0;
+    text-decoration: none;
+}
+
+.tool2 {
     background: #504e4d;
     color: #e5e3e2;
     visibility: hidden;
