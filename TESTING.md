@@ -252,7 +252,7 @@ To ensure the site is accessible as possible I have taken the following steps;
 - Using semantic HTML.
 - Descriptive alt attributes on images.
 - Label functions and links to ensure clarity of the roles of each button, icon or clickable feature.
-- Ensuring that there is a sufficient colour contrast throughout the site (There are contrast flags throughout the WAVE reporting but I am happy with the way the site is represented in these case as a low contrast was my intention and part of the design. I am happy with the visibility of each flag so have left them as they are and they are all labelled with descriptions.)
+- Ensuring that there is a sufficient colour contrast throughout the site.
 
 [Wave accessibility](#https://wave.webaim.org/) was used to test the websites accessibility
 
@@ -263,12 +263,14 @@ To ensure the site is accessible as possible I have taken the following steps;
 - Contact Success [results]()
 - Favourites [results]()
 - Home [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/)
-- Products [results]()
-- Product Detail [results]()
+- Products [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/products/?random=True)
+- Product Detail [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/products/47/)
 - Product - Add [results]()
 - Product - Edit [results]()
 - Profile [results]()
 - Errors [results]()
+- Register [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/accounts/signup/)
+- Sign In [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/accounts/login/)
 _ _ _
 
 ## Manuel Testing
