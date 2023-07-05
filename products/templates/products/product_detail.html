@@ -33,15 +33,15 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
+                <h2 class="mb-1">{{ product.name }}</h2>
                 {% if product.has_sizes %}
-                <p class="lead mb-0 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">£{{ product.a3_price }}</p>
+                <h3 class="lead mb-1 text-left font-weight-bold" id="price-display" data-product-price="{{ product.price }}">£{{ product.a3_price }}</h3>
                 {% else %}
-                <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                <h3 class="lead mb-1 text-left font-weight-bold">£{{ product.price }}</h3>
                 {% endif %}
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
-                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted" aria-label="go to product category">
+                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="link-dark" aria-label="go to product category">
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>
                 </p>
