@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center mt-3">
-                <h2 class="logo-font title banner-title">Our Posters</h2>
+                <h1 class="logo-font title banner-title">Our Posters</h1>
                 {% for c in current_categories %}
                 <a href="{% url 'products' %}?category={{ c.name }}" class="category-badge text-decoration-none" aria-label="go to product category">
                     <span class="p-2 link-dark mb-4 ml-1 mr-1 category-title">{{ c.friendly_name }}</span>
