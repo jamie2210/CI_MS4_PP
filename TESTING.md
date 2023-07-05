@@ -248,7 +248,7 @@ Performance testing was done using lighthouse in chrome developer tools testing 
 **Lighthouse Mobile Test Results**
 
 <details><summary>Bag</summary>
-<img src="documentation/testing/lighthouse/lighthouse-cart.png">
+<img src="documentation/testing/lighthouse/mobile-cart.png">
 </details><br>
 <details><summary>Checkout</summary>
 <img src="documentation/testing/lighthouse/mobile-checkout.png">
