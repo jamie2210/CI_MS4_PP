@@ -35,20 +35,20 @@
                             </a>
                             {% endif %}
                             <div class="card-body pb-0">
-                                <p class="mb-0">{{ favourite.name }}</p>
+                                <h2 class="mb-0">{{ favourite.name }}</h2>
                             </div>
                             <div class="card-footer pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
                                         {% if favourite.has_sizes %}
-                                        <p class="lead mb-0 text-left font-weight-bold">£{{ favourite.a4_price }}</p>
+                                        <p class="lead mb-0 text-left font-weight-bold"><small>From</small>£{{ favourite.a4_price }}</p>
                                         {% else %}
                                         <p class="lead mb-0 text-left font-weight-bold">£{{ favourite.price }}</p>
                                         {% endif %}
                                         {% if favourite.category %}
                                         <p class="small mt-1 mb-0">
-                                            <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted" aria-label="go to product category page">
-                                                <i class="fas fa-tag mr-1"></i>{{ favourite.category.friendly_name }}
+                                            <a href="{% url 'products' %}?category={{ product.category.name }}" aria-label="go to product category page">
+                                                <i class="fas fa-tag mr-1"></i><em>{{ favourite.category.friendly_name }}</em>
                                             </a>
                                         </p>
                                         {% endif %}

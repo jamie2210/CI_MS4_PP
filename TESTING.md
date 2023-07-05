@@ -256,7 +256,7 @@ To ensure the site is accessible as possible I have taken the following steps;
 
 [Wave accessibility](#https://wave.webaim.org/) was used to test the websites accessibility
 
-- Bag [results]()
+- Bag [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/bag/)
 - Checkout [results]()
 - Checkout Success [results]()
 - Contact [results]()

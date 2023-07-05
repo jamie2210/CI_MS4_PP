@@ -61,20 +61,20 @@
                                     </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <h2 class="mb-0">{{ product.name }}</h2>
                                 </div>
                                 <div class="card-footer pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
                                             {% if product.has_sizes %}
-                                            <p class="lead mb-0 text-left font-weight-bold"><small class="text-muted">From</small> £{{ product.a4_price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold"><small>From</small> £{{ product.a4_price }}</p>
                                             {% else %}
                                             <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                             {% endif %}
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
-                                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                <a href="{% url 'products' %}?category={{ product.category.name }}"aria-label="go to product category page">
+                                                    <i class="fas fa-tag mr-1"></i><em>{{ product.category.friendly_name }}</em>
                                                 </a>
                                             </p>
                                             {% endif %}
