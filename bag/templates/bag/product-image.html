@@ -1,5 +1,5 @@
 {% if item.product.image %}
-    <img class="img-fluid bag-image" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+    <img class="img-fluid bag-image" src="{{ item.product.image.url }}" alt="{{ item.product.name }}" aria-label="to go product page">
 {% else %}
-    <img class="img-fluid bag-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+    <img class="img-fluid bag-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}" aria-label="go to product page">
 {% endif %}
