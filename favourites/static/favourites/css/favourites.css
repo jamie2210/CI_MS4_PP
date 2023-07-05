@@ -26,6 +26,10 @@
     background: #e5e3e2;
 }
 
+.card-container h2 {
+    font-size: x-large;
+}
+
 .card-footer,
 .card-body {
     padding-left: 0;

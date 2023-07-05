@@ -7,7 +7,7 @@
 
 {% block inner_content %}
 
-  <h2 class="logo-font allauth-title mb-4">{% trans "Sign In" %}</h2>
+  <h1 class="logo-font allauth-title mb-4">{% trans "Sign In" %}</h1>
   <hr class="mb-4">
 
 {% get_providers as socialaccount_providers %}
@@ -31,7 +31,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+<strong><a href="{{ signup_url }}" class="link-dark">sign up</a></strong> first.{% endblocktrans %}</p>
 {% endif %}
 
 <form class="login mb-4" method="POST" action="{% url 'account_login' %}">

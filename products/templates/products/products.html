@@ -67,13 +67,13 @@
                                     <div class="row">
                                         <div class="col">
                                             {% if product.has_sizes %}
-                                            <p class="lead mb-0 text-left font-weight-bold"><small>From</small> £{{ product.a4_price }}</p>
+                                            <h3 class="lead mb-1 mt-1 text-left font-weight-bold"><small>From</small> £{{ product.a4_price }}</h3>
                                             {% else %}
-                                            <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                            <h3 class="lead mb-1 mt-1 text-left font-weight-bold">£{{ product.price }}</h3>
                                             {% endif %}
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0">
-                                                <a href="{% url 'products' %}?category={{ product.category.name }}"aria-label="go to product category page">
+                                            <p class="small mt-1 mb-0 tag">
+                                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="link-dark" aria-label="go to product category page">
                                                     <i class="fas fa-tag mr-1"></i><em>{{ product.category.friendly_name }}</em>
                                                 </a>
                                             </p>
@@ -95,7 +95,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title logo-font">Delete Product</h5>
+                                        <h3 class="modal-title logo-font">Delete Product</h3>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                         </button>

@@ -6,10 +6,10 @@
 
 {% block inner_content %}
 
-    <h2 class="logo-font allauth-title mb-4">{% trans "Sign Up" %}</h2>
+    <h1 class="logo-font allauth-title mb-4">{% trans "Sign Up" %}</h1>
     <hr class="mb-4">
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<p>{% blocktrans %}Already have an account? Then please <strong><a href="{{ login_url }}" class="link-dark">sign in</a></strong>.{% endblocktrans %}</p>
 
 <form class="signup mb-4" id="signup_form" method="post" action="{% url 'account_signup' %}">
   {% csrf_token %}
@@ -17,7 +17,7 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="btn btn-dark rounded border-0" href="{% url 'account_login' %}" aria-label="go to login page">Back to Login</a>
+  <a class="btn btn-dark rounded border-0 mr-1" href="{% url 'home' %}" aria-label="go to home page">Home</a>
   <button class="btn btn-dark rounded border-0" type="submit" aria-label="submit sign up">{% trans "Sign Up" %} &raquo;</button>
 </form>
 

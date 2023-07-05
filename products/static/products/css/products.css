@@ -12,6 +12,10 @@
     z-index: 1;
 }
 
+.card-container h2 {
+    font-size: x-large;
+}
+
 .card,
 .card-footer {
     background: #e5e3e2;
@@ -43,10 +47,6 @@
     max-width: 600px;
 }
 
-.model {
-    background-color: #eee9cc;
-}
-
 textarea.form-control {
     max-height: 100px;
 }
@@ -58,6 +58,8 @@ textarea.form-control {
 footer {
     margin-top: 20px;
 }
+
+/* ------------------- Product Detail Page */
 
 .product-star {
     font-size: x-large;
