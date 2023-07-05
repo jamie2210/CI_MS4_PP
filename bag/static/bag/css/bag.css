@@ -27,6 +27,15 @@ footer {
     margin-top: 20px;
 }
 
+.mobile-btn {
+    width: 50px;
+    height: auto;
+}
+
+.mobile-btn .qty-circle {
+    font-size: x-large;
+}
+
 /* ----------------- up-to-top arrow */
 
 .arrow-button {
