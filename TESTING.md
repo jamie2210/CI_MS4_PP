@@ -193,7 +193,7 @@ All code from the Boutique Ado project was left out to ensure the testing was do
 
 ### Performance
 
-Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be this is down mainly to resources blocking the first paint of the page. This is something with more time I'd like to read up on and gain a better undertsanding but due to time contraints I am happy with the current scores.
+Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be, this is down mainly to resources blocking the first paint of the page. This is something with more time I'd like to read up on and gain a better undertsanding but due to time contraints I am happy with the current scores.
 <br>
 <details><summary>First Paint Message Example</summary>
 <img src="documentation/testing/lighthouse/lighthouse-paint.png">
