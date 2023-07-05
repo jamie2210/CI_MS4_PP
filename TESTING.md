@@ -193,11 +193,59 @@ All code from the Boutique Ado project was left out to ensure the testing was do
 
 ### Performance
 
-Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be but for most of them, the lower ones especially, it was from labels or formatting within Materialize I which I could not change so it's not something I'm too worried about.
+Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be this is down mainly to resources blocking the first paint of the page. This is something with more time I'd like to read up on and gain a better undertsanding but due to time contraints I am happy with the current scores.
 <br>
-<details><summary>Logged Out Home</summary>
-<img src="documentation/testing/lighthouse/logged-out-home.png">
-</details>
+<details><summary>First Paint Message Example</summary>
+<img src="documentation/testing/lighthouse/lighthouse-paint.png">
+</details><br>
+
+**Lighthouse Test Results**
+
+<details><summary>Bag</summary>
+<img src="documentation/testing/lighthouse/lighthouse-cart.png">
+</details><br>
+<details><summary>Checkout</summary>
+<img src="documentation/testing/lighthouse/lighthouse-checkout.png">
+</details><br>
+<details><summary>Checkout Success</summary>
+<img src="documentation/testing/lighthouse/lighthouse-checkout-success.png">
+</details><br>
+<details><summary>Contact</summary>
+<img src="documentation/testing/lighthouse/lighthouse-contact.png">
+</details><br>
+<details><summary>Contact Success</summary>
+<img src="documentation/testing/lighthouse/lighthouse-contact-success.png">
+</details><br>
+<details><summary>Favourites</summary>
+<img src="documentation/testing/lighthouse/lighthouse-favourites.png">
+</details><br>
+<details><summary>Home</summary>
+<img src="documentation/testing/lighthouse/lighthouse-home.png">
+</details><br>
+<details><summary>Products</summary>
+<img src="documentation/testing/lighthouse/lighthouse-products.png">
+</details><br>
+<details><summary>Product Detail</summary>
+<img src="documentation/testing/lighthouse/lighthouse-product-detail.png">
+</details><br>
+<details><summary>Product Add</summary>
+<img src="documentation/testing/lighthouse/lighthouse-product-add.png">
+</details><br>
+<details><summary>Product Edit</summary>
+<img src="documentation/testing/lighthouse/lighthouse-product-edit.png">
+</details><br>
+<details><summary>Profile</summary>
+<img src="documentation/testing/lighthouse/lighthouse-profile.png">
+</details><br>
+<details><summary>Register</summary>
+<img src="documentation/testing/lighthouse/lighthouse-register.png">
+</details><br>
+<details><summary>Sign In</summary>
+<img src="documentation/testing/lighthouse/lighthouse-signin.png">
+</details><br>
+<details><summary>Sign Out</summary>
+<img src="documentation/testing/lighthouse/lighthouse-signout.png">
+</details><br>
 
 ### Accessibility
 
