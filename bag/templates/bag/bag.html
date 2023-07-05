@@ -135,11 +135,15 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty</p>
-                    <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0" aria-label="to go main gallery">
-                        <i class="fa-regular fa-circle-left"></i>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                    <div class="row">
+                        <div class="col col-10 offset-1">
+                            <p class="lead mb-5">Your bag is empty</p>
+                            <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0" aria-label="to go main gallery">
+                                <i class="fa-regular fa-circle-left"></i>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                        </div>
+                    </div>
                 {% endif %}
             </div>
         </div>
