@@ -1,5 +1,5 @@
 .card-poster {
-    padding: 30px;
+    padding: 20px;
 }
 
 .card-container {
@@ -162,9 +162,6 @@ footer {
 }
 
 @media (max-width: 440px) {
-    .card-poster {
-        padding: 20px;
-    }
     .sort-select-wrapper {
         margin-top: 20px;
     }
