@@ -6,12 +6,13 @@
                 <p class="my-0">Search</p>
             </div>
         </a>
+         <!-- Search bar -->
         <div class="dropdown-menu mobile-search border-0 w-100 my-0 rounded-0" aria-labelledby="mobile-search">
-            <form class="form sm-search-bar" method="GET" action="{% url 'products' %}">
+            <form class="form sm-search-bar" method="GET" action="{% url 'products' %}" aria-label="Search field form for products">
                 <div class="input-group w-100">
-                    <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our site">
+                    <input class="form-control border rounded-0" type="text" name="q" placeholder="Search our site" aria-label="text input search field">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-dark no-border rounded-0 icon-light" type="submit">
+                        <button class="form-control btn btn-dark no-border rounded-0 icon-light" type="submit" aria-label="search text input">
                             <span>
                                 <i class="fas fa-search"></i>
                             </span>
