@@ -836,7 +836,7 @@ _ _ _
     ```
 - The issue was that each time the icon was clicked and therefore changed as a favourite was added or remove the event listeners were still looking for the old icon. It was only after refreshing the page would the tooltip now show on mouse over.
 - While this worked ok I knew it could work the way I wanted and should.
-- Below is the new working cord.
+- Below is the new working code.
 
     ```Javascript
         const addStar = document.querySelector('.add');
@@ -872,3 +872,50 @@ _ _ _
 
 - By creating individual classes for both icons and specific functions for each class the page no longer needs to refresh for the mouse over to display the tooltip or vice versa.
 - Its a much more long winded way of doing it for such a small feature, but it wass important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
+
+### Stock Level - 0
+
+- Product detial page displays stock as an alert when stock is 3 or below if it is at zero there is no display.
+- This is the code used;
+
+    ```Python
+        {% if product.stock %}
+            {% if product.stock < 4 %}
+                <div class="col-12 stock-level text-danger">
+                    <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
+                </div>
+            {% endif %}
+        {% endif %}
+    ```
+- This code was then tried which did not work, still no display if 0;
+
+    ```Python
+        {% if product.stock %}
+            {% if product.stock == 0 %}
+                <div class="col-12 stock-level text-danger">
+                    <p><strong>OUT OF STOCK!</strong></p>
+                </div>
+            {% elif product.stock < 4 %}
+                <div class="col-12 stock-level text-danger">
+                    <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
+                </div>
+            {% endif %}
+        {% endif %}
+    ```
+
+- In the end writing to separate if statements worked.
+
+    ```Python
+        {% if product.stock %}
+            {% if product.stock < 4 %}
+                <div class="col-12 stock-level text-danger">
+                    <p><strong>Low stock! Only {{ product.stock }} left!</strong></p>
+                </div>
+            {% endif %}
+        {% endif %}
+        {% if product.stock == 0 %}
+                <div class="col-12 stock-level text-danger">
+                    <p><strong>OUT OF STOCK!</strong></p>
+                </div>
+        {% endif %}
+    ```
