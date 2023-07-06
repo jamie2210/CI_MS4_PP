@@ -267,7 +267,7 @@ _ _ _
 | 21 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
 | 22 | Shopper | Feel my personal payment information is safe and secure | Confidently provide the needed information to make a purchase |
 | 23 | Shopper | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 24 | Shopper | Receive an email confimation after checking out | Keep the confimation of what I've purchased for my records |
+| 24 | Shopper | Receive an email confimation after checking out | Keep the confirmation of what I've purchased for my records |
 
 | **Admin & Store Management** |
 |-------------|
