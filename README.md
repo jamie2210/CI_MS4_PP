@@ -277,7 +277,8 @@ _ _ _
 | 25 | Store Owner | Add a poster | Upload new posters for sale to my store |
 | 26 | Store Owner | Edit/Update a poster | Change product prices, descriptions, sizes, images, stock and other product criteria |
 | 27 | Store Owner | Delete a poster | Remove posters that are no longer for sale |
-| 28 | Store Owner | Ensure any errors direct the user back to the home page | Ensure I do not lose them as a customer |
+| 28 | Store Owner | Track and display stock | Ensure customers don't try and buy more than the stock number |
+| 29 | Store Owner | Ensure any errors direct the user back to the home page | Ensure I do not lose them as a customer |
 
 
 ## Skeleton
@@ -409,10 +410,13 @@ __Stock Management__
 
 For stocked items checks have been made adding items to the bag and editting them agai oncein the bag. Quantity levels above the stock count will not be updated and a message will alert the user of the stock count. If stock is 3 or below a low stock message is displayed with the stock count in the product detail page allowing the user to act fast should the poster be close to out of stock. On purchasing a stocked item the quantity is adjusted depending on the quantity bought. This means there is potential for a low stocked item to be in multiple bags which could lead to upsetting the shopper. Due to time constraints I haven't had time to look into this further but one option would be to put a time limit on a low stocked item once it's in the bag before removing it from the bag if time ran out. It is something I would love to figure out given more time.
 
+ - User stories covered: 28
+
 <details><summary>Stock Alert</summary>
 <img src="documentation/features/stock-level.png">
 </details>
 <br>
+
 _ _ _
 
 ### Consistent Features
