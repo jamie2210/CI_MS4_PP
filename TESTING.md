@@ -314,9 +314,10 @@ To ensure the site is accessible as possible I have taken the following steps;
 - Errors [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/34566rgt)
 - Register [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/accounts/signup/)
 - Sign In [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/accounts/login/)
-_ _ _
+
 
 ## Manuel Testing
+_ _ _
 
 ### Device testing
 The website was tested on the following devices:
@@ -334,7 +335,6 @@ The website was tested on the following browsers:
 - Apple Safari
 - Mozilla Firefox
 
-_ _ _
 
 ### Developer Feature Testing
 
@@ -346,75 +346,89 @@ _ _ _
 ### Testing User Stories
 _ _ _
 
-
 **Viewing & Navigation**
-
 
 1. As a shopper I want to be able to view a list of products so that I can select some to purchase.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | View gallery  | Click button  | Go to all posters view | Works as expected |
+    | All posters  | Click drop down link  | Go to all posters view | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
-</details>
-<br>
+    <details><summary>View Gallery</summary>
+    <img src="documentation/testing/stories/view-gallery.gif">
+    </details>
+    <br>
+    <details><summary>All Posters</summary>
+    <img src="documentation/testing/stories/all-posters.gif">
+    </details>
+    <br>
 
 2. As a shopper I want to be able to view specific category of products so that I can quickly find posters I'm interested in without having to search through all options.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Main category nav link | Click link | Go to specified category page | Works as expected |
+    | Sub category nav link | Click link | Go to specified category page | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
-</details>
-<br>
+    <details><summary>View Category</summary>
+    <img src="documentation/testing/stories/view-category.gif">
+    </details>
+    <br>
 
-3. As a shopper I want to be able to view Individual product details so that I can identify the price, description, product rating, product image and available sizes.
+3. As a shopper I want to be able to view individual product details so that I can identify the price, description, product rating, product image and available sizes.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | View product detail | Click on poster | View product detail page | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
-</details>
-<br>
+    <details><summary>Product Detail</summary>
+    <img src="documentation/testing/stories/product-detail.gif">
+    </details>
+    <br>
 
 4. As a shopper I want to be able to identify stock levels on items low on stock so that I can insure I don't miss out on items I want.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | View product detail | Click on poster | Stock levels displayed if low | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
-</details>
-<br>
+    <details><summary>View Stock Levels</summary>
+    <img src="documentation/testing/stories/product-detail.gif">
+    </details>
+    <br>
 
 5. As a shopper I want to be able to easily view the total of my purchases at any time so that I can avoid spending too much.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Cart View | Add item to cart | See cart total increase in header | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
-</details>
-<br>
+    <details><summary>Cart View</summary>
+    <img src="documentation/testing/stories/cart-view.gif">
+    </details>
+    <br>
 
 6. As a shopper I want to be able to easily contact the store whether I have an account or not so that I can have any query answered.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Find contact form | Click link in footer  | To go contact page | Works as expected |
+    | Send Message | Fill out form  | To go contact success page | Works as expected |
+    | Proof of message received | Check emails | Contact message confirmation email received | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
-</details>
-<br>
+    <details><summary>View Contact Page</summary>
+    <img src="documentation/testing/stories/contact.gif">
+    </details>
+    <br>
+    <details><summary>Contact Success Page</summary>
+    <img src="documentation/features/contact/contact-success.png">
+    </details>
+    <br>
+    <details><summary>Email Received</summary>
+    <img src="documentation/features/contact/confirmation-email.png">
+    </details>
+    <br>
 
 **Registration & User Accounts**
 
@@ -425,7 +439,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -436,7 +450,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -447,7 +461,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -458,7 +472,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -469,7 +483,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -484,7 +498,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -495,7 +509,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -506,7 +520,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -517,7 +531,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -528,7 +542,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -539,7 +553,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -553,7 +567,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -564,7 +578,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -575,7 +589,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -586,7 +600,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -597,7 +611,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -608,7 +622,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -619,7 +633,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -632,7 +646,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -643,7 +657,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -654,7 +668,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
@@ -665,7 +679,7 @@ _ _ _
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/testing/stories.png">
+<img src="documentation/testing/stories/">
 </details>
 <br>
 
