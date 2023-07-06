@@ -342,18 +342,330 @@ _ _ _
 | --- | --- | --- |
 | Links | Check all links navigate correctly | Pass |
 
-_ _ _
 
 ### Testing User Stories
+_ _ _
 
-1. As a Shopper I want to be able to view a list of products so that I can select some to purchase.
+
+**Viewing & Navigation**
+
+
+1. As a shopper I want to be able to view a list of products so that I can select some to purchase.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |  |  |  | Works as expected |
 
 <details><summary>View List</summary>
-<img src="documentation/images/features/logged-out-home.png">
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+2. As a shopper I want to be able to view specific category of products so that I can quickly find posters I'm interested in without having to search through all options.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+3. As a shopper I want to be able to view Individual product details so that I can identify the price, description, product rating, product image and available sizes.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+4. As a shopper I want to be able to identify stock levels on items low on stock so that I can insure I don't miss out on items I want.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+5. As a shopper I want to be able to easily view the total of my purchases at any time so that I can avoid spending too much.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+6. As a shopper I want to be able to easily contact the store whether I have an account or not so that I can have any query answered.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+**Registration & User Accounts**
+
+7. As a site user I want to be able to easily register for an account so that I can have a personal account and be able to view my profile.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+8. As a site user I want to be able to easily login or logout so that I can access my personal account information.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+9. As a site user I want to be able to Easily recover my password incase I forget it so that I can easily recover access to my account.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+10. Site user I want to be able to Receive confimation after registering  so that I can easily verify that my account registration was successful.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+11. Site user I want to be able to Have a personalised user profile so that I can easily view my personal order history and order confirmations, and save my payment information.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+**Sorting & Searching**
+
+
+
+12. As a shopper I want to be able to store and view my favourite posters so that I can easily find them when I am ready to purchase.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+13. As a shopper I want to be able to sort the list of available posters so that I can easily identify the best priced and categorically sorted products.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+14. As a shopper I want to be able to sort a specific category of poster so that I can find the best-priced or in a specific category, or sort the products in that category by name.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+15. As a shopper I want to be able to sort multiple categories of products simultaneously so that I can find the best-priced across the broad categories, such as 'photography' or 'illustrations'.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+16. As a shopper I want to be able to search for a poster by name or description so that I can find a specific product I'd like to purchase.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+17. As a shopper I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+**Purchasing & Checkout**
+
+
+18. As a shopper I want to be able to easily select the size and quantity of a poster when purchasing it so that I can ensure I don't accidentally select the wrong poster, quantity or size.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+19. As a shopper I want to be able to view items in my bag to purchase so that I can identify the total cost of my purchase and all items I will receive.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+20. As a shopper I want to be able to adjust the quantity of individual items in my bag so that I can easily make changes to my purchases before checkout.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+21. As a shopper I want to be able to easily enter my payment information so that I can check out quickly and with no hassles.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+22. As a shopper I want to be able to feel my personal payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+23. As a shopper I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+24. As a shopper I want to be able to receive an email confimation after checking out so that I can keep the confirmation of what I've purchased for my records.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+**Admin & Store Management**
+
+25. As a store Owner I want to be able to Add a poster so that I can upload new posters for sale to my store.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+26. As a store Owner I want to be able to Edit/Update a poster so that I can change product prices, descriptions, sizes, images, stock and other product criteria.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+27. As a store Owner I want to be able to Delete a poster so that I can remove posters that are no longer for sale.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
+</details>
+<br>
+
+28. As a store Owner I want to be able to Ensure any errors direct the user back to the home page so that I can ensure I do not lose them as a customer.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|  |  |  | Works as expected |
+
+<details><summary>View List</summary>
+<img src="documentation/images/testing/stories.png">
 </details>
 <br>
 
