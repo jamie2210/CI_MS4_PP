@@ -434,58 +434,102 @@ _ _ _
 
 7. As a site user I want to be able to easily register for an account so that I can have a personal account and be able to view my profile.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Register account | Click register drop down link | To go register page | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Register Page</summary>
+    <img src="documentation/testing/stories/register.gif">
+    </details>
+    <br>
 
 8. As a site user I want to be able to easily login or logout so that I can access my personal account information.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Login | Click link & enter details | User logged in | Works as expected |
+    | Logout | Click link & confirm sign out with button | User logged out | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Login</summary>
+    <img src="documentation/testing/stories/login.gif">
+    </details>
+    <br>
+    <details><summary>Logout</summary>
+    <img src="documentation/testing/stories/logout.gif">
+    </details>
+    <br>
 
 9. As a site user I want to be able to Easily recover my password incase I forget it so that I can easily recover access to my account.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Forgotten password | Click 'Forgotten Password?' link | Go to reset password confirmation page | Works as expected |
+    | Confirm email | Confirm email on the account | Go to reset link email confirmation page | Works as expected |
+    | Reset link | Click link | Go to reset password page | Works as expected |
+    | New password | Enter new password | Confirm new password | Works as expected |
+    | New password confirmed | Click 'change password' button | New password confirmed | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Forgotten Password</summary>
+    <img src="documentation/features/password-reset/forgotten-password.png">
+    </details>
+    <br>
+    <details><summary>Confirm Email</summary>
+    <img src="documentation/features/password-reset/reset-email.png">
+    </details>
+    <br>
+    <details><summary>Confirmation email Page</summary>
+    <img src="documentation/features/password-reset/reset-link.png">
+    </details>
+    <br>
+    <details><summary>Reset Link</summary>
+    <img src="documentation/features/password-reset/reset-confirmation-email.png">
+    </details>
+    <br>
+    <details><summary>Enter New Password</summary>
+    <img src="documentation/features/password-reset/new-password.png">
+    </details>
+    <br>
+    <details><summary>New Password Confirmation</summary>
+    <img src="documentation/features/password-reset/change-success.png">
+    </details>
+    <br>
 
-10. Site user I want to be able to Receive confimation after registering  so that I can easily verify that my account registration was successful.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+10. Site user I want to be able to receive confimation after registering so that I can easily verify that my account registration was successful.
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Fill out form | Click sign up button | Receive email confirmation link | Works as expected |
+    | Confirmation link | Click link | To go confirm email page | Works as expected |
+    | Confirm email button | Click button | Go to email confirmed page | Works as expected |
+
+    <details><summary>Fill Out form</summary>
+    <img src="documentation/features/register/sign-up.png">
+    </details>
+    <br>
+    <details><summary>Confirmation Link</summary>
+    <img src="documentation/features/register/email-confirmation.png">
+    </details>
+    <br>
+    <details><summary>Confirm Email</summary>
+    <img src="documentation/features/register/confirm-email.png">
+    </details>
+    <br>
+    <details><summary>Email Confirmed</summary>
+    <img src="documentation/features/register/email-confirmed.png">
+    </details>
+    <br>
 
 11. Site user I want to be able to Have a personalised user profile so that I can easily view my personal order history and order confirmations, and save my payment information.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Profile | Login | To go to profile page | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>View Profile</summary>
+    <img src="documentation/testing/stories/view-profile.gif">
+    </details>
+    <br>
 
 **Sorting & Searching**
 
