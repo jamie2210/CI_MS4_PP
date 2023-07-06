@@ -534,72 +534,81 @@ _ _ _
 **Sorting & Searching**
 
 
-
 12. As a shopper I want to be able to store and view my favourite posters so that I can easily find them when I am ready to purchase.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Favourites Page | Click favourites drop down link | To go favourites page | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>View List</summary>
+    <img src="documentation/testing/stories/favourites.gif">
+    </details>
+    <br>
 
 13. As a shopper I want to be able to sort the list of available posters so that I can easily identify the best priced and categorically sorted products.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Sort by price | Select price by ascending or descending | View by price | Works as expected |
+    | Sort by category | Select by category | View by category | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Sort By Price</summary>
+    <img src="documentation/testing/stories/sort-price.gif">
+    </details>
+    <br>
+    <details><summary>Sort By Category</summary>
+    <img src="documentation/testing/stories/sort-category.gif">
+    </details>
+    <br>
 
 14. As a shopper I want to be able to sort a specific category of poster so that I can find the best-priced or in a specific category, or sort the products in that category by name.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Search specific category | Select by name or price | View alphabetically or by price | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Specific Category Search</summary>
+    <img src="documentation/testing/stories/search-specific.gif">
+    </details>
+    <br>
 
-15. As a shopper I want to be able to sort multiple categories of products simultaneously so that I can find the best-priced across the broad categories, such as 'photography' or 'illustrations'.
+15. As a shopper I want to be able to sort multiple categories of products simultaneously so that I can find the best-priced across the broad categories, such as 'photography' or 'Film'.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Search broad category | Select by name or price | View alphabetically or by price | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Broad Category Search</summary>
+    <img src="documentation/testing/stories/search-broad.gif">
+    </details>
+    <br>
 
 16. As a shopper I want to be able to search for a poster by name or description so that I can find a specific product I'd like to purchase.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Search by name | Enter name | Name search results displayed | Works as expected |
+    | Search by description | Enter description | Description search results displayed | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Search Name</summary>
+    <img src="documentation/testing/stories/search-name.gif">
+    </details>
+    <br>
+    <details><summary>Search Description</summary>
+    <img src="documentation/testing/stories/search-description.gif">
+    </details>
+    <br>
 
 17. As a shopper I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | View search results | Search for multiple posters | Search results and number displayed | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>View Search Results</summary>
+    <img src="documentation/testing/stories/search-results.gif">
+    </details>
+    <br>
 
 **Purchasing & Checkout**
 
