@@ -231,7 +231,7 @@ _ _ _
 | 3 | Shopper | View Individual product details | Identify the price, description, product rating, product image and available sizes |
 | 4 | Shopper | Identify stock levels on items low on stock | Insure I don't miss out on items I want |
 | 5 | Shopper | Easily view the total of my purchases at any time | Avoid spending too much |
-| 6 | Shopper | Easily contact the store whether I have an account or not | Have an query answered |
+| 6 | Shopper | Easily contact the store whether I have an account or not | Have any query answered |
 
 | **Registration & User Accounts** |
 |-------------|
