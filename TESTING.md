@@ -678,6 +678,17 @@ _ _ _
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Make Payment | Click 'buy now' button | Checkout Success page confirms order | Works as expected |
+
+    <details><summary>Make Payment</summary>
+    <img src="documentation/testing/stories/make-payment.gif">
+    </details>
+    <br>
+
+24. As a shopper I want to be able to receive an email confimation after checking out so that I can keep the confirmation of what I've purchased for my records.
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Make Payment | Click 'buy now' button | Checkout Success page confirms order | Works as expected |
     | Confirmation Email | Click 'buy now' button | Order confirmation email confirms order | Works as expected |
 
     <details><summary>Make Payment</summary>
@@ -689,62 +700,78 @@ _ _ _
     </details>
     <br>
 
-24. As a shopper I want to be able to receive an email confimation after checking out so that I can keep the confirmation of what I've purchased for my records.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
-
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
-
 **Admin & Store Management**
 
-25. As a store Owner I want to be able to add a poster so that I can upload new posters for sale to my store.
+25. As a store owner I want to be able to add a poster so that I can upload new posters for sale to my store.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Add Product Page | Click Manage Items | Go to add product page | Works as expected |
+    | Add Product | Fill out form, add product | New product is added | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Add Product Page</summary>
+    <img src="documentation/testing/stories/add-product-page.gif">
+    </details>
+    <br>
+    <details><summary>Add Product</summary>
+    <img src="documentation/testing/stories/add-product.gif">
+    </details>
+    <br>
 
-26. As a store Owner I want to be able to Edit/Update a poster so that I can change product prices, descriptions, sizes, images, stock and other product criteria.
+26. As a store owner I want to be able to Edit/Update a poster so that I can change product prices, descriptions, sizes, images, stock and other product criteria.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Edit Product Page | Click edit button | Go to edit product page | Works as expected |
+    | Edit Product | Fill out form, edit product | Edited product is update | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Edit Product Page</summary>
+    <img src="documentation/testing/stories/edit-product-page.gif">
+    </details>
+    <br>
+    <details><summary>Edit Product</summary>
+    <img src="documentation/testing/stories/edit-product.gif">
+    </details>
+    <br>
 
-27. As a store Owner I want to be able to Delete a poster so that I can remove posters that are no longer for sale.
+27. As a store owner I want to be able to Delete a poster so that I can remove posters that are no longer for sale.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Delete Product | Click delete button, confirm deletion on delete modal | Product deleted | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Delete Product</summary>
+    <img src="documentation/testing/stories/delete-product.gif">
+    </details>
+    <br>
 
-28. As a store Owner I want to be able to Ensure any errors direct the user back to the home page so that I can ensure I do not lose them as a customer.
+28. As a Store owner I want to be able to Track and display stock so that I can ensure customers don't try and buy more than the stock number and so I can track stock that is low |
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Stocked display - Product detail | Stock lower than 4 | Alert to say stock levels are low | Works as expected |
+    | Stocked item - Product detail | Add more than stock | Message display explains quantity is above stock level | Works as expected |
+    | Stocked item - Cart | Add more than stock | Message display explains quantity is above stock level | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Stocked Item - Product Detail</summary>
+    <img src="documentation/testing/stories/stock.gif">
+    </details>
+    <br>
+    <details><summary>Stocked Item - Cart</summary>
+    <img src="documentation/testing/stories/stock-cart.gif">
+    </details>
+    <br>
+
+29. As a store owner I want to be able to Ensure any errors direct the user back to the home page so that I can ensure I do not lose them as a customer.
+
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Error page | Enter incorrect page source | 404 Error displayed with 'Home' button | Works as expected |
+
+    <details><summary>Error Page</summary>
+    <img src="documentation/testing/stories/error-page.gif">
+    </details>
+    <br>
 
 _ _ _
 
