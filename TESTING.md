@@ -678,10 +678,14 @@ _ _ _
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Make Payment | Click 'buy now' button | Checkout Success page confirms order | Works as expected |
-    | Make Payment | Click 'buy now' button | Order confirmation email confirms order | Works as expected |
+    | Confirmation Email | Click 'buy now' button | Order confirmation email confirms order | Works as expected |
 
-    <details><summary>View List</summary>
-    <img src="documentation/testing/stories/">
+    <details><summary>Make Payment</summary>
+    <img src="documentation/testing/stories/make-payment.gif">
+    </details>
+    <br>
+    <details><summary>Order Confirmation Email</summary>
+    <img src="documentation/testing/stories/purchase-confirmation.png">
     </details>
     <br>
 
