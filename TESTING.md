@@ -773,97 +773,102 @@ _ _ _
     </details>
     <br>
 
-_ _ _
-
 ## Bugs
 
 _ _ _
 
-### Image Field
+### Image2 Field Error
 
-```html
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 add-product-container">
-                <form method="POST" actiom="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {% if field.name != 'image' %}
-                            {% if field.name != 'image2' %}
-                                {{ field | as_crispy_field }}
-                            {% else %}
-                                {{ field }}
-                            {% endif %}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
-                    {% endfor %}
-                    <div class="text-center">
-                        <a href="{% url 'products' %}?random=True" class="btn btn-dark rounded border-0 mt-2 mb-2">Cancel</a>
-                        <button class="btn btn-dark rounded border-0 mt-2 mb-2">Add Product</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-```
+- As some products have 2 images I added an image2 field to the products model. For some reason the below error occurred if only an image was uploaded in the second field and not the first. 
+
+    ![Image Error](documentation/testing/image-error.png)
+
+- I tried to adjust the code to ignore the field if it was empty but couldn't find a way to make it work.
+- To ensure no image is uploaded to the second image field before the first I used javascript to hide the image2 fields unless the first image field has a value.
+
+    ```Javascript
+        document.addEventListener('DOMContentLoaded', function() {
+        const newImageInput = document.getElementById('new-image');
+        const newImage2Input = document.getElementById('new-image2');
+        const imageButton = document.getElementById('image2-button');
+        const imageUrl = document.getElementById('div_id_image2_url');
+        
+            if (!newImageInput) {
+                return;
+            }
+        
+            newImageInput.addEventListener('change', function() {
+                if (newImageInput.value) {
+                    newImage2Input.disabled = false;
+                    imageButton.hidden = false;
+                    imageUrl.hidden = false;
+                } else {
+                    newImage2Input.disabled = true;
+                    imageButton.hidden = true;
+                    imageUrl.hidden = true;
+                }
+            });
+
+            if (!newImageInput.value) {
+            newImage2Input.disabled = true;
+            imageButton.hidden = true;
+            imageUrl.hidden = true;
+            }
+        });
+    ```
 
 ### Tooltip
 
 - I could not get the bootstrap tooltip to work, followed everything for the correct Bootstrap version, but for some reason it would not work. I took it onmyself to create one myself as I really wanted this feature for the star / favourite icon.
 - This is the code I originally used.
 
-```Javascript
-    var star = document.querySelector('.fa-star');
-    var tool = document.querySelector('.tool');
+    ```Javascript
+        var star = document.querySelector('.fa-star');
+        var tool = document.querySelector('.tool');
 
-    star.addEventListener('mouseover', function() {
-        tool.style.visibility = 'visible';
-    });
+        star.addEventListener('mouseover', function() {
+            tool.style.visibility = 'visible';
+        });
 
-    star.addEventListener('mouseout', function() {
-        tool.style.visibility = 'hidden';
-    });    
-```
+        star.addEventListener('mouseout', function() {
+            tool.style.visibility = 'hidden';
+        });    
+    ```
 - The issue was that each time the icon was clicked and therefore changed as a favourite was added or remove the event listeners were still looking for the old icon. It was only after refreshing the page would the tooltip now show on mouse over.
-- While this worked ok I knoew it could work the way I wanted and should.
+- While this worked ok I knew it could work the way I wanted and should.
 - Below is the new working cord.
 
-```Javascript
-    const addStar = document.querySelector('.add');
-    const removeStar = document.querySelector('.remove');
-    const toolOne = document.querySelector('.tool1');
-    const toolTwo = document.querySelector('.tool2');
+    ```Javascript
+        const addStar = document.querySelector('.add');
+        const removeStar = document.querySelector('.remove');
+        const toolOne = document.querySelector('.tool1');
+        const toolTwo = document.querySelector('.tool2');
 
-    // function to toggle visibility
-    function toggleVisibility(element, isVisible) {
-        element.style.visibility = isVisible ? 'visible' : 'hidden';
-    }
-
-    // Event handler for mouseover events
-    function handleMouseOver(event) {
-        const target = event.target;
-        if (target === addStar) {
-        toggleVisibility(toolOne, true);
-        } else if (target === removeStar) {
-        toggleVisibility(toolTwo, true);
+        function toggleVisibility(element, isVisible) {
+            element.style.visibility = isVisible ? 'visible' : 'hidden';
         }
-    }
 
-    // Event handler for mouseout events
-    function handleMouseOut(event) {
-        const target = event.target;
-        if (target === addStar) {
-        toggleVisibility(toolOne, false);
-        } else if (target === removeStar) {
-        toggleVisibility(toolTwo, false);
+        function handleMouseOver(event) {
+            const target = event.target;
+            if (target === addStar) {
+            toggleVisibility(toolOne, true);
+            } else if (target === removeStar) {
+            toggleVisibility(toolTwo, true);
+            }
         }
-    }
 
-    // Attach the event listeners
-    document.addEventListener('mouseover', handleMouseOver);
-    document.addEventListener('mouseout', handleMouseOut);
-```
+        function handleMouseOut(event) {
+            const target = event.target;
+            if (target === addStar) {
+            toggleVisibility(toolOne, false);
+            } else if (target === removeStar) {
+            toggleVisibility(toolTwo, false);
+            }
+        }
+
+        document.addEventListener('mouseover', handleMouseOver);
+        document.addEventListener('mouseout', handleMouseOut);
+    ```
 
 - By creating individual classes for both icons and specific functions for each class the page no longer needs to refresh for the mouse over to display the tooltip or vice versa.
 - Its a much more long winded way of doing it for such a small feature, but it wass important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
