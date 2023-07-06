@@ -252,7 +252,7 @@ _ _ _
 | 12 | Shopper | Store and view my favourite posters | Easily find them when I am ready to purchase |
 | 13 | Shopper | Sort the list of available posters | Easily identify the best priced and categorically sorted products |
 | 14 | Shopper | Sort a specific category of poster | Find the best-priced or in a specific category, or sort the products in that category by name |
-| 15 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced across the broad categories, such as 'photography' or 'illustrations' |
+| 15 | Shopper | Sort multiple categories of products simultaneously | Find the best-priced across the broad categories, such as 'photography' or 'Film' |
 | 16 | Shopper | Search for a poster by name or description | Find a specific product I'd like to purchase |
 | 17 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 
