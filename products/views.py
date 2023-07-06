@@ -15,8 +15,6 @@ from .models import Product, Category
 from .forms import ProductForm
 from favourites.models import Favourites
 
-# Create your views here.
-
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
