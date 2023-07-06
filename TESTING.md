@@ -533,13 +533,17 @@ _ _ _
 
 **Sorting & Searching**
 
-
 12. As a shopper I want to be able to store and view my favourite posters so that I can easily find them when I am ready to purchase.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
+    | Add to favourites | Click on favourites icon | Poster is added to favourites | Works as expected |
     | Favourites Page | Click favourites drop down link | To go favourites page | Works as expected |
 
+    <details><summary>Add to Favourites</summary>
+    <img src="documentation/testing/stories/add-favourite.gif">
+    </details>
+    <br>
     <details><summary>View List</summary>
     <img src="documentation/testing/stories/favourites.gif">
     </details>
@@ -615,69 +619,71 @@ _ _ _
 
 18. As a shopper I want to be able to easily select the size and quantity of a poster when purchasing it so that I can ensure I don't accidentally select the wrong poster, quantity or size.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Select Size / Quantity | Select size and / or quantity on product detail page | Size and Quanity changes on selection | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Select Size / Quantity</summary>
+    <img src="documentation/testing/stories/select-size-quantity.gif">
+    </details>
+    <br>
 
 19. As a shopper I want to be able to view items in my bag to purchase so that I can identify the total cost of my purchase and all items I will receive.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | View cart | Click on cart icon | View cart with selected items in it | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>View Cart</summary>
+    <img src="documentation/testing/stories/view-cart.gif">
+    </details>
+    <br>
 
 20. As a shopper I want to be able to adjust the quantity of individual items in my bag so that I can easily make changes to my purchases before checkout.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Adjust Quantity in Cart | Change quantity with selector, click update | Quantity is updated | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Adjust Quantity</summary>
+    <img src="documentation/testing/stories/adjust-quantity.gif">
+    </details>
+    <br>
 
 21. As a shopper I want to be able to easily enter my payment information so that I can check out quickly and with no hassles.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Information Form | Fil out form | Clearly labelled form to fill out | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>View Checkout From</summary>
+    <img src="documentation/testing/stories/fill-form.gif">
+    </details>
+    <br>
 
 22. As a shopper I want to be able to feel my personal payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Secure Checkout | Click secure checkout button | View payment is via stripe (footer) | Works as expected |
+    | Secure Checkout | Click secure checkout button | Information only populated if logged in and saved to profile | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>Secure Checkout</summary>
+    <img src="documentation/testing/stories/view-checkout.gif">
+    </details>
+    <br>
 
 23. As a shopper I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  | Works as expected |
+    | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+    |-------------|------------|---------------------|-------------------|
+    | Make Payment | Click 'buy now' button | Checkout Success page confirms order | Works as expected |
+    | Make Payment | Click 'buy now' button | Order confirmation email confirms order | Works as expected |
 
-<details><summary>View List</summary>
-<img src="documentation/testing/stories/">
-</details>
-<br>
+    <details><summary>View List</summary>
+    <img src="documentation/testing/stories/">
+    </details>
+    <br>
 
 24. As a shopper I want to be able to receive an email confimation after checking out so that I can keep the confirmation of what I've purchased for my records.
 
@@ -692,7 +698,7 @@ _ _ _
 
 **Admin & Store Management**
 
-25. As a store Owner I want to be able to Add a poster so that I can upload new posters for sale to my store.
+25. As a store Owner I want to be able to add a poster so that I can upload new posters for sale to my store.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
