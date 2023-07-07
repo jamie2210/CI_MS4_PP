@@ -142,6 +142,11 @@ input[name='q']::placeholder {
     display: none;
 }
 
+#delivery-banner p {
+    margin: 0;
+    padding: 5px;
+}
+
 /* ------------------------- Footer */
 
 footer {
@@ -356,14 +361,6 @@ footer {
 
 /* ------------------------- Bag */
 
-#delivery-banner {
-    display: block;
-}
-
-#delivery-banner p {
-    margin: 0;
-    padding: 5px;
-}
 
 .bag-image {
     max-height: 150px;
@@ -442,33 +439,25 @@ footer {
 .order-details {
     max-width: 700px;
   }
-  
-  #delivery-banner {
-      display: block;
-  }
-  
-  #delivery-banner p {
-      margin: 0;
-      padding: 5px;
-  }
-  
-  select,
-  select option {
-    color: #504e4d;
-  }
-  
-  select:invalid,
-  select option[value=""] {
-    color: #aab7c4 !important;
-  }
-  
-  .order-confirmation-wrapper {
-    margin: 20px;
-  }
-  
-  footer {
-    margin-top: 20px;
-  }
+
+
+select,
+select option {
+color: #504e4d;
+}
+
+select:invalid,
+select option[value=""] {
+color: #aab7c4 !important;
+}
+
+.order-confirmation-wrapper {
+margin: 20px;
+}
+
+footer {
+margin-top: 20px;
+}
   
   /* ---------------------------- Stripe */
   
@@ -591,14 +580,6 @@ footer {
 
 /* ------------------------- Favourites */
 
-#delivery-banner {
-    display: block;
-}
-
-#delivery-banner p {
-    margin: 0;
-    padding: 5px;
-}
 
 .card-poster {
     padding: 30px;
@@ -737,15 +718,6 @@ footer {
 
 .card-footer {
     padding-bottom: 0;
-}
-
-#delivery-banner {
-    display: block;
-}
-
-#delivery-banner p {
-    margin: 0;
-    padding: 5px;
 }
 
 .add-product-container {

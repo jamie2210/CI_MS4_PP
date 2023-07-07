@@ -120,3 +120,9 @@ const handleMouseOut = function (event) {
 // Attach the event listeners
 document.addEventListener('mouseover', handleMouseOver);
 document.addEventListener('mouseout', handleMouseOut);
+
+
+// Add free delivery banner
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("delivery-banner").style.display = "block";
+});

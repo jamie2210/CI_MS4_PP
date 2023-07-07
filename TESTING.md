@@ -248,49 +248,49 @@ Performance testing was done using lighthouse in chrome developer tools testing 
 **Lighthouse Mobile Test Results**
 
 <details><summary>Bag</summary>
-<img src="documentation/testing/lighthouse/mobile-cart.png">
+<img src="documentation/testing/lighthouse/mobile/cart.png">
 </details><br>
 <details><summary>Checkout</summary>
-<img src="documentation/testing/lighthouse/mobile-checkout.png">
+<img src="documentation/testing/lighthouse/mobile/checkout.png">
 </details><br>
 <details><summary>Checkout Success</summary>
-<img src="documentation/testing/lighthouse/mobile-checkout-success.png">
+<img src="documentation/testing/lighthouse/mobile/checkout-success.png">
 </details><br>
 <details><summary>Contact</summary>
-<img src="documentation/testing/lighthouse/mobile-contact.png">
+<img src="documentation/testing/lighthouse/mobile/contact.png">
 </details><br>
 <details><summary>Contact Success</summary>
-<img src="documentation/testing/lighthouse/mobile-contact-success.png">
+<img src="documentation/testing/lighthouse/mobile/contact-success.png">
 </details><br>
 <details><summary>Favourites</summary>
-<img src="documentation/testing/lighthouse/mobile-favourites.png">
+<img src="documentation/testing/lighthouse/mobile/favourites.png">
 </details><br>
 <details><summary>Home</summary>
-<img src="documentation/testing/lighthouse/mobile-home.png">
+<img src="documentation/testing/lighthouse/mobile/home.png">
 </details><br>
 <details><summary>Products</summary>
-<img src="documentation/testing/lighthouse/mobile-products.png">
+<img src="documentation/testing/lighthouse/mobile/all-products.png">
 </details><br>
 <details><summary>Product Detail</summary>
-<img src="documentation/testing/lighthouse/mobile-product-detail.png">
+<img src="documentation/testing/lighthouse/mobile/product-detail.png">
 </details><br>
 <details><summary>Product Add</summary>
-<img src="documentation/testing/lighthouse/mobile-product-add.png">
+<img src="documentation/testing/lighthouse/mobile/product-add.png">
 </details><br>
 <details><summary>Product Edit</summary>
-<img src="documentation/testing/lighthouse/mobile-product-edit.png">
+<img src="documentation/testing/lighthouse/mobile/product-edit.png">
 </details><br>
 <details><summary>Profile</summary>
-<img src="documentation/testing/lighthouse/mobile-profile.png">
+<img src="documentation/testing/lighthouse/mobile/profile.png">
 </details><br>
 <details><summary>Register</summary>
-<img src="documentation/testing/lighthouse/mobile-register.png">
+<img src="documentation/testing/lighthouse/mobile/register.png">
 </details><br>
 <details><summary>Sign In</summary>
-<img src="documentation/testing/lighthouse/mobile-signin.png">
+<img src="documentation/testing/lighthouse/mobile/signin.png">
 </details><br>
 <details><summary>Sign Out</summary>
-<img src="documentation/testing/lighthouse/mobile-signout.png">
+<img src="documentation/testing/lighthouse/mobile/signout.png">
 </details><br>
 
 ### Accessibility

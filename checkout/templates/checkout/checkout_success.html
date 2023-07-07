@@ -205,10 +205,4 @@
 {% block postloadjs %}
     {{ block.super }}
     <script src="{% static 'checkout/js/checkout.js' %}"></script>
-    <script>
-        // Remove free delivery banner
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("delivery-banner").style.display = "none";
-        });
-    </script>
 {% endblock %}

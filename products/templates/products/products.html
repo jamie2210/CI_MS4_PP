@@ -128,4 +128,10 @@
 {% block postloadjs %}
     {{ block.super }}
     <script src="{% static 'products/js/products.js' %}"></script>
+    <script>
+        // Add free delivery banner
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("delivery-banner").style.display = "block";
+        });
+    </script>
 {% endblock %}

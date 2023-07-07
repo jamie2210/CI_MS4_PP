@@ -138,4 +138,10 @@
     {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
     <script src="{% static 'checkout/js/checkout.js' %}"></script>
+    <script>
+        // Add free delivery banner
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("delivery-banner").style.display = "block";
+        });
+    </script>
 {% endblock %}

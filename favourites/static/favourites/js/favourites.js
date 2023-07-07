@@ -52,5 +52,9 @@ window.addEventListener('scroll', function() {
         // Button is above the footer
         button.style.bottom = '20px';
     }
+});
 
+// Add free delivery banner
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("delivery-banner").style.display = "block";
 });
