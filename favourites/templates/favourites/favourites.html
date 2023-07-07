@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block extra_title %}- Favourites{% endblock %}
-{% block extra_css %}
-    <!-- <link rel="stylesheet" href="{% static 'favourites/css/favourites.css' %}"> -->
-{% endblock %}
 
 {% block page_header %}
 <div class="row">
@@ -23,6 +20,8 @@
             {% if favourites_items %}
             <div class="row">
                 {% for favourite in favourites_items %}
+
+                    <!-- List of favourites -->
                     <div class="card-container col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card card-poster h-100 border-0">
                             {% if favourite.image %}
@@ -52,6 +51,7 @@
                                             </a>
                                         </p>
                                         {% endif %}
+
                                         <!-- Edit & Remove Buttons -->
                                         <div>
                                             {% if request.user.is_superuser %}
@@ -66,6 +66,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Remove Modal -->
                     <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ favourite.id }}">
                         <div class="modal-dialog" role="document">
@@ -91,6 +92,7 @@
                     </div>
                 {% endfor %}
             </div>
+            <!-- No favourites -->
             {% else %}
                 <p class="lead mb-5 mt-5">You currently have no favourites</p>
                 <a href="{% url 'products' %}?random=True" class="btn btn-dark btn-lg border-0" aria-label="to go poster gallery">

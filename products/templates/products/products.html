@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block extra_title %}- Posters{% endblock %}
-{% block extra_css %}
-    <!-- <link rel="stylesheet" href="{% static 'products/css/products.css' %}"> -->
-{% endblock %}
 
 {% block page_header %}
     <div class="container-fluid">
@@ -21,6 +18,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Product sorting selector -->
     <div class="container-fluid">
         <div class="row">
             <div class="product-container col-10 offset-1">
@@ -38,6 +36,8 @@
                             </select>
                         </div>
                     </div>
+
+                    <!-- Products in cateogry number -->
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -47,6 +47,8 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Products card container -->
                 <div class="row">
                     {% for product in products %}
                         <div class="card-container col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -67,18 +69,19 @@
                                     <div class="row">
                                         <div class="col">
                                             {% if product.has_sizes %}
-                                            <h3 class="lead mb-1 mt-1 text-left font-weight-bold"><small>From</small> £{{ product.a4_price }}</h3>
+                                                <h3 class="lead mb-1 mt-1 text-left font-weight-bold"><small>From</small> £{{ product.a4_price }}</h3>
                                             {% else %}
-                                            <h3 class="lead mb-1 mt-1 text-left font-weight-bold">£{{ product.price }}</h3>
+                                                <h3 class="lead mb-1 mt-1 text-left font-weight-bold">£{{ product.price }}</h3>
                                             {% endif %}
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0 tag">
-                                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="link-dark" aria-label="go to product category page">
-                                                    <i class="fas fa-tag mr-1"></i><em>{{ product.category.friendly_name }}</em>
-                                                </a>
-                                            </p>
+                                                <p class="small mt-1 mb-0 tag">
+                                                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="link-dark" aria-label="go to product category page">
+                                                        <i class="fas fa-tag mr-1"></i><em>{{ product.category.friendly_name }}</em>
+                                                    </a>
+                                                </p>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
+
                                             <!-- Edit and Delete Buttons -->
                                                 <div>
                                                     <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-dark rounded border-0 mt-1" aria-label="go to product edit page">Edit</a>
@@ -90,6 +93,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Delete Modal -->
                         <div class="modal" tabindex="-1" role="dialog" id="deleteModal-{{ product.id }}">
                             <div class="modal-dialog" role="document">
@@ -119,11 +123,13 @@
             </div>
         </div>
     </div>
-<div class="arrow-button btn btn-dark border-0">
-    <a class="d-flex h-100 justify-content-center icon-light" aria-label="to go top of the page">
-        <i class="fa-regular fa-circle-up mx-auto my-auto"></i>
-    </a>	
-</div>
+
+    <!-- Up to top arrow -->
+    <div class="arrow-button btn btn-dark border-0">
+        <a class="d-flex h-100 justify-content-center icon-light" aria-label="to go top of the page">
+            <i class="fa-regular fa-circle-up mx-auto my-auto"></i>
+        </a>	
+    </div>
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}

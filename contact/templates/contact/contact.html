@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block extra_title %}- Contact{% endblock %}
-{% block extra_css %}
-    <!-- <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}"> -->
-{% endblock %}
 
 {% block page_header %}
     <div class="row">
@@ -15,6 +12,8 @@
 {% endblock %}
 
 {% block content %}
+
+    <!-- Contact Form -->
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -25,6 +24,8 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="float-right">
+                        
+                    <!-- Contact & gallery buttons -->
                     <a href="{% url 'products' %}?random=True" class="btn btn-dark no-border btn-lrg my-3" 
                         aria-label="go to poster gallery">Back to Gallery</a>
                     <button class="btn btn-dark btn-lrg border-0 rounded" aria-label="submit form">
