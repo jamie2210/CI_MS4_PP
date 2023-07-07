@@ -1,15 +1,19 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
-
-from .models import Order, OrderLineItem
-from products.models import Product
-from profiles.models import UserProfile
-
 import json
 import time
 import stripe
+
+# Internal:
+from .models import Order, OrderLineItem
+from products.models import Product
+from profiles.models import UserProfile
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class StripeWH_Handler:

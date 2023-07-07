@@ -21,7 +21,7 @@ class FavouritesAdmin(admin.ModelAdmin):
     list_filter = (
         'username',
     )
-    list_per_page = 20
+    ordering = ('-date',)
 
 
 admin.site.register(Favourites, FavouritesAdmin)

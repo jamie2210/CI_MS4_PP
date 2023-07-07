@@ -1,3 +1,6 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import (
     render,
     redirect,
@@ -5,12 +8,14 @@ from django.shortcuts import (
     HttpResponse,
     get_object_or_404
     )
-
+from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.contrib import messages
+
+# Internal:
 from products.models import Product
-from django.contrib.auth.decorators import login_required
 from .models import Favourites
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 @login_required

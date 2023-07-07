@@ -1,15 +1,20 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import (
     render,
     redirect,
     get_object_or_404
 )
-from .forms import ContactForm
-from profiles.models import UserProfile
+from django.contrib import messages
+from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
-from django.conf import settings
 
-from django.contrib import messages
+# Internal:
+from .forms import ContactForm
+from profiles.models import UserProfile
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def contact(request):

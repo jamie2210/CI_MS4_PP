@@ -1,9 +1,18 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
+from django.core.validators import EmailValidator
+
+# Internal:
 from django import forms
 from .models import ContactForm
-from django.core.validators import EmailValidator
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class ContactForm(forms.ModelForm):
+    """
+    A form for submitting contact information and messages.
+    """
     class Meta:
         model = ContactForm
         fields = (

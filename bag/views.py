@@ -1,3 +1,6 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import (
     render,
     redirect,
@@ -6,8 +9,11 @@ from django.shortcuts import (
     get_object_or_404
     )
 from django.contrib import messages
+
+# Internal:
 from products.models import Product
 from decimal import Decimal
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def view_bag(request):
