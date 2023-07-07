@@ -745,14 +745,23 @@ _ _ _
     </details>
     <br>
 
-28. As a Store owner I want to be able to Track and display stock so that I can ensure customers don't try and buy more than the stock number and so I can track stock that is low |
+28. As a Store owner I want to be able to track and display stock so that I can ensure customers don't try and buy more than the stock number and so I can track stock that is low.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
     | Stocked display - Product detail | Stock lower than 4 | Alert to say stock levels are low | Works as expected |
+    | Stocked display - Product detail | Stock at 0 | Alert to poster is out of stock | Works as expected |
     | Stocked item - Product detail | Add more than stock | Message display explains quantity is above stock level | Works as expected |
     | Stocked item - Cart | Add more than stock | Message display explains quantity is above stock level | Works as expected |
 
+    <details><summary>Stock Level < 4</summary>
+    <img src="documentation/testing/stories/stock-low.png">
+    </details>
+    <br>
+    <details><summary>Stock Level = 0</summary>
+    <img src="documentation/testing/stories/stock-out.png">
+    </details>
+    <br>
     <details><summary>Stocked Item - Product Detail</summary>
     <img src="documentation/testing/stories/stock.gif">
     </details>
@@ -903,7 +912,7 @@ _ _ _
         {% endif %}
     ```
 
-- In the end writing to separate if statements worked.
+- In the end writing two separate if statements worked.
 
     ```Python
         {% if product.stock %}
