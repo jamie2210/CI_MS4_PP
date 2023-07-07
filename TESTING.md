@@ -718,7 +718,7 @@ _ _ _
     </details>
     <br>
 
-26. As a store owner I want to be able to Edit/Update a poster so that I can change product prices, descriptions, sizes, images, stock and other product criteria.
+26. As a store owner I want to be able to edit/update a poster so that I can change product prices, descriptions, sizes, images, stock and other product criteria.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -734,7 +734,7 @@ _ _ _
     </details>
     <br>
 
-27. As a store owner I want to be able to Delete a poster so that I can remove posters that are no longer for sale.
+27. As a store owner I want to be able to delete a poster so that I can remove posters that are no longer for sale.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
