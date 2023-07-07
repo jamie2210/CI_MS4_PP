@@ -880,7 +880,7 @@ _ _ _
     ```
 
 - By creating individual classes for both icons and specific functions for each class the page no longer needs to refresh for the mouse over to display the tooltip or vice versa.
-- Its a much more long winded way of doing it for such a small feature, but it wass important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
+- Its a much more long winded way of doing it for such a small feature, but it was important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
 
 ### Stock Level - 0
 
