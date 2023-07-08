@@ -55,7 +55,7 @@ def contact(request):
     template = 'contact/contact.html'
     context = {
         'form': contact_form,
-        'on_contact_page': True,
+        'on_profile_page': True
     }
 
     return render(request, template, context)
