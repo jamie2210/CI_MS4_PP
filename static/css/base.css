@@ -749,6 +749,10 @@ textarea.form-control {
     .mainbody .image-container.my-5 {
         margin-top: 0;
     }
+    .sm-bag-button-t,
+    .sm-bag-button-b {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -814,7 +818,7 @@ textarea.form-control {
     }
     .sm-bag-button-t,
     .sm-bag-button-b {
-        font-size: medium;
+        font-size: large;
     }
     .sm-bag-button-t {
         margin-top: 20px;
