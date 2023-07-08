@@ -78,7 +78,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        'random_order': random_order
+        'random_order': random_order,
     }
 
     return render(request, 'products/products.html', context)

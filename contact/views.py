@@ -19,7 +19,6 @@ from profiles.models import UserProfile
 
 def contact(request):
     """Display the contact form"""
-
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
@@ -55,7 +54,7 @@ def contact(request):
     template = 'contact/contact.html'
     context = {
         'form': contact_form,
-        'on_profile_page': True
+        'on_profile_page': True,
     }
 
     return render(request, template, context)
