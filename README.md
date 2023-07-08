@@ -365,11 +365,9 @@ Noto Serif is used through as the brands main font, 'Roboto' used throughout for
 <details><summary>Roboto</summary>
 <img src="documentation/images/roboto.png">
 </details>
-
-
+<br>
 
 # Features
-
 _ _ _
 
 The website has 16 distinct features, and they are described below
@@ -419,16 +417,16 @@ For stocked items checks have been made adding items to the bag and then updatin
 </details>
 <br>
 
-### Consistent Features
+## Consistent Features
 _ _ _
 
-* __Favicon__ 
+### Favicon 
 
 - I designed the favicon in Illustrator.
 
   ![Poster Prints Favicon](documentation/features/favicon.png)
 
-* __Navbar__ 
+### Navbar 
 
 - The Navbar is displayed on all pages and has a dropdown menu with the list changing depending on whether logged in or out and whether a shopper or admin.
 - The Cart and the items in it are always displayed for easy access.
@@ -459,7 +457,7 @@ _ _ _
   ![Mobile Navbar](documentation/features/mobile-navbar.gif)
 
 
-* __Footer__ 
+### Footer
 
 - The footer is displayed on all pages and includes social links, my GitHub link to this repository, contact details and a link to the contact page, the copyright year, and payment information.
 - It changes from a horizontal list to a vertical one depending on the screen size.
@@ -471,10 +469,12 @@ _ _ _
   <img src="documentation/features/mobile-footer.png">
   </details>
 
-### Main Content Features
+## Main Content Features
 _ _ _
 
-* __HomePage__
+### HomePage
+
+_ _ _
 
 - Home page consists of a welcome message and button that links to view the entire gallery of posters.
 - User Stories covered: 1
@@ -942,7 +942,6 @@ The testing information and results for this project are documented in [TESTING.
 _ _ _
 
 ### Google emails
-
 To set up the project to send emails and to use a Google account as an SMTP server, the following steps are required:
 1. Create an email account at google.com, login, navigate to Settings in your gmail account and then click on Other Google Account Settings
 2. Turn on 2-step verification and follow the steps to enable
@@ -964,7 +963,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 <br><code>DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')</code>
 8. You will also need to set the variables EMAIL_HOST_PASS and EMAIL_HOST_USER in your production instance, for example Heroku
 
-## Stripe
+### Stripe
 1. Register for an account at stripe.com
 2. Click on the Developers section of your account once logged in
 3. Under Developers, click on the API keys section
@@ -989,9 +988,8 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 
 10. Test out the webhook and note the success/fail attempts for troubleshooting
 
-_ _ _
-
 ## Deployment
+_ _ _
 
 There are a number of applications that need to be configured to run this application locally or on a cloud-based service, for example Heroku.
 
@@ -1117,8 +1115,9 @@ To deploy this application to Heroku, run the following steps;
 </details>
 
 18. With Elephant database set up, head to Heroku and in add the url to DATABASE_URL in the convig vars.
-19. Delete the DATABSES above and replace with
-```
+19. Delete the DATABSES above and replace with;
+
+```Python
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -1131,6 +1130,7 @@ else:
         }
     }
 ```
+
 20. From the CLI login to Heroku using the command heroku login -i;
   * Enter your Heroku account email and press Enter.
   * Next, you will be prompted to enter your API key. To obtain your API key, follow these steps:
@@ -1180,9 +1180,8 @@ _ _ _
   [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto)
     - Robot is used for all other text throughout.
 
-_ _ _ 
-
 ## Media
+_ _ _
 
 * __Source Unknown__ - For the purpose of this course and project I have taken images from the internet where I was unable to find the source and therefore credit the owner. If this site were to ever go live these images would be removed and never used for monetary gain. They are purely for the content of the course.
 
@@ -1201,10 +1200,9 @@ _ _ _
 * Photography
   * All photos are taken from [Pexels](https://www.pexels.com/)
   * Each photo is credited to the photographer on the product details page.
-    
-_ _ _
 
 ## __Acknowledgements__
+_ _ _
 
 I would like to take the opportunity to thank;
 
