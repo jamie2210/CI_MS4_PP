@@ -332,7 +332,7 @@ The website was tested on the following browsers:
 | Feature | Testing Performed | &#9989; (Pass) / &#10060; (Fail) |
 | --- | --- | --- |
 | Register | Sign up and email confirmation working | &#9989; |
-| Login / Logout | both functions work correctly | &#9989; |
+| Login / Logout | Both functions work correctly | &#9989; |
 | Forgot Password | Reset and email links all work correctly | &#9989; |
 | Links | Check all links navigate correctly | &#9989; |
 | Buttons | Check all buttons function correctly | &#9989; |
@@ -342,17 +342,16 @@ The website was tested on the following browsers:
 | Product Edit | Edits and updates correct product | &#9989; |
 | Product Add | Adds product and its details correctly | &#9989; |
 | Product Delete Modal | Button calls modal, modal deletes product | &#9989; |
-| Image OnClick | Links work correctly, open new window | &#9989; |
+| Image On Click | Links work correctly, open new window | &#9989; |
 | Image1 upload | Image uploads and displays correctly | &#9989; |
 | Image2 upload | Image2 uploads and displays correctly (only available if Image1 field has value) | &#9989; |
 | Size / Price | Price changes depending on size selected | &#9989; |
 | Stock Level Updates | Stock display correctly displays stock level | &#9989; |
 | Quantity Updates | Quantity updates from product and bag view | &#9989; |
-| Add / Remove Favourites Icon | Check all links navigate correctly | &#9989; |
+| Add / Remove Favourites Icon | Adds and removes favourites correclty | &#9989; |
 | Remove Favourites Modal | Button calls modal, modal removes product | &#9989; |
 | Contact Admin | Contact form delivers message to admin | &#9989; |
 | Contact Emails | Emails are sent to both user and store email | &#9989; |
-| Contact Admin | Contact form delivers message to admin | &#9989; |
 | Add to Bag | Correct items add to bag | &#9989; |
 | Update Bag | Correctly update items in bag | &#9989; |
 | Checkout | Bag items displayed in checkout | &#9989; |
