@@ -51,10 +51,12 @@
   <body>
     <header class="containter-fluid fixed-top">
       <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+
           <!-- logo -->
           <div class="col-12 col-lg-4 my-auto text-lg-left text-center">
             <a href="{% url 'home' %}" class="nav-link"><h2 class="logo-font main-logo" aria-label="go to home page">Poster Prints.</h2></a>
           </div>
+
           <!-- Search bar -->
           <div class="row search-bar justify-content-center col-12 col-lg-4">
             <div class="col-12">
@@ -130,7 +132,8 @@
         </div>            
     </div>
     </header>
-          
+    
+    <!-- Messages -->
     {% if messages %}
     <div class="message-container">
       {% for message in messages %}
