@@ -812,9 +812,15 @@ textarea.form-control {
     .sm-font {
         font-size: small;
     }
-    .sm-bag-button {
+    .sm-bag-button-t,
+    .sm-bag-button-b {
+        font-size: medium;
+    }
+    .sm-bag-button-t {
         margin-top: 20px;
-        font-size: small;
+    }
+    .sm-bag-button-b {
+        margin-top: 10px;
     }
     .mobile-btn {
         width: 50px;
