@@ -52,18 +52,18 @@ _ _ _
 
 [W3C](https://validator.w3.org/) Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
-- Bag [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fbag%2F)
-- Checkout [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2F)
-- Checkout Success [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2Fcheckout_success%2F2C24A64E7ED64A0CA1BADFAC4D905053)
-- Contact [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcontact%2F)
+- Bag [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fbag%2F)
+- Checkout [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2F)
+- Checkout Success [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcheckout%2Fcheckout_success%2F2C24A64E7ED64A0CA1BADFAC4D905053)
+- Contact [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fcontact%2F)
 - Contact Success [results](documentation/testing/contact-success.png)
-- Favourites [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Ffavourites%2F)
-- Home [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2F)
-- Products [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F%3Frandom%3DTrue)
-- Product Detail [results](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F14%2F)
+- Favourites [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Ffavourites%2F)
+- Home [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2F)
+- Products [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F%3Frandom%3DTrue)
+- Product Detail [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Fproducts%2F14%2F)
 - Product - Add [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fadd%2F)
 - Product - Edit [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fedit%2F35%2F)
-- Profile [results](https://poster-prints-8ff329d79ba2.herokuapp.com/profile/)
+- Profile [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-prints-8ff329d79ba2.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
 - Errors [results](documentation/testing/errors.png)
 
 ### CSS Validation
@@ -182,101 +182,111 @@ Performance testing was done using lighthouse in chrome developer tools testing 
 
 <details><summary>Bag</summary>
 <img src="documentation/testing/lighthouse/lighthouse-cart.png">
-</details><br>
+</details>
 <details><summary>Checkout</summary>
 <img src="documentation/testing/lighthouse/lighthouse-checkout.png">
-</details><br>
+</details>
 <details><summary>Checkout Success</summary>
 <img src="documentation/testing/lighthouse/lighthouse-checkout-success.png">
-</details><br>
+</details>
 <details><summary>Contact</summary>
 <img src="documentation/testing/lighthouse/lighthouse-contact.png">
-</details><br>
+</details>
 <details><summary>Contact Success</summary>
 <img src="documentation/testing/lighthouse/lighthouse-contact-success.png">
-</details><br>
+</details>
 <details><summary>Favourites</summary>
 <img src="documentation/testing/lighthouse/lighthouse-favourites.png">
-</details><br>
+</details>
 <details><summary>Home</summary>
 <img src="documentation/testing/lighthouse/lighthouse-home.png">
-</details><br>
+</details>
 <details><summary>Products</summary>
 <img src="documentation/testing/lighthouse/lighthouse-products.png">
-</details><br>
+</details>
 <details><summary>Product Detail</summary>
 <img src="documentation/testing/lighthouse/lighthouse-product-detail.png">
-</details><br>
+</details>
 <details><summary>Product Add</summary>
 <img src="documentation/testing/lighthouse/lighthouse-product-add.png">
-</details><br>
+</details>
 <details><summary>Product Edit</summary>
 <img src="documentation/testing/lighthouse/lighthouse-product-edit.png">
-</details><br>
+</details>
 <details><summary>Profile</summary>
 <img src="documentation/testing/lighthouse/lighthouse-profile.png">
-</details><br>
+</details>
 <details><summary>Register</summary>
 <img src="documentation/testing/lighthouse/lighthouse-register.png">
-</details><br>
+</details>
 <details><summary>Sign In</summary>
 <img src="documentation/testing/lighthouse/lighthouse-signin.png">
-</details><br>
+</details>
 <details><summary>Sign Out</summary>
 <img src="documentation/testing/lighthouse/lighthouse-signout.png">
+</details><br>
+
+
+Performance was slower for mobile testing. I did as much as I could improve it with some scores as low as 24 now sitting around 60 or above for most. There isn't much more I could do as essential JS and CSS was the main cause, so I am happy with the improvement. 
+
+<details><summary>Redner Blocking</summary>
+<img src="documentation/testing/lighthouse/mobile/render-block.png">
+</details>
+<details><summary>Reduce JS</summary>
+<img src="documentation/testing/lighthouse/mobile/reduce-js.png">
 </details><br>
 
 **Lighthouse Mobile Test Results**
 
 <details><summary>Bag</summary>
 <img src="documentation/testing/lighthouse/mobile/cart.png">
-</details><br>
+</details>
 <details><summary>Checkout</summary>
 <img src="documentation/testing/lighthouse/mobile/checkout.png">
-</details><br>
+</details>
 <details><summary>Checkout Success</summary>
 <img src="documentation/testing/lighthouse/mobile/checkout-success.png">
-</details><br>
+</details>
 <details><summary>Contact</summary>
 <img src="documentation/testing/lighthouse/mobile/contact.png">
-</details><br>
+</details>
 <details><summary>Contact Success</summary>
 <img src="documentation/testing/lighthouse/mobile/contact-success.png">
-</details><br>
+</details>
 <details><summary>Favourites</summary>
 <img src="documentation/testing/lighthouse/mobile/favourites.png">
-</details><br>
+</details>
 <details><summary>Home</summary>
 <img src="documentation/testing/lighthouse/mobile/home.png">
-</details><br>
+</details>
 <details><summary>Products</summary>
 <img src="documentation/testing/lighthouse/mobile/all-products.png">
-</details><br>
+</details>
 <details><summary>Product Detail</summary>
 <img src="documentation/testing/lighthouse/mobile/product-detail.png">
-</details><br>
+</details>
 <details><summary>Product Add</summary>
 <img src="documentation/testing/lighthouse/mobile/product-add.png">
-</details><br>
+</details>
 <details><summary>Product Edit</summary>
 <img src="documentation/testing/lighthouse/mobile/product-edit.png">
-</details><br>
+</details>
 <details><summary>Profile</summary>
 <img src="documentation/testing/lighthouse/mobile/profile.png">
-</details><br>
+</details>
 <details><summary>Register</summary>
 <img src="documentation/testing/lighthouse/mobile/register.png">
-</details><br>
+</details>
 <details><summary>Sign In</summary>
 <img src="documentation/testing/lighthouse/mobile/signin.png">
-</details><br>
+</details>
 <details><summary>Sign Out</summary>
 <img src="documentation/testing/lighthouse/mobile/signout.png">
 </details><br>
 
 ### Accessibility
 
-To ensure the site is accessible as possible I have taken the following steps;
+To ensure the site is accessible as possible I have taken the following steps:
 
 - Using semantic HTML.
 - Descriptive alt attributes on images.
@@ -285,7 +295,7 @@ To ensure the site is accessible as possible I have taken the following steps;
 
 [Wave accessibility](#https://wave.webaim.org/) was used to test the websites accessibility, all results have no warnings or errors.
 
-- Due to restrictions when logged or having items in the bag I am only able to provided live links of areas that aren't restricted.
+Due to restrictions when logged or having items in the bag I am only able to provided live links of areas that aren't restricted.
 
 - Bag (empty) [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/bag/)
 - Contact [results](https://wave.webaim.org/report#/https://poster-prints-8ff329d79ba2.herokuapp.com/contact/)
