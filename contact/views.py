@@ -54,7 +54,6 @@ def contact(request):
     template = 'contact/contact.html'
     context = {
         'form': contact_form,
-        'on_contact_page': True,
     }
 
     return render(request, template, context)
@@ -110,7 +109,5 @@ def send_contact_notify_admin(contact_form):
 
 def contact_success(request):
     template = 'contact/contact_success.html'
-    context = {
-        'on_contact_page': True,
-    }
+
     return render(request, template, context)
