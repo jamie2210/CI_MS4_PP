@@ -105,8 +105,8 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Are you sure you want to delete <strong>{{ product.name }}?</strong></p>
-                                        <p>This action is permanent and cannot be undone!</p>
+                                        <p>Are you sure you want to delete <strong>{{ product.name }}</strong>?</p>
+                                        <p>This action is irreversible!</p>
                                     </div>
                                     <div class="modal-footer">
                                         <a href="{% url 'delete_product' product.id %}" class="btn btn-dark rounded border-0" aria-label="delete product, to go gallery">
