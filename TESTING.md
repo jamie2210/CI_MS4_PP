@@ -101,73 +101,73 @@ All code from the Boutique Ado project was left out to ensure the testing was do
 [pep8ci](#https://pep8ci.herokuapp.com/) was the linter used to check the python code, all clear with no errors.
 <br>
 
-| File | Result | Proof |
+| File | &#9989; (Pass) / &#10060; (Fail) | Proof |
 | :--- | :--- | :---: |
-| custom_storages.py | Pass | [custom_storages.py validation](documentation/testing/linter/custom-storage.png) |
+| custom_storages.py | &#9989; | [custom_storages.py validation](documentation/testing/linter/custom-storage.png) |
 | **POSTER_PRINTS** |
-| poster_prints/settings.py | Pass | [settings.py validation](documentation/testing/linter/settings.png) |
-| poster_prints/urls.py | Pass | [urls.py validation](documentation/testinglinter/urls.png) |
+| poster_prints/settings.py | &#9989; | [settings.py validation](documentation/testing/linter/settings.png) |
+| poster_prints/urls.py | &#9989; | [urls.py validation](documentation/testinglinter/urls.png) |
 | **BAG** |
-| bag/apps.py | Pass | [apps.py validation](documentation/testing/linter/bag-apps.png) |
-| bag/contexts.py | Pass | [contexts.py validation](documentation/testing/linter/bag-context.png) |
-| bag/urls.py | Pass | [urls.py validation](documentation/testinglinter/bag-urls.png) |
-| bag/views.py | Pass | [views.py validation](documentation/testing/linter/bag-views.png) |
-| bag/templatetags/bag_tools.py | Pass | [bag_tools.py validation](documentation/testing/linter/bag-tools.png)|
-| bag/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/bag-test-views.png) |
+| bag/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/bag-apps.png) |
+| bag/contexts.py | &#9989; | [contexts.py validation](documentation/testing/linter/bag-context.png) |
+| bag/urls.py | &#9989; | [urls.py validation](documentation/testinglinter/bag-urls.png) |
+| bag/views.py | &#9989; | [views.py validation](documentation/testing/linter/bag-views.png) |
+| bag/templatetags/bag_tools.py | &#9989; | [bag_tools.py validation](documentation/testing/linter/bag-tools.png)|
+| bag/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/bag-test-views.png) |
 | **CHECKOUT** |
-| checkout/admin.py | Pass | [admin.py validation](documentation/testing/linter/checkout-admin.png) |
-| checkout/apps.py | Pass | [apps.py validation](documentation/testing/linter/checkout-apps.png) |
-| checkout/forms.py | Pass | [forms.py validation](documentation/testing/linter/checkout-forms.png) |
-| checkout/models.py | Pass | [models.py validation](documentation/testing/linter/checkout-models.png) |
-| checkout/signals.py | Pass | [signals.py validation](documentation/testing/linter/checkout-signals.png) |
-| checkout/urls.py | Pass | [urls.py validation](documentation/testing/linter/checkout-urls.png) |
-| checkout/views.py | Pass | [views.py validation](documentation/testing/linter/checkout-views.png) |
-| checkout/webhook_handler.py | Pass | [webhook_handler.py](documentation/testing/linter/checkout-webhook-handler.png) |
-| checkout/webhooks.py | Pass| [webhooks.py](documentation/testing/linter/checkout-webhooks.png) |
-| checkout/test_forms.py | Pass | [test_forms.py validation](documentation/testing/linter/checkout-test-forms.png)|
-| checkout/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/checkout-test-models.png)|
-| checkout/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/checkout-test-views.png) |
+| checkout/admin.py | &#9989; | [admin.py validation](documentation/testing/linter/checkout-admin.png) |
+| checkout/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/checkout-apps.png) |
+| checkout/forms.py | &#9989; | [forms.py validation](documentation/testing/linter/checkout-forms.png) |
+| checkout/models.py | &#9989; | [models.py validation](documentation/testing/linter/checkout-models.png) |
+| checkout/signals.py | &#9989; | [signals.py validation](documentation/testing/linter/checkout-signals.png) |
+| checkout/urls.py | &#9989; | [urls.py validation](documentation/testing/linter/checkout-urls.png) |
+| checkout/views.py | &#9989; | [views.py validation](documentation/testing/linter/checkout-views.png) |
+| checkout/webhook_handler.py | &#9989; | [webhook_handler.py](documentation/testing/linter/checkout-webhook-handler.png) |
+| checkout/webhooks.py | &#9989; | [webhooks.py](documentation/testing/linter/checkout-webhooks.png) |
+| checkout/test_forms.py | &#9989; | [test_forms.py validation](documentation/testing/linter/checkout-test-forms.png)|
+| checkout/test_models.py | &#9989; | [test_models.py validation](documentation/testing/linter/checkout-test-models.png)|
+| checkout/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/checkout-test-views.png) |
 | **CONTACT** |
-| contact/admin.py | Pass |[admin.py validation](documentation/testing/linter/contact-admin.png) |
-| contact/apps.py | Pass | [apps.py validation](documentation/testing/linter/contact-apps.png) |
-| contact/forms.py | Pass | [forms.py validation](documentation/testing/linter/contact-forms.png) |
-| contact/models.py | Pass | [models.py validation](documentation/testing/linter/contact-models.png) |
-| contact/urls.py | Pass | [urls.py validation](documentation/testing/linter/contact-urls.png) |
-| contact/views.py | Pass | [views.py validation](documentation/testing/linter/contact-views.png) |
-| contact/test_forms.py | Pass | [test_forms.py validation](documentation/testing/linter/contact-test-forms.png) |
-| contact/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/contact-test-models.png) |
-| contact/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/contact-test-views.png) |
+| contact/admin.py | &#9989; |[admin.py validation](documentation/testing/linter/contact-admin.png) |
+| contact/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/contact-apps.png) |
+| contact/forms.py | &#9989; | [forms.py validation](documentation/testing/linter/contact-forms.png) |
+| contact/models.py | &#9989; | [models.py validation](documentation/testing/linter/contact-models.png) |
+| contact/urls.py | &#9989; | [urls.py validation](documentation/testing/linter/contact-urls.png) |
+| contact/views.py | &#9989; | [views.py validation](documentation/testing/linter/contact-views.png) |
+| contact/test_forms.py | &#9989; | [test_forms.py validation](documentation/testing/linter/contact-test-forms.png) |
+| contact/test_models.py | &#9989; | [test_models.py validation](documentation/testing/linter/contact-test-models.png) |
+| contact/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/contact-test-views.png) |
 | **FAVOURITES** |
-| favourites/apps.py | Pass | [apps.py validation](documentation/testing/linter/favourites-apps.png) |
-| favourites/contexts.py | Pass | [contexts.py validation](documentation/testing/linter/favourites-contexts.png) |
-| favourites/urls.py | Pass | [urls.py validation](documentation/testing/linter/favourites-urls.png) |
-| favourites/models.py | Pass | [models.py validation](documentation/testing/linter/favourites-models.png) |
-| favourites/views.py | Pass | [views.py validation](documentation/testing/linter/favourites-views.png) |
-| favourites/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/favourites-test-models.png)|
-| favourites/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/favourites-test-views.png) |
+| favourites/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/favourites-apps.png) |
+| favourites/contexts.py | &#9989; | [contexts.py validation](documentation/testing/linter/favourites-contexts.png) |
+| favourites/urls.py | &#9989; | [urls.py validation](documentation/testing/linter/favourites-urls.png) |
+| favourites/models.py | &#9989; | [models.py validation](documentation/testing/linter/favourites-models.png) |
+| favourites/views.py | &#9989; | [views.py validation](documentation/testing/linter/favourites-views.png) |
+| favourites/test_models.py | &#9989; | [test_models.py validation](documentation/testing/linter/favourites-test-models.png)|
+| favourites/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/favourites-test-views.png) |
 | **HOME** |
-| home/apps.py | Pass | [apps.py validation](documentation/testing/linter/home-apps.png) |
-| home/urls.py | Pass | [urls.py validation](documentation/testing/linter/home-urls.png)|
-| home/views.py | Pass | [views.py validation](documentation/testing/linter/home-views.png) |
-| home/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/home-test-views.png) |
+| home/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/home-apps.png) |
+| home/urls.py | &#9989; | [urls.py validation](documentation/testing/linter/home-urls.png)|
+| home/views.py | &#9989; | [views.py validation](documentation/testing/linter/home-views.png) |
+| home/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/home-test-views.png) |
 | **PRODUCTS** |
-| products/admin.py | Pass | [admin.py validation](documentation/testing/linter/products-admin.png) |
-| products/apps.py | Pass | [apps.py validation](documentation/testing/linter/products-apps.png) |
-| products/forms.py | Pass | [forms.py validation](documentation/testing/linter/products-forms.png) |
-| products/models.py | Pass | [models.py validation](documentation/testing/linter/products-models.png) |
-| products/urls.py | Pass | [urls.py validation](documentation/testing/linter/products-urls.png) |
-| products/views.py | Pass | [views.py validation](documentation/testing/linter/products-views.png) |
-| products/widgets.py | Pass | [widgets.py validation](documentation/testing/linter/products-widgets.png) |
-| products/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/products-test-models.png) |
-| products/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/products-test-views.png) |
+| products/admin.py | &#9989; | [admin.py validation](documentation/testing/linter/products-admin.png) |
+| products/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/products-apps.png) |
+| products/forms.py | &#9989; | [forms.py validation](documentation/testing/linter/products-forms.png) |
+| products/models.py | &#9989; | [models.py validation](documentation/testing/linter/products-models.png) |
+| products/urls.py | &#9989; | [urls.py validation](documentation/testing/linter/products-urls.png) |
+| products/views.py | &#9989; | [views.py validation](documentation/testing/linter/products-views.png) |
+| products/widgets.py | &#9989; | [widgets.py validation](documentation/testing/linter/products-widgets.png) |
+| products/test_models.py | &#9989; | [test_models.py validation](documentation/testing/linter/products-test-models.png) |
+| products/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/products-test-views.png) |
 | **PROFILES** |
-| profiles/apps.py | Pass | [apps.py validation](documentation/testing/linter/profiles-apps.png) |
-| profiles/forms.py | Pass | [forms.py validation](documentation/testing/linter/profiles-forms.png) |
-| profiles/models.py | Pass | [models.py validation](documentation/testing/linter/profiles-models.png) |
-| profiles/urls.py | Pass | [urls.py validation](documentation/testing/linter/profiles-urls.png) |
-| profiles/views.py | Pass | [views.py validation](documentation/testing/linter/profiles-views.png) |
-| profiles/test_models.py | Pass | [test_models.py validation](documentation/testing/linter/profiles-test-models.png) |
-| profiles/test_views.py | Pass | [test_views.py validation](documentation/testing/linter/profiles-test-views.png) |
+| profiles/apps.py | &#9989; | [apps.py validation](documentation/testing/linter/profiles-apps.png) |
+| profiles/forms.py | &#9989; | [forms.py validation](documentation/testing/linter/profiles-forms.png) |
+| profiles/models.py | &#9989; | [models.py validation](documentation/testing/linter/profiles-models.png) |
+| profiles/urls.py | &#9989; | [urls.py validation](documentation/testing/linter/profiles-urls.png) |
+| profiles/views.py | &#9989; | [views.py validation](documentation/testing/linter/profiles-views.png) |
+| profiles/test_models.py | &#9989; | [test_models.py validation](documentation/testing/linter/profiles-test-models.png) |
+| profiles/test_views.py | &#9989; | [test_views.py validation](documentation/testing/linter/profiles-test-views.png) |
 
 
 ### Performance
@@ -316,12 +316,40 @@ The website was tested on the following browsers:
 - Apple Safari
 - Mozilla Firefox
 
-
 ### Developer Feature Testing
 
-| Feature | Testing Performed | Pass/Fail |
+| Feature | Testing Performed | &#9989; (Pass) / &#10060; (Fail) |
 | --- | --- | --- |
-| Links | Check all links navigate correctly | Pass |
+| Register | Sign up and email confirmation working | &#9989; |
+| Login / Logout | both functions work correctly | &#9989; |
+| Forgot Password | Reset and email links all work correctly | &#9989; |
+| Links | Check all links navigate correctly | &#9989; |
+| Buttons | Check all buttons function correctly | &#9989; |
+| Search Bar | Cehck search criteria works | &#9989; |
+| Sort Selection | Sort selection sorts correctly | &#9989; |
+| Product Links | Products link to correct product detail | &#9989; |
+| Product Edit | Edits and updates correct product | &#9989; |
+| Product Add | Adds product and it's details correctly | &#9989; |
+| Product Delete Modal | Button calls modal, modal deletes product | &#9989; |
+| Image OnClick | Links work correctly, open new window | &#9989; |
+| Image1 upload | Image uploads and displays correctly | &#9989; |
+| Image2 upload | Image2 uploads and displays correctly (only avaiable if Image1 field has value) | &#9989; |
+| Size / Price | Price changes depending on size selected | &#9989; |
+| Stock Level Updates | Stock display correctly displays stock level | &#9989; |
+| Quantity Updates | Quanity updates from product and bag view | &#9989; |
+| Add / Remove Favourites Icon | Check all links navigate correctly | &#9989; |
+| Remove Favourites Modal | Button calls modal, modal removes product | &#9989; |
+| Contact Admin | Contact form delivers message to admin | &#9989; |
+| Contact Emails | Emails are sent to both user and store email | &#9989; |
+| Contact Admin | Contact form delivers message to admin | &#9989; |
+| Add to Bag | Correct items add to bag | &#9989; |
+| Update Bag | Correctly update items in bag | &#9989; |
+| Checkout | Bag items displayed in checkout | &#9989; |
+| Payment | Stripe payment received | &#9989; | 
+| Purchase | Webhooks sent and all working | &#9989; |
+| Checkout emails | Confirmation emails delivered with correct order information | &#9989; |
+| Profile Page | Personal information and order history displays correctly | &#9989; |
+| Social Links | Links work correctly, open new window | &#9989; |
 
 
 ### Testing User Stories
