@@ -1,10 +1,12 @@
-# __Poster Prints Testing__
+# Poster Prints Testing
 
 ![Mockup image](documentation/images/device-display.jpg)
 
 [Live webpage](https://poster-prints-8ff329d79ba2.herokuapp.com/)
 
-## __Contents__
+## Contents
+
+_ _ _
 
 1. [Automated Testing](#automated-testing)
 1. [Validation Testing](#validation-testing)
@@ -45,7 +47,6 @@ A total of 32 test all passing with no errors.
 - This is an area I look forward to learning more about and utilising as I progress as a developer as it's an area I know I can improve. I know it will prove more and more useful helping me write more robust and tested code for future projects.
 
 ## Validation Testing
-
 _ _ _
 
 ### HTML Validation
@@ -172,7 +173,7 @@ All code from the Boutique Ado project was left out to ensure the testing was do
 
 ### Performance
 
-Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be, this is down mainly to resources blocking the first paint of the page. This is something with more time I'd like to read up on and gain a better undertsanding but due to time contraints I am happy with the current scores.
+Performance testing was done using lighthouse in chrome developer tools testing the performance, accessibility, best practices, and SEO of the website. Some of the scores are lower than I'd like them to be, this is down mainly to resources blocking the first paint of the page. This is something with more time I'd like to read up on and gain a better understanding but due to time constraints I am happy with the current scores.
 <br>
 <details><summary>First Paint Message Example</summary>
 <img src="documentation/testing/lighthouse/lighthouse-paint.png">
@@ -229,7 +230,7 @@ Performance testing was done using lighthouse in chrome developer tools testing 
 
 Performance was slower for mobile testing. I did as much as I could improve it with some scores as low as 24 now sitting around 60 or above for most. There isn't much more I could do as essential JS and CSS was the main cause, so I am happy with the improvement. 
 
-<details><summary>Redner Blocking</summary>
+<details><summary>Render Blocking</summary>
 <img src="documentation/testing/lighthouse/mobile/render-block.png">
 </details>
 <details><summary>Reduce JS</summary>
@@ -335,18 +336,18 @@ The website was tested on the following browsers:
 | Forgot Password | Reset and email links all work correctly | &#9989; |
 | Links | Check all links navigate correctly | &#9989; |
 | Buttons | Check all buttons function correctly | &#9989; |
-| Search Bar | Cehck search criteria works | &#9989; |
+| Search Bar | Check search criteria works | &#9989; |
 | Sort Selection | Sort selection sorts correctly | &#9989; |
 | Product Links | Products link to correct product detail | &#9989; |
 | Product Edit | Edits and updates correct product | &#9989; |
-| Product Add | Adds product and it's details correctly | &#9989; |
+| Product Add | Adds product and its details correctly | &#9989; |
 | Product Delete Modal | Button calls modal, modal deletes product | &#9989; |
 | Image OnClick | Links work correctly, open new window | &#9989; |
 | Image1 upload | Image uploads and displays correctly | &#9989; |
-| Image2 upload | Image2 uploads and displays correctly (only avaiable if Image1 field has value) | &#9989; |
+| Image2 upload | Image2 uploads and displays correctly (only available if Image1 field has value) | &#9989; |
 | Size / Price | Price changes depending on size selected | &#9989; |
 | Stock Level Updates | Stock display correctly displays stock level | &#9989; |
-| Quantity Updates | Quanity updates from product and bag view | &#9989; |
+| Quantity Updates | Quantity updates from product and bag view | &#9989; |
 | Add / Remove Favourites Icon | Check all links navigate correctly | &#9989; |
 | Remove Favourites Modal | Button calls modal, modal removes product | &#9989; |
 | Contact Admin | Contact form delivers message to admin | &#9989; |
@@ -377,7 +378,6 @@ _ _ _
     <details><summary>View Gallery</summary>
     <img src="documentation/testing/stories/view-gallery.gif">
     </details>
-    <br>
     <details><summary>All Posters</summary>
     <img src="documentation/testing/stories/all-posters.gif">
     </details>
@@ -432,18 +432,16 @@ _ _ _
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Find contact form | Click link in footer  | To go contact page | Works as expected |
-    | Send Message | Fill out form  | To go contact success page | Works as expected |
+    | Find contact form | Click link in footer | To go contact page | Works as expected |
+    | Send Message | Fill out form | To go contact success page | Works as expected |
     | Proof of message received | Check emails | Contact message confirmation email received | Works as expected |
 
     <details><summary>View Contact Page</summary>
     <img src="documentation/testing/stories/contact.gif">
     </details>
-    <br>
     <details><summary>Contact Success Page</summary>
     <img src="documentation/features/contact/contact-success.png">
     </details>
-    <br>
     <details><summary>Email Received</summary>
     <img src="documentation/features/contact/confirmation-email.png">
     </details>
@@ -472,13 +470,12 @@ _ _ _
     <details><summary>Login</summary>
     <img src="documentation/testing/stories/login.gif">
     </details>
-    <br>
     <details><summary>Logout</summary>
     <img src="documentation/testing/stories/logout.gif">
     </details>
     <br>
 
-9. As a site user I want to be able to Easily recover my password incase I forget it so that I can easily recover access to my account.
+9. As a site user I want to be able to Easily recover my password in case I forget it so that I can easily recover access to my account.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -491,30 +488,25 @@ _ _ _
     <details><summary>Forgotten Password</summary>
     <img src="documentation/features/password-reset/forgotten-password.png">
     </details>
-    <br>
     <details><summary>Confirm Email</summary>
     <img src="documentation/features/password-reset/reset-email.png">
     </details>
-    <br>
     <details><summary>Confirmation email Page</summary>
     <img src="documentation/features/password-reset/reset-link.png">
     </details>
-    <br>
     <details><summary>Reset Link</summary>
     <img src="documentation/features/password-reset/reset-confirmation-email.png">
     </details>
-    <br>
     <details><summary>Enter New Password</summary>
     <img src="documentation/features/password-reset/new-password.png">
     </details>
-    <br>
     <details><summary>New Password Confirmation</summary>
     <img src="documentation/features/password-reset/change-success.png">
     </details>
     <br>
 
 
-10. Site user I want to be able to receive confimation after registering so that I can easily verify that my account registration was successful.
+10. Site user I want to be able to receive confirmation after registering so that I can easily verify that my account registration was successful.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -525,21 +517,18 @@ _ _ _
     <details><summary>Fill Out form</summary>
     <img src="documentation/features/register/sign-up.png">
     </details>
-    <br>
     <details><summary>Confirmation Link</summary>
     <img src="documentation/features/register/email-confirmation.png">
     </details>
-    <br>
     <details><summary>Confirm Email</summary>
     <img src="documentation/features/register/confirm-email.png">
     </details>
-    <br>
     <details><summary>Email Confirmed</summary>
     <img src="documentation/features/register/email-confirmed.png">
     </details>
     <br>
 
-11. Site user I want to be able to Have a personalised user profile so that I can easily view my personal order history and order confirmations, and save my payment information.
+11. Site user I want to be able to have a personalised user profile so that I can easily view my personal order history, order confirmations and save my payment information.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -562,7 +551,6 @@ _ _ _
     <details><summary>Add to Favourites</summary>
     <img src="documentation/testing/stories/add-favourite.gif">
     </details>
-    <br>
     <details><summary>View List</summary>
     <img src="documentation/testing/stories/favourites.gif">
     </details>
@@ -578,13 +566,12 @@ _ _ _
     <details><summary>Sort By Price</summary>
     <img src="documentation/testing/stories/sort-price.gif">
     </details>
-    <br>
     <details><summary>Sort By Category</summary>
     <img src="documentation/testing/stories/sort-category.gif">
     </details>
     <br>
 
-14. As a shopper I want to be able to sort a specific category of poster so that I can find the best-priced or in a specific category, or sort the products in that category by name.
+14. As a shopper I want to be able to sort a specific category of poster so that I can find the best-priced or in a specific category or sort the products in that category by name.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -616,7 +603,6 @@ _ _ _
     <details><summary>Search Name</summary>
     <img src="documentation/testing/stories/search-name.gif">
     </details>
-    <br>
     <details><summary>Search Description</summary>
     <img src="documentation/testing/stories/search-description.gif">
     </details>
@@ -640,7 +626,7 @@ _ _ _
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
-    | Select Size / Quantity | Select size and / or quantity on product detail page | Size and Quanity changes on selection | Works as expected |
+    | Select Size / Quantity | Select size and / or quantity on product detail page | Size and Quantity changes on selection | Works as expected |
 
     <details><summary>Select Size / Quantity</summary>
     <img src="documentation/testing/stories/select-size-quantity.gif">
@@ -703,7 +689,7 @@ _ _ _
     </details>
     <br>
 
-24. As a shopper I want to be able to receive an email confimation after checking out so that I can keep the confirmation of what I've purchased for my records.
+24. As a shopper I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
 
     | **Feature** | **Action** | **Expected Result** | **Actual Result** |
     |-------------|------------|---------------------|-------------------|
@@ -713,7 +699,6 @@ _ _ _
     <details><summary>Make Payment</summary>
     <img src="documentation/testing/stories/make-payment.gif">
     </details>
-    <br>
     <details><summary>Order Confirmation Email</summary>
     <img src="documentation/testing/stories/purchase-confirmation.png">
     </details>
@@ -731,7 +716,6 @@ _ _ _
     <details><summary>Add Product Page</summary>
     <img src="documentation/testing/stories/add-product-page.gif">
     </details>
-    <br>
     <details><summary>Add Product</summary>
     <img src="documentation/testing/stories/add-product.gif">
     </details>
@@ -747,7 +731,6 @@ _ _ _
     <details><summary>Edit Product Page</summary>
     <img src="documentation/testing/stories/edit-product-page.gif">
     </details>
-    <br>
     <details><summary>Edit Product</summary>
     <img src="documentation/testing/stories/edit-product.gif">
     </details>
@@ -776,15 +759,12 @@ _ _ _
     <details><summary>Stock Level < 4</summary>
     <img src="documentation/testing/stories/stock-low.png">
     </details>
-    <br>
     <details><summary>Stock Level = 0</summary>
     <img src="documentation/testing/stories/stock-out.png">
     </details>
-    <br>
     <details><summary>Stocked Item - Product Detail</summary>
     <img src="documentation/testing/stories/stock.gif">
     </details>
-    <br>
     <details><summary>Stocked Item - Cart</summary>
     <img src="documentation/testing/stories/stock-cart.gif">
     </details>
@@ -802,12 +782,11 @@ _ _ _
     <br>
 
 ## Bugs
-
 _ _ _
 
 ### Image2 Field Error
 
-- As some products have 2 images I added an image2 field to the products model. For some reason the below error occurred if only an image was uploaded in the second field and not the first. 
+- As some products have two images, I added an image2 field to the products model. For some reason the below error occurred if only an image was uploaded in the second field and not the first. 
 
     ![Image Error](documentation/testing/image-error.png)
 
@@ -847,7 +826,7 @@ _ _ _
 
 ### Tooltip
 
-- I could not get the bootstrap tooltip to work, followed everything for the correct Bootstrap version, but for some reason it would not work. I took it onmyself to create one myself as I really wanted this feature for the star / favourite icon.
+- I could not get the bootstrap tooltip to work, followed everything for the correct Bootstrap version, but for some reason it would not work. I took it on myself to create one as I really wanted this feature for the star / favourite icon.
 - This is the code I originally used.
 
     ```Javascript
@@ -862,8 +841,8 @@ _ _ _
             tool.style.visibility = 'hidden';
         });    
     ```
-- The issue was that each time the icon was clicked and therefore changed as a favourite was added or remove the event listeners were still looking for the old icon. It was only after refreshing the page would the tooltip now show on mouse over.
-- While this worked ok I knew it could work the way I wanted and should.
+- The issue was that each time the icon was clicked and therefore changed as a favourite was added or removed the event listeners were still looking for the old icon. It was only after refreshing the page would the tooltip now show on mouse over.
+- While this worked ok, I knew it could work the way I wanted and should.
 - Below is the new working code.
 
     ```Javascript
@@ -899,7 +878,7 @@ _ _ _
     ```
 
 - By creating individual classes for both icons and specific functions for each class the page no longer needs to refresh for the mouse over to display the tooltip or vice versa.
-- Its a much more long winded way of doing it for such a small feature, but it was important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
+- It's a long-winded way of doing it for such a small feature, but it was important to me that it worked how I wanted it to. I am very pleased that it now works how it should.
 
 ### Stock Level - 0
 
