@@ -8,8 +8,8 @@
 
 1. [Automated Testing](#automated-testing)
 1. [Validation Testing](#validation-testing)
-    * [HTML Validation](#HTML-validation)
-    * [CSS Validation](#CSS-validation)
+    * [HTML Validation](#html-validation)
+    * [CSS Validation](#css-validation)
     * [JavaScript Validation](#javascript-validation)
     * [Python Validation](#python-validation)
     * [Accessibility](#accessibility)
@@ -68,30 +68,11 @@ _ _ _
 
 ### CSS Validation
 
-[W3C](https://validator.w3.org/) Jigsaw CSS Validation Service was used to validate the CSS of the website.
-All pass with no errors, occassional warning when webkits used.
-
+[W3C](https://jigsaw.w3.org/css-validator/) Jigsaw CSS Validation Service was used to validate the CSS of the website.
+All pass with no errors, with 3 warnings, 1 for webkits and 2 for using the same colour for border and background which is intentional.
 
 <details><summary>base.css</summary>
 <img src="documentation/testing/css-base.png">
-</details><br>
-<details><summary>bag.css</summary>
-<img src="documentation/testing/css-bag.png">
-</details><br>
-<details><summary>checkout.css</summary>
-<img src="documentation/testing/css-checkout.png">
-</details><br>
-<details><summary>contact.css</summary>
-<img src="documentation/testing/css-contact.png">
-</details><br>
-<details><summary>favourites.css</summary>
-<img src="documentation/testing/css-favourites.png">
-</details><br>
-<details><summary>products.css</summary>
-<img src="documentation/testing/css-products.png">
-</details><br>
-<details><summary>profiles.css</summary>
-<img src="documentation/testing/css-profiles.png">
 </details><br>
 
 ### JavaScript Validation
