@@ -726,7 +726,7 @@ textarea.form-control {
     }
 }
 
-/* fixed top navbar only on medium and up */
+/* Delivery alert placement */
 @media (min-width: 992px) {
     .delivery-alert {
         float: right;
