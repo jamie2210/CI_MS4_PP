@@ -735,9 +735,9 @@ textarea.form-control {
         left: 0;
         z-index: 1030;
     } */
-    .delivery-alert {
+    /* .delivery-alert {
         float: right;
-      }
+      } */
 }
 
 @media (max-width: 991px) {
