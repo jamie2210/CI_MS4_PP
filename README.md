@@ -5,7 +5,7 @@ Developer: Jamie Letts
 
 [Live webpage](https://poster-prints-8ff329d79ba2.herokuapp.com/)
 
-Poster Prints is an ecommerce poster website allowing users to purchase printed, framed and mounted posters developed for Milestone 4 as milestone project 4 as part of the Code Institute - Level 5 Diploma in Software Development course (Full stack).
+Poster Prints is an ecommerce poster website allowing users to purchase printed, framed and mounted posters developed for Milestone Project 4 as part of the Code Institute - Level 5 Diploma in Software Development course (Full stack).
 
 - There are two types of users
     - An admin(administrator) user account
@@ -29,7 +29,7 @@ Poster Prints is an ecommerce poster website allowing users to purchase printed,
         * [Physical Database Model](#physical-database-model)
         * [Models](#models)
           * [User Model](#user-model)
-          * [UserProfile Model](#userprofile-model)
+          * [User Profile Model](#user-profile-model)
           * [Order Model](#order-model)
           * [OrderLineItem Model](#orderlineitem-model)
           * [Favourites Model](#favourites-model)
@@ -43,22 +43,27 @@ Poster Prints is an ecommerce poster website allowing users to purchase printed,
     * [Surface](#surface)
       * [Color Palette](#color-palette)
       * [Typography](#typography)
+
 2. [Features](#features)
     * [Consistent Features](#consistent-features)
     * [Main Content Features](#main-content-features)
+
 3. [Technologies Used](#technologies-used)
     * [Languages](#languages)
     * [Databases](#databases)
     * [Frameworks](#frameworks)
     * [Libraries & Packages](#libraries--packages)
-    * [Programs](#programs)
+
 4. [Future Implementations](#future-implementations)
+
 5. [Testing](#testing)
+
 6. [APIs & Configuration](#apis--configuration)
     * [Google Emails](#google-emails)
     * [Stripe](#stripe)
+
 7. [Deployment](#deployment)
-    * [Amazon Webservices](#amazon-webservices)
+    * [Amazon Web Services](#amazon-web-services)
     * [Local Deployment](#local-deployment)
     * [Heroku & Postgres Database](#heroku--postgres-database)
 
@@ -180,7 +185,7 @@ _ _ _
 - The User model contains information about the user. It is part of the Django allauth library
 - The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
 
-##### UserProfile Model
+##### User Profile Model
 - The UserProfile model has a one-to-one relationship with User
 - The model contains the following fields: default_full_name, default_email, default_phone_number, default_street_address1, default_street_address2
 default_town_or_city, default_county, default_postcode and default_country
@@ -415,8 +420,6 @@ For stocked items checks have been made adding items to the bag and editting the
 </details>
 <br>
 
-_ _ _
-
 ### Consistent Features
 _ _ _
 
@@ -468,6 +471,9 @@ _ _ _
   <details><summary>Mobile Footer</summary>
   <img src="documentation/features/mobile-footer.png">
   </details>
+
+### Main Content Features
+_ _ _
 
 * __HomePage__
 
@@ -1084,7 +1090,8 @@ To deploy this application to Heroku, run the following steps;
 6. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
 7. Create a Procfile with the text: web: gunicorn poster_prints.wsgi:application for example
 8. In the settings.py ensure the connection is to the Elephant SQL postgres database and the backend database is commented out
-```
+
+```Python
 # DATABASES = {
  #     'default': {
  #         'ENGINE': 'django.db.backends.sqlite3',
@@ -1096,6 +1103,7 @@ To deploy this application to Heroku, run the following steps;
      'default': dj_database_url.parse('your-database-url-here')
  }
  ```
+
 9. Ensure not to commit while the URL is saved in the settings.py file
 10. Run "python3 manage.py showmigrations" to check the status of the migrations
 11. Run "python3 manage.py migrate" to migrate the database
