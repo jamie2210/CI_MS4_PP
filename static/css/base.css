@@ -174,6 +174,10 @@ footer {
     font-size: x-large;
 }
 
+footer {
+    margin-top: 20px;
+}
+
 /* ------------------------- Icons */
 
 .icon {
@@ -378,10 +382,6 @@ footer {
     cursor: pointer;
 }
 
-footer {
-    margin-top: 20px;
-}
-
 .mobile-btn {
     width: 50px;
     height: auto;
@@ -453,10 +453,6 @@ color: #aab7c4 !important;
 
 .order-confirmation-wrapper {
 margin: 20px;
-}
-
-footer {
-margin-top: 20px;
 }
   
   /* ---------------------------- Stripe */
@@ -570,10 +566,6 @@ margin-top: 20px;
     margin: auto;
 }
 
-footer {
-    margin-top: 20px;
-}
-
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
@@ -611,10 +603,6 @@ footer {
 
 .card-footer {
     padding-bottom: 0;
-}
-
-footer {
-    margin-top: 20px;
 }
 
 /* ---------------------------- Page top arrow */
@@ -732,10 +720,6 @@ textarea.form-control {
     background-color: #504e4d;
 }
 
-footer {
-    margin-top: 20px;
-}
-
 /* ------------------- Product Detail Page */
 
 .product-star {
@@ -849,10 +833,6 @@ footer {
 .order-history {
     max-height: 500px;
     overflow: auto;
-}
-
-footer {
-    margin-top: 20px;
 }
 
 #profile-update-form input::placeholder {

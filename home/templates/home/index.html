@@ -29,3 +29,13 @@
         </div>
     </div>  
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script>
+    // Remove Footer Margin
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("footer").style.marginTop = "0";
+    });
+    </script>
+{% endblock %}
