@@ -218,8 +218,8 @@ default_town_or_city, default_county, default_postcode and default_country
 
 ## Scope
 _ _ _
-### User Stories
 
+### User Stories
 
 | **Viewing & Navigation** |
 |-------------|
@@ -333,9 +333,7 @@ _ _ _
 </details>
 <details><summary>Errors</summary>
 <img src="documentation/wireframes/errors.png">
-</details>
-
-
+</details><br>
 
 ## Surface
 _ _ _
