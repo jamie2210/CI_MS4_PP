@@ -83,16 +83,16 @@ All code from the Boutique Ado project was left out to ensure the testing was do
 
 <details><summary>base.js</summary>
 <img src="documentation/testing/js-base.png">
-</details><br>
+</details>
 <details><summary>bag.js</summary>
 <img src="documentation/testing/js-bag.png">
-</details><br>
+</details>
 <details><summary>favourites.js</summary>
 <img src="documentation/testing/js-favourites.png">
-</details><br>
+</details>
 <details><summary>product_detail.js</summary>
 <img src="documentation/testing/js-product-detail.png">
-</details><br>
+</details>
 <details><summary>products.js</summary>
 <img src="documentation/testing/js-products.png">
 </details><br>
