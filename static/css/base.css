@@ -633,7 +633,7 @@ textarea.form-control {
     background-color: #504e4d;
 }
 
-.form-group {
+.btn-form-group {
     width: 50%;
 }
 
@@ -840,7 +840,7 @@ textarea.form-control {
     .sort-select-wrapper {
         margin-top: 20px;
     }
-    .form-group {
+    .btn-form-group {
         width: 65%;
     }
     .satin-print {
