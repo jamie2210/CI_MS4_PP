@@ -115,7 +115,7 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control w-50 satin-print" name="product_size" id='id_product_size' 
+                                    <select class="form-control satin-print" name="product_size" id='id_product_size' 
                                     data-item-price="a4:£14.99;a3:£19.99;a2:£24.99;a1:£29.99;a0:£39.99" aria-label="choose product size">
                                         <option value="a4">A4 - £{{ product.a4_price }}</option>
                                         <option value="a3" selected>A3 - £{{ product.a3_price }}</option>
@@ -127,7 +127,7 @@
                             {% endif %}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
-                            <div class="form-group w-50">
+                            <div class="form-group">
                                 <div class="input-group justify-content-center">
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn-dark border-0 mobile-btn" aria-label="decrement quantity"
